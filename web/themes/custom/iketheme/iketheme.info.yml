@@ -1,0 +1,22 @@
+name: iketheme
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - iketheme/base
+  - iketheme/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - iketheme/user
+  core/drupal.dropbutton:
+    - iketheme/dropbutton
+  core/drupal.dialog:
+    - iketheme/dialog
+  file/drupal.file:
+    - iketheme/file
+  core/drupal.progress:
+    - iketheme/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.2.3'
