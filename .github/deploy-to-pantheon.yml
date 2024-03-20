@@ -1,0 +1,57 @@
+name: Deployment Drupal site to Pantheon host
+on:
+  push:
+    branches:
+      - master
+env:
+  PANTHEON_SITE: ike-drupal-ds4
+  PANTHEON_SITE_ID: f75b15e0-54d5-406d-8eb2-b9eae6e9d1ab
+  PANTHEON_ENV: dev
+
+  PANTHEON_GIT_USER: codeserver.dev.$PANTHEON_SITE_ID
+  PANTHEON_GIT_HOSTNAME: codeserver.dev.$PANTHEON_SITE_ID.drush.in
+  PANTHEON_GIT_PORT: 2222
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate composer.json
+        run: composer validate
+
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.PANTHEON_SSH_PRIVATE_KEY }}
+          known_hosts: ' '
+
+      - name: Install Terminus
+        uses: pantheon-systems/terminus-github-actions@main
+        with:
+          pantheon-machine-token: ${{ secrets.TERMINUS_TOKEN }}
+
+      - name: Add Pantheon Git repository URL as known host
+        run: |
+          ssh-keyscan -t rsa -p ${{ env.PANTHEON_GIT_PORT }} -H ${{ env.PANTHEON_GIT_HOSTNAME }} >> ~/.ssh/known_hosts
+
+      - name: Deploy via commit to Pantheon Git repository URL
+        run: |
+          git remote add pantheon ssh://${{ env.PANTHEON_GIT_USER }}@${{ env.PANTHEON_GIT_HOSTNAME }}:${{ env.PANTHEON_GIT_PORT }}/~/repository.git;
+          git push pantheon HEAD:master --force
+
+      - name: Terminus Wake Environment
+        run: |
+          terminus env:wake ${{ env.PANTHEON_SITE }}.${{ env.PANTHEON_ENV }}
+
+
+      - name: Terminus Clear Cache
+        run: |
+          terminus env:clear-cache ${{ env.PANTHEON_SITE }}.${{ env.PANTHEON_ENV }}
