@@ -46,6 +46,8 @@ base:
         weight: -10
       css/components/ui-dialog.css:
         weight: -10
+      css/components/custom.css:
+        weight: -10
 dialog:
   version: VERSION
   css:
