@@ -9,3 +9,32 @@
   display: none;
 }
 
+.region-header {
+  display: flex;
+  justify-content: center;
+}
+
+/* The width of the content  */
+.content-container-default {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  /* margin: 0 auto; */
+}
+
+.menu {
+  display: flex;
+}
+
+.menu .menu-item {
+  margin-right: 16px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.region-content, .region-secondary-menu, .region-highlighted {
+  max-width: 1200px;
+}
