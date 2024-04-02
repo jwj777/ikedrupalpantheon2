@@ -1,0 +1,21 @@
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  {# Get the class from the field's selected value. #}
+  {% set columnWidthClass = paragraph.field_2_column_widths.0.value|clean_class ~ '-width' %}
+
+  <div{{ attributes.addClass(classes, columnWidthClass) }}>
+    <div class="paragraph-inner">
+      {% block content %}
+        {{ content }}
+      {% endblock %}
+    </div>
+  </div>
+{% endblock paragraph %}

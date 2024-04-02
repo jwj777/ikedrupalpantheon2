@@ -48,6 +48,25 @@ base:
         weight: -10
       css/components/custom.css:
         weight: -10
+      css/components/typography.css:
+        weight: -10
+      css/components/hero.css:
+        weight: -10
+      css/components/menu-main.css:
+        weight: -10
+      css/components/layout.css:
+        weight: -10
+      css/components/paragraphs.css:
+        weight: -10
+
+global-scripts:
+  version: VERSION
+  js:
+    js/menu.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
 dialog:
   version: VERSION
   css:

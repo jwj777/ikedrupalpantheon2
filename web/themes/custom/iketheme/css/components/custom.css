@@ -1,7 +1,7 @@
 
 /** site logo **/
 #block-iketheme-site-branding img {
-  max-width: 240px;
+  max-width: 140px;
 }
 
 /* hide site name */
@@ -14,12 +14,15 @@
   justify-content: center;
 }
 
-/* The width of the content  */
-.content-container-default {
+.region-header .region-inner {
+  flex: 2;
   display: flex;
   justify-content: space-between;
+}
+
+/* The width of the content  */
+.content-container-default {
   max-width: 1200px;
-  /* margin: 0 auto; */
 }
 
 .menu {
@@ -30,11 +33,14 @@
   margin-right: 16px;
 }
 
-main {
-  display: flex;
-  justify-content: center;
+.block-views-blockhero-homepage-block-1 {
+  width: 100%;
 }
 
-.region-content, .region-secondary-menu, .region-highlighted {
+.region-secondary-menu, .region-highlighted {
   max-width: 1200px;
+}
+
+.viewsreference--view-title {
+  display: none;
 }

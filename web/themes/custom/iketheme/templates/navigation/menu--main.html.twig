@@ -1,0 +1,66 @@
+{#
+/**
+ * @file
+ * Theme override to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link URL, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *   - is_expanded: TRUE if the link has visible children within the current
+ *     menu tree.
+ *   - is_collapsed: TRUE if the link has children within the current menu tree
+ *     that are not currently visible.
+ *   - in_active_trail: TRUE if the link is in the active trail.
+ */
+#}
+{% import _self as menus %}
+
+{#
+  We call a macro which calls itself to render the full tree.
+  @see https://twig.symfony.com/doc/3.x/tags/macro.html
+#}
+{{ menus.menu_links(items, attributes, 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+
+
+  <div class="nav-container">
+    <div class="nav1 nav-about">
+      <a href="" class="nav1-item" id="aboutUsLink">About Us</a>
+      <div class="dropdown" id="aboutUsDropdown" style="display: none">
+        <a href="" class="nav2-item">About The Fondation</a>
+        <a href="" class="nav2-item">IKE Insights</a>
+        <a href="" class="nav2-item">Eisenhower Presidential Library</a>
+        <a href="" class="nav2-item">Research Travel Grants</a>
+        <a href="" class="nav2-item">Legacy Organizations</a>
+        <a href="" class="nav2-item">Eisenhower Memorial</a>
+        <a href="" class="nav2-item">Silo Mural Project</a>
+      </div>
+
+    </div>
+    <div class="nav1">
+      <a href="">Ike's Life</a>
+      <div class="nav2">
+        <a href="" class="nav2-item"></a>
+      </div>
+    </div>
+    <div class="nav1">
+      <a href="">Education</a>
+    </div>
+    <div class="nav1">
+      <a href="">Ike's Solders</a>
+    </div>
+    <div class="nav1">
+      <a href="">Plan Your Visit</a>
+    </div>
+    <div class="nav1">
+      <a href="">Donate</a>
+    </div>
+  </div>
+ 
+{% endmacro %}

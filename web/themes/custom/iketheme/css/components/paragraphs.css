@@ -1,0 +1,26 @@
+
+.field--name-field-column-one,
+.field--name-field-column-two {
+  background-color: #eef0ff;
+  padding: 24px 40px 24px 32px;
+  border-radius: 24px;
+}
+
+.field--name-field-column-one {
+  margin-right: 32px;
+}
+
+.sm-lg-width .field--name-field-column-one {
+  max-width: 400px;
+}
+
+.sm-lg-width .field--name-field-column-two {
+  max-width: 720px;
+  flex: 2;
+}
+
+.paragraph--type--two-column-section > .paragraph-inner {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}

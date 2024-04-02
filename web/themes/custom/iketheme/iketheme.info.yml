@@ -7,6 +7,7 @@ libraries:
   - iketheme/base
   - iketheme/messages
   - core/normalize
+  - iketheme/global-scripts
 libraries-extend:
   user/drupal.user:
     - iketheme/user
@@ -20,3 +21,4 @@ libraries-extend:
     - iketheme/progress
 core_version_requirement: ^10
 generator: 'starterkit_theme:10.2.3'
+  
