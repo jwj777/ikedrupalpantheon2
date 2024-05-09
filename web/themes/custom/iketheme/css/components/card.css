@@ -1,0 +1,84 @@
+
+.ikes-life-item-wide .views-row {
+  display: flex;
+  align-items: stretch;
+}
+
+.ikes-life-item-square {
+  margin-bottom: 4rem;
+  margin-top: 6rem;
+}
+
+.ikes-life-item-wide {
+  display: flex;
+  margin-bottom: 64px;
+}
+
+.ikes-life-item-wide .view-header {
+  width: 400px;
+}
+
+.ikes-life-item-wide .views-field-field-hero-image img {
+  height: 100%;
+  display: block;
+  margin-top: 0px;
+  border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.ikes-life-item-square .views-row {
+  width: 310px;
+  margin: 0.5rem;
+}
+
+.ikes-life-item-square .view-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.ikes-life-item-square .view-header {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.ikes-life-item-square .view-header .ikes-life-heading-year {
+  width: 400px;
+}
+
+.ikes-life-item-square .views-field-field-hero-image .field-content {
+  width: 100%
+}
+
+.ikes-life-item-square .ikes-life-heading-title {
+  margin-right: 4rem;
+}
+
+.ikes-life-item-square .ikes-life-heading-text {
+  max-width: 520px;
+  margin-top: 1rem;
+}
+
+
+
+.ikes-life-item-wide .views-field-title-1 {
+  border-radius: 0 1.5rem 1.5rem 0;
+  background: var(--primary-10);
+  padding: 2rem 2.5rem;
+}
+
+.ikes-life-item-square .views-field-title-1 {
+  border-radius: 0 0 1.5rem 1.5rem;
+  background: var(--primary-10);
+  padding: 1.8rem 2rem;
+}
+
+.ikes-life-item-square .heading-small {
+  margin-top: 0px;
+}
+
+.ikes-life-item-square .views-field-field-hero-image img {
+  margin-top: 0px;
+  border-radius: 1.5rem 1.5rem 0 0;
+  width: 100%;
+  margin-bottom: -4px;
+}

@@ -57,11 +57,15 @@
     {{ page.highlighted }}
   </div>
 
-    {% if page.hero_bottom %}
+  {% if page.hero_bottom %}
     <div class="hero-bottom">
       {{ page.hero_bottom }}
     </div>
   {% endif %}
+
+  {% for key, value in page %}
+  <div>{{ key }}: {{ value }}</div>
+{% endfor %}
 
   {{ page.help }}
 

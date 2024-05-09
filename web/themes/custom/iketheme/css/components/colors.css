@@ -1,0 +1,28 @@
+:root {
+  --primary-10: #001945;
+  --primary-20: #002d6f;
+  --primary-40: #375ca9;
+  --primary-50: #5275C3;
+  --primary-90: #d9e2ff;
+  --primary-95: #eef0ff;
+  --primary-100: #ffffff;
+
+  --neutral-10: #191B23;
+  --neutral-90: #E3E2E6;
+}
+
+.primary-10 {
+  color: var(--primary-10);
+}
+
+.primary-90 {
+  color: var(--primary-90);
+}
+
+.primary-100 {
+  color: var(--primary-100);
+}
+
+.neutral-90 {
+  color: var(--neutral-90);
+}

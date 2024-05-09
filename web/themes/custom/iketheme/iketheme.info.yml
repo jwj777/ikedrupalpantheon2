@@ -8,6 +8,18 @@ libraries:
   - iketheme/messages
   - core/normalize
   - iketheme/global-scripts
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  breadcrumb: 'Breadcrumb'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  hero_bottom: 'Hero Bottom'
+  content: 'Content'
+  left_sidebar: 'Left sidebar'
+  right_sidebar: 'Right sidebar'
+  footer: 'Footer'
 libraries-extend:
   user/drupal.user:
     - iketheme/user

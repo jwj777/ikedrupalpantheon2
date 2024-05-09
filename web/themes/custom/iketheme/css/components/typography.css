@@ -2,45 +2,88 @@
 
 body {
   font-family: 'Figtree', sans-serif;
+  color: var(--neutral-10);
 }
 
 h1, .display-large {
   font-family: 'Newsreader', Georgia, serif;
   font-size: 4rem;
   font-weight: 400;
-  margin-top: 16px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.display-medium, h2.display-medium {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 3.4rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.display-small, h2.display-small {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 
 .heading-large, .field--name-field-heading-2 {
   font-family: 'Newsreader', Georgia, serif;
-  font-size: 2.4rem;
-  font-weight: 400;
+  font-size: 2.6rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.heading-medium {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  font-weight: 300;
   margin-top: 1rem;
   margin-bottom: 1.4rem;
 }
 
 .heading-small {
   font-family: 'Newsreader', Georgia, serif;
-  font-size: 2.4rem;
-  font-weight: 400;
-  margin-top: 1rem;
-  margin-bottom: 1.4rem;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  font-weight: 300;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
 }
 
-.body-large {
-  font-size: 1.1rem;
+.body-large, .views-element-container .subheading {
+  font-family: 'Figtree', Georgia, serif;
+  font-size: 1.15rem;
+  line-height: 1.8rem;
 }
 
-p, .body-medium {
+p, li, .body-medium {
   font-family: 'Figtree', Georgia, serif;
   font-size: 1.05rem;
   line-height: 1.45rem;
+  color: var(--neutral-10);
 }
 
 .label-large {
     font-family: 'Figtree', Georgia, serif;
     font-size: 1.2rem;
     text-transform: uppercase;
-    letter-spacing: 2px;  
+    letter-spacing: 5px;  
+}
+
+.label-medium {
+  font-family: 'Figtree', Georgia, serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;  
+  margin-bottom: 1.4rem;
+}
+
+a {
+  color: var(--primary-50);
 }

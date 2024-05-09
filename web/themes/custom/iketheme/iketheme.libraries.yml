@@ -2,6 +2,8 @@ base:
   version: VERSION
   css:
     component:
+      css/components/colors.css:
+        weight: -10
       css/components/action-links.css:
         weight: -10
       css/components/breadcrumb.css:
@@ -57,6 +59,10 @@ base:
       css/components/layout.css:
         weight: -10
       css/components/paragraphs.css:
+        weight: -10
+      css/components/card.css:
+        weight: -10
+      css/components/views.css:
         weight: -10
 
 global-scripts:

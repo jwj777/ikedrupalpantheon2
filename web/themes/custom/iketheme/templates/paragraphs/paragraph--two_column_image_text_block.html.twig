@@ -9,14 +9,20 @@
 %}
 {% block paragraph %}
 
-  {% set columnWidthClass = paragraph.field_2_column_widths.0.value|clean_class ~ '-width' %}
   {% set paddingTopClass = paragraph.field_paragraph_padding_top.0.value|clean_class ~ '-padding-top' %}
   {% set paddingBottomClass = paragraph.field_paragraph_padding_bottom.0.value|clean_class ~ '-padding-bottom' %}
 
-  <div{{ attributes.addClass(classes, columnWidthClass, paddingTopClass, paddingBottomClass) }}>
+  <div{{ attributes.addClass(classes, paddingTopClass, paddingBottomClass) }}>
     <div class="paragraph-inner">
       {% block content %}
-        {{ content }}
+      <div class="two-column-left">
+        {{ content.field_block_image }}
+      </div>
+      <div>
+        <p class="label-medium">{{ paragraph.field_block_label.0.value }}</p>
+        <h2 class="heading-large">{{ paragraph.field_heading_2.0.value }}</h2>
+        <p class="body-medium">{{ paragraph.field_body.value|render|striptags|raw }}</p>
+      </div>
       {% endblock %}
     </div>
   </div>

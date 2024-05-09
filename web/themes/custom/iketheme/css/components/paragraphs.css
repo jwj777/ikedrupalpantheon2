@@ -1,7 +1,20 @@
 
+.md-padding-bottom {
+  padding-bottom: 64px;
+}
+.md-padding-top {
+  padding-top: 64px;
+}
+.sm-padding-bottom {
+  padding-bottom: 32px;
+}
+.sm-padding-top {
+  padding-top: 32px;
+}
+
 .field--name-field-column-one,
 .field--name-field-column-two {
-  background-color: #eef0ff;
+  background-color: var(--primary-95);
   padding: 24px 40px 24px 32px;
   border-radius: 24px;
 }
@@ -19,8 +32,84 @@
   flex: 2;
 }
 
-.paragraph--type--two-column-section > .paragraph-inner {
+.paragraph--type--two-column-section > .paragraph-inner,
+.paragraph--type--two-column-image-text-block > .paragraph-inner,
+.paragraph--type--two-column-text-collage > .paragraph-inner {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.paragraph--type--two-column-text-collage > .paragraph-inner {
+  justify-content: space-between;
+}
+
+/** two column image and text  **/
+.paragraph--type--two-column-image-text-block {
+  margin-top: 40px;
+}
+.paragraph--type--two-column-image-text-block .paragraph-inner {
+  align-items: center;
+}
+.paragraph--type--two-column-image-text-block .field--name-field-block-image img {
+  /* max-width: 400px; */
+  margin-right: 48px;
+}
+.paragraph--type--two-column-image-text-block h2 {
+  max-width: 560px;
+}
+
+/** text collages two coloumn **/
+.paragraph--type--two-column-text-collage .text-column {
+  max-width: 560px;
+  padding: 64px 0 0 0px;
+  margin-right: -64px;
+}
+.paragraph--type--two-column-text-collage .text-background {
+  background-color: var(--primary-95);
+  position: absolute;
+  width: 1200px;
+  height: 560px;
+  z-index: -1;
+  border-radius: 24px;
+}
+.paragraph--type--two-column-text-collage .collage {
+  margin: 80px 0 0 48px;
+}
+.paragraph--type--two-column-text-collage .image-row-1 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.paragraph--type--two-column-text-collage .image-row-1 img {
+  max-width: 520px;
+  margin-bottom: 24px;
+}
+
+.paragraph--type--two-column-text-collage .image-row-2 {
+  display: flex;
+}
+.paragraph--type--two-column-text-collage .image-row-2 img {
+  margin-left: 24px;
+}
+.paragraph--type--two-column-text-collage .image-row-2 .image-item:first-child img {
+  max-width: 280px;
+}
+.paragraph--type--two-column-text-collage .image-row-2 .image-item:nth-child(2) img {
+  max-width: 360px;
+}
+
+
+/** people on the about page **/
+
+.page-node-type-page .paragraph--type--view-reference {
+  margin-top: 3rem;
+}
+
+.view-id-people_board_of_directors .views-row {
+  margin-bottom: 1rem;
+}
+
+.view-id-people_board_of_directors .views-field-title-1 {
+  margin-bottom: 3px;
 }

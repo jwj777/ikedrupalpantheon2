@@ -1,20 +1,98 @@
 
-/* .hero {
-  padding: 8rem 0;
-} */
 
 .header-hero {
   background: #333;
 }
 
-.hero-home {
-  padding: 8rem 0 4rem 0;
+.page-node-type-page .header-hero,
+.page-node-type-ike-s-life .header-hero,
+.page-node-type-news-home .header-hero,
+.page-node-type-newsletter-article, .header-hero {
+  background-image: linear-gradient(to right, var(--primary-20), var(--primary-40));
 }
-.hero-home .view-content {
+
+.hero-home {
+  padding: 5rem 0 5rem 0;
+}
+
+/** restrict with and center hero **/
+.hero-basic {
+  max-width: var(--xl);
+  margin: 0 auto;
+  padding: 4rem 0 18rem 0;
+}
+
+.hero-basic .views-field-title, .hero-basic .views-field-subheading {
+  max-width: 800px;
+}
+
+/* .page-node-type-page .hero-home,
+.page-node-type-ike-s-life .hero,
+.page-node-type-newsletter-article .hero-basic {
+    padding-bottom: 20rem;
+} */
+
+.page-node-type-page .views-field-field-hero-image,
+.page-node-type-ike-s-life .views-field-field-hero-image,
+.page-node-type-newsletter-article .views-field-field-hero-image {
+  max-width: var(--lg);
+  position: relative;
+  bottom: 14rem;
+  margin-bottom: -12rem;
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.page-node-type-page .views-field-field-hero-image img,
+.page-node-type-ike-s-life .views-field-field-hero-image img
+.page-node-type-newsletter-article .views-field-field-hero-image img {
+  /* max-width: var(--lg); */
+  object-fit: cover;
+}
+
+.hero-home .views-field-field-hero-image,
+.hero-basic .views-field-field-hero-image {
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 10rem; */
+  }
+
+.hero-home .view-content,
+.hero-basic .view-content {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.hero-home h1, .hero-home .label-large {
-    color: #fff;
+.hero-home h1, 
+.hero-home .label-large, 
+.hero-basic h1 {
+    color: var(--primary-100);
   }
+
+/* subheading */
+.header-hero .views-field-field-subheading, .view-hero-basic-page-alt .views-field-field-subheading {
+  max-width: 960px;
+  color: var(--neutral-90);
+}
+
+/* .hero-alt .views-field-field-hero-image img {
+  max-width: 1200px;
+  height: auto;
+  margin-top: 6rem;
+} */
+
+/** Ike's Life **/
+.view-hero-ike-s-life img {
+  border-radius: 24px;
+}
+
+.hero-bottom {
+  background: #fff;
+}
+
+.region-hero-bottom {
+  max-width: 1200px;
+  /* height: auto;  */
+  margin: 0 auto; 
+}
+
