@@ -11,7 +11,7 @@
   background-image: linear-gradient(to right, var(--primary-20), var(--primary-40));
 }
 
-.hero-home {
+.hero-home { 
   padding: 5rem 0 5rem 0;
 }
 
