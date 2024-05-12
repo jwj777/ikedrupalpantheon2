@@ -45,9 +45,12 @@
 }
 
 .page-node-type-basic-page-b .region-content,
-.page-node-type-newsletter-article .region-content,
-.page-node-type-ike-s-life .region-content {
+.page-node-type-newsletter-article .region-content {
   max-width: var(--xl);
+}
+
+.page-node-type-ike-s-life .region-content {
+  max-width: var(--lg);
 }
 
 .node__content .field--name-body .field-inner {

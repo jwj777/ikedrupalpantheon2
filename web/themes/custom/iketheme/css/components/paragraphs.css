@@ -113,3 +113,19 @@
 .view-id-people_board_of_directors .views-field-title-1 {
   margin-bottom: 3px;
 }
+
+
+/** body paragraph styles, text-imaage **/
+
+.paragraph--type--body-text-image {
+  display: flex;
+}
+
+.paragraph--type--body-text-image .field--type-image {
+  margin-left: 2rem;
+  align-self: baseline;
+}
+
+.paragraph--type--body-text-image .field--type-image img {
+  max-width: 440px;
+}
