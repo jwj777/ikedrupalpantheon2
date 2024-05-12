@@ -123,11 +123,11 @@
   margin-bottom: 4rem;
 }
 
-.paragraph--type--body-text-image .field-name--field-text {
+.paragraph--type--body-text-image .field--name-field-text {
   flex: 1;
 }
 
-.paragraph--type--body-text-image .field-name--field-image {
+.paragraph--type--body-text-image .field--name-field-image {
   margin-left: 3rem;
 }
 
