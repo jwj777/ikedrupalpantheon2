@@ -118,14 +118,21 @@
 /** body paragraph styles, text-imaage **/
 
 .paragraph--type--body-text-image {
-  display: flex;
+  display: flex; 
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
 }
 
-.paragraph--type--body-text-image .field--type-image {
+.paragraph--type--body-text-image .field-name--field-text {
+  flex: 1;
+}
+
+.paragraph--type--body-text-image .field-name--field-image {
   margin-left: 2rem;
-  align-self: baseline;
 }
 
 .paragraph--type--body-text-image .field--type-image img {
   max-width: 440px;
+  height: auto;
+  border-radius: 1.1rem;
 }
