@@ -120,6 +120,7 @@
 .paragraph--type--body-text-image {
   display: flex; 
   flex-wrap: wrap;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -145,7 +146,7 @@
 }
 
 .field--name-field-text-quote,
-.field--name-field-text blockquote {
+.field--name-field-text blockquote p {
   quotes: "“" "”" "‘" "’";
   font-size: 2rem;
   font-family: 'Newsreader';

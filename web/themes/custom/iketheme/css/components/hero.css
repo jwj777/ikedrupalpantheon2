@@ -38,7 +38,7 @@
   max-width: var(--lg);
   position: relative;
   bottom: 12rem;
-  margin-bottom: -12rem;
+  margin-bottom: -9rem;
   border-radius: 32px;
   overflow: hidden;
 }
