@@ -144,7 +144,8 @@
   margin-bottom: 3rem;
 }
 
-.field--name-field-text-quote {
+.field--name-field-text-quote,
+.field--name-field-text blockquote {
   quotes: "“" "”" "‘" "’";
   font-size: 2rem;
   font-family: 'Newsreader';
@@ -164,4 +165,12 @@
   font-size: 1.1rem;
   font-family: 'Newsreader';
   color: var(--primary-40);
+}
+
+.field--name-field-text blockquote::before {
+  content: open-quote;
+}
+
+.field--name-field-text blockquote::after {
+  content: close-quote;
 }
