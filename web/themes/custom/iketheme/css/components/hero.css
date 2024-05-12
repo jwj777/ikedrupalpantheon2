@@ -19,7 +19,7 @@
 .hero-basic {
   max-width: var(--xl);
   margin: 0 auto;
-  padding: 4rem 0 18rem 0;
+  padding: 4rem 0 16rem 0;
 }
 
 .hero-basic .views-field-title, .hero-basic .views-field-subheading {

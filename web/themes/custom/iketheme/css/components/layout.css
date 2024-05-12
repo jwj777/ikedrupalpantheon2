@@ -35,7 +35,8 @@
 
 .page-node-type-basic-page-b .layout-content,
 .page-node-type-page .layout-content,
-.page-node-type-newsletter-article .layout-content {
+.page-node-type-newsletter-article .layout-content,
+.page-node-type-ike-s-life .layout-content {
   display: flex;
   justify-content: center;
   padding-right: 0rem;
@@ -44,7 +45,8 @@
 }
 
 .page-node-type-basic-page-b .region-content,
-.page-node-type-newsletter-article .region-content {
+.page-node-type-newsletter-article .region-content,
+.page-node-type-ike-s-life .region-content {
   max-width: var(--xl);
 }
 
