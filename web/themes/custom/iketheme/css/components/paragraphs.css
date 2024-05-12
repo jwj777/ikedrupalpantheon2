@@ -140,12 +140,13 @@
 /** body quote **/
 
 .paragraph--type--body-quote {
-  margin-bottom: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 .field--name-field-text-quote {
   quotes: "“" "”" "‘" "’";
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: 'Newsreader';
   color: var(--primary-40);
   margin-bottom: 1rem;
