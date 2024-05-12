@@ -120,7 +120,7 @@
 .paragraph--type--body-text-image {
   display: flex; 
   flex-wrap: wrap;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .paragraph--type--body-text-image .field--name-field-text {
@@ -135,4 +135,32 @@
   max-width: 440px;
   height: auto;
   border-radius: 1.1rem;
+}
+
+/** body quote **/
+
+.paragraph--type--body-quote {
+  margin-bottom: 4rem;
+}
+
+.field--name-field-text-quote {
+  quotes: "“" "”" "‘" "’";
+  font-size: 1.8rem;
+  font-family: 'Newsreader';
+  color: var(--primary-40);
+  margin-bottom: 1rem;
+}
+
+.field--name-field-text-quote::before {
+  content: open-quote;
+}
+
+.field--name-field-text-quote::after {
+  content: close-quote;
+}
+
+.field--name-field-quote-attribution {
+  font-size: 1.1rem;
+  font-family: 'Newsreader';
+  color: var(--primary-40);
 }
