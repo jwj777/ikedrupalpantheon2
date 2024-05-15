@@ -41,6 +41,7 @@
 }
 
 .paragraph--type--two-column-text-collage > .paragraph-inner {
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -61,9 +62,11 @@
 
 /** text collages two coloumn **/
 .paragraph--type--two-column-text-collage .text-column {
-  max-width: 560px;
-  padding: 64px 0 0 0px;
+  padding: 72px 280px 160px 64px;
+  border-radius: 1.5rem;
   margin-right: -64px;
+  background: var(--neutral-95);
+  width: 540px;
 }
 .paragraph--type--two-column-text-collage .text-background {
   background-color: var(--primary-95);
@@ -74,7 +77,10 @@
   border-radius: 24px;
 }
 .paragraph--type--two-column-text-collage .collage {
-  margin: 80px 0 0 48px;
+  width: 700px;
+  align-self: flex-end;
+  position: relative;
+  bottom: 436px;
 }
 .paragraph--type--two-column-text-collage .image-row-1 {
   display: flex;
@@ -141,7 +147,7 @@
 /** body quote **/
 
 .paragraph--type--body-quote {
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
 }
 
