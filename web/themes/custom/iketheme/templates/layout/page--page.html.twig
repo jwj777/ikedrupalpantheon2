@@ -44,7 +44,7 @@
 #}
 <div class="layout-container">
 
-  <div class="header-hero">
+  <div class="header-hero" style="background-image: url('{{ hero_background_image_url }}');">
     <header role="banner">
       {{ page.header }}
     </header>
@@ -72,6 +72,7 @@
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
+    <h1>page content type</h1>
     <div class="layout-content">
       {{ page.content }}
     </div>{# /.layout-content #}

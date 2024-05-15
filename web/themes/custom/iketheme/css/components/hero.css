@@ -7,12 +7,12 @@
 .page-node-type-page .header-hero,
 .page-node-type-ike-s-life .header-hero,
 .page-node-type-news-home .header-hero,
-.page-node-type-newsletter-article, .header-hero {
+.page-node-type-newsletter-article .header-hero {
   background-image: linear-gradient(to right, var(--primary-20), var(--primary-40));
 }
 
 .hero-home { 
-  padding: 5rem 0 5rem 0;
+  padding: 15rem 0 8rem 0;
 }
 
 /** restrict with and center hero **/

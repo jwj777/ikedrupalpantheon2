@@ -5,6 +5,8 @@
  * Functions to support theming.
  */
 
+use Drupal\Core\Url;  // Ensure this line is within the PHP tags
+
 /**
  * Implements hook_preprocess_image_widget().
  */
@@ -18,4 +20,18 @@ function iketheme_preprocess_image_widget(array &$variables) {
   if (isset($data['preview']['#access']) && $data['preview']['#access'] === FALSE) {
     unset($data['preview']);
   }
+}
+
+function iketheme_preprocess_page(&$variables) {
+    if (isset($variables['node']) && $variables['node']->hasField('field_hero_background_image')) {
+        $node = $variables['node'];
+        if (!$node->get('field_hero_background_image')->isEmpty()) {
+            $file = $node->field_hero_background_image->entity->getFileUri();
+            // Use the file_url_generator service
+            $variables['hero_background_image_url'] = \Drupal::service('file_url_generator')->generateAbsoluteString($file);
+        } else {
+            // Provide a default if no image is set
+            $variables['hero_background_image_url'] = Url::fromUri('base://path/to/default/image.jpg')->toString();
+        }
+    }
 }
