@@ -9,6 +9,15 @@
 !/web/sites/*/services.pantheon.*.yml
 !/web/sites/*/services.yml
 
+# Ignore sensitive information
+/web/sites/*/settings*.php
+
+# Ignore development service files
+/web/sites/development.services.yml
+/web/sites/default/default.services.yml
+web/sites/development.services.yml
+web/sites/default/default.services.yml
+
 # Ignore paths that contain user-generated content.
 /web/sites/*/files
 /web/sites/*/private
@@ -95,11 +104,3 @@
 
 # Ignore .env files as they are personal
 #/.env
-
-
-# Ignore sensitive information
-/web/sites/*/settings*.php
-
-# Ignore development service files
-/web/sites/development.services.yml
-/web/sites/default/default.services.yml
