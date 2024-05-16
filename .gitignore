@@ -95,3 +95,11 @@
 
 # Ignore .env files as they are personal
 #/.env
+
+
+# Ignore sensitive information
+/web/sites/*/settings*.php
+
+# Ignore development service files
+/web/sites/development.services.yml
+/web/sites/default/default.services.yml
