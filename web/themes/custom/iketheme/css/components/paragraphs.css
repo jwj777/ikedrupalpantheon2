@@ -15,7 +15,7 @@
 .field--name-field-column-one,
 .field--name-field-column-two {
   background-color: var(--primary-95);
-  padding: 24px 40px 24px 32px;
+  padding: 24px 40px 48px 32px;
   border-radius: 24px;
 }
 

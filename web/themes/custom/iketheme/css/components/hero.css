@@ -12,7 +12,9 @@
 }
 
 .hero-home { 
-  padding: 15rem 0 8rem 0;
+  padding: 16rem 0 12rem 0;
+  position: relative;
+  z-index: 1;
 }
 
 /** restrict with and center hero **/
@@ -22,15 +24,50 @@
   padding: 4rem 0 16rem 0;
 }
 
+.hero-alt {
+  max-width: var(--xl);
+  margin: 0 auto;
+  padding: 6rem 0 6rem 0;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-alt h1 {
+  color: #fff;
+}
+
+.page-node-type-basic-page-b .header-hero,
+.page-node-type-homepage .header-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.page-node-type-basic-page-b .header-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, .80) 0%, rgba(0, 0, 0, 0.48) 100%);
+  pointer-events: none; /* This makes the overlay 'click-through' */
+}
+
+.page-node-type-homepage .header-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, .44) 0%, rgba(0, 0, 0, 0.36) 100%);
+  pointer-events: none; /* This makes the overlay 'click-through' */
+}
+
 .hero-basic .views-field-title, .hero-basic .views-field-subheading {
   max-width: 800px;
 }
-
-/* .page-node-type-page .hero-home,
-.page-node-type-ike-s-life .hero,
-.page-node-type-newsletter-article .hero-basic {
-    padding-bottom: 20rem;
-} */
 
 .page-node-type-page .views-field-field-hero-image,
 .page-node-type-ike-s-life .views-field-field-hero-image,

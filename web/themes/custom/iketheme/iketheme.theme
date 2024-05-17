@@ -22,16 +22,31 @@ function iketheme_preprocess_image_widget(array &$variables) {
   }
 }
 
+
 function iketheme_preprocess_page(&$variables) {
-    if (isset($variables['node']) && $variables['node']->hasField('field_hero_background_image')) {
-        $node = $variables['node'];
-        if (!$node->get('field_hero_background_image')->isEmpty()) {
-            $file = $node->field_hero_background_image->entity->getFileUri();
-            // Use the file_url_generator service
-            $variables['hero_background_image_url'] = \Drupal::service('file_url_generator')->generateAbsoluteString($file);
-        } else {
-            // Provide a default if no image is set
-            $variables['hero_background_image_url'] = Url::fromUri('base://path/to/default/image.jpg')->toString();
+    // Define an array of field names and their corresponding template variable names.
+    $fields = [
+        'field_hero_background_image' => 'hero_background_image_url',
+        'field_hero_background' => 'hero_background_url',
+    ];
+
+    if (isset($variables['node'])) {
+        foreach ($fields as $fieldName => $variableName) {
+            if ($variables['node']->hasField($fieldName) && !$variables['node']->get($fieldName)->isEmpty()) {
+                $fileUri = $variables['node']->get($fieldName)->entity->getFileUri();
+                $variables[$variableName] = \Drupal::service('file_url_generator')->generateAbsoluteString($fileUri);
+            } else {
+                // Provide a default if no image is set
+                $variables[$variableName] = Url::fromUri('base://path/to/default/image.jpg')->toString();
+            }
         }
     }
+}
+
+function iketheme_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  // Retrieve the current node from the route.
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    // Add a template suggestion for the content type.
+    $suggestions[] = 'page__' . $node->bundle();
+  }
 }
