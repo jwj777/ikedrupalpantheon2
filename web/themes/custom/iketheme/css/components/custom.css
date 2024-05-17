@@ -49,3 +49,10 @@
 .viewsreference--view-title {
   display: none;
 }
+
+
+/* pages with light background */
+
+.page-node-type-basic-page-b .layout-content {
+  background: var(--primary-95);
+}

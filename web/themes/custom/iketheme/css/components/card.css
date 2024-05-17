@@ -30,15 +30,23 @@
   margin: 0.5rem;
 }
 
+.view-ike-s-life-the-general .ikes-life-item-square .views-row {
+  width: 420px;
+  margin: 0.5rem;
+}
+
 .ikes-life-item-square .view-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  width: 960px;
 }
 
 .ikes-life-item-square .view-header {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 28px;
+  width: 100%;
 }
 
 .ikes-life-item-square .view-header .ikes-life-heading-year {
