@@ -7,8 +7,9 @@
 .page-node-type-page .header-hero,
 .page-node-type-ike-s-life .header-hero,
 .page-node-type-news-home .header-hero,
-.page-node-type-newsletter-article .header-hero {
-  background-image: linear-gradient(to right, var(--primary-20), var(--primary-40));
+.page-node-type-newsletter-article .header-hero,
+.page-node-type-education .header-hero {
+  background-image: linear-gradient(to right, var(--primary-20), var(--primary-40)) !important;
 }
 
 .hero-home { 
@@ -37,7 +38,8 @@
 }
 
 .page-node-type-basic-page-b .header-hero,
-.page-node-type-homepage .header-hero {
+.page-node-type-homepage .header-hero,
+.page-node-type-education .header-hero {
   position: relative;
   background-size: cover;
   background-position: center;
