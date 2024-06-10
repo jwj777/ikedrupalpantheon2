@@ -1,0 +1,22 @@
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+
+  <div class="card card-image-title">
+    <div class="paragraph-inner">
+      {% block content %}
+      <a href="{{ content.field_link.0['#url'] }}">
+        <div class="field-image">{{ content.field_image }}</div>
+        <p class="card-title title-medium">{{ paragraph.field_heading_4.value }}</p>
+      </a>
+      {% endblock %}
+    </div>
+  </div>
+{% endblock paragraph %}

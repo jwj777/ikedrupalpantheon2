@@ -32,6 +32,23 @@
   flex: 2;
 }
 
+.md-md-width .field--name-field-column-one {
+  max-width: 600px;
+}
+
+.md-md-width .field--name-field-column-two {
+  max-width: 600px;
+}
+
+.sm-lg-width .field--name-field-column-one {
+  max-width: 720px;
+}
+
+.sm-lg-width .field--name-field-column-two {
+  max-width: 400px;
+  flex: 2;
+}
+
 .paragraph--type--two-column-section > .paragraph-inner,
 .paragraph--type--two-column-image-text-block > .paragraph-inner,
 .paragraph--type--two-column-text-collage > .paragraph-inner {
@@ -180,4 +197,41 @@
 
 .field--name-field-text blockquote::after {
   content: close-quote;
+}
+
+
+
+/** cards array **/
+
+.paragraph--type--cards-array {
+  max-width: var(--lg);
+  margin: 0 auto;
+  padding: 4rem 0 4rem 0;
+}
+
+.field--name-field-card {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.card-image-title {
+  background-color: var(--primary-95);
+  border-radius: 1rem;
+  /* border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem; */
+  margin-left: -2rem;
+}
+
+.card-image-title a {
+  text-decoration: none;
+}
+
+.card-title {
+  padding: .2rem 1rem 1.5rem 1.5rem;
+  color: var(--primary-10);
+}
+
+.paragraph--type--cards-array .field--name-field-text {
+  max-width: var(--sm);
 }

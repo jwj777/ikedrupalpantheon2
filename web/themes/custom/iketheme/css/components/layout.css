@@ -33,6 +33,11 @@
   background: #fff;
 }
 
+.lg-container {
+  max-width: var(--xl);
+  margin: 0 auto;
+}
+
 .page-node-type-basic-page-b .layout-content,
 .page-node-type-page .layout-content,
 .page-node-type-newsletter-article .layout-content,

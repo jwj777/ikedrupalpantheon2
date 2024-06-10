@@ -3,6 +3,11 @@
  * Visual styles for menu.
  */
 
+ .nav-container {
+  position: relative;
+  z-index: 5;
+ }
+
 ul.menu {
   margin-left: 1em; /* LTR */
   padding: 0;

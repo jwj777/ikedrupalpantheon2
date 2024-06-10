@@ -56,6 +56,15 @@ h1, .display-large {
   margin-bottom: 1rem;
 }
 
+.title-medium {
+  font-family: 'Figtree', Georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.7em;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
 .body-large, .views-element-container .subheading {
   font-family: 'Figtree', Georgia, serif;
   font-size: 1.15rem;
