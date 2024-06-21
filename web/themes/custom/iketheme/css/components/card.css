@@ -1,7 +1,7 @@
 
-.ikes-life-item-wide .views-row {
+.ikes-life-item-wide {
   display: flex;
-  align-items: stretch;
+  margin-bottom: 64px;
 }
 
 .ikes-life-item-square {
@@ -12,23 +12,28 @@
   margin-top: 6rem;
 }
 
-.ikes-life-item-wide {
+.ikes-life-item-square-md {
   display: flex;
-  margin-bottom: 64px;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+  margin-top: 6rem;
 }
 
-.ikes-life-item-wide .view-header {
-  width: 400px;
-}
-
-.ikes-life-item-wide .views-field-field-hero-image img {
-  height: 100%;
-  display: block;
-  margin-top: 0px;
-  border-radius: 1.5rem 0 0 1.5rem;
+.ikes-life-item-wide .views-row {
+  display: flex;
+  align-items: stretch;
+  width: 960px;
 }
 
 .ikes-life-item-square .views-row {
+  width: 296px;
+  margin: 0.5rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.ikes-life-item-square-md .views-row {
   width: 296px;
   margin: 0.5rem;
   border-radius: 1.5rem;
@@ -40,19 +45,46 @@
   margin: 0.5rem;
 }
 
-.ikes-life-item-square .view-content {
+
+
+.ikes-life-item-wide .view-header {
+  width: 620px;
+}
+
+.ikes-life-item-square .view-header, .ikes-life-item-square-md .view-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  width: 100%;
+}
+
+.ikes-life-item-square .view-header .title-text-container, 
+.ikes-life-item-square-md .view-header .title-text-container {
+  display: flex;
+  align-items: center;
+  width: 960px;
+}
+
+.ikes-life-item-wide .views-field-field-hero-image img {
+  height: 100%;
+  display: block;
+  margin-top: 0px;
+  border-radius: 1.5rem 0 0 1.5rem;
+}
+
+
+.ikes-life-item-square .view-content, .ikes-life-item-square-md .view-content  {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   width: 960px;
 }
 
-.ikes-life-item-square .view-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 28px;
-  width: 100%;
+.ikes-life-item-square-md .view-content {
+  width: 960px;
 }
+
 
 .ikes-life-item-square .view-header .ikes-life-heading-year {
   width: 344px;
@@ -62,13 +94,13 @@
   width: 100%
 }
 
-.ikes-life-item-square .ikes-life-heading-title {
+.ikes-life-item-square .ikes-life-heading-title, .ikes-life-item-square-md .ikes-life-heading-title  {
   margin-right: 4rem;
 }
 
-.ikes-life-item-square .ikes-life-heading-text {
+.ikes-life-item-square .ikes-life-heading-text, .ikes-life-item-square-md .ikes-life-heading-text {
   max-width: 520px;
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
 
 .ikes-life-item-square .views-field .views-field-title-1 {
@@ -81,7 +113,7 @@
   padding: 2rem 2.5rem;
 }
 
-.ikes-life-item-square .views-field-title-1 {
+.ikes-life-item-square .views-field-title-1, .ikes-life-item-square-md .views-field-title-1 {
   border-radius: 0 0 1.5rem 1.5rem;
   background: var(--primary-10);
   padding: 1.8rem 2rem;
@@ -109,7 +141,29 @@
   margin-bottom: -4px;
 }
 
+.ikes-life-item-square-md .views-field-field-hero-image img {
+  /* object-fit: cover; */
+  /* margin-top: 0px; */
+  /* border-radius: 1.5rem 1.5rem 0 0; */
+  /* width: 100%; */
+  margin-bottom: -4px;
+}
+
+.ikes-life-item-square-md .views-field-field-summary-image {
+  height: 300px;
+  overflow: hidden;
+}
+
+.ikes-life-item-square-md .views-field-field-hero-image {
+  display: none;
+}
+
 .ikes-life-item-square .views-field-field-summary-image img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.ikes-life-item-square-md .views-field-field-summary-image img {
   object-fit: cover;
   max-width: 100%;
 }
