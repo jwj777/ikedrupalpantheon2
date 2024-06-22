@@ -34,7 +34,7 @@
 }
 
 .ikes-life-item-square-md .views-row {
-  width: 296px;
+  width: 420px;
   margin: 0.5rem;
   border-radius: 1.5rem;
   overflow: hidden;
@@ -45,10 +45,8 @@
   margin: 0.5rem;
 }
 
-
-
 .ikes-life-item-wide .view-header {
-  width: 620px;
+  width: 420px;
 }
 
 .ikes-life-item-square .view-header, .ikes-life-item-square-md .view-header {
@@ -67,12 +65,16 @@
 }
 
 .ikes-life-item-wide .views-field-field-hero-image img {
-  height: 100%;
+  height: 268px;
+  object-fit: cover;
   display: block;
   margin-top: 0px;
   border-radius: 1.5rem 0 0 1.5rem;
 }
 
+.ikes-life-item-wide .view-content {
+  width: 960px;
+}
 
 .ikes-life-item-square .view-content, .ikes-life-item-square-md .view-content  {
   display: flex;
@@ -84,7 +86,6 @@
 .ikes-life-item-square-md .view-content {
   width: 960px;
 }
-
 
 .ikes-life-item-square .view-header .ikes-life-heading-year {
   width: 344px;
@@ -124,11 +125,6 @@
   height: 106px;
 }
 
-.view-ike-s-life-the-general .views-row {
-  width: 388px;
-  margin: 0.5rem;
-}
-
 .ikes-life-item-square .heading-small {
   margin-top: 0px;
 }
@@ -157,7 +153,11 @@
 .ikes-life-item-square .views-field-field-summary-image img {
   object-fit: none;
   max-width: 100%;
-  max-height: 240px;
+  height: 240px;
+}
+
+.ikes-life-item-square .views-field-field-summary-image .field-content {
+  height: 240px;
 }
 
 .ikes-life-item-square-md .views-field-field-summary-image img {
