@@ -235,3 +235,22 @@
 .paragraph--type--cards-array .field--name-field-text {
   max-width: var(--sm);
 }
+
+.page-node-type-ike-s-life .imageLeft, .page-node-type-ike-s-life .imageRight {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.page-node-type-ike-s-life .imageLeft img, .page-node-type-ike-s-life .imageRight img {
+  max-width: 420px;
+  height: auto;
+  margin-right: 3rem;
+  object-fit: contain;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.page-node-type-ike-s-life .imageRight img {
+  margin-right: 0px;
+  margin-left: 3rem;
+}

@@ -137,9 +137,9 @@
   margin-bottom: -4px;
 }
 
-.ikes-life-item-square-md .views-field-field-hero-image img {
+/* .ikes-life-item-square-md .views-field-field-hero-image img {
   margin-bottom: -4px;
-}
+} */
 
 .ikes-life-item-square-md .views-field-field-summary-image {
   height: 300px;
@@ -163,4 +163,5 @@
 .ikes-life-item-square-md .views-field-field-summary-image img {
   object-fit: cover;
   max-width: 100%;
+  width: 420px;
 }

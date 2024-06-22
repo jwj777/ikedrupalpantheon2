@@ -3,6 +3,7 @@
 body {
   font-family: 'Figtree', sans-serif;
   color: var(--neutral-10);
+  font-size: 18px;
 }
 
 h1, .display-large {

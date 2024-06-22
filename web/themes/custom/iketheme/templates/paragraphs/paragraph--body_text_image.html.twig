@@ -3,18 +3,16 @@
   set classes = [
     'content-wrapper',
     'flex-container',
-    field_image_position.value == 'right' ? 'imageRight' : 'imageLeft'
+    paragraph.field_image_position.value == 'image_right' ? 'imageRight' : 'imageLeft'
   ]
 %}
 
 <div{{ attributes.addClass(classes) }}>
-  {% if field_image_position.value == 'right' %}
+  {% if paragraph.field_image_position.value == 'image_right' %}
     <div class="field-text">{{ content.field_text }}</div>
-    <div class="field-text">right</div>
     <div class="field-image">{{ content.field_image }}</div>
   {% else %}
     <div class="field-image">{{ content.field_image }}</div>
-    <div class="field-text">left</div>
     <div class="field-text">{{ content.field_text }}</div>
   {% endif %}
 </div>
