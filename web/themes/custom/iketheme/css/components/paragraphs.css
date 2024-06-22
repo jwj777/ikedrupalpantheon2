@@ -172,17 +172,18 @@
 .field--name-field-text blockquote p {
   quotes: "“" "”" "‘" "’";
   font-size: 2rem;
+  line-height: 2.1rem;
   font-family: 'Newsreader';
   color: var(--primary-40);
   margin-bottom: 1rem;
 }
 
 .field--name-field-text-quote::before {
-  content: open-quote;
+  /* content: open-quote; */
 }
 
 .field--name-field-text-quote::after {
-  content: close-quote;
+  /* content: close-quote; */
 }
 
 .field--name-field-quote-attribution {
