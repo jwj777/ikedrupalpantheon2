@@ -14,7 +14,7 @@
 }
 
 .nav-container .nav1 {
-  margin-right: 1rem;
+  margin-right: 0.8rem;
 }
 
 .dropdown {
@@ -28,10 +28,6 @@
   box-shadow: 1px 2px 2px hsl(227, 0%, 0%) / 0.333;
   box-shadow: 2px 4px 4px hsl(227, 0%, 0%) / 0.333;
   box-shadow: 3px 6px 6px hsl(227, 0%, 0%) / 0.333;
-}
-
-#aboutUsDropDown {
-  /* display: none; */
 }
 
 .nav2-item {
@@ -48,5 +44,5 @@ a.nav1-item {
 }
 
 a.nav1-item:hover {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.16);
 }

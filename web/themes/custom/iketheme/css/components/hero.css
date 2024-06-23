@@ -78,7 +78,6 @@
   position: relative;
   bottom: 12rem;
   margin-bottom: -9rem;
-  border-radius: 32px;
   overflow: hidden;
 }
 
@@ -95,6 +94,17 @@
     justify-content: center;
     /* margin-bottom: 10rem; */
   }
+
+.views-field-field-hero-image .field-content {
+  display: flex;
+}
+
+.page-node-type-ike-s-life .views-field-field-hero-image .field-content img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  margin-right: 1rem;
+}
 
 .hero-home .view-content,
 .hero-basic .view-content {
@@ -135,3 +145,20 @@
   margin: 0 auto; 
 }
 
+.ikes-life-breadcrumbs {
+  display: flex;
+  align-items: center;
+}
+
+.ikes-life-breadcrumbs a, .ikes-life-breadcrumbs p {
+  color: #fff;
+  text-decoration: none;
+}
+
+.ikes-life-breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.ikes-life-breadcrumbs .right-arrow {
+  margin: 0 8px;
+}
