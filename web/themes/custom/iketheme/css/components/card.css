@@ -24,20 +24,42 @@
   display: flex;
   align-items: stretch;
   width: 960px;
+  overflow: hidden;
+  position: relative;
 }
 
 .ikes-life-item-square .views-row {
   width: 296px;
   margin: 0.5rem;
-  border-radius: 1.5rem;
+  border-radius: 1.3rem;
   overflow: hidden;
+}
+
+.ikes-life-item-square .views-row:hover {
+  border-radius: 2.25rem;
+  transition: border-radius 0.25s ease;
+}
+
+.ikes-life-item-square .views-row:hover img {
+  transform: scale(1.03);
+  transition: transform 0.25s ease;
 }
 
 .ikes-life-item-square-md .views-row {
   width: 420px;
   margin: 0.5rem;
-  border-radius: 1.5rem;
+  border-radius: 1.3rem;
   overflow: hidden;
+}
+
+.ikes-life-item-square-md .views-row:hover {
+  border-radius: 2.5rem;
+  transition: border-radius 0.25s ease;
+}
+
+.ikes-life-item-square-md .views-row:hover img {
+  transform: scale(1.03);
+  transition: transform 0.25s ease;
 }
 
 .view-ike-s-life-early-military .ikes-life-item-square .views-row {
@@ -64,16 +86,33 @@
   width: 960px;
 }
 
-.ikes-life-item-wide .views-field-field-hero-image img {
+.ikes-life-item-wide .views-field-field-summary-image img {
   height: 268px;
   object-fit: cover;
   display: block;
   margin-top: 0px;
-  border-radius: 1.5rem 0 0 1.5rem;
+  border-radius: 1.3rem 0 0 1.3rem;
 }
 
 .ikes-life-item-wide .view-content {
   width: 960px;
+}
+
+.ikes-life-item-wide a, 
+.ikes-life-item-square a, 
+.ikes-life-item-square-md a {
+  text-decoration: none;
+}
+
+.ikes-life-item-wide .views-row:hover {
+  border-radius: 2.2rem 0 0 2.2rem;
+  transition: transform 0.25s ease, border-radius 0.25s ease;
+}
+
+.ikes-life-item-wide .views-row:hover img {
+  /* border-radius: 2rem 0 0 2rem; */
+  transition: transform 0.25s ease, border-radius 0.25s ease;
+  transform: scale(1.03);
 }
 
 .ikes-life-item-square .view-content, .ikes-life-item-square-md .view-content  {
@@ -91,10 +130,6 @@
   width: 344px;
 }
 
-.ikes-life-item-square .views-field-field-hero-image .field-content {
-  width: 100%
-}
-
 .ikes-life-item-square .ikes-life-heading-title, .ikes-life-item-square-md .ikes-life-heading-title  {
   margin-right: 4rem;
 }
@@ -109,9 +144,14 @@
 }
 
 .ikes-life-item-wide .views-field-title-1 {
-  border-radius: 0 1.5rem 1.5rem 0;
+  border-radius: 0 1.3rem 1.3rem 0;
   background: var(--primary-10);
   padding: 2rem 2.5rem;
+}
+
+.ikes-life-item-wide .views-row:hover .views-field-title-1 {
+  border-radius: 0 2rem 2rem 0;
+  transition: .25s all ease;
 }
 
 .ikes-life-item-square .views-field-title-1, .ikes-life-item-square-md .views-field-title-1 {
@@ -129,25 +169,9 @@
   margin-top: 0px;
 }
 
-.ikes-life-item-square .views-field-field-hero-image img {
-  object-fit: cover;
-  margin-top: 0px;
-  border-radius: 1.5rem 1.5rem 0 0;
-  width: 100%;
-  margin-bottom: -4px;
-}
-
-/* .ikes-life-item-square-md .views-field-field-hero-image img {
-  margin-bottom: -4px;
-} */
-
 .ikes-life-item-square-md .views-field-field-summary-image {
   height: 300px;
   overflow: hidden;
-}
-
-.ikes-life-item-square-md .views-field-field-hero-image {
-  display: none;
 }
 
 .ikes-life-item-square .views-field-field-summary-image img {
