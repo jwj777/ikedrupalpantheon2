@@ -208,7 +208,7 @@
 }
 
 .paragraph--type--body-text-image-array .field--name-field-body {
-  max-width: 640px;
+  max-width: 560px;
   padding-right: 3rem;
 }
 
@@ -219,11 +219,17 @@
   max-width: 680px;
 }
 
-.field--name-field-image-array .field__item:first-child img {
-  max-width: 320px;
+.field--name-field-image-array .field__item img {
+  max-width: 280px;
   margin-right: 1rem;
   object-fit: cover;
 }
+
+/* .field--name-field-image-array .field__item:first-child img {
+  max-width: 320px;
+  margin-right: 1rem;
+  object-fit: cover;
+} */
 
 .field--name-field-image-array img {
   border-radius: 1.5rem;
