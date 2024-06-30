@@ -212,7 +212,7 @@
   padding-right: 3rem;
 }
 
-.field--name-field-image-array .field__items {
+.field--name-field-image-array {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
