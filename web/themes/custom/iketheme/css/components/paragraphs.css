@@ -217,6 +217,7 @@
   justify-content: flex-end;
   flex-wrap: wrap;
   max-width: 680px;
+  margin-top: 1rem;
 }
 
 .field--name-field-image-array .field__item img {
