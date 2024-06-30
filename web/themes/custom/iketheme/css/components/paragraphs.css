@@ -200,7 +200,34 @@
   content: close-quote;
 }
 
+/** text and image array **/
 
+.paragraph--type--body-text-image-array {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paragraph--type--body-text-image-array .field--name-field-body {
+  max-width: 640px;
+  padding-right: 3rem;
+}
+
+.field--name-field-image-array .field__items {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  max-width: 680px;
+}
+
+.field--name-field-image-array .field__item:first-child img {
+  max-width: 320px;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+.field--name-field-image-array img {
+  border-radius: 1.5rem;
+}
 
 /** cards array **/
 
