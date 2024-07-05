@@ -7,7 +7,21 @@
   --primary-95: #eef0ff;
   --primary-100: #ffffff;
 
+  --secondary-5: #091121;
+  --secondary-10: #141B2C;
+  --secondary-15: #1F2536;
+  --secondary-20: #293042;
+  --secondary-25: #343B4D;
+  --secondary-30: #404659;
+  --secondary-35: #4B5265;
+  --secondary-40: #575E71;
+  --secondary-90: #DCE2F9;
+  --secondary-95: #EEF0FF;
+  --secondary-98: #FAF8FF;
+  --secondary-99: #FEFBFF;
+
   --neutral-10: #191B23;
+  --neutral-40: #5E5E62;
   --neutral-90: #E3E2E6;
   --neutral-95: #F2F0F4;
 }

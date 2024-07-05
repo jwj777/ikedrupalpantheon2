@@ -1,9 +1,10 @@
 
 /** site logo **/
 #block-iketheme-site-branding img {
-  max-width: 120px;
+  max-width: 88px;
   background: #fff;
-  padding: 12px 12px 16px 16px;
+  padding: 12px 12px 14px 16px;
+  margin-top: 1rem;
 }
 
 /* hide site name */
@@ -15,7 +16,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .region-header .region-inner {
@@ -54,5 +55,5 @@
 /* pages with light background */
 
 .page-node-type-basic-page-b .layout-content {
-  background: var(--primary-95);
+  background: var(--primary-98);
 }

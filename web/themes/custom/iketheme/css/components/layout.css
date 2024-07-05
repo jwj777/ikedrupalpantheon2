@@ -20,13 +20,6 @@
  xs - 375px
 **/
 
-/* main .layout-content {
-  display: flex;
-  max-width: var(--xl);
-  margin: 0 auto;
-  padding-top: 48px;
-} */
-
 .layout-content {
   flex: 2;
   padding-right: 8rem;
@@ -41,7 +34,8 @@
 .page-node-type-basic-page-b .layout-content,
 .page-node-type-page .layout-content,
 .page-node-type-newsletter-article .layout-content,
-.page-node-type-ike-s-life .layout-content {
+.page-node-type-ike-s-life .layout-content,
+.page-node-type-soldier .layout-content {
   display: flex;
   justify-content: center;
   padding-right: 0rem;
@@ -54,7 +48,8 @@
   max-width: var(--xl);
 }
 
-.page-node-type-ike-s-life .region-content {
+.page-node-type-ike-s-life .region-content,
+.page-node-type-soldier .region-content {
   max-width: var(--lg);
 }
 

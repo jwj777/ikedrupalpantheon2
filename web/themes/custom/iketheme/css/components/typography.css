@@ -30,7 +30,6 @@ h1, .display-large {
   margin-bottom: 1rem;
 }
 
-
 .heading-large, .field--name-field-heading-2 {
   font-family: 'Newsreader', Georgia, serif;
   font-size: 2.6rem;
@@ -61,6 +60,15 @@ h1, .display-large {
   font-family: 'Figtree', Georgia, serif;
   font-size: 1.2rem;
   line-height: 1.7em;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.title-small {
+  font-family: 'Figtree', Georgia, serif;
+  font-size: 1.075rem;
+  line-height: 1.6em;
   font-weight: 500;
   margin-top: 0.8rem;
   margin-bottom: 1rem;
