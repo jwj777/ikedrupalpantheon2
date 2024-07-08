@@ -4,6 +4,8 @@ base:
     component:
       css/components/colors.css:
         weight: -10
+      css/components/content.css:
+        weight: -10
       css/components/action-links.css:
         weight: -10
       css/components/breadcrumb.css:

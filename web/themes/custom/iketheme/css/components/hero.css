@@ -162,3 +162,68 @@
 .ikes-life-breadcrumbs .right-arrow {
   margin: 0 8px;
 }
+
+/** Ike's Soldiers **/
+
+/** /sites/default/files/static/ike-soldiers-background.png
+**/
+
+.page-node-type-soldier .header-hero {
+  position: relative; /* Ensure that the container can be positioned relatively */
+  background: url('/sites/default/files/static/ike-soldiers-background.png');
+  background-size: cover; /* Ensure the background image covers the entire element */
+  background-position: center; /* Center the background image */
+}
+
+.page-node-type-soldier .header-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #001945, #002D6F);
+  opacity: 0.9; /* Adjust the transparency here */
+  z-index: 1; /* Ensure the gradient is on top */
+}
+
+/* Ensure any content inside the .header-hero is above the gradient */
+.page-node-type-soldier .header-hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+.soldier-hero {
+  max-width: var(--lg);
+  margin: 0 auto;
+}
+
+.soldier-hero {
+  padding: 4rem 0 6rem 0;
+}
+
+.soldier-hero { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.soldier-hero img {
+  border-radius: 1.5rem;
+  min-height: 280px;
+  max-height: 360px;
+}
+
+.soldier-hero h1, 
+.soldier-hero p,
+.soldier-hero .birth-death {
+  color: var(--primary-95)
+}
+
+.soldier-hero p.label {
+  font-weight: 600;
+}
+
+.soldier-hero .label-medium {
+  margin-bottom: 4rem;
+  color: var(--primary-95)
+}
