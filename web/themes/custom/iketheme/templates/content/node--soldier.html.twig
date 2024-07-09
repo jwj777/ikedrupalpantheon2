@@ -139,11 +139,9 @@
   </div><!-- end soldier details -->
 
   <div class="biographical">
-      {% if content.field_biographical_information %}
-  
-   
-        {{ content.field_biographical_information }}
-   
+    {% if content.field_biographical_information %}
+      <h2 class="heading-large">Biography</h2>
+      {{ content.field_biographical_information }}
     {% endif %}
   </div>
     

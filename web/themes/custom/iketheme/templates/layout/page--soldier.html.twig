@@ -110,15 +110,9 @@
       {{ page.content }}
     </div>{# /.layout-content #}
 
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
-
-    {% if page.sidebar_second %}
+    {% if page.right_sidebar %}
       <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
+        {{ page.right_sidebar }}
       </aside>
     {% endif %}
 
