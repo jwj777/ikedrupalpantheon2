@@ -6,3 +6,27 @@
   border-radius: 2rem;
   margin-bottom: 3rem;
 }
+
+.label-value {
+  display: flex;
+}
+
+.soldier-details {
+  position: relative; 
+  z-index: 2;
+  background-color: var(--primary-95);
+  padding: 1.5rem 2.5rem 2rem 2.5rem;
+  border-radius: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.soldier-details .label-value {
+  margin-bottom: 1rem;
+  color: var(--neutral-40);
+}
+
+.soldier-details .label {
+  font-weight: 600;
+  margin-right: 0.3rem;
+  color: var(--neutral-10);
+}

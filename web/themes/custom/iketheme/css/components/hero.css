@@ -170,7 +170,7 @@
 
 .page-node-type-soldier .header-hero {
   position: relative; /* Ensure that the container can be positioned relatively */
-  background: url('/sites/default/files/static/ike-soldiers-background.png');
+  background: url('/sites/default/files/2024-07/ike-soldiers-background.png');
   background-size: cover; /* Ensure the background image covers the entire element */
   background-position: center; /* Center the background image */
 }
@@ -199,18 +199,19 @@
 }
 
 .soldier-hero {
-  padding: 4rem 0 6rem 0;
+  padding: 5rem 0 12rem 0;
 }
 
 .soldier-hero { 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .soldier-hero img {
   border-radius: 1.5rem;
-  min-height: 280px;
-  max-height: 360px;
+  min-height: 300px;
+  max-height: 400px;
 }
 
 .soldier-hero h1, 

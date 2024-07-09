@@ -1,7 +1,7 @@
 
 /** site logo **/
 #block-iketheme-site-branding img {
-  max-width: 88px;
+  max-width: 80px;
   background: #fff;
   padding: 12px 12px 14px 16px;
   margin-top: 1rem;
@@ -10,24 +10,6 @@
 /* hide site name */
 .site-name {
   display: none;
-}
-
-.region-header {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  z-index: 3;
-}
-
-.region-header .region-inner {
-  flex: 2;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* The width of the content  */
-.content-container-default {
-  max-width: var(--xl);
 }
 
 .menu {

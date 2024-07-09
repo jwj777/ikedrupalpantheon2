@@ -20,11 +20,29 @@
  xs - 375px
 **/
 
+.region-header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+}
+
+.region-header .region-inner {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
 .layout-content {
   flex: 2;
   padding-right: 8rem;
   background: #fff;
 }
+
+/* .content-container-default {
+  max-width: var(--xl);
+} */
 
 .lg-container {
   max-width: var(--xl);
@@ -40,7 +58,10 @@
   justify-content: center;
   padding-right: 0rem;
   padding-top: 1rem;
+}
 
+.page-node-type-soldier .layout-content {
+  margin-top: -8rem;
 }
 
 .page-node-type-basic-page-b .region-content,

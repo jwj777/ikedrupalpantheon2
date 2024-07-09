@@ -100,9 +100,54 @@
 
   <div{{ content_attributes.addClass('node__content') }}>
 
+  <div class="soldier-details">
 
+    <h2 class="heading-large">Soldier Details</h2>
+
+    {% if content.field_branch_of_service or content.field_unit %}
+      <div class="label-value">
+        <p class="label">Division:</p>
+        {% if content.field_branch_of_service and content.field_unit %}
+          {{ content.field_branch_of_service }},&nbsp;{{ content.field_unit }}
+        {% else %}
+          {{ content.field_branch_of_service }}{{ content.field_unit }}
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if content.field_theater_of_operation %}
+      <div class="label-value">
+        <p class="label">Theater of Operation:</p>
+        {{ content.field_theater_of_operation }}
+      </div>
+    {% endif %}
+
+    {% if content.field_military_honors %}
+      <div class="label-value">
+        <p class="label">Military Honors:</p>
+        {{ content.field_military_honors }}
+      </div>
+    {% endif %}
+
+    {% if content.field_honored_by %}
+      <div class="label-value">
+        <p class="label">Honored By:</p>
+        {{ content.field_honored_by }}
+      </div>
+    {% endif %}
+
+  </div><!-- end soldier details -->
+
+  <div class="biographical">
+      {% if content.field_biographical_information %}
   
-    {{ content }}
+   
+        {{ content.field_biographical_information }}
+   
+    {% endif %}
+  </div>
+    
+
   </div>
 
 </article>
