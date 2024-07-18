@@ -27,7 +27,8 @@
         "drupal/entity_block": "^1.1",
         "drupal/redirect": "^1.9",
         "drupal/better_exposed_filters": "^6.0",
-        "drupal/csv_importer": "^1.16"
+        "drupal/csv_importer": "^1.16",
+        "drupal/feeds": "^3.0@beta"
     },
     "require-dev": {
         "drupal/core-dev": "^10"

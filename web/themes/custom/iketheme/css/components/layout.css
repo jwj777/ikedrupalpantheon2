@@ -60,6 +60,12 @@
   padding-top: 1rem;
 }
 
+.page-node-type-soldier main {
+  display: flex;
+  max-width: var(--lg);
+  margin: 0 auto;
+}
+
 .page-node-type-soldier .layout-content {
   margin-top: -8rem;
 }
