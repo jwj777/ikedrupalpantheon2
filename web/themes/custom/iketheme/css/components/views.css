@@ -14,8 +14,13 @@
 
 .view-soliders-main .view-content {
   display: flex;
+  flex-wrap: wrap;
+  max-width: var(--xl);
 }
 
 .view-soliders-main .views-row {
-  margin: 1rem;
+  margin: 0.8rem;
+  max-width: 220px;
 }
+
+
