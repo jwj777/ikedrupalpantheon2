@@ -13,6 +13,10 @@
 
 /** Ike's Soldiers **/
 
+.view-soliders-main {
+  display: flex;
+}
+
 .view-soliders-main .view-content {
   display: flex;
   flex-wrap: wrap;

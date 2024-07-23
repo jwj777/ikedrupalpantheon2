@@ -26,7 +26,7 @@
         "drupal/viewsreference": "^2.0@beta",
         "drupal/entity_block": "^1.1",
         "drupal/redirect": "^1.9",
-        "drupal/better_exposed_filters": "^6.0",
+        "drupal/better_exposed_filters": "^7.0@beta",
         "drupal/csv_importer": "^1.16",
         "drupal/feeds": "^3.0@beta"
     },

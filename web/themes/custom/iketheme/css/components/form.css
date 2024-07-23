@@ -102,3 +102,16 @@ abbr.ajax-changed {
   background: url(../../images/icons/error.svg) no-repeat;
   background-size: contain;
 }
+
+
+/** Ike's Soldiers Search Filters **/
+
+.view-soliders-main .views-exposed-form {
+  max-width: 280px;
+}
+
+.view-soliders-main .views-exposed-form .form-item {
+  display: flex;
+  flex-direction: column;
+  float: none;
+}
