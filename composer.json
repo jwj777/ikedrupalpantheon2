@@ -28,7 +28,8 @@
         "drupal/redirect": "^1.9",
         "drupal/better_exposed_filters": "^7.0@beta",
         "drupal/csv_importer": "^1.16",
-        "drupal/feeds": "^3.0@beta"
+        "drupal/feeds": "^3.0@beta",
+        "drupal/flag": "^4.0@beta"
     },
     "require-dev": {
         "drupal/core-dev": "^10"

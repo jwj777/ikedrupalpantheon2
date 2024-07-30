@@ -23,8 +23,12 @@
         required ? 'form-required',
       ]
     %}
-    <summary{{ summary_attributes.addClass(summary_classes) }}>{{ title }}</summary>
+    <summary{{ summary_attributes.addClass(summary_classes) }}>
+      <div class="summary-title">{{ title }}</div>
+      <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+    </summary>
   {%- endif -%}
+  
   <div class="details-wrapper">
     {% if errors %}
       <div class="form-item--error-message">
@@ -41,4 +45,5 @@
       {{ value }}
     {%- endif -%}
   </div>
+
 </details>

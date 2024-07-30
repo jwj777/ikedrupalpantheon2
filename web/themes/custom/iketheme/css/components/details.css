@@ -9,15 +9,57 @@
 details {
   margin-top: 1em;
   margin-bottom: 1em;
-  border: 1px solid #ccc;
 }
+
 details > .details-wrapper {
   padding: 0.5em 1.5em;
 }
-/* @todo Regression: The summary of noncollapsible details are no longer
-     vertically aligned with the .details-wrapper in browsers without native
-     details support. */
+
+details svg {
+  fill: var(--neutral-40)
+}
+
 summary {
   padding: 0.2em 0.5em;
   cursor: pointer;
+  list-style: none; /* Hide the default marker */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--secondary-80);
+  border-radius: 2rem;
+  padding: 1rem 1.25rem;
 }
+
+details{
+  border: none;
+}
+
+summary::marker {
+  display: none; /* Hide the default marker in Firefox */
+}
+
+summary::-webkit-details-marker {
+  display: none; /* Hide the default marker in WebKit browsers */
+}
+
+.custom-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+summary span {
+  display: none;
+}
+
+#block-iketheme-views-block-soliders-main-block-1 details.form-item {
+  background: var(--secondary-90);
+  border-radius: 2rem;
+}
+
+#edit-field-gender-value-collapsible {
+  margin-bottom: 2rem;
+}
+

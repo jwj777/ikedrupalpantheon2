@@ -53,11 +53,7 @@ label.option {
   font-size: inherit;
   font-weight: bold;
 }
-.form-checkboxes .form-item,
-.form-radios .form-item {
-  margin-top: 0.4em;
-  margin-bottom: 0.4em;
-}
+
 .form-type-radio .description,
 .form-type-checkbox .description {
   margin-left: 2.4em; /* LTR */
@@ -111,7 +107,22 @@ abbr.ajax-changed {
 }
 
 .view-soliders-main .views-exposed-form .form-item {
-  display: flex;
-  flex-direction: column;
   float: none;
+}
+
+.form-type-checkbox {
+  display: flex;
+  margin-top: 0.4em;
+  margin-bottom: 16px !important;
+}
+
+.form-type-checkbox input {
+  margin-right: 8px;
+}
+
+.js-form-item-field-biographical-information-value input {
+  background: var(--secondary-90);
+  border-radius: 2rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--secondary-90);
 }
