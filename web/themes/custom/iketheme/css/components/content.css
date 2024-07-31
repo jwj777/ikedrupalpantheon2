@@ -46,5 +46,6 @@
 
 .pow img, .kia img {
   max-width: 140px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
 }
