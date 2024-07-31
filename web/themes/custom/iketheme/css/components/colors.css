@@ -21,10 +21,13 @@
   --secondary-98: #FAF8FF;
   --secondary-99: #FEFBFF;
 
+  --tertiary-40: #ba1926;
+
   --neutral-10: #191B23;
   --neutral-40: #5E5E62;
   --neutral-90: #E3E2E6;
   --neutral-95: #F2F0F4;
+  --neutral-100: #FFFFFF;
 }
 
 .primary-10 {

@@ -76,3 +76,22 @@ function iketheme_theme_suggestions_views_view_field_alter(array &$suggestions, 
   }
 }
 
+
+function iketheme_preprocess_node(&$variables) {
+  // Check if the node is of type 'soldier'.
+  if ($variables['node']->bundle() == 'soldier') {
+    $node = $variables['node'];
+    $flag_link = [
+      '#lazy_builder' => [
+        'flag.link_builder:build',
+        [
+          $node->getEntityTypeId(),
+          $node->id(),
+          'bookmark', // Replace with your actual flag's machine name.
+        ],
+      ],
+      '#create_placeholder' => TRUE,
+    ];
+    $variables['flag_link'] = $flag_link;
+  }
+}

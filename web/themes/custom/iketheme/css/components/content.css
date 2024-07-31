@@ -49,3 +49,18 @@
   margin-bottom: 0.5rem;
   border-radius: 8px;
 }
+
+.flag-link {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  margin-bottom: 3rem;
+  background: var(--tertiary-40);
+  padding: 1rem 1.5rem;
+  border-radius: 10rem;
+}
+
+.flag-link a {
+  color: var(--neutral-100);
+  text-decoration: none;
+}
