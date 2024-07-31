@@ -12,14 +12,6 @@
   --gutter-xs: 24px;
 }
 
-/** breakpoints
- xl - 1440px
- lg - 1280px
- md - 1024px
- sm - 768px
- xs - 375px
-**/
-
 .region-header {
   display: flex;
   justify-content: center;
@@ -39,10 +31,6 @@
   padding-right: 8rem;
   background: #fff;
 }
-
-/* .content-container-default {
-  max-width: var(--xl);
-} */
 
 .lg-container {
   max-width: var(--xl);
@@ -71,8 +59,10 @@
 }
 
 .page-node-type-basic-page-b .region-content,
-.page-node-type-newsletter-article .region-content {
+.page-node-type-newsletter-article .region-content,
+.user-logged-in .region-content {
   max-width: var(--xl);
+  padding-top: 4rem;
 }
 
 .page-node-type-ike-s-life .region-content,

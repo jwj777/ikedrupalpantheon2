@@ -45,3 +45,12 @@
   flex: 1 1 100%;
 }
 
+.view-user-soldier-collection {
+  background: var(--primary-95);
+  padding: 1.5rem 2rem 2rem 2rem;
+}
+
+.view-user-soldier-collection a {
+  color: var(--primary-10);
+}
+
