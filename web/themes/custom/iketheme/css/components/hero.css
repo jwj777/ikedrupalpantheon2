@@ -188,7 +188,7 @@
 }
 
 /* Ensure any content inside the .header-hero is above the gradient */
-.page-node-type-soldier .header-hero > * {
+.page-node-type-soldier .soldier-hero {
   position: relative;
   z-index: 2;
 }
