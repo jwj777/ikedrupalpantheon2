@@ -120,9 +120,3 @@ abbr.ajax-changed {
   margin-right: 8px;
 }
 
-.js-form-item-field-biographical-information-value input {
-  background: var(--secondary-90);
-  border-radius: 2rem;
-  padding: 1rem 1.25rem;
-  border: 1px solid var(--secondary-90);
-}

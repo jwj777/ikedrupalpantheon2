@@ -30,3 +30,22 @@
   margin-right: 0.3rem;
   color: var(--neutral-10);
 }
+
+.pow-kia-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.pow, .kia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 4rem;
+}
+
+.pow img {
+  max-width: 80px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}

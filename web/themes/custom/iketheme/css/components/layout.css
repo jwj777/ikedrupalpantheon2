@@ -88,3 +88,12 @@
 .layout-sidebar-second {
   max-width: 360px;
 }
+
+/** soliders documents section **/
+.documents {
+  margin-top: 4rem;
+  background: var(--primary-95);
+  padding: 1.5rem 3rem 3rem 2.5rem;
+  border-radius: 2rem;
+  max-width: 600px;
+}

@@ -20,6 +20,7 @@ details svg {
 }
 
 summary {
+  width: 100%;
   padding: 0.2em 0.5em;
   cursor: pointer;
   list-style: none; /* Hide the default marker */
@@ -63,3 +64,16 @@ summary span {
   margin-bottom: 2rem;
 }
 
+.js-form-item-keys input {
+  width: 100%;
+  background: var(--secondary-90);
+  border-radius: 2rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--secondary-90);
+}
+
+.js-form-item-keys label {
+  position: absolute;
+  margin-top: 16px;
+  margin-left: 23px;
+}

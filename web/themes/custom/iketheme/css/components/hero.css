@@ -194,6 +194,8 @@
 }
 
 .soldier-hero {
+  display: flex;
+  justify-content: space-between;
   max-width: var(--lg);
   margin: 0 auto;
 }
@@ -202,14 +204,15 @@
   padding: 5rem 0 12rem 0;
 }
 
-.soldier-hero { 
+.soldier-hero .soldier-image { 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 1.5rem;
+  overflow: hidden;
 }
 
 .soldier-hero img {
-  border-radius: 1.5rem;
   min-height: 300px;
   max-height: 400px;
 }

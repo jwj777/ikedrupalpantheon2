@@ -16,6 +16,7 @@
 .view-soliders-main {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .view-soliders-main .view-content {
@@ -44,9 +45,3 @@
   flex: 1 1 100%;
 }
 
-.js-form-item-field-biographical-information-value input {
-  background: var(--secondary-90);
-  border-radius: 2rem;
-  padding: 1rem 1.25rem;
-  border: 1px solid var(--secondary-90);
-}

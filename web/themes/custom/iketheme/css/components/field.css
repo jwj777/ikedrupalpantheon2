@@ -23,3 +23,7 @@
 .field--label-inline .field__label::after {
   content: ":";
 }
+
+.documents .file {
+  margin-bottom: 1rem;
+}

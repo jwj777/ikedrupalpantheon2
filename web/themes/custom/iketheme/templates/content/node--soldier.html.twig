@@ -122,6 +122,13 @@
       </div>
     {% endif %}
 
+    {% if content.field_battle %}
+      <div class="label-value">
+        <p class="label">Battle:</p>
+        {{ content.field_battle }}
+      </div>
+    {% endif %}
+
     {% if content.field_military_honors %}
       <div class="label-value">
         <p class="label">Military Honors:</p>
@@ -136,15 +143,37 @@
       </div>
     {% endif %}
 
+    <div class="pow-kia-container">
+      {% if node.field_prisoner_of_war.value == "1" %}
+        <div class="pow">
+          <img src="/sites/default/files/2024-07/POW-MIA-flag.png" />
+          <p class="label">Prisoner of War</p>
+        </div>
+      {% endif %}
+
+      {% if node.field_killed_in_action.value == "1" %}
+        <div class="kia">
+          <img src="/sites/default/files/2024-07/kia-flag.png" />
+          <p class="label">Killed In Action</p>
+        </div>
+      {% endif %}
+    </div>
+
   </div><!-- end soldier details -->
 
-  <div class="biographical">
-    {% if content.field_biographical_information %}
-      <h2 class="heading-large">Biography</h2>
-      {{ content.field_biographical_information }}
+    <div class="biographical">
+      {% if content.field_biographical_information %}
+        <h2 class="heading-large">Biography</h2>
+        {{ content.field_biographical_information }}
+      {% endif %}
+    </div>
+
+    {% if content.field_documents|render|trim is not empty %}
+      <div class="documents">
+        <h2 class="heading-large">Documents</h2>
+        {{ content.field_documents }}
+      </div>
     {% endif %}
-  </div>
-    
 
   </div>
 

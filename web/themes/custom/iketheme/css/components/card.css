@@ -200,14 +200,13 @@
   height: 50px;
 }
 
-.soldier-image img {
+.view-soliders-main .soldier-image img {
   display: flex;
   border-radius: 1rem 1rem 0 0;
   object-fit: cover;
   width: 220px;
   height: 315px;
 }
-
 
 .view-soliders-main .views-row p {
   margin: 0px;
