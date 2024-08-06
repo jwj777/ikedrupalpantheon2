@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
 
+
 body {
   font-family: 'Figtree', sans-serif;
   color: var(--neutral-10);
@@ -14,7 +15,7 @@ h1, .display-large {
   margin-bottom: 1rem;
 }
 
-.display-medium, h2.display-medium {
+.display-medium, h2.display-medium, .view-news-main .view-content > h3 {
   font-family: 'Newsreader', Georgia, serif;
   font-size: 3.5rem;
   font-weight: 300;
