@@ -22,11 +22,15 @@
   z-index: 1;
 }
 
-/** restrict with and center hero **/
+/** restrict width and center hero **/
 .hero-basic {
   max-width: var(--xl);
   margin: 0 auto;
   padding: 4rem 0 16rem 0;
+}
+ 
+.page-node-type-news-home .hero-basic {
+  padding: 4rem 0 22rem 0;
 }
 
 .hero-alt {
