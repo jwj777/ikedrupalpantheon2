@@ -12,6 +12,10 @@
   background-image: linear-gradient(to right, var(--primary-20), var(--primary-40)) !important;
 }
 
+.page-node-type-news-home .header-hero {
+  background-image: linear-gradient(to right, var(--primary-30), var(--primary-40)) !important;
+}
+
 .hero-home { 
   padding: 16rem 0 12rem 0;
   position: relative;
@@ -84,7 +88,6 @@
 .page-node-type-page .views-field-field-hero-image img,
 .page-node-type-ike-s-life .views-field-field-hero-image img
 .page-node-type-newsletter-article .views-field-field-hero-image img {
-  /* max-width: var(--lg); */
   object-fit: cover;
 }
 
@@ -92,7 +95,6 @@
 .hero-basic .views-field-field-hero-image {
     display: flex;
     justify-content: center;
-    /* margin-bottom: 10rem; */
   }
 
 .views-field-field-hero-image .field-content {
@@ -124,12 +126,6 @@
   color: var(--neutral-90);
 }
 
-/* .hero-alt .views-field-field-hero-image img {
-  max-width: 1200px;
-  height: auto;
-  margin-top: 6rem;
-} */
-
 /** Ike's Life **/
 .view-hero-ike-s-life img {
   border-radius: 24px;
@@ -141,7 +137,6 @@
 
 .region-hero-bottom {
   max-width: 1200px;
-  /* height: auto;  */
   margin: 0 auto; 
 }
 
@@ -163,10 +158,8 @@
   margin: 0 8px;
 }
 
-/** Ike's Soldiers **/
 
-/** /sites/default/files/static/ike-soldiers-background.png
-**/
+/** Ike's Soldiers **/
 
 .page-node-type-soldier .header-hero {
   position: relative; /* Ensure that the container can be positioned relatively */
