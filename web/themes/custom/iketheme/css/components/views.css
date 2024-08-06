@@ -31,12 +31,13 @@
 }
 
 .view-soliders-main .view-filters {
-  flex: 1 1 20%;
+  flex: 1 1 22%;
+  margin-right: 2rem;
 }
 
 
 .view-soliders-main .view-content {
-  flex: 1 1 74%;
+  flex: 1 1 68%;
 }
 
 .view-soliders-main .pager {
@@ -46,11 +47,31 @@
 }
 
 .view-user-soldier-collection {
+  display: inline-block;
   background: var(--primary-95);
-  padding: 1.5rem 2rem 2rem 2rem;
+  padding: 1rem 3rem 2rem 2rem;
+  border-radius: 1.5rem;
 }
 
 .view-user-soldier-collection a {
   color: var(--primary-10);
 }
 
+.view-user-soldier-collection .views-row {
+  margin-bottom: 0.8rem;
+}
+
+/* news home */
+.view-news-main .view-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.view-news-main h3 {
+  flex: 1 1 100%;
+  margin-top: 4rem;
+}
+
+.view-news-main .views-row {
+  flex: 1 1 50%;
+}

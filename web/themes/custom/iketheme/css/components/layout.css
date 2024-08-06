@@ -28,7 +28,7 @@
 
 .layout-content {
   flex: 2;
-  padding-right: 8rem;
+  /* padding-right: 8rem; */
   background: #fff;
 }
 
@@ -41,7 +41,8 @@
 .page-node-type-page .layout-content,
 .page-node-type-newsletter-article .layout-content,
 .page-node-type-ike-s-life .layout-content,
-.page-node-type-soldier .layout-content {
+.page-node-type-soldier .layout-content,
+.page-node-type-news-home .layout-content {
   display: flex;
   justify-content: center;
   padding-right: 0rem;
@@ -54,19 +55,34 @@
   margin: 0 auto;
 }
 
+.block-views-blocksoliders-main-block-1 {
+  padding-top: 2rem;
+}
+
 .page-node-type-soldier .layout-content {
-  margin-top: -12rem;
+  margin-top: -16rem;
 }
 
 .page-node-type-basic-page-b .region-content,
-.page-node-type-newsletter-article .region-content,
-.user-logged-in .region-content {
+.page-node-type-newsletter-article .region-content {
   max-width: var(--xl);
-  padding-top: 4rem;
+}
+
+.path-user .region-content {
+  max-width: var(--xl);
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
+
+@media screen and (max-width: 1360px) {
+  .path-user .region-content {
+    padding: 2rem 2rem;
+  }
 }
 
 .page-node-type-ike-s-life .region-content,
-.page-node-type-soldier .region-content {
+.page-node-type-soldier .region-content,
+.page-node-type-news-home .region-content {
   max-width: var(--lg);
 }
 

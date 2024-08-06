@@ -13,6 +13,7 @@ details {
 
 details > .details-wrapper {
   padding: 0.5em 1.5em;
+  width: 100%;
 }
 
 details svg {
@@ -20,8 +21,8 @@ details svg {
 }
 
 summary {
-  width: 100%;
-  padding: 0.2em 0.5em;
+  /* width: 300px; */
+  /* padding: 0.2em 0.5em; */
   cursor: pointer;
   list-style: none; /* Hide the default marker */
   display: flex;
@@ -29,7 +30,7 @@ summary {
   justify-content: space-between;
   background: var(--secondary-80);
   border-radius: 2rem;
-  padding: 1rem 1.25rem;
+  padding: 1rem 1.45rem;
 }
 
 details{
@@ -56,6 +57,7 @@ summary span {
 }
 
 #block-iketheme-views-block-soliders-main-block-1 details.form-item {
+  width: 340px;
   background: var(--secondary-90);
   border-radius: 2rem;
 }
