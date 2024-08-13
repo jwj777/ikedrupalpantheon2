@@ -119,6 +119,13 @@
       </div>
     {% endif %}
 
+    {% if content.field_highest_rank|render|trim is not empty %}
+      <div class="label-value">
+        <p class="label">Highest Rank:</p>
+        {{ content.field_highest_rank['#items'].0.value }}
+      </div>
+    {% endif %}
+
     {% if content.field_theater_of_operation %}
       <div class="label-value">
         <p class="label">Theater of Operation:</p>
@@ -126,14 +133,34 @@
       </div>
     {% endif %}
 
-    {% if content.field_battle %}
+{% set enlisted_date = node.field_enlisted_commissioned_date[0].value ?? null %}
+{% set discharge_date = node.field_discharge_date[0].value ?? null %}
+
+{% if enlisted_date or discharge_date %}
+  <div class="label-value">
+    <p class="label">Served:</p>
+    <div class="date-value">
+      {% if enlisted_date %}
+        {{ enlisted_date|date("M j, Y") }}
+      {% endif %}
+      {% if enlisted_date and discharge_date %}
+        {{ ' - ' }}
+      {% endif %}
+      {% if discharge_date %}
+        {{ discharge_date|date("M j, Y") }}
+      {% endif %}
+    </div>
+  </div>
+{% endif %}
+
+    {% if content.field_battle|render|trim is not empty %}
       <div class="label-value">
         <p class="label">Battle:</p>
         {{ content.field_battle }}
       </div>
     {% endif %}
 
-    {% if content.field_military_honors %}
+    {% if content.field_military_honors|render|trim is not empty %}
       <div class="label-value">
         <p class="label">Military Honors:</p>
         {{ content.field_military_honors }}
