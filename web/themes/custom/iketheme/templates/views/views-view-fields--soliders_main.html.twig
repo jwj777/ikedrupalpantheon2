@@ -32,12 +32,11 @@
 
 {% set url = "/node/" ~ row._entity.nid.value %}
 {% set image = fields.field_solider_image.content %}
-{% set gender =  fields.field_gender.content|trim|lower %}
-{% set noimage = image %}
+{% set gender =  fields.field_gender.content|striptags|trim|lower %}
 
  <a href="{{ url }}">
    <div class="soldier-image">
-     {% if noimage|striptags|trim|lower == 'noimage' %}
+     {% if image|striptags|trim|lower == 'noimage' %}
        {% if gender == 'female' %}
          <img src="/sites/default/files/2024-07/female-soldier-default.jpg" alt="Default Female Soldier">
        {% else %}
