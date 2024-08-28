@@ -42,7 +42,8 @@
 .page-node-type-newsletter-article .layout-content,
 .page-node-type-ike-s-life .layout-content,
 .page-node-type-soldier .layout-content,
-.page-node-type-news-home .layout-content {
+.page-node-type-news-home .layout-content,
+.page-node-type-lesson-plan .layout-content {
   display: flex;
   justify-content: center;
   padding-right: 0rem;
