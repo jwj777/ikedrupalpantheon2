@@ -45,6 +45,30 @@
   flex: 1 1 100%;
 }
 
+.view-soliders-main .views-row a {
+  text-decoration: none;
+}
+
+.view-soliders-main .views-row:hover {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transition: 0.2s all ease;
+}
+
+.view-soliders-main .views-row:hover {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transition: 0.25s all ease;
+}
+
+.view-soliders-main .views-row:hover img {
+  transition: transform 0.25s ease, border-radius 0.25s ease;
+  transform: scale(1.05) !important;
+  max-height: 310px;
+  overflow: hidden;
+}
+
+
 .view-user-soldier-collection {
   display: inline-block;
   background: var(--primary-95);
@@ -91,15 +115,19 @@
   right: 1rem;
 }
 
-.view-news-main .views-field-nothing {
+.view-news-main .views-row:hover .text-container {
   background: var(--primary-90);
+}
+
+.view-news-main .text-container {
+  background: var(--primary-95);
   padding: 0.8rem 2rem;
   margin-top: -4px;
   border-bottom-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
 }
 
-.view-news-main .views-field-field-summary-image {
+.view-news-main .article-summary-image {
   border-top-right-radius: 1.5rem;
   border-top-left-radius: 1.5rem;
   overflow: hidden;
@@ -117,10 +145,12 @@
 
 .view-news-main h3.title-medium {
   height: 56px;
+  color: var(--primary-10) !important;
+  text-decoration: none;
 }
 
-.view-news-main h3.title-medium a {
-  color: var(--primary-10) !important;
+.view-news-main a {
+  text-decoration: none;
 }
 
 .view-news-featured {
