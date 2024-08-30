@@ -1,0 +1,145 @@
+{#
+/**
+ * @file
+ * Theme override to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link URL, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *   - is_expanded: TRUE if the link has visible children within the current
+ *     menu tree.
+ *   - is_collapsed: TRUE if the link has children within the current menu tree
+ *     that are not currently visible.
+ *   - in_active_trail: TRUE if the link is in the active trail.
+ */
+#}
+{% import _self as menus %}
+
+{#
+  We call a macro which calls itself to render the full tree.
+  @see https://twig.symfony.com/doc/3.x/tags/macro.html
+#}
+{{ menus.menu_links(items, attributes, 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+
+
+  <div class="footer-container">
+  <div class="footer-inner">
+
+    <div class="footer-top">
+
+      <div class="footer-info">
+        <a class="logo" href="/">
+          <img src="/sites/default/files/EF_New_transparent_0.png">
+        </a>
+        <div class="footer-address">
+          <p class="label-medium">Address</p>
+          <p>200 SE Fourth Street</p>
+          <p>PO Box 295</p>
+          <p>Abeline, KS 67410</p>
+        </div>
+        <div class="footer-hours">
+          <p class="label-medium">Office Hours</p>
+          <p>200 SE Fourth Street</p>
+          <p>PO Box 295</p>
+          <p>Abeline, KS 67410</p>
+        </div>
+      </div>
+  
+      <div class="footer-cards-container">
+        <div class="footer-card">
+          <p class="label-medium">Ike's Life</p>
+          <div class="nav-section-links">
+            <a href="/ikes-life/boyhood">Boyhood</a>
+            <a href="/ikes-life/west-point>West Point</a>
+            <a href="/ikes-life/great-war-years">Early Military</a>
+            <a href="/ikes-life/clouds-of-war">The General</a>
+            <a href="/ikes-life/candidate">Presidency</a>
+            <a href="/ikes-life/statesman">The Statesman</a>
+          </div>
+        </div>
+
+        <div class="footer-card">
+          <p class="label-medium">Ike's Soldiers</p>
+          <div class="nav-section-links">
+            <a href="/education-home/ikeducation">Educator's Guide</a>
+            <a href="/page/lesson-plans">Lesson Plans</a>
+          </div>
+        </div>
+
+        <div class="footer-card">
+          <p class="label-medium">Plan Your Visit</p>
+          <div class="nav-section-links">
+            <a href="#">Hours & Visit Details</a>
+            <a href="/page/events">Events</a>
+            <a href="#">Plan Your Education Experience</a>
+          </div>
+        </div>
+
+        <div class="footer-card">
+          <p class="label-medium">The Foundation</p>
+          <div class="nav-section-links">
+            <a href="/page/about-foundation">About The Fondation</a>
+            <a href="/resources/home">IKE Insights</a>
+            <a href="">Eisenhower Presidential Library</a>
+            <a href="/page/research-travel-grants">Research Travel Grants</a>
+            <a href="">Legacy Organizations</a>
+            <a href="/page/eisenhower-memorial">Eisenhower Memorial</a>
+            <a href="">Silo Mural Project</a>
+          </div>
+        </div>
+
+        <div class="footer-card">
+          <p class="label-medium">Interactive</p>
+          <div class="nav-section-links">
+            <a href="#">Interactive Timeline</a>
+            <a href="#">Pivotal Moments</a>
+          </div>
+        </div>
+
+        <div class="footer-card">
+          <p class="label-medium">IKEducation</p>
+          <div class="nav-section-links">
+            <a href="/education-home/ikeducation">Educator's Guide</a>
+            <a href="/page/lesson-plans">Lesson Plans</a>
+            <a href="">Eisenhower Presidential Library</a>
+            <a href="/page/research-travel-grants">Research Travel Grants</a>
+          </div>
+        </div>
+
+        <div class="footer-card">
+          <p class="label-medium">Join & Give</p>
+          <div class="nav-section-links">
+            <a href="#">Friends</a>         
+            <a href="#">Sponsors</a>
+            <a href="#">Donor Wall</a>
+            <a href="#">Kansas Tax Credits</a>
+            <a href="#">Volunteer</a>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="row1">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact Directory</a>
+      </div>
+      <div class="">
+        <p class="label-small">© 2024 Eisenhower Foundation</p>
+      </div>
+    </div>
+
+  </div>
+  </div>
+ 
+{% endmacro %}

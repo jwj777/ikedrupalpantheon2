@@ -25,7 +25,8 @@
   max-width: var(--xl);
 }
 
-.view-soliders-main .views-row {
+.view-soliders-main .views-row, 
+.view-soldiers-featured .views-row {
   margin: 0.8rem;
   max-width: 220px;
 }

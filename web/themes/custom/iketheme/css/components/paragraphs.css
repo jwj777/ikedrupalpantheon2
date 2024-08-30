@@ -1,4 +1,12 @@
 
+
+.lg-padding-bottom {
+  padding-bottom: 96px;
+}
+.lg-padding-top {
+  padding-top: 96px;
+}
+
 .md-padding-bottom {
   padding-bottom: 64px;
 }
@@ -10,6 +18,10 @@
 }
 .sm-padding-top {
   padding-top: 32px;
+}
+
+.paragraph-padding {
+  padding: 8rem 0;
 }
 
 .field--name-field-column-one,
@@ -57,6 +69,11 @@
   margin: 0 auto;
 }
 
+.paragraph-featured-soldiers > .paragraph-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .paragraph--type--two-column-text-collage > .paragraph-inner {
   flex-direction: column;
   justify-content: space-between;
@@ -79,7 +96,7 @@
 
 /** text collages two coloumn **/
 .paragraph--type--two-column-text-collage .text-column {
-  padding: 72px 280px 160px 64px;
+  padding: 64px 280px 160px 64px;
   border-radius: 1.5rem;
   margin-right: -64px;
   background: var(--neutral-95);
@@ -97,29 +114,62 @@
   width: 700px;
   align-self: flex-end;
   position: relative;
-  bottom: 436px;
+  bottom: 400px;
+  margin-bottom: -400px;
 }
+
+.paragraph--type--two-column-text-collage .image-row-1 .image-item  {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  width: 420px;
+  height: 240px;
+}
+
 .paragraph--type--two-column-text-collage .image-row-1 {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 2rem;
 }
 
 .paragraph--type--two-column-text-collage .image-row-1 img {
-  max-width: 520px;
-  margin-bottom: 24px;
+  width: 420px;
+  height: 240px;
+  object-fit: cover;
 }
 
 .paragraph--type--two-column-text-collage .image-row-2 {
   display: flex;
+  justify-content: flex-end;
 }
-.paragraph--type--two-column-text-collage .image-row-2 img {
-  margin-left: 24px;
+
+.paragraph--type--two-column-text-collage .image-row-2 .image-item:first-child {
+  margin-right: 2rem;
 }
+
+.paragraph--type--two-column-text-collage .image-row-2 .image-item:first-child {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  width: 280px;
+  height: 220px;
+}
+
 .paragraph--type--two-column-text-collage .image-row-2 .image-item:first-child img {
-  max-width: 280px;
+  width: 280px;
+  height: 220px;
+  object-fit: cover;
 }
+
+.paragraph--type--two-column-text-collage .image-row-2 .image-item:nth-child(2) {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  width: 360px;
+  height: 220px;
+}
+
 .paragraph--type--two-column-text-collage .image-row-2 .image-item:nth-child(2) img {
-  max-width: 360px;
+  width: 360px;
+  height: 220px;
+  object-fit: cover;
 }
 
 
@@ -288,4 +338,30 @@
 .page-node-type-ike-s-life .imageRight img {
   margin-right: 0px;
   margin-left: 3rem;
+}
+
+/* featured soldiers */
+
+.paragraph-featured-soldiers .field--name-field-section-icon img {
+  max-width: 240px;
+  object-fit: contain;
+  height: auto;
+}
+
+.paragraph-featured-soldiers .paragraph-heading {
+  display: flex;
+}
+
+.paragraph-featured-soldiers .heading-text {
+  max-block-size: 720px;
+  margin-right: 2rem;
+  margin-bottom: 4rem;
+}
+
+.paragraph-featured-soldiers .body-large {
+  margin-bottom: 3rem;
+}
+
+.view-soldiers-featured .view-content {
+  display: flex;
 }

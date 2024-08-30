@@ -32,7 +32,9 @@
       {# Check if it's the first item #}
       {% if loop.index == 1 %}
         <div class="image-row-1">
-          <img src="{{ file_url(item.entity.fileuri) }}" alt="{{ item.entity.alt }}" />
+          <div class="image-item">
+            <img src="{{ file_url(item.entity.fileuri) }}" alt="{{ item.entity.alt }}" />
+          </div>
         </div>
       {% endif %}
       

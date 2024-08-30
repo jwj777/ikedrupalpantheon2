@@ -33,7 +33,7 @@ h1, .display-large {
 
 .heading-large, .field--name-field-heading-2 {
   font-family: 'Newsreader', Georgia, serif;
-  font-size: 2.6rem;
+  font-size: 2.7rem;
   font-weight: 300;
   margin-top: 1rem;
   margin-bottom: 1.4rem;
@@ -41,7 +41,7 @@ h1, .display-large {
 
 .heading-medium {
   font-family: 'Newsreader', Georgia, serif;
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   line-height: 2.6rem;
   font-weight: 300;
   margin-top: 1rem;
@@ -50,7 +50,7 @@ h1, .display-large {
 
 .heading-small {
   font-family: 'Newsreader', Georgia, serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 2.1rem;
   font-weight: 300;
   margin-top: 0.8rem;
@@ -75,7 +75,8 @@ h1, .display-large {
   margin-bottom: 1rem;
 }
 
-.body-large, .views-element-container .subheading {
+.body-large, 
+.views-element-container .subheading {
   font-family: 'Figtree', Georgia, serif;
   font-size: 1.15rem;
   line-height: 1.8rem;

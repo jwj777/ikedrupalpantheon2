@@ -14,3 +14,11 @@ button.link {
 label button.link {
   font-weight: bold;
 }
+
+.field--name-field-link-button a {
+  background: var(--primary-40);
+  padding: 16px 22px;
+  color: var(--neutral-100);
+  border-radius: 10rem;
+  text-decoration: none;
+}

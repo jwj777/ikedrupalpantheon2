@@ -193,7 +193,8 @@
 
 /** Ike's Soldiers **/
 
-.view-soliders-main .views-row .text-container {
+.view-soliders-main .views-row .text-container,
+.view-soldiers-featured .text-container {
   background-color: var(--secondary-90);
   padding: 1rem 1.5rem 1.35rem 1.5rem;
   border-radius: 0 0 1rem 1rem;
@@ -202,13 +203,15 @@
   z-index: 2;
 }
 
-.view-soliders-main .views-row:hover .text-container {
+.view-soliders-main .views-row:hover .text-container,
+.view-soldiers-featured .views-row:hover .text-container {
   background-color: var(--secondary-80);
   transition: 0.25s all ease;
 }
 
 
-.view-soliders-main .soldier-image img {
+.view-soliders-main .soldier-image img,
+.view-soldiers-featured img {
   display: flex;
   border-radius: 1rem 1rem 0 0;
   object-fit: cover;
@@ -216,12 +219,14 @@
   height: 310px;
 }
 
-.view-soliders-main .views-row p {
+.view-soliders-main .views-row p,
+.view-soldiers-featured .views-row p {
   margin: 0px;
 }
 
-.view-soldiers-main .title-medium {
-  margin-bottom: 8px;
+.view-soldiers-main .title-medium,
+.view-soldiers-featured .title-small {
+  margin-bottom: 4px !important;
   color: var(--primary-10);
 }
 
@@ -229,7 +234,8 @@ p.text-light {
   color: var(--secondary-40) !important;
 }
 
-.view-soliders-main .text-container p {
+.view-soliders-main .text-container p,
+.view-soldiers-featured .text-container p {
   max-width: 180px;
   text-overflow: ellipsis;
   white-space: nowrap;
