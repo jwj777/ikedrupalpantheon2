@@ -217,3 +217,14 @@
   width: 380px;
   object-fit: cover;
 }
+
+
+/* upcoming programs - ikeducation */
+
+.view-upcoming-programs .views-row {
+  margin-bottom: 1rem;
+}
+
+.field--name-field-view-reference .field__label {
+  display: none;
+}

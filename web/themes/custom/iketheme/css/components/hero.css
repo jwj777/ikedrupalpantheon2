@@ -34,7 +34,7 @@
 }
 
 .hero-alt {
-  max-width: var(--xl);
+  max-width: var(--lg);
   margin: 0 auto;
   padding: 6rem 0 6rem 0;
   position: relative;
@@ -87,6 +87,11 @@
   bottom: 12rem;
   margin-bottom: -9rem;
   overflow: hidden;
+}
+
+.page-node-type-education .hero {
+  padding: 6rem 0 12rem 0;
+  margin-bottom: -9rem;
 }
 
 .page-node-type-page .views-field-field-hero-image img,

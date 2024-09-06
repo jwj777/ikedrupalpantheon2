@@ -23,7 +23,7 @@
   margin-top: 32px;
   background: #fff;
   z-index: 2;
-  padding: 24px;
+  padding: 22px 40px 28px 28px;
   border-radius: 20px;
   box-shadow: 1px 2px 2px hsl(227, 0%, 0%) / 0.333;
   box-shadow: 2px 4px 4px hsl(227, 0%, 0%) / 0.333;
@@ -31,7 +31,7 @@
 }
 
 .nav2-item {
-  padding: 8px 0px;
+  padding: 10px 0px;
 }
 
 a.nav1-item {

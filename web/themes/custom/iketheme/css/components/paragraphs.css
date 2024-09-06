@@ -27,7 +27,7 @@
 .field--name-field-column-one,
 .field--name-field-column-two {
   background-color: var(--primary-95);
-  padding: 24px 40px 48px 32px;
+  padding: 24px 52px 48px 32px;
   border-radius: 24px;
 }
 
@@ -65,12 +65,12 @@
 .paragraph--type--two-column-image-text-block > .paragraph-inner,
 .paragraph--type--two-column-text-collage > .paragraph-inner {
   display: flex;
-  max-width: 1200px;
+  max-width: var(--lg);
   margin: 0 auto;
 }
 
 .paragraph-featured-soldiers > .paragraph-inner {
-  max-width: 1200px;
+  max-width: var(--lg);
   margin: 0 auto;
 }
 
@@ -250,6 +250,7 @@
   content: close-quote;
 }
 
+
 /** text and image array **/
 
 .paragraph--type--body-text-image-array {
@@ -276,12 +277,6 @@
   object-fit: cover;
 }
 
-/* .field--name-field-image-array .field__item:first-child img {
-  max-width: 320px;
-  margin-right: 1rem;
-  object-fit: cover;
-} */
-
 .field--name-field-image-array img {
   border-radius: 1.5rem;
 }
@@ -296,16 +291,20 @@
 
 .field--name-field-card {
   display: flex;
-  justify-content: space-between;
-  margin: 2rem;
+  margin-left: -2rem;
+  margin-top: 2rem;
 }
 
 .card-image-title {
   background-color: var(--primary-95);
-  border-radius: 1rem;
-  /* border-bottom-left-radius: 0.75rem;
-  border-bottom-right-radius: 0.75rem; */
-  margin-left: -2rem;
+  border-radius: 1.5rem;
+  max-width: 360px;
+  margin: 0 1rem;
+}
+
+.card-image-title img {
+  max-width: 360px;
+  height: auto;
 }
 
 .card-image-title a {
@@ -364,4 +363,10 @@
 
 .view-soldiers-featured .view-content {
   display: flex;
+}
+
+/* ike education - upcoming programs */
+
+.field--name-field-column-two {
+  min-width: 360px;
 }
