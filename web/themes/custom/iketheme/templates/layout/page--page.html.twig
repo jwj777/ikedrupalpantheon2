@@ -42,7 +42,7 @@
  * @see html.html.twig
  */
 #}
-<div class="layout-container">
+<div class="layout-container {% if node is defined %}node-id-{{ node.id }}{% endif %}">
 
   <div class="header-hero" style="background-image: url('{{ hero_background_image_url }}');">
     <header role="banner">

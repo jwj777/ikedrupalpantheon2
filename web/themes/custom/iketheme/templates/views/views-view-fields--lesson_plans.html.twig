@@ -32,15 +32,31 @@
 
 {% set url = "/node/" ~ row._entity.nid.value %}
 {% set image = fields.field_summary_image.content %}
-{% set title = fields.title_1.content|striptags|raw %}
+{% set title = fields.title.content|striptags|raw %}
+{% set grade_levels_raw = fields.field_grade_levels_select.content|striptags %}
+
+{% if grade_levels_raw %}
+  {# Split the grade levels string by commas or other delimiters if necessary #}
+  {% set grade_levels = grade_levels_raw|split(',') %}
+{% endif %}
 
 <a href="{{ url }}">
-  <div class="article-summary-image">
+  <div class="lesson-summary-image">
     {% if image %}
       {{ image }}
     {% endif %}
   </div>
   <div class="text-container">
-    <h3 class="title-medium">{{ title }}</h3>
+    <h3 class="heading-small">{{ title }}</h3>
+    
+    {% if grade_levels is defined and grade_levels|length > 0 %}
+      {% set first_grade = grade_levels|first %}
+      {% set last_grade = grade_levels|last %}
+      <p>Grade Levels: {{ first_grade }} - {{ last_grade }}</p>
+    {% else %}
+      <p class="body-medium">Grade Levels: {{ grade_levels_raw }}</p>
+    {% endif %}
+    
   </div>
 </a>
+

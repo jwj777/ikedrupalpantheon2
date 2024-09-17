@@ -228,3 +228,82 @@
 .field--name-field-view-reference .field__label {
   display: none;
 }
+
+
+/** lesson plans **/
+
+.view-lesson-plans {
+  width: var(--lg);
+  margin-bottom: 4rem;
+  margin-top: -17rem;
+}
+
+.view-lesson-plans .view-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+}
+
+.view-lesson-plans .views-row {
+  width: 360px;
+  margin: 0 1rem 2rem 1rem;
+  background: var(--primary-95);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.view-lesson-plans .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.75rem 2.5rem 2rem 1.5rem;
+  height: 112px;
+}
+
+.view-lesson-plans h3 {
+  color: var(--primary-10);
+}
+
+.view-lesson-plans a {
+  text-decoration: none;
+}
+
+.view-lesson-plans img {
+  max-width: 100%;
+  height: 346px;
+  object-fit: cover;
+}
+
+.view-lesson-plans p {
+  margin: 0;
+  color: var(--neutral-40)
+}
+
+/** lesson plan filters **/
+
+.js-form-item-field-grade-levels-select-value label {
+  display: block;
+  color: var(--primary-90);
+  margin-bottom: 1.5rem;
+}
+
+#edit-field-grade-levels-select-value {
+  margin-bottom: 1.5rem;
+}
+
+#edit-field-grade-levels-select-value ul {
+  display: flex;
+  padding: 0;
+}
+
+#edit-field-grade-levels-select-value li {
+  list-style-type: none;
+}
+
+#edit-field-grade-levels-select-value a {
+  background: var(--primary-90);
+  color: var(--primary-10);
+  padding: 0.7rem 1.6rem;
+  margin-right: 1rem;
+  border-radius: 10rem;
+}
