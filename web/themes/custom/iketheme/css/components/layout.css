@@ -50,6 +50,15 @@
   padding-top: 1rem;
 }
 
+.page-node-type-page main {
+  display: flex;
+  justify-content: center;
+}
+
+.page-node-type-page .layout-content {
+  max-width: var(--lg);
+}
+
 .page-node-type-soldier main {
   display: flex;
   max-width: var(--lg);

@@ -6,6 +6,7 @@
 .navigation {
   display: flex;
   align-items: center;
+  margin-right: 2rem;
 }
 
 .nav-container {
@@ -28,6 +29,11 @@
   box-shadow: 1px 2px 2px hsl(227, 0%, 0%) / 0.333;
   box-shadow: 2px 4px 4px hsl(227, 0%, 0%) / 0.333;
   box-shadow: 3px 6px 6px hsl(227, 0%, 0%) / 0.333;
+}
+
+#joinDropdown {
+  width: 210px;
+  right: 0px;
 }
 
 .nav2-item {

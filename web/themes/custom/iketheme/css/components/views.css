@@ -257,7 +257,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 0.75rem 2.5rem 2rem 1.5rem;
-  height: 112px;
+  /* height: 112px; */
 }
 
 .view-lesson-plans h3 {
@@ -277,6 +277,20 @@
 .view-lesson-plans p {
   margin: 0;
   color: var(--neutral-40)
+}
+
+.flag-link-view {
+  height: 0px;
+}
+
+.flag-save-lesson {
+  position: relative;
+  top: 26px;
+  left: 281px;
+  background: #ddd;
+  border-radius: 10rem;
+  padding: 12px 12px 6px 12px;
+  width: 32px;
 }
 
 /** lesson plan filters **/
@@ -306,4 +320,82 @@
   padding: 0.7rem 1.6rem;
   margin-right: 1rem;
   border-radius: 10rem;
+}
+
+.view-lesson-plans select {
+  background: var(--primary-90);
+  padding: 1rem 1.2rem;
+  border-right: 1.2rem solid transparent;
+  border-radius: 10rem;
+}
+
+.view-lesson-plans .views-exposed-form .form-actions {
+  display: none;
+}
+
+
+/** events **/
+
+.view-events-main {
+  margin-top: -18rem;
+}
+
+.view-events-main .views-row {
+  display: flex;
+}
+
+.view-events-main .views-field-nothing {
+  background: var(--primary-10);
+  padding: 4rem 22rem 3rem 3rem;
+  border-radius: 1.5rem;
+  margin-right: -18rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .view-events-main .views-field-nothing {
+    padding: 4rem 5rem 3rem 3rem;
+    margin-right: 0rem;
+  }
+}
+
+.view-events-main .views-field-nothing h2,
+.view-events-main .views-field-nothing p,
+.view-events-main .views-field-nothing a,
+.view-events-main .label-medium {
+  color: #fff;
+}
+
+.view-events-main .views-field-nothing h2 {
+  max-width: 560px;
+}
+
+.view-events-main .subheading {
+  min-height: 180px;
+  color: var(--primary-90) !important;
+}
+
+.view-events-main .label-medium {
+  margin-bottom: 4rem;
+}
+
+.view-events-main .views-field-nothing a {
+  text-decoration: none; 
+}
+
+.view-events-main .views-field-field-summary-image .field-content {
+  border-radius: 1.5rem;
+  margin-top: 5rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .view-events-main .views-field-field-summary-image .field-content {
+    display: none;
+  } 
+}
+
+.view-events-main img {
+  height: 340px;
+  width: 380px;
+  object-fit: cover;
 }
