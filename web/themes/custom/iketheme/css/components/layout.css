@@ -32,6 +32,10 @@
   background: #fff;
 }
 
+.region-content {
+  width: 100%;
+}
+
 .lg-container {
   max-width: var(--xl);
   margin: 0 auto;
@@ -53,6 +57,14 @@
 .page-node-type-page main {
   display: flex;
   justify-content: center;
+}
+
+.node-id-1791 main {
+  background-color: var(--primary-95);
+}
+
+.node-id-1791 .layout-content {
+  background-color: var(--primary-95);
 }
 
 .page-node-type-page .layout-content {

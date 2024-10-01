@@ -29,12 +29,17 @@
   padding: 4rem 0 16rem 0;
 }
 
+
+/* base pages that don't use adjustment to move content up */
 .node-id-37 .hero-basic {
   max-width: var(--xl);
   margin: 0 auto;
   padding: 4rem 0 20rem 0;
 }
- 
+.node-id-36 .hero-basic {
+  padding-bottom: 6rem !important;
+  margin-bottom: 12rem;
+}
 .page-node-type-news-home .hero-basic {
   padding: 4rem 0 22rem 0;
 }
@@ -93,6 +98,14 @@
   bottom: 12rem;
   margin-bottom: -9rem;
   overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+/* base pages with no hero image */
+.node-id-36 .views-field-field-hero-image,
+.node-id-1791 .views-field-field-hero-image {
+  display: none;
+  margin-bottom: 0px;
 }
 
 .page-node-type-education .hero {

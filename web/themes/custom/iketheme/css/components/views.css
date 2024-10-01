@@ -99,10 +99,10 @@
   text-decoration: none;
 }
 
-.view-content > h3 {
+/* .view-content > h3 {
   margin-top: 5rem !important;
   margin-bottom: 2rem !important
-}
+} */
 
 .view-content > h3 a {
   color: var(--primary-10);
@@ -337,65 +337,82 @@
 /** events **/
 
 .view-events-main {
-  margin-top: -18rem;
+  margin-top: -12rem;
 }
 
-.view-events-main .views-row {
+
+
+
+/** education programs **/
+
+.view-education-programs {
+  width: var(--lg);
+  margin-bottom: 4rem;
+  margin-top: 0rem;
+}
+
+.view-education-programs .view-content {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
 }
 
-.view-events-main .views-field-nothing {
-  background: var(--primary-10);
-  padding: 4rem 22rem 3rem 3rem;
-  border-radius: 1.5rem;
-  margin-right: -18rem;
+.view-education-programs h3 {
+  color: var(--primary-10);
+  width: 100%;
+  margin-top: 2rem;
 }
 
-@media screen and (max-width: 1200px) {
-  .view-events-main .views-field-nothing {
-    padding: 4rem 5rem 3rem 3rem;
-    margin-right: 0rem;
-  }
+.view-education-programs .view_filters {
+  margin-bottom: -2rem;
 }
 
-.view-events-main .views-field-nothing h2,
-.view-events-main .views-field-nothing p,
-.view-events-main .views-field-nothing a,
-.view-events-main .label-medium {
-  color: #fff;
+
+.view-education-programs .js-form-type-select {
+  margin-right: 2rem;
 }
 
-.view-events-main .views-field-nothing h2 {
-  max-width: 560px;
+.view-education-programs .js-form-type-checkbox {
+  margin-top: 30px;
+  margin-right: 2rem;
 }
 
-.view-events-main .subheading {
-  min-height: 180px;
-  color: var(--primary-90) !important;
+/* Select field rounded pill style */
+.form-item-field-grade-levels-select-value .form-select {
+  background-color: var(--primary-95);
+  border-radius: 50px; /* Creates the pill shape */
+  border: none; /* Removes any default borders */
+  padding: 0.9rem 1.5rem; /* Adjust padding for better appearance */
+  font-size: 1.05rem; /* Adjust font size as needed */
+  outline: none; /* Removes the outline on focus */
+  transition: background-color 0.3s ease; /* Smooth transition for hover or focus states */
+  -webkit-appearance: none; /* Removes default appearance in Safari */
+  -moz-appearance: none; /* Removes default appearance in Firefox */
+  appearance: none; /* Removes default appearance in other browsers */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow */
+  color: var(--primary-dark); /* Adjust the text color as needed */
 }
 
-.view-events-main .label-medium {
+/* Optional: Add focus and hover state */
+.form-item-field-grade-levels-select-value .form-select:hover,
+.form-item-field-grade-levels-select-value .form-select:focus {
+  background-color: var(--primary-90); /* Adjust for hover or focus state */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Optional: Adds a larger shadow */
+}
+
+
+/*** sponsors ***/
+
+.view-sponsors .view-content {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 4rem;
 }
 
-.view-events-main .views-field-nothing a {
-  text-decoration: none; 
-}
-
-.view-events-main .views-field-field-summary-image .field-content {
-  border-radius: 1.5rem;
-  margin-top: 5rem;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 1200px) {
-  .view-events-main .views-field-field-summary-image .field-content {
-    display: none;
-  } 
-}
-
-.view-events-main img {
-  height: 340px;
-  width: 380px;
-  object-fit: cover;
+.view-sponsors .views-row {
+  background-color: var(--primary-95);
+  padding: 1rem 1.5rem;
+  border-radius: 10rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }

@@ -48,6 +48,10 @@ a.nav1-item {
   border-radius: 10rem;
 }
 
+.nav-container a.in-progress {
+  color: red !important;
+}
+
 
 
 a.nav1-item:hover {

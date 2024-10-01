@@ -65,4 +65,12 @@
   text-decoration: none;
 }
 
+/** friends of the foundation body text **/
+
+.node-id-1809 .field--name-body {
+  background-color: var(--primary-95);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  margin-bottom: 3rem;
+}
 
