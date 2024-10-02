@@ -96,13 +96,14 @@
 }
 
 .view-news-main h3 a {
-  text-decoration: none;
+  display: block;
+  margin-top: 4.5rem !important;
+  margin-bottom: 2.5rem !important;
 }
 
-/* .view-content > h3 {
-  margin-top: 5rem !important;
-  margin-bottom: 2rem !important
-} */
+.view-news-main h3 a {
+  text-decoration: none;
+}
 
 .view-content > h3 a {
   color: var(--primary-10);
@@ -122,7 +123,7 @@
 
 .view-news-main .text-container {
   background: var(--primary-95);
-  padding: 0.8rem 2rem;
+  padding: 1.8rem 2.25rem;
   margin-top: -4px;
   border-bottom-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
@@ -145,9 +146,10 @@
 }
 
 .view-news-main h3.title-medium {
-  height: 56px;
+  height: 84px;
   color: var(--primary-10) !important;
   text-decoration: none;
+  margin-top: 0px;
 }
 
 .view-news-main a {
@@ -156,6 +158,7 @@
 
 .view-news-featured {
   margin-top: -18rem;
+  margin-bottom: 4rem;
 }
 
 .view-news-featured .views-row {
@@ -337,10 +340,8 @@
 /** events **/
 
 .view-events-main {
-  margin-top: -12rem;
+  margin-top: -17rem;
 }
-
-
 
 
 /** education programs **/
@@ -406,6 +407,7 @@
 .view-sponsors .view-content {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 2rem;
   margin-bottom: 4rem;
 }
 
@@ -415,4 +417,34 @@
   border-radius: 10rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
+}
+
+
+/** people on the about page **/
+
+.person {
+  margin-bottom: 1.5rem;
+}
+
+.person .views-field-title-1 {
+  margin-bottom: 3px;
+}
+
+.view-people-staff .view-content {
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+.view-people-staff .person {
+  width: 560px;
+  margin-right: 3rem;
+}
+
+.node-id-2 .field--name-field-paragraphs .field__item:nth-child(3) .field--name-field-reference-field {
+  width: 100%;
+}
+
+.node-id-2 .field--name-field-heading-2 {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }

@@ -173,21 +173,6 @@
 }
 
 
-/** people on the about page **/
-
-.page-node-type-page .paragraph--type--view-reference {
-  margin-top: 3rem;
-}
-
-.view-id-people_board_of_directors .views-row {
-  margin-bottom: 1rem;
-}
-
-.view-id-people_board_of_directors .views-field-title-1 {
-  margin-bottom: 3px;
-}
-
-
 /** body paragraph styles, text-imaage **/
 
 .paragraph--type--body-text-image {
@@ -228,14 +213,6 @@
   font-family: 'Newsreader';
   color: var(--primary-40);
   margin-bottom: 1rem;
-}
-
-.field--name-field-text-quote::before {
-  /* content: open-quote; */
-}
-
-.field--name-field-text-quote::after {
-  /* content: close-quote; */
 }
 
 .field--name-field-quote-attribution {
@@ -410,10 +387,6 @@
   border-radius: 1.5rem;
 }
 
-/* .node-id-1809 .field--name-field-heading-3 {
-
-} */
-
 .paragraph--type--membership-level .field--name-field-heading-3 {
   color: var(--tertiary-40);
   margin-bottom: 0.25rem;
@@ -430,3 +403,28 @@
 .paragraph--type--sponsorship-level  .field--name-field-heading-3 {
   color: var(--tertiary-40);
 }
+
+/** about page **/
+
+.node-id-2 .field--name-field-paragraphs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.node-id-2 .field--name-field-paragraphs .field__item:nth-child(1) {
+  width: 560px;
+}
+
+.node-id-2 .field--name-field-paragraphs .field__item:nth-child(2) {
+  width: 560px;
+}
+
+.node-id-2 .field--name-field-paragraphs .field__item:nth-child(3) {
+  width: 100%;
+}
+
+/** hours and visiting page **/
+
+/* .node-id-1793 .field--name-field-paragraphs {
+  width: 100%;
+} */
