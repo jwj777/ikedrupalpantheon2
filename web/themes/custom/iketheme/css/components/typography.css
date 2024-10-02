@@ -54,9 +54,11 @@ h1, .display-large {
   color: var(--neutral-10)
 }
 
-.heading-small, .field-text h3, .views-row h3 {
+.heading-small, .field-text h3, .views-row h3,
+.node-id-1809 .field--name-field-sections-sidebar-right .paragraph h3,
+.node-id-1809 .field--name-field-sections-sidebar-right .paragraph .field--name-field-heading-2  {
   font-family: 'Newsreader', Georgia, serif;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   line-height: 2rem;
   font-weight: 300;
   margin-top: 1.5rem;

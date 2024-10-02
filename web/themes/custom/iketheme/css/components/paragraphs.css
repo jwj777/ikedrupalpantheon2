@@ -403,10 +403,7 @@
   width: 100%;
 }
 
-
-
-
-.paragraph--type--text-and-links {
+.paragraph--type--membership-level .paragraph--type--text-and-links {
   margin-bottom: 4rem;
 }
 
@@ -459,6 +456,3 @@
 .node-id-2 .field--name-field-paragraphs .field__item:nth-child(3) {
   width: 100%;
 }
-
-/** friends of the foundation **/
-
