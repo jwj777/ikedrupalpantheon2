@@ -1,0 +1,26 @@
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+
+  <div class="card sponsorship-level-item">
+    <div class="inner">
+      {% block content %}
+        <div class="field-image">{{ content.field_image }}</div>
+        <div class="text-container">
+          <div class="heading-price"">
+            <h3 class="heading-medium">{{ paragraph.field_heading_3.value }}</h3>
+            <p class="title-large">{{ paragraph.field_sponsorship_price.value }}</p>
+          </div>
+          <p class="body-medium">{{ paragraph.field_body.value|striptags }}</p>
+        </div>
+      {% endblock %}
+    </div>
+  </div>
+{% endblock paragraph %}

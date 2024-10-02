@@ -43,6 +43,7 @@ h1, .display-large {
 .field--name-field-heading-2,
 .paragraph--type--membership-level .field--name-field-heading-3,
 .paragraph--type--sponsorship-level .field--name-field-heading-3,
+.field--name-field-level-price,
 .view-header h2 {
   font-family: 'Newsreader', Georgia, serif;
   font-size: 2.2rem;
@@ -60,6 +61,15 @@ h1, .display-large {
   font-weight: 300;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
+}
+
+.title-large {
+  font-family: 'Figtree', Georgia, serif;
+  font-size: 1.35rem;
+  line-height: 1.5em;
+  font-weight: 600;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .title-medium, h4 {

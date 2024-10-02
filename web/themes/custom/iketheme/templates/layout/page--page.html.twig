@@ -78,9 +78,18 @@
       </aside>
     {% endif %}
 
-    {% if page.sidebar_second %}
+    {# Render second sidebar if there is content or paragraphs to display #}
+    {% if page.sidebar_second or content.field_paragraphs is defined %}
       <aside class="layout-sidebar-second" role="complementary">
+        {# Render sidebar blocks #}
         {{ page.sidebar_second }}
+
+        {# Render paragraphs from node #}
+        {% if content.field_paragraphs %}
+          <div class="paragraphs-sidebar">
+            {{ content.field_paragraphs }} {# This will render the field content correctly #}
+          </div>
+        {% endif %}
       </aside>
     {% endif %}
 

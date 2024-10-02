@@ -390,17 +390,54 @@
 .paragraph--type--membership-level .field--name-field-heading-3 {
   color: var(--tertiary-40);
   margin-bottom: 0.25rem;
+  margin-right: 2rem;
+  flex-grow: 2;
 }
+
+.paragraph--type--membership-level {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.paragraph--type--membership-level .field--name-field-body {
+  width: 100%;
+}
+
+
+
 
 .paragraph--type--text-and-links {
   margin-bottom: 4rem;
 }
 
-.paragraph--type--sponsorship-level {
-  display: flex;
+
+/** sponsorship level **/
+
+.sponsorship-level-item {
+  margin-bottom: 4rem;
 }
 
-.paragraph--type--sponsorship-level  .field--name-field-heading-3 {
+.sponsorship-level-item .inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sponsorship-level-item .field--name-field-image {
+  margin-right: 4rem;
+}
+
+.sponsorship-level-item img {
+  width: 248px;
+  height: 248px;
+  object-fit: cover;
+}
+
+.sponsorship-level-item .text-container {
+  max-width: 800px;
+}
+
+.sponsorship-level-item .heading-price p {
   color: var(--tertiary-40);
 }
 
@@ -423,8 +460,5 @@
   width: 100%;
 }
 
-/** hours and visiting page **/
+/** friends of the foundation **/
 
-/* .node-id-1793 .field--name-field-paragraphs {
-  width: 100%;
-} */
