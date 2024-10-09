@@ -34,7 +34,7 @@ h1, .display-large {
 .heading-large, .view-content h3 {
   font-family: 'Newsreader', Georgia, serif;
   font-size: 2.7rem;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 1rem;
   margin-bottom: 1.4rem;
 }
@@ -44,7 +44,8 @@ h1, .display-large {
 .paragraph--type--membership-level .field--name-field-heading-3,
 .paragraph--type--sponsorship-level .field--name-field-heading-3,
 .field--name-field-level-price,
-.view-header h2 {
+.view-header h2,
+.text-formatted h2 {
   font-family: 'Newsreader', Georgia, serif;
   font-size: 2.2rem;
   line-height: 2.6rem;
@@ -56,13 +57,16 @@ h1, .display-large {
 
 .heading-small, .field-text h3, .views-row h3,
 .node-id-1809 .field--name-field-sections-sidebar-right .paragraph h3,
-.node-id-1809 .field--name-field-sections-sidebar-right .paragraph .field--name-field-heading-2  {
+.node-id-1809 .field--name-field-sections-sidebar-right .paragraph .field--name-field-heading-2,
+.paragraph--type--heading-with-icon-text .field--name-field-heading-3,
+.text-formatted h3  {
   font-family: 'Newsreader', Georgia, serif;
   font-size: 1.8rem;
   line-height: 2rem;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
+  color: var(--neutral-10)
 }
 
 .title-large {

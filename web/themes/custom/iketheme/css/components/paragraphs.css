@@ -173,19 +173,22 @@
 }
 
 
-/** body paragraph styles, text-imaage **/
+/** body paragraph styles, body-text-image **/
 
 .paragraph--type--body-text-image {
   display: flex; 
-  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding-bottom: 4rem;
 }
 
+.paragraph--type--body-text-image h2 {
+  margin-bottom: 2.5rem;
+}
+
 .paragraph--type--body-text-image .field--name-field-text {
-  max-width: 640px;
-  margin: 0 1rem;
+  margin-right: 4rem;
 }
 
 .paragraph--type--body-text-image .field--name-field-image {
@@ -270,8 +273,9 @@
 
 .field--name-field-card {
   display: flex;
-  margin-left: -2rem;
-  margin-top: 2rem;
+  margin: 1rem;
+  position: relative; 
+  right: 1rem;
 }
 
 .card-image-title {
@@ -291,8 +295,8 @@
 }
 
 .card-title {
-  padding: .2rem 1rem 1.5rem 1.5rem;
-  color: var(--primary-10);
+  padding: 1.2rem 1rem 1.6rem 1.5rem;
+  color: var(--primary-10) !important;
 }
 
 .paragraph--type--cards-array .field--name-field-text {
@@ -456,3 +460,75 @@
 .node-id-2 .field--name-field-paragraphs .field__item:nth-child(3) {
   width: 100%;
 }
+
+/** node id 1807 - Book Your Experience **/
+
+.node-id-1807 .field--name-field-paragraphs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.node-id-1807 .field--name-field-paragraphs .field__item:nth-child(1) {
+  width: 100%;
+}
+
+.node-id-1807 .paragraph--type--cards-array {
+  background-color: var(--primary-95);
+  padding: 3rem 4rem 4rem 4rem;
+  border-radius: 1.5rem;
+}
+
+.node-id-1807 .paragraph--type--cards-array .field__item:nth-child(1) {
+  width: auto;
+}
+
+.node-id-1807 .field--name-field-paragraphs .field__item:nth-child(3) {
+  flex: 1;
+}
+
+.node-id-1807 .paragraph--type--cards-array .field__item:nth-child(3) {
+  flex: auto;
+}
+
+.node-id-1807 .paragraph--type--markup {
+  width: 920px;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+.node-id-1807 .paragraph--type--body-text {
+  width: auto;
+  margin-top: 4rem;
+  background-color: var(--primary-95);
+  padding: 2rem 2.5rem 3rem 2.5rem;
+  border-radius: 1.5rem;
+
+}
+
+.node-id-1807 .paragraph--type--body-text h3 {
+  margin-bottom: 1rem;
+}
+
+.paragraph--type--heading-with-icon-text {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--primary-90);
+  padding: 1.25rem 2rem 2rem 2rem;
+  border-radius: 1rem;
+  margin: 0 1rem;
+  height: 160px;
+}
+
+.paragraph--type--heading-with-icon-text .field--name-field-body {
+  width: 100%;
+  max-width: 240px;
+}
+
+.paragraph--type--heading-with-icon-text .field--name-field-card-icon img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-top: 12px;
+  margin-right: 12px;
+}
+

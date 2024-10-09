@@ -9,10 +9,16 @@
 
 <div class="paragraph--type--body-text-image">
   {% if paragraph.field_image_position.value == 'image_right' %}
-    <div class="field-text">{{ content.field_text }}</div>
+    <div>
+      <h2 class="field-text heading-large">{{ content.field_heading_2|render|striptags|raw  }}</h2>
+      <div class="field-text">{{ content.field_text }}</div>
+    </div>
     <div class="field-image">{{ content.field_image }}</div>
   {% else %}
     <div class="field-image">{{ content.field_image }}</div>
-    <div class="field-text">{{ content.field_text }}</div>
+    <div>
+      <h2 class="field-text heading-large">{{ content.field_heading_2|render|striptags|raw  }}</h2>
+      <div class="field-text">{{ content.field_text }}</div>
+    </div>
   {% endif %}
 </div>

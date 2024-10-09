@@ -343,6 +343,11 @@
   margin-top: -17rem;
 }
 
+.view-events-featured {
+  margin-top: -12rem;
+  margin-bottom: 17rem;
+}
+
 
 /** education programs **/
 
@@ -364,7 +369,9 @@
   margin-top: 2rem;
 }
 
-.view-education-programs .view_filters {
+.view-education-programs .view-filters {
+  display: flex;
+  justify-content: flex-end;
   margin-bottom: -2rem;
 }
 
