@@ -65,7 +65,7 @@
 .paragraph--type--two-column-image-text-block > .paragraph-inner,
 .paragraph--type--two-column-text-collage > .paragraph-inner {
   display: flex;
-  max-width: var(--lg);
+  max-width: var(--xl);
   margin: 0 auto;
 }
 
@@ -266,7 +266,7 @@
 /** cards array **/
 
 .paragraph--type--cards-array {
-  max-width: var(--lg);
+  max-width: var(--xl);
   margin: 0 auto;
   padding: 4rem 0 4rem 0;
 }

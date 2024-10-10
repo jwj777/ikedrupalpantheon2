@@ -34,6 +34,7 @@
 
 .region-content {
   width: 100%;
+  position: relative;
 }
 
 .lg-container {

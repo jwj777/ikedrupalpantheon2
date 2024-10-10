@@ -269,6 +269,28 @@
 }
 
 .soldier-hero .label-medium {
+
   margin-bottom: 4rem;
   color: var(--primary-95)
+}
+
+
+/** Ikeducation **/
+
+.view-hero-basic-page-education .views-row {
+  display: flex; 
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: baseline;
+  height: 264px;
+}
+
+.views-field-field-hero-icon img {
+  width: 156px;
+  object-fit: contain;
+  margin-right: 4rem;
+}
+
+.view-hero-basic-page-education .label-medium {
+  color: var(--primary-90);
 }
