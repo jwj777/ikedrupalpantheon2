@@ -26,7 +26,7 @@
 .hero-basic {
   max-width: var(--xl);
   margin: 0 auto;
-  padding: 3rem 0 16rem 0;
+  padding: 4rem 0 16rem 0;
 }
 
 
@@ -44,6 +44,7 @@
 
 .page-node-type-news-home .hero-basic {
   padding: 4rem 0 22rem 0;
+  max-width: var(--lg);
 }
 
 .hero-alt {
@@ -269,7 +270,6 @@
 }
 
 .soldier-hero .label-medium {
-
   margin-bottom: 4rem;
   color: var(--primary-95)
 }
@@ -283,6 +283,10 @@
   flex-direction: column;
   align-content: baseline;
   height: 264px;
+}
+
+.views-field-field-hero-icon  {
+  height: 240px;
 }
 
 .views-field-field-hero-icon img {

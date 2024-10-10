@@ -75,6 +75,7 @@ global-scripts:
     js/menu.js: {}
     js/input.js: {}
     js/flag.js: {}
+    js/form.js: {}
   dependencies:
     - core/jquery
     - core/drupal

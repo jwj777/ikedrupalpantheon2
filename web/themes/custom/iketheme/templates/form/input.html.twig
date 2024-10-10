@@ -10,4 +10,10 @@
  * @see template_preprocess_input()
  */
 #}
-<input{{ attributes }} />{{ children }}
+<div class="form-item">
+  {% if label %}
+    <label for="{{ attributes.id }}">{{ label }}</label>
+  {% endif %}
+  <input{{ attributes }} />
+  {{ children }}
+</div>

@@ -165,7 +165,9 @@
   height: 106px;
 }
 
-.ikes-life-item-square .heading-small {
+.ikes-life-item-square h3,
+.ikes-life-item-square-md h3 {
+  color: var(--primary-100);
   margin-top: 0px;
 }
 
