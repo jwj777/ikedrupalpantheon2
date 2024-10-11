@@ -187,3 +187,16 @@ abbr.ajax-changed {
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
 }
+
+
+/** search input view filter **/
+
+.view-lesson-plans .js-form-type-textfield {
+  height: 90px;
+  width: 240px;
+  margin-right: 4rem;
+}
+
+.view-lesson-plans .js-form-type-textfield label {
+  margin-top: 34px;
+}
