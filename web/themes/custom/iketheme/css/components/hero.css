@@ -299,3 +299,14 @@
 .view-hero-basic-page-education .label-medium {
   color: var(--primary-90);
 }
+
+/*** lesson plans ***/
+
+.hero-lesson-plans .views-row {
+  display: flex;
+  align-items: center;
+}
+
+.hero-lesson-plans .label-medium {
+  color: var(--primary-90);
+}
