@@ -8,7 +8,8 @@
 .page-node-type-ike-s-life .header-hero,
 .page-node-type-news-home .header-hero,
 .page-node-type-newsletter-article .header-hero,
-.page-node-type-education .header-hero {
+.page-node-type-education .header-hero,
+.page-node-type-lesson-plan .header-hero {
   background-image: linear-gradient(to right, var(--primary-20), var(--primary-40)) !important;
 }
 

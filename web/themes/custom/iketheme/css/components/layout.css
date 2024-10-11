@@ -69,8 +69,14 @@
   background-color: var(--primary-95);
 }
 
-.page-node-type-page .layout-content {
+.page-node-type-page .layout-content,
+.page-node-type-lesson-plan .layout-content {
   max-width: var(--xl);
+}
+
+.page-node-type-lesson-plan .layout-content {
+  max-width: var(--lg);
+  margin: 0 auto;
 }
 
 .page-node-type-soldier main {
@@ -88,6 +94,10 @@
 }
 
 .page-node-type-basic-page-b .region-content,
+.page-node-type-newsletter-article .region-content {
+  max-width: var(--xl);
+}
+
 .page-node-type-newsletter-article .region-content {
   max-width: var(--xl);
 }

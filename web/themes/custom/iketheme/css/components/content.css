@@ -110,3 +110,52 @@
   margin-bottom: 1rem !important;
 }
 
+/** lesson plans **/
+
+.page-node-type-lesson-plan .node__content {
+  display: flex;
+}
+
+.page-node-type-lesson-plan .layout-content {
+  padding-top: 4rem !important;
+  padding-bottom: 8rem !important;
+}
+
+.page-node-type-lesson-plan .text-container {
+  background-color: var(--primary-95);
+  border-radius: 1.5rem;
+  padding: 2.5rem 3rem 4rem 3rem;
+  margin-right: 4rem;
+}
+
+.page-node-type-lesson-plan .field--name-field-summary-image img {
+  height: 520px;
+  width: 520px;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.page-node-type-lesson-plan .field--name-field-grade-levels-select {
+  display: flex;
+}
+
+.page-node-type-lesson-plan .field--name-field-grade-levels-select label {
+  margin-bottom: 0px;
+}
+
+.page-node-type-lesson-plan .field--name-field-grade-levels-select .field__item {
+  margin-right: 8px;
+}
+
+.page-node-type-lesson-plan .grade-levels {
+  margin-bottom: 1rem;
+}
+
+.page-node-type-lesson-plan .lesson-plan-documents {
+  margin-top: 3rem;
+}
+
+.page-node-type-lesson-plan .lesson-plan-documents .heading-small {
+  margin-bottom: 1rem;
+}
