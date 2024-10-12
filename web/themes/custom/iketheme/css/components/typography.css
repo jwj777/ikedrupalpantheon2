@@ -126,7 +126,8 @@ p, li, .body-medium {
     letter-spacing: 5px;  
 }
 
-.label-medium {
+.label-medium,
+.block-block-content40e06a90-048a-412c-938f-55be4d8845b2 .field--name-field-title {
   font-family: 'Figtree', Georgia, serif;
   font-size: 1.1rem;
   text-transform: uppercase;

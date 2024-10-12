@@ -549,8 +549,14 @@
   border-radius: 1.5rem;
 }
 
+.block-block-content40e06a90-048a-412c-938f-55be4d8845b2 .field--name-field-title {
+  color: var(--primary-90);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .block-block-content40e06a90-048a-412c-938f-55be4d8845b2 .field--name-field-headline {
-  color: var(--primary-100);
+  color: var(--primary-98);
   margin-bottom: 0.5rem;
 }
 
