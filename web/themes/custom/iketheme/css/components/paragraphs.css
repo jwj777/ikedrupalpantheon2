@@ -417,6 +417,12 @@
   margin-bottom: 4rem;
 }
 
+/** text and links **/
+
+.paragraph--type--text-and-links .field--name-field-call-to-action {
+  margin-top: 2rem;
+}
+
 
 /** sponsorship level **/
 

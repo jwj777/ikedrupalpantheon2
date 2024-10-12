@@ -13,3 +13,11 @@
   margin-right: 0;
   margin-left: 0;
 }
+
+
+.paragraph--type--text-and-links .field--name-field-call-to-action a {
+  background-color: var(--tertiary-40);
+  color: var(--neutral-100);
+  padding: 1rem 1.4rem;
+  border-radius: 10rem;
+}
