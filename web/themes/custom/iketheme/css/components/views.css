@@ -386,6 +386,7 @@
   margin-right: 2rem;
 }
 
+
 /* Select field rounded pill style */
 .form-item-field-grade-levels-select-value .form-select {
   background-color: var(--primary-95);
@@ -399,7 +400,7 @@
   -moz-appearance: none; /* Removes default appearance in Firefox */
   appearance: none; /* Removes default appearance in other browsers */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow */
-  color: var(--primary-dark); /* Adjust the text color as needed */
+  color: var(--primary-dark); 
   width: 220px;
 }
 
