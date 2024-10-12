@@ -305,10 +305,6 @@
   margin-bottom: 1.5rem;
 }
 
-#edit-field-grade-levels-select-value {
-  margin-bottom: 1.5rem;
-}
-
 #edit-field-grade-levels-select-value ul {
   display: flex;
   padding: 0;
@@ -335,6 +331,16 @@
 
 .view-lesson-plans .views-exposed-form .form-actions {
   display: none;
+}
+
+.view-lesson-plans .form--inline {
+  display: flex;
+  align-items: center;
+}
+
+.view-lesson-plans .js-form-type-textfield {
+  width: 280px;
+  margin-right: 4rem;
 }
 
 
