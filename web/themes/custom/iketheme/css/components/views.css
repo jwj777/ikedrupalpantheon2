@@ -232,6 +232,15 @@
   display: none;
 }
 
+.view-upcoming-programs .event-title {
+  margin-bottom: 0.3rem;
+}
+
+.view-upcoming-programs .event-date {
+  color: var(--neutral-40);
+  margin-bottom: 0px;
+}
+
 
 /** lesson plans **/
 

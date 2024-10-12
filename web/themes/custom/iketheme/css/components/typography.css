@@ -112,6 +112,13 @@ p, li, .body-medium {
   color: var(--neutral-10);
 }
 
+.body-small {
+  font-family: 'Figtree', Georgia, serif;
+  font-size: 0.95rem;
+  line-height: 1.45rem;
+  color: var(--neutral-10);
+}
+
 .label-large {
     font-family: 'Figtree', Georgia, serif;
     font-size: 1.2rem;
