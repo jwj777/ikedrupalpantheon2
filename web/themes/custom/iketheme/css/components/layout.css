@@ -85,6 +85,14 @@
   margin: 0 auto;
 }
 
+.node-id-37 .layout-content {
+  background: none;
+}
+
+.node-id-37 main {
+  background-color: var(--primary-98);
+}
+
 .block-views-blocksoliders-main-block-1 {
   padding-top: 2rem;
 }

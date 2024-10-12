@@ -68,10 +68,10 @@ summary span {
 
 .js-form-item-keys input {
   width: 100%;
-  background: var(--secondary-90);
+  background: var(--secondary-95);
   border-radius: 2rem;
   padding: 1rem 1.25rem;
-  border: 1px solid var(--secondary-90);
+  border: 1px solid var(--secondary-95);
 }
 
 .js-form-item-keys label {

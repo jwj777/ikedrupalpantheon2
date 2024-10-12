@@ -1,13 +1,16 @@
 {{ attach_library('iketheme/flag') }}
 
+{# Default scheduling link if no link field data is present #}
+{% set scheduling_link = fields.field_scheduling_link.content ?? 'https://ikeducation.as.me/schedule/d836f757' %}
+
 {% set url = "/node/" ~ row._entity.nid.value %}
 {% set image = fields.field_summary_image.content %}
 {% set title = fields.title.content|striptags|raw %}
 {% set grade_levels_raw = fields.field_grade_levels_select.content|striptags %}
 {% set flag_link = fields['link_flag'].content %} 
 
-<a href="{{ url }}">
-  <div class="lesson-summary-image">
+<a href="{{ scheduling_link }}">
+  <div class="programs-summary-image">
     {% if image %}
       {{ image }}
     {% endif %}

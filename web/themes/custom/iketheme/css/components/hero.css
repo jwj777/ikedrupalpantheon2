@@ -291,9 +291,10 @@
 }
 
 .views-field-field-hero-icon img {
-  width: 156px;
+  width: 128px;
   object-fit: contain;
-  margin-right: 4rem;
+  margin-right: 2.8rem;
+  margin-top: -1rem;
 }
 
 .view-hero-basic-page-education .label-medium {

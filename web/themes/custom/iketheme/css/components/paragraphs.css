@@ -209,13 +209,19 @@
 }
 
 .field--name-field-text-quote,
-.field--name-field-text blockquote p {
+.field--name-field-text blockquote p,
+.field--name-body blockquote p {
   quotes: "“" "”" "‘" "’";
   font-size: 2rem;
   line-height: 2.1rem;
   font-family: 'Newsreader';
   color: var(--primary-40);
   margin-bottom: 1rem;
+}
+
+.field--name-body blockquote {
+  margin-left: 0px;
+  margin-bottom: 2rem;
 }
 
 .field--name-field-quote-attribution {
