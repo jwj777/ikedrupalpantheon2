@@ -133,6 +133,7 @@
 .page-node-type-ike-s-life .views-field-field-hero-image img
 .page-node-type-newsletter-article .views-field-field-hero-image img {
   object-fit: cover;
+  max-height: 440px;
 }
 
 .hero-home .views-field-field-hero-image,
@@ -283,7 +284,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-content: baseline;
-  height: 280px;
+  max-height: 280px;
 }
 
 .views-field-field-hero-icon  {

@@ -279,9 +279,11 @@
 
 .field--name-field-card {
   display: flex;
+  justify-content: space-between;
   margin: 1rem;
-  position: relative; 
+  position: relative;
   right: 1rem;
+  width: 100%;
 }
 
 .card-image-title {
@@ -421,6 +423,7 @@
 
 .paragraph--type--text-and-links .field--name-field-call-to-action {
   margin-top: 2rem;
+  height: 40px;
 }
 
 
@@ -576,4 +579,34 @@
   max-width: 520px;
   color: var(--primary-90);
   padding-right: 4rem;
+}
+
+
+/** paragraph--type--card-image-title-description **/
+
+.paragraph--type--card-image-title-description {
+  max-width: 412px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  margin: 1rem;
+  background-color: var(--primary-95);
+}
+
+.paragraph--type--card-image-title-description img {
+  width: 412px;
+  height: 328px;
+  object-fit: cover;
+}
+
+.paragraph--type--card-image-title-description .field--name-field-heading-3 {
+  padding-top: 0.5rem;
+  padding-left: 2rem;
+  color: var(--primary-10);
+}
+
+.paragraph--type--card-image-title-description .field--name-field-body p {
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  color: var(--neutral-40);
 }

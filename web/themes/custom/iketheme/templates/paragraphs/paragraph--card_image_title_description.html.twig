@@ -1,0 +1,21 @@
+
+{# Check if field_link has a value #}
+{% if paragraph.field_link and paragraph.field_link.uri %}
+  {# Set the link URL #}
+  {% set link_url = paragraph.field_link.uri %}
+  
+  <div class="paragraph--type--card-image-title-description">
+    <a href="{{ link_url }}">
+      <div class="paragraph-content">
+        {# Render the content of the paragraph #}
+        {{ content }}
+      </div>
+    </a>
+  </div>
+
+{% else %}
+  {# If no link is provided, just render the content without a link #}
+  <div class="paragraph--type--card-image-title-description">
+    {{ content }}
+  </div>
+{% endif %}

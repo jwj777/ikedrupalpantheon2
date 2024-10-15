@@ -368,7 +368,6 @@
 /** education programs **/
 
 .view-education-programs {
-  width: var(--lg);
   margin-bottom: 4rem;
   margin-top: 0rem;
 }
@@ -401,6 +400,15 @@
   margin-right: 2rem;
 }
 
+.view-education-programs .views-exposed-form {
+  background-color: var(--primary-98);
+  padding: 0.4rem 2rem;
+  border-radius: 1rem;
+}
+
+.view-education-programs .form-actions {
+  display: none;
+}
 
 /* Select field rounded pill style */
 .form-item-field-grade-levels-select-value .form-select {
