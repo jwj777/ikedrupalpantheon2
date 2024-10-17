@@ -35,6 +35,9 @@
   --neutral-90: #E3E2E6;
   --neutral-95: #F2F0F4;
   --neutral-100: #FFFFFF;
+
+  --neutralVariant-90: #E1E2EC;
+  --neutralVariant-95: #EFF0FA;
 }
 
 .primary-10 {

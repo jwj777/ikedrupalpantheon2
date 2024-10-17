@@ -62,7 +62,8 @@ h1, .display-large {
 .node-id-1809 .field--name-field-sections-sidebar-right .paragraph .field--name-field-heading-2,
 .paragraph--type--heading-with-icon-text .field--name-field-heading-3,
 .text-formatted h3,
-.paragraph--type--card-image-title-description .field--name-field-heading-3  {
+.paragraph--type--card-image-title-description .field--name-field-heading-3,
+.field--name-field-sections-sidebar-right .field--name-field-heading-2  {
   font-family: 'Newsreader', Georgia, serif;
   font-size: 1.8rem;
   line-height: 2rem;

@@ -274,16 +274,26 @@
 .paragraph--type--cards-array {
   max-width: var(--xl);
   margin: 0 auto;
-  padding: 4rem 0 4rem 0;
 }
+
+/* .node-id-1919 .paragraph--type--cards-array {
+  padding: 4rem 0 4rem 0;
+  position: relative;
+  bottom: 8rem;
+} */
 
 .field--name-field-card {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin: 1rem;
+  /* margin: 1rem; */
   position: relative;
   right: 1rem;
   width: 100%;
+}
+
+.node-id-1807 .field--name-field-card {
+  margin-top: 3rem;
 }
 
 .card-image-title {
@@ -419,13 +429,6 @@
   margin-bottom: 4rem;
 }
 
-/** text and links **/
-
-.paragraph--type--text-and-links .field--name-field-call-to-action {
-  margin-top: 2rem;
-  height: 40px;
-}
-
 
 /** sponsorship level **/
 
@@ -491,6 +494,7 @@
   background-color: var(--primary-95);
   padding: 3rem 4rem 4rem 4rem;
   border-radius: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .node-id-1807 .paragraph--type--cards-array .field__item:nth-child(1) {
@@ -513,7 +517,7 @@
 
 .node-id-1807 .paragraph--type--body-text {
   width: auto;
-  margin-top: 4rem;
+  margin-top: 1rem;
   background-color: var(--primary-95);
   padding: 2rem 2.5rem 3rem 2.5rem;
   border-radius: 1.5rem;
@@ -524,14 +528,22 @@
   margin-bottom: 1rem;
 }
 
+/** .paragraph--type--heading-with-icon-text **/
+
 .paragraph--type--heading-with-icon-text {
   display: flex;
   flex-wrap: wrap;
   background-color: var(--primary-90);
-  padding: 1.25rem 2rem 2rem 2rem;
+  padding: 2rem 2rem 2rem 2rem;
   border-radius: 1rem;
   margin: 0 1rem;
-  height: 160px;
+  min-height: 134px;
+  width: 320px;
+}
+
+.paragraph--type--heading-with-icon-text h3 {
+  margin-top: 0px;
+  margin-bottom: 0.5rem;
 }
 
 .paragraph--type--heading-with-icon-text .field--name-field-body {
@@ -540,11 +552,10 @@
 }
 
 .paragraph--type--heading-with-icon-text .field--name-field-card-icon img {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   object-fit: contain;
-  margin-top: 12px;
-  margin-right: 12px;
+  margin-right: 1.5rem;
 }
 
 /** webform block - join mailing list **/
@@ -599,14 +610,18 @@
 }
 
 .paragraph--type--card-image-title-description .field--name-field-heading-3 {
-  padding-top: 0.5rem;
+  padding-top: 0.25rem;
   padding-left: 2rem;
   color: var(--primary-10);
 }
 
 .paragraph--type--card-image-title-description .field--name-field-body p {
   padding-right: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
   padding-left: 2rem;
   color: var(--neutral-40);
+}
+
+.paragraph--type--card-image-title-description a {
+  text-decoration: none;
 }

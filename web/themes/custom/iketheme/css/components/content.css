@@ -77,7 +77,8 @@
 
 /* friends of foundation */
 
-.node-id-1809 .node__content {
+.node-id-1809 .node__content,
+.node-id-1918 .node__content {
   display: flex;
   flex-wrap: wrap;
 }
@@ -86,28 +87,48 @@
   max-width: 760px;
 }
 
-.node-id-1809 .field--name-field-sections-sidebar-right {
+.node-id-1918 .field--name-field-paragraphs {
+  max-width: 890px;
+  position: relative;
+  bottom: 3rem;
+}
+
+.node-id-1809 .field--name-field-sections-sidebar-right,
+.node-id-1918 .field--name-field-sections-sidebar-right {
   max-width: 358px !important;
   margin-left: 2rem;
   flex-grow: 2 !important;
 }
 
-.node-id-1809 .field--name-field-sections-sidebar-right .paragraph {
-  background: var(--primary-90);
+.node-id-1918 .field--name-field-sections-sidebar-right {
+  position: relative;
+  bottom: 2rem;
+}
+
+.node-id-1809 .field--name-field-sections-sidebar-right .paragraph,
+.node-id-1918 .field--name-field-sections-sidebar-right .paragraph {
+  background: var(--neutralVariant-95);
   padding: 2rem;
   border-radius: 1.5rem;
   margin-bottom: 2rem;
 }
 
-.node-id-1809 .field--name-field-sections-sidebar-right .paragraph h3 {
+.node-id-1809 .field--name-field-sections-sidebar-right .paragraph h3,
+.node-id-1918 .field--name-field-sections-sidebar-right .paragraph h3 {
   margin-top: 0px !important;
-  margin-bottom: 1rem !important;
+  margin-bottom: 2rem !important;
 }
 
 .node-id-1809 .field--name-field-sections-sidebar-right .paragraph .field--name-field-heading-2,
 .node-id-1809 .field--name-field-sections-sidebar-right .paragraph .heading-medium  {
   margin-top: 0px !important;
-  margin-bottom: 1rem !important;
+  margin-bottom: 2rem !important;
+}
+
+.field--name-field-sections-sidebar-right .field--name-field-heading-2,
+.field--name-field-sections-sidebar-right h3 {
+  margin-top: 0px !important;
+  margin-bottom: 3rem !important;
 }
 
 /** lesson plans **/

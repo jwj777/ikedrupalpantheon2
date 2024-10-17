@@ -1,0 +1,15 @@
+
+{%
+  set classes = [
+    'content-wrapper',
+    'flex-container',
+  ]
+%}
+
+<div class="paragraph--type--heading-with-icon-text">
+    <div class="field-image">{{ content.field_card_icon }}</div>
+    <div>
+      <h3 class="field-text heading-medium">{{ content.field_heading_3|render|striptags|raw }}</h3>
+      <div class="field-text">{{ content.field_body }}</div>
+    </div>
+</div>

@@ -14,10 +14,20 @@
   margin-left: 0;
 }
 
+.paragraph--type--text-and-links .field--name-field-call-to-action,
+.paragraph--type--text-and-links .field--name-field-link-2,
+.paragraph--type--text-and-links .field--name-field-link-3 {
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  height: 40px;
+}
 
-.paragraph--type--text-and-links .field--name-field-call-to-action a {
+.paragraph--type--text-and-links .field--name-field-call-to-action a,
+.paragraph--type--text-and-links .field--name-field-link-2 a,
+.paragraph--type--text-and-links .field--name-field-link-3 a {
   background-color: var(--tertiary-40);
   color: var(--neutral-100);
   padding: 1rem 1.4rem;
   border-radius: 10rem;
+  text-decoration: none;
 }

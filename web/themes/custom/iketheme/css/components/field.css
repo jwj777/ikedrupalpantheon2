@@ -27,3 +27,12 @@
 .documents .file {
   margin-bottom: 1rem;
 }
+
+
+/** iframe markup field **/
+
+.field--name-field-markup {
+  border: 1px solid var(--neutral-80);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
