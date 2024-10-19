@@ -5,6 +5,7 @@
 }
 
 .page-node-type-page .header-hero,
+.page-node-primary-source .header-hero,
 .page-node-type-ike-s-life .header-hero,
 .page-node-type-news-home .header-hero,
 .page-node-type-newsletter-article .header-hero,
@@ -18,7 +19,7 @@
 }
 
 .hero-home { 
-  padding: 16rem 0 12rem 0;
+  padding: 18rem 0 8rem 0;
   position: relative;
   z-index: 1;
 }
@@ -95,6 +96,7 @@
 }
 
 .page-node-type-page .views-field-field-hero-image,
+.page-node-type-primary-source .views-field-field-hero-image,
 .page-node-type-ike-s-life .views-field-field-hero-image,
 .page-node-type-newsletter-article .views-field-field-hero-image {
   max-width: var(--lg);

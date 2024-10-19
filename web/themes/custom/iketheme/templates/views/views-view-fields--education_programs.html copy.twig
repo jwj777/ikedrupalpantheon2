@@ -1,0 +1,45 @@
+{{ attach_library('iketheme/flag') }}
+
+{# Default scheduling link if no link field data is present #}
+{% set scheduling_link = fields.field_scheduling_link.content ?? 'https://ikeducation.as.me/schedule/d836f757' %}
+
+{% set url = "/node/" ~ row._entity.nid.value %}
+{% set image = fields.field_summary_image.content %}
+{% set title = fields.title.content|render|striptags|raw %}
+{% set grade_levels_raw = fields.field_grade_levels_select.content|striptags %}
+{% set flag_link = fields['link_flag'].content %}
+
+<a href="{{ scheduling_link }}">
+  <div class="programs-summary-image">
+    {% if image %}
+      {{ image }}
+    {% endif %}
+  </div>
+  <div class="text-container">
+    <div class="heading-small">{{ title|raw }}</div>
+    
+    {# Check if grade_levels_raw is set and not empty #}
+    {% if grade_levels_raw is not empty %}
+      {# Split grade levels by commas #}
+      {% set grade_levels = grade_levels_raw|split(',') %}
+      
+      {# Debug the grade_levels array #}
+      {{ dump(grade_levels) }}
+      
+      {# Check if grade_levels array is properly set and has values #}
+      {% if grade_levels is defined and grade_levels|length > 0 %}
+        {% set first_grade = grade_levels|first %}
+        {% set last_grade = grade_levels|last %}
+        <p>Grade Levels: {{ first_grade }} - {{ last_grade }}</p>
+      {% else %}
+        <p>No grade levels available</p>
+      {% endif %}
+    {% else %}
+      <p>Grade Levels: {{ grade_levels_raw }}</p> {# If raw string needs to be displayed #}
+    {% endif %}
+
+    <div class="flag-link-view">
+      {{ flag_link }}
+    </div> 
+  </div>
+</a>

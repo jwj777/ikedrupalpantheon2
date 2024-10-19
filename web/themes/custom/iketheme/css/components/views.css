@@ -490,3 +490,51 @@
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
+
+/** view-featured-events-insights  **/
+
+.view-featured-events-insights .views-row a {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.path-frontpage .field--name-field-column-two .field--name-field-heading-2 {
+  margin-bottom: 2rem;
+}
+
+.view-featured-events-insights .views-row {
+  margin-bottom: 1.5rem;
+}
+
+.view-featured-events-insights .text-container {
+  width: 100%;
+  background-color: var(--primary-100);
+  border: 1px solid var(--neutral-90);
+  padding: 1.75rem 3rem 1rem 2rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.view-featured-events-insights .title-large {
+  max-width: 360px;
+  margin-bottom: 1.5rem;
+}
+
+
+.view-featured-events-insights img {
+  width: 192px;
+  height: 100%;
+  max-height: 192px;
+  object-fit: cover;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.view-featured-events-insights .label-medium, .view-featured-events-insights a {
+  text-decoration: none !important;
+}
+
+.view-featured-events-insights .body-small {
+  margin-bottom: 8px;
+}
