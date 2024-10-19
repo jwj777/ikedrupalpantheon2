@@ -52,11 +52,11 @@
   max-width: 620px;
 }
 
-.sm-lg-width .field--name-field-column-one {
+.lg-sm-width .field--name-field-column-one {
   max-width: 720px;
 }
 
-.sm-lg-width .field--name-field-column-two {
+.lg-sm-width .field--name-field-column-two {
   max-width: 400px;
   flex: 2;
 }
@@ -199,6 +199,7 @@
   max-width: 440px;
   height: auto;
   border-radius: 1.1rem;
+  margin-right: 2.5rem;
 }
 
 /** body quote **/
@@ -616,7 +617,7 @@
 }
 
 .paragraph--type--card-image-title-description .field--name-field-body p {
-  padding-right: 2rem;
+  padding-right: 3rem;
   padding-bottom: 1.5rem;
   padding-left: 2rem;
   color: var(--neutral-40);
@@ -625,3 +626,38 @@
 .paragraph--type--card-image-title-description a {
   text-decoration: none;
 }
+
+
+/** paragraph type link **/
+
+.path-frontpage .field--name-field-link-reference {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  margin-top: 2rem;
+}
+
+.path-frontpage .paragraph--type--link {
+  margin-right: 1rem !important;
+}
+
+.paragraph--type--link-array h2 {
+  margin-bottom: 2rem;
+}
+
+.paragraph--type--link {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.paragraph--type--link .button {
+  margin-bottom: 2rem;
+  height: 40px;
+}
+
+.paragraph--type--link .text {
+  margin-bottom: 1.25rem;
+  margin-left: 0.25rem;
+}
+
+

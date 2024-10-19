@@ -31,3 +31,29 @@
   border-radius: 10rem;
   text-decoration: none;
 }
+
+.paragraph--type--link .button a {
+  background-color: var(--primary-40);
+  color: var(--neutral-100);
+  padding: 1rem 1.4rem;
+  border-radius: 10rem;
+  text-decoration: none;
+}
+
+.paragraph--type--link .button a:hover {
+  background-color: var(--primary-30);
+  color: var(--neutral-100);
+}
+
+.paragraph--type--link .button-light a {
+  background-color: var(--primary-90);
+  color: var(--neutral-40);
+  padding: 1rem 1.4rem;
+  border-radius: 10rem;
+  text-decoration: none;
+}
+
+.paragraph--type--link .button-light a:hover {
+  background-color: var(--primary-80);
+  color: var(--neutral-10);  
+}

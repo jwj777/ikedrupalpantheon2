@@ -376,12 +376,20 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: -1rem;
+  margin-top: -4rem;
 }
 
 .view-education-programs h3 {
   color: var(--primary-10);
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 3.5rem; 
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+.view-education-programs .heading-small {
+  margin-top: 0px;
 }
 
 .view-education-programs .view-filters {
@@ -404,6 +412,7 @@
   background-color: var(--primary-98);
   padding: 0.4rem 2rem;
   border-radius: 1rem;
+  border: 1px solid var(--neutral-90);
 }
 
 .view-education-programs .form-actions {
