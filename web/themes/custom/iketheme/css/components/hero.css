@@ -5,7 +5,7 @@
 }
 
 .page-node-type-page .header-hero,
-.page-node-primary-source .header-hero,
+.page-node-type-primary-source .header-hero,
 .page-node-type-ike-s-life .header-hero,
 .page-node-type-news-home .header-hero,
 .page-node-type-newsletter-article .header-hero,
@@ -29,6 +29,11 @@
   max-width: var(--xl);
   margin: 0 auto;
   padding: 4rem 0 16rem 0;
+}
+
+.page-node-type-primary-source .hero-basic {
+  max-width: var(--lg);
+  padding: 4rem 0 5rem 0;
 }
 
 
@@ -273,9 +278,14 @@
   font-weight: 600;
 }
 
-.soldier-hero .label-medium {
+.soldier-hero .label-medium,
+.page-node-type-primary-source .hero-basic .label-medium {
   margin-bottom: 4rem;
   color: var(--primary-95)
+}
+
+.page-node-type-primary-source .hero-basic .label-medium {
+  margin-bottom: 2rem;
 }
 
 

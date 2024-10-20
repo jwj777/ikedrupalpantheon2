@@ -409,7 +409,7 @@
 }
 
 .view-education-programs .views-exposed-form {
-  background-color: var(--primary-98);
+  background-color: var(--primary-95);
   padding: 0.4rem 2rem;
   border-radius: 1rem;
   border: 1px solid var(--neutral-90);
@@ -421,7 +421,7 @@
 
 /* Select field rounded pill style */
 .form-item-field-grade-levels-select-value .form-select {
-  background-color: var(--primary-95);
+  background-color: var(--primary-90);
   border-radius: 50px; /* Creates the pill shape */
   border: none; /* Removes any default borders */
   padding: 1.15rem 1.5rem; /* Adjust padding for better appearance */

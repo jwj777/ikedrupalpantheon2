@@ -75,7 +75,8 @@
   max-width: var(--xl);
 }
 
-.page-node-type-lesson-plan .layout-content {
+.page-node-type-lesson-plan .layout-content,
+.page-node-type-primary-source .layout-content  {
   max-width: var(--lg);
   margin: 0 auto;
 }
@@ -105,6 +106,10 @@
 .page-node-type-basic-page-b .region-content,
 .page-node-type-newsletter-article .region-content {
   max-width: var(--xl);
+}
+
+.page-node-type-primary-source .region-content {
+  padding-top: 3rem;
 }
 
 .page-node-type-newsletter-article .region-content {

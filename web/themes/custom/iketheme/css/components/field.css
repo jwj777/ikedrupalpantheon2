@@ -31,8 +31,9 @@
 
 /** iframe markup field **/
 
-.field--name-field-markup {
+.page-node-type-primary-source .field--name-field-markup {
   border: 1px solid var(--neutral-80);
   border-radius: 1.5rem;
   overflow: hidden;
+  width: min-content;
 }
