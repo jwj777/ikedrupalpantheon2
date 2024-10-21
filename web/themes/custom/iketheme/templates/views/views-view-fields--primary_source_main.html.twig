@@ -1,0 +1,16 @@
+
+
+{% set url = "/node/" ~ row._entity.nid.value %}
+{% set image = fields.field_summary_image.content %}
+{% set title = fields.title.content|striptags|raw %}
+
+<a href="{{ url }}">
+  <div class="lesson-summary-image">
+    {% if image %}
+      {{ image }}
+    {% endif %}
+  </div>
+  <div class="text-container">
+    <h3 class="heading-small">{{ title|raw }}</h3>
+  </div>
+</a>

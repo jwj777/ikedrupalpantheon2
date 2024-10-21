@@ -54,6 +54,10 @@
   max-width: var(--lg);
 }
 
+.node-id-1967 .hero-basic {
+  padding: 4rem 0 22rem 0;
+}
+
 .hero-alt {
   max-width: var(--lg);
   margin: 0 auto;

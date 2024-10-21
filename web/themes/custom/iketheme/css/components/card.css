@@ -249,7 +249,7 @@ p.text-light {
 
 
 .card-image-title {
-  width: 314px;
+  width: 312px;
   margin: 0 1rem 2rem 1rem;
   background: var(--primary-95);
   border-radius: 1.5rem;
@@ -266,6 +266,19 @@ p.text-light {
   /* height: 112px; */
 }
 
+.view   .card-image-title .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 2.5rem 2.5rem 2.5rem;
+  /* height: 112px; */
+}
+
+.view-primary-source-main  .card-image-title .text-container {
+  padding: 1.5rem 2.5rem 2rem 2rem;
+}
+
+
 .card-image-title a {
   text-decoration: none;
 }
@@ -277,7 +290,7 @@ p.text-light {
 }
 
 .card-image-title h3 {
-  margin-top: 12px !important;
+  margin-top: 6px !important;
 }
 
 .card-image-title p {

@@ -1,4 +1,29 @@
 
+/** view filters **/
+
+.view-filters select {
+  background: var(--primary-90);
+  padding: 1rem 1.2rem;
+  border: none;
+  border-right: 1.2rem solid transparent;
+  border-radius: 10rem;
+}
+
+.js-form-item-keys input {
+  width: 100%;
+  background: var(--secondary-95);
+  border-radius: 2rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--secondary-95);
+}
+
+.js-form-item-keys label {
+  position: absolute;
+  top: 41px;
+  margin-left: 23px;
+}
+
+
 .block-views-blockike-s-life-boyhood-block-1 {
   margin: 4rem 0 4rem 0;
 }
@@ -537,4 +562,40 @@
 
 .view-featured-events-insights .body-small {
   margin-bottom: 8px;
+}
+
+/** primary source main **/
+
+.view-primary-source-main {
+  position: relative;
+  bottom: 20rem;
+}
+
+.view-primary-source-main .view-content, .view-primary-source-main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.view-primary-source-main .view-filters {
+  margin-bottom: 1.5rem;
+}
+
+.view-primary-source-main .view-filters .js-form-item {
+  margin-right: 1rem;
+}
+
+.view-primary-source-main .view-filters .form--inline {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.view-primary-source-main .view-filters .js-form-type-textfield {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  height: 72px;
+}
+
+.view-primary-source-main .view-filters .js-form-type-textfield input {
+  max-width: 480px;
 }

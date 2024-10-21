@@ -65,17 +65,3 @@ summary span {
 #edit-field-gender-value-collapsible {
   margin-bottom: 2rem;
 }
-
-.js-form-item-keys input {
-  width: 100%;
-  background: var(--secondary-95);
-  border-radius: 2rem;
-  padding: 1rem 1.25rem;
-  border: 1px solid var(--secondary-95);
-}
-
-.js-form-item-keys label {
-  position: absolute;
-  margin-top: 16px;
-  margin-left: 23px;
-}
