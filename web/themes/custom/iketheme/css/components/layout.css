@@ -81,10 +81,15 @@
   margin: 0 auto;
 }
 
-.page-node-type-soldier main {
+.page-node-type-soldier main,
+.page-node-type-primary-source main {
   display: flex;
   max-width: var(--lg);
   margin: 0 auto;
+}
+
+.page-node-type-primary-source main {
+  padding-top: 3rem;
 }
 
 .node-id-37 .layout-content {
@@ -108,8 +113,8 @@
   max-width: var(--xl);
 }
 
-.page-node-type-primary-source .region-content {
-  padding-top: 3rem;
+.page-node-type-primary-source .layout-content {
+  padding-right: 4rem;
 }
 
 .page-node-type-newsletter-article .region-content {
@@ -141,6 +146,17 @@
 /** sidebar right **/
 .layout-sidebar-second {
   max-width: 360px;
+}
+
+.page-node-type-primary-source .layout-sidebar-second {
+  width: 360px;
+}
+
+.page-node-type-primary-source .layout-sidebar-second .block {
+  background-color: var(--primary-95);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 /** soliders documents section **/

@@ -180,3 +180,24 @@
 .page-node-type-lesson-plan .lesson-plan-documents .heading-small {
   margin-bottom: 1rem;
 }
+
+/** primary source sidebar **/
+
+.view-primary-source-sidebar .views-field {
+  margin-bottom: 1rem;
+}
+
+.view-primary-source-sidebar .views-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.view-primary-source-sidebar .field-content {
+  color: var(--neutral-40);
+}
+
+.view-primary-source-sidebar p {
+  margin: 0px;
+  color: var(--neutral-40);
+}

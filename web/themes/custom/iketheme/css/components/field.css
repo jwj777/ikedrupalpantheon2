@@ -32,8 +32,14 @@
 /** iframe markup field **/
 
 .page-node-type-primary-source .field--name-field-markup {
+  display: flex;
   border: 1px solid var(--neutral-80);
   border-radius: 1.5rem;
   overflow: hidden;
   width: min-content;
+  margin-bottom: 2rem;
+}
+
+.page-node-type-primary-source .field--name-field-markup audio {
+  width: 560px;
 }
