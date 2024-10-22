@@ -46,6 +46,9 @@
 
 .field--name-field-3d-markup {
   margin-bottom: 2rem;
+  border: 1px solid var(--primary-90);
+  border-radius: 1.5rem;
+  overflow: hidden;
 }
 
 .page-node-type-primary-source .field--name-field-main-image {
