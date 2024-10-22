@@ -23,6 +23,11 @@
   margin-left: 23px;
 }
 
+.view-lesson-plans .js-form-item-keys label {
+  position: absolute;
+  top: 52px;
+}
+
 
 .block-views-blockike-s-life-boyhood-block-1 {
   margin: 4rem 0 4rem 0;
