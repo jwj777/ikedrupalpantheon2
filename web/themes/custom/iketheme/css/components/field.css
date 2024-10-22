@@ -43,3 +43,21 @@
 .page-node-type-primary-source .field--name-field-markup audio {
   width: 560px;
 }
+
+.field--name-field-3d-markup {
+  margin-bottom: 2rem;
+}
+
+.page-node-type-primary-source .field--name-field-main-image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.page-node-type-primary-source .field--name-field-main-image img {
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.field--name-field-video-markup {
+  margin-bottom: 2rem;
+}

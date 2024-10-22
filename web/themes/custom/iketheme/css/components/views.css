@@ -568,7 +568,7 @@
 
 .view-primary-source-main {
   position: relative;
-  bottom: 20rem;
+  bottom: 12rem;
 }
 
 .view-primary-source-main .view-content, .view-primary-source-main {
@@ -577,6 +577,7 @@
 }
 
 .view-primary-source-main .view-filters {
+  width: 100%;
   margin-bottom: 1.5rem;
 }
 

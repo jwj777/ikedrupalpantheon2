@@ -89,7 +89,7 @@
 }
 
 .page-node-type-primary-source main {
-  padding-top: 3rem;
+  padding-top: 4rem;
 }
 
 .node-id-37 .layout-content {
@@ -115,6 +115,8 @@
 
 .page-node-type-primary-source .layout-content {
   padding-right: 4rem;
+  padding-bottom: 5rem;
+  max-width: 800px;
 }
 
 .page-node-type-newsletter-article .region-content {

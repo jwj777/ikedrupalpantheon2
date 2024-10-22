@@ -55,7 +55,7 @@
 }
 
 .node-id-1967 .hero-basic {
-  padding: 4rem 0 22rem 0;
+  padding: 4rem 0 24rem 0;
 }
 
 .hero-alt {
@@ -327,4 +327,17 @@
 
 .hero-lesson-plans .label-medium {
   color: var(--primary-90);
+}
+
+/** primary source **/
+
+.view-hero-primary-source .view-content {
+  display: flex;
+}
+
+.view-hero-primary-source .view-content img {
+  max-width: 120px;
+  margin-right: 3rem;
+  object-fit: contain;
+  height: 180px;
 }
