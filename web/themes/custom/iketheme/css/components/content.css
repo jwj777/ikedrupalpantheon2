@@ -201,3 +201,40 @@
   margin: 0px;
   color: var(--neutral-40);
 }
+
+/** join newsletter form **/
+
+.block-block-content40e06a90-048a-412c-938f-55be4d8845b2 {
+  max-width: var(--xl);
+  margin: 4rem auto;
+}
+
+.block-block-content40e06a90-048a-412c-938f-55be4d8845b2 .block-inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 432px;
+  background-color: var(--primary-10);
+  padding: 3rem;
+  border-radius: 1.5rem;
+}
+
+#block-iketheme-formforemaillist .text-container {
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+#block-iketheme-formforemaillist .label-medium {
+  color: var(--primary-90);
+  margin-bottom: 2rem;
+}
+
+#block-iketheme-formforemaillist .heading-large {
+  margin-bottom: 1.5rem;
+  color: var(--primary-95);
+}
+
+#block-iketheme-formforemaillist .body-medium {
+  color: var(--primary-90);
+
+}

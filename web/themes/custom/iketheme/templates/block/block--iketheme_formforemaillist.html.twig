@@ -1,0 +1,68 @@
+<div id="block-iketheme-formforemaillist" class="contextual-region block block-block-content block-block-content40e06a90-048a-412c-938f-55be4d8845b2">
+  <div class="block-inner">
+    
+    <div class="text-container"> {# Wrap only the text fields inside this div #}
+
+      <div class="field field--name-field-form-title label-medium">
+        Join Our Email List
+      </div>
+      
+      <div class="heading-large">
+        Get News and Updates Delivered To Your Inbox
+      </div>
+      
+      <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
+        <div class="field-inner">
+          <p class="body-medium">Enter your information below to receive emails about foundation news and upcoming events.</p>
+        </div>
+      </div>
+
+    </div> {# Close text-container #}
+    
+    {# The form is not inside the text-container #}
+    <div class="field field--name-field-webform-reference field--type-webform field--label-hidden field__item">
+      <form class="webform-submission-form webform-submission-add-form webform-submission-join-mailing-list-form js-webform-details-toggle" method="post" accept-charset="UTF-8">
+        
+        <div class="js-form-item form-item js-form-type-textfield form-type-textfield">
+          <label for="edit-first-name">First Name</label>
+          <div class="form-item">
+            <input type="text" id="edit-first-name" name="first_name" value="" size="60" class="form-text">
+          </div>
+        </div>
+
+        <div class="js-form-item form-item js-form-type-textfield form-type-textfield">
+          <label for="edit-last-name">Last Name</label>
+          <div class="form-item">
+            <input type="text" id="edit-last-name" name="last_name" value="" size="60" class="form-text">
+          </div>
+        </div>
+
+        <div class="js-form-item form-item js-form-type-email form-type-email">
+          <label for="edit-email">Email</label>
+          <div class="form-item">
+            <input type="email" id="edit-email" name="email" value="" size="60" class="form-email">
+          </div>
+        </div>
+
+        <div class="js-form-item form-item js-form-type-select form-type-select">
+          <label for="edit-grade-level">Grade Level</label>
+          <select id="edit-grade-level" name="grade_level" class="form-select">
+            <option value="" selected="selected">- None -</option>
+            <option value="K - 2nd">K - 2nd</option>
+            <option value="3rd - 5th">3rd - 5th</option>
+            <option value="Middle School">Middle School</option>
+            <option value="High School">High School</option>
+          </select>
+        </div>
+
+        <div class="form-actions js-form-wrapper form-wrapper">
+          <div class="form-item">
+            <input class="webform-button--submit button button--primary js-form-submit form-submit" type="submit" id="edit-submit" name="op" value="Submit">
+          </div>
+        </div>
+
+      </form>
+    </div> {# Close form wrapper #}
+
+  </div> {# Close block-inner #}
+</div> {# Close block #}

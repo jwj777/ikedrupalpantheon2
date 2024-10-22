@@ -31,8 +31,8 @@ h1, .display-large {
   margin-bottom: 1rem;
 }
 
-.heading-large, .view-content h3, 
-.block-block-content40e06a90-048a-412c-938f-55be4d8845b2 .field--name-field-headline {
+.heading-large, 
+.view-content h3 {
   font-family: 'Newsreader', Georgia, serif;
   font-size: 2.7rem;
   font-weight: 400;

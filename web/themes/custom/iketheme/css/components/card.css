@@ -254,8 +254,8 @@ p.text-light {
   background: var(--primary-95);
   border-radius: 1.5rem;
   overflow: hidden;
-  position: relative;
-  right: 1rem;
+  /* position: relative;
+  right: 1rem; */
 }
 
 .card-image-title .text-container {
@@ -266,7 +266,7 @@ p.text-light {
   /* height: 112px; */
 }
 
-.view   .card-image-title .text-container {
+.view .card-image-title .text-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
