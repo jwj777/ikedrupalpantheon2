@@ -49,6 +49,10 @@
   margin-bottom: 2rem;
 }
 
+.node-id-2117 .hero-basic {
+  max-width: var(--lg);
+}
+
 .page-node-type-news-home .hero-basic {
   padding: 4rem 0 22rem 0;
   max-width: var(--lg);

@@ -77,7 +77,8 @@
 }
 
 .page-node-type-lesson-plan .layout-content,
-.page-node-type-primary-source .layout-content  {
+.page-node-type-primary-source .layout-content,
+.node-id-2117 .layout-content  {
   max-width: var(--lg);
   margin: 0 auto;
 }

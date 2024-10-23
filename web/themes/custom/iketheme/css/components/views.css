@@ -605,3 +605,54 @@
 .view-primary-source-main .view-filters .js-form-type-textfield input {
   max-width: 480px;
 }
+
+
+/** donor wall **/
+
+.view-donor-wall {
+  margin-left: -1rem;
+}
+
+.view-donor-wall h3 {
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  color: var(--primary-10);
+}
+
+.view-donor-wall .view-grouping {
+  background-color: var(--primary-95);
+  padding: 3rem 3rem 2rem 2.5rem;
+  border-radius: 1.5rem;
+  margin: 1rem;
+}
+
+.view-donor-wall .views-row {
+  width: 370px;
+  /* height: 40px; */
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+}
+
+.view-donor-wall .view-grouping-header {
+  display: none;
+}
+
+.view-donor-wall .view-grouping {
+  margin-bottom: 2rem;
+}
+
+.view-donor-wall .view-grouping:nth-child(1) .views-row,
+.view-donor-wall .view-grouping:nth-child(2) .views-row,
+.view-donor-wall .view-grouping:nth-child(3) .views-row   {
+  width: 100%;
+}
+
+.view-donor-wall .view-grouping-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.view-donor-wall a {
+  color: var(--secondary-40);
+}
