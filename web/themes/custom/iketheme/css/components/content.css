@@ -238,3 +238,20 @@
   color: var(--primary-90);
 
 }
+
+/** donor wall **/
+
+/* .view-donor-wall .view-content {
+  display: flex;
+} */
+
+.view-donor-wall h3 {
+  margin-top: 2rem;
+}
+
+.view-donor-wall .views-row {
+  /* background-color: var(--primary-95);
+  padding: 2rem;
+  border-radius: 1.5rem; */
+  margin-bottom: 0.5rem;
+}
