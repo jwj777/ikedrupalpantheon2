@@ -57,7 +57,11 @@ h1, .display-large {
   color: var(--neutral-10)
 }
 
-.heading-small, .field-text h3, .views-row h3,
+.heading-small, 
+.field-text h3, 
+/* .views-row h3, */
+.ikes-life-item-square h3,
+.ikes-life-item-square-md h3,
 .node-id-1809 .field--name-field-sections-sidebar-right .paragraph h3,
 .node-id-1809 .field--name-field-sections-sidebar-right .paragraph .field--name-field-heading-2,
 .paragraph--type--heading-with-icon-text .field--name-field-heading-3,

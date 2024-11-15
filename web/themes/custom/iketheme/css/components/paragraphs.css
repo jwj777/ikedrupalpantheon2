@@ -215,7 +215,7 @@
 .field--name-body blockquote p {
   quotes: "“" "”" "‘" "’";
   font-size: 2rem;
-  line-height: 2.1rem;
+  line-height: 2.3rem;
   font-family: 'Newsreader';
   color: var(--primary-40);
   margin-bottom: 1rem;

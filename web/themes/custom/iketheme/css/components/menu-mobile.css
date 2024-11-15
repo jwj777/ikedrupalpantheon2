@@ -1,0 +1,58 @@
+/**
+ * @file
+ * Visual styles for menu.
+ */
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.nav-container {
+  max-width: 560px;
+}
+
+.nav-container .nav1 {
+  margin-right: 0.5rem;
+}
+
+.dropdown {
+  flex-direction: column;
+  position: absolute;
+  margin-top: 32px;
+  background: #fff;
+  z-index: 2;
+  padding: 22px 40px 28px 28px;
+  border-radius: 20px;
+  box-shadow: 1px 2px 2px hsl(227, 0%, 0%) / 0.333;
+  box-shadow: 2px 4px 4px hsl(227, 0%, 0%) / 0.333;
+  box-shadow: 3px 6px 6px hsl(227, 0%, 0%) / 0.333;
+}
+
+#joinDropdown {
+  width: 210px;
+  right: 0px;
+}
+
+.nav2-item {
+  padding: 10px 0px;
+}
+
+a.nav1-item {
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 1.7rem;
+  border-radius: 10rem;
+}
+
+.nav-container a.in-progress {
+  color: red !important;
+}
+
+
+
+a.nav1-item:hover {
+  background: rgba(255,255,255,0.16);
+}
