@@ -60,6 +60,8 @@ base:
         weight: -10
       css/components/menu-main.css:
         weight: -10
+      css/components/menu-mobile.css:
+        weight: -10
       css/components/layout.css:
         weight: -10
       css/components/paragraphs.css:
@@ -73,6 +75,7 @@ global-scripts:
   version: VERSION
   js:
     js/menu.js: {}
+    js/menuMobile.js: {}
     js/input.js: {}
     js/flag.js: {}
     js/form.js: {}

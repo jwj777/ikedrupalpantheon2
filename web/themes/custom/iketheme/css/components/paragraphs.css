@@ -29,14 +29,29 @@
   background-color: var(--primary-95);
   padding: 32px 72px 48px 48px;
   border-radius: 24px;
+  margin-bottom: 2rem;
 }
+
+
 
 .field--name-field-column-one {
   margin-right: 32px;
 }
 
+@media screen and (max-width: 712px) {
+  .field--name-field-column-one {
+    margin-right: 0px;
+  }
+}
+
 .sm-lg-width .field--name-field-column-one {
   max-width: 360px;
+}
+
+@media screen and (max-width: 1216px) {
+  .sm-lg-width .field--name-field-column-one {
+    max-width: 100%;
+  }
 }
 
 .sm-lg-width .field--name-field-column-two {
@@ -70,9 +85,26 @@
   align-items: baseline;
 }
 
+@media screen and (max-width: 1376px) {
+  .paragraph--type--two-column-section > .paragraph-inner,
+  .paragraph--type--two-column-image-text-block > .paragraph-inner,
+  .paragraph--type--two-column-text-collage > .paragraph-inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: var(--gutter-xl);
+    margin-left: var(--gutter-xl);
+  }
+}
+
 .paragraph-featured-soldiers > .paragraph-inner {
   max-width: var(--lg);
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1376px) {
+  .paragraph-featured-soldiers > .paragraph-inner {
+    margin: 0 var(--gutter-xl);
+  }
 }
 
 .paragraph--type--two-column-text-collage > .paragraph-inner {
@@ -88,8 +120,8 @@
   align-items: center;
 }
 .paragraph--type--two-column-image-text-block .field--name-field-block-image img {
-  /* max-width: 400px; */
   margin-right: 48px;
+  margin-bottom: 2rem;
 }
 .paragraph--type--two-column-image-text-block h2 {
   max-width: 560px;
@@ -103,20 +135,39 @@
   background: var(--neutral-95);
   width: 540px;
 }
+
+@media screen and (max-width: 1216px) {
+  .paragraph--type--two-column-text-collage .text-column {
+    padding: 64px 64px 160px 64px;
+    margin-right: 0px;
+    width: auto;
+  }
+}
+
 .paragraph--type--two-column-text-collage .text-background {
   background-color: var(--primary-95);
   position: absolute;
-  width: 1200px;
+  max-width: 1200px;
   height: 560px;
   z-index: -1;
   border-radius: 24px;
 }
+
 .paragraph--type--two-column-text-collage .collage {
   width: 700px;
   align-self: flex-end;
   position: relative;
   bottom: 440px;
   margin-bottom: -400px;
+}
+
+@media screen and (max-width: 1216px) {
+  .paragraph--type--two-column-text-collage .collage {
+    width: 800px;
+    bottom: 100px;
+    margin-bottom: -100px;
+    right: 4rem;
+  }
 }
 
 .paragraph--type--two-column-text-collage .image-row-1 .image-item  {
@@ -224,6 +275,7 @@
 .field--name-body blockquote {
   margin-left: 0px;
   margin-bottom: 2rem;
+  margin-right: 0rem;
 }
 
 .field--name-field-quote-attribution {
@@ -355,10 +407,17 @@
   max-width: 240px;
   object-fit: contain;
   height: auto;
+  margin-bottom: 2rem;
 }
 
 .paragraph-featured-soldiers .paragraph-heading {
   display: flex;
+}
+
+@media screen and (max-width: 1376px) {
+  .paragraph-featured-soldiers .paragraph-heading {
+    flex-direction: column-reverse;
+  }
 }
 
 .paragraph-featured-soldiers .heading-text {
@@ -373,12 +432,19 @@
 
 .view-soldiers-featured .view-content {
   display: flex;
+  flex-wrap: wrap;
 }
 
 /* ike education - upcoming programs */
 
 .field--name-field-column-two {
   min-width: 360px;
+}
+
+@media screen and (max-width: 560px) {
+  .field--name-field-column-two {
+    min-width: auto;
+  }
 }
 
 /* text array */
@@ -477,11 +543,13 @@
 }
 
 .node-id-2 .field--name-field-paragraphs .field__item:nth-child(1) {
-  width: 560px;
+  /* width: 560px; */
+  max-width: 560px;
 }
 
 .node-id-2 .field--name-field-paragraphs .field__item:nth-child(2) {
-  width: 560px;
+  /* width: 560px; */
+  max-width: 560px;
 }
 
 .node-id-2 .field--name-field-paragraphs .field__item:nth-child(3) {

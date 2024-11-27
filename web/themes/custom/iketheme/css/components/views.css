@@ -40,6 +40,14 @@
   color: var(--primary-10);
 }
 
+@media screen and (max-width: 480px) {
+  .block-views-blockike-s-life-boyhood-block-1 h2,
+  .block-views-blockike-s-life-west-point-block-1 h2,
+  .block-views-blockike-s-life-early-military-block-1 .ikes-life-heading-year {
+    width: auto;
+    color: var(--primary-10);
+  }
+}
 
 /** Ike's Soldiers **/
 
@@ -515,6 +523,13 @@
   margin-right: 3rem;
 }
 
+@media screen and (max-width: 968px) {
+  .view-people-staff .person {
+    width: auto;
+    margin-right: 0rem;
+  } 
+}
+
 .node-id-2 .field--name-field-paragraphs .field__item:nth-child(3) .field--name-field-reference-field {
   width: 100%;
 }
@@ -542,6 +557,7 @@
 
 .view-featured-events-insights .text-container {
   width: 100%;
+  min-width: 340px;
   background-color: var(--primary-100);
   border: 1px solid var(--neutral-90);
   padding: 1.75rem 3rem 1rem 2rem;

@@ -122,9 +122,15 @@ abbr.ajax-changed {
 
 /** webform submission form **/
 
-.webform-submission-form {
+.block-block-content40e06a90-048a-412c-938f-55be4d8845b2 .webform-submission-form {
   position: relative;
   bottom: 40px;
+}
+
+@media screen and (max-width: 1216px) {
+  .block-block-content40e06a90-048a-412c-938f-55be4d8845b2 .webform-submission-form {
+    bottom: 0px;
+  }
 }
 
 .webform-submission-form .js-form-type-textfield,
@@ -135,8 +141,13 @@ abbr.ajax-changed {
 }
 
 .webform-submission-form input {
+  width: 88%;
   padding: 1.1rem 1rem 1.1rem 1rem;
   border-radius: 0.5rem;
+}
+
+.webform-submission-form select {
+  width: 88%;
 }
 
 .webform-submission-form input:focus {
@@ -186,6 +197,7 @@ abbr.ajax-changed {
   border-radius: 10rem;
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
+  width: auto;
 }
 
 /** view bef exposed filters **/

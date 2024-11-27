@@ -32,7 +32,7 @@
 
 {% set url = "/node/" ~ row._entity.nid.value %}
 {% set image = fields.field_summary_image.content %}
-{% set title = fields.title_1.content|striptags|raw %}
+{% set title = fields.title.content|striptags|raw %}
 
 <a href="{{ url }}">
   <div class="article-summary-image">

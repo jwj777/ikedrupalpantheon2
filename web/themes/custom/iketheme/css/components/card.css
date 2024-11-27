@@ -1,23 +1,18 @@
 
 .ikes-life-item-wide {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 64px;
 }
 
-.ikes-life-item-square {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-bottom: 4rem;
-  margin-top: 6rem;
+.ikes-life-item-wide .view-content {
+  width: 952px;
 }
 
-.ikes-life-item-square-md {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-bottom: 4rem;
-  margin-top: 6rem;
+@media screen and (max-width: 1376px) {
+  .ikes-life-item-wide .view-content {
+    width: 100%;
+  }
 }
 
 .ikes-life-item-wide .views-row {
@@ -28,11 +23,203 @@
   position: relative;
 }
 
+@media screen and (max-width: 1376px) {
+  .ikes-life-item-wide .views-row {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .ikes-life-item-wide .views-row {
+    flex-direction: column;
+  }
+}
+
+.ikes-life-item-wide .views-row:hover {
+  border-radius: 2rem;
+  overflow: hidden;
+  transition: transform 0.25s ease, border-radius 0.25s ease;
+}
+
+@media screen and (max-width: 968px) {
+  .ikes-life-item-wide .views-row:hover {
+    border-radius: 2rem;
+    transition: transform 0.25s ease, border-radius 0.25s ease;
+  }
+}
+
+.ikes-life-item-wide .views-row:hover img {
+  transition: transform 0.25s ease, border-radius 0.25s ease;
+  transform: scale(1.03);
+}
+
+@media screen and (max-width: 1376px) {
+  .ikes-life-item-wide {
+    margin: 0 var(--gutter-xl);
+  }
+}
+
+.ikes-life-item-wide .view-header {
+  width: 420px;
+}
+
+@media screen and (max-width: 1376px) {
+  .ikes-life-item-wide .view-header .ikes-life-heading-year {
+    margin-bottom: 2rem;
+  }
+}
+
+.ikes-life-item-wide .views-field-title-1 {
+  border-radius: 0 1.3rem 1.3rem 0;
+  background: var(--primary-10);
+  padding: 3rem 2.5rem;
+  max-width: 620px;
+  min-height: 197px;
+}
+
+@media screen and (max-width: 1376px) {
+  .ikes-life-item-wide .views-field-title-1 {
+    max-width: 560px;
+  }
+}
+
+@media screen and (max-width: 1216px) {
+  .ikes-life-item-wide .views-field-title-1 {
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .ikes-life-item-wide .views-field-title-1 {
+    max-width: 400px;
+    
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .ikes-life-item-wide .views-field-title-1 {
+    max-width: 100%;
+    border-radius: 0 0 1.3rem 1.3rem;
+  }
+}
+
+.ikes-life-item-wide .views-row:hover .views-field-title-1 {
+  border-radius: 0 2rem 2rem 0;
+  transition: .25s all ease;
+}
+
+@media screen and (max-width: 1376px) {
+  .ikes-life-item-wide .views-row:hover .views-field-title-1 {
+    border-radius: 0 2rem 2rem 0;
+    transition: .25s all ease;
+  }
+}
+
+.ikes-life-item-wide .views-field-field-summary-image img {
+  height: 100%;
+  display: block;
+  margin-top: 0px;
+  border-radius: 1.3rem 0 0 1.3rem;
+}
+
+.ikes-life-item-wide .views-field-field-summary-image .field-content,
+.ikes-life-item-wide .views-field-field-summary-image a {
+  display: block;
+  height: 100%;
+}
+
+.ikes-life-item-wide .views-field-field-summary-image {
+  overflow: hidden;
+  width: 320px;
+}
+
+@media screen and (max-width: 968px) { 
+  .ikes-life-item-wide .views-field-field-summary-image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1376px) {
+  .ikes-life-item-wide .views-field-field-summary-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.3rem 0 0 1.3rem;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .ikes-life-item-wide .views-field-field-summary-image img {
+    border-radius: 1.3rem 0 0 1.3rem;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .ikes-life-item-wide .views-field-field-summary-image img {
+    border-radius: 1.3rem 1.3rem 0 0;
+  }
+}
+
+
+/*****/
+/** Ike's Life Item Square **/
+/*****/
+
+.ikes-life-item-square {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+  margin-top: 6rem;
+}
+
+@media screen and (max-width: 1376px) {
+  .ikes-life-item-square {
+    margin-right: var(--gutter-xl);
+    margin-left: var(--gutter-xl);
+    align-items: flex-start;
+  }
+}
+
+.ikes-life-item-square .view-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 960px;
+}
+
+@media screen and (max-width: 1376px) {
+  .ikes-life-item-square .view-content {
+    width: 100%;
+    /* flex-wrap: nowrap; */
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .ikes-life-item-square .view-content {
+    flex-wrap: wrap;
+  }
+}
+
 .ikes-life-item-square .views-row {
-  width: 296px;
+  max-width: 296px;
   margin: 0.5rem;
   border-radius: 1.3rem;
   overflow: hidden;
+}
+
+@media screen and (max-width: 1216px) {
+  .ikes-life-item-square .views-row {
+    max-width: 380px;
+    min-width: 280px;
+  }
+}
+
+
+@media screen and (max-width: 968px) {
+  .ikes-life-item-square .views-row {
+    max-width: 100%;
+  }
 }
 
 .ikes-life-item-square .views-row:hover {
@@ -43,6 +230,108 @@
 .ikes-life-item-square .views-row:hover img {
   transform: scale(1.03);
   transition: transform 0.25s ease;
+}
+
+.ikes-life-item-square .view-header, .ikes-life-item-square-md .view-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1376px) {
+  .ikes-life-item-square .view-header, .ikes-life-item-square-md .view-header {
+    /* flex-direction: column; */
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+.ikes-life-item-square .view-header .ikes-life-heading-year {
+  width: 344px;
+}
+
+@media screen and (max-width: 1376px) {
+  .ikes-life-item-square .view-header .ikes-life-heading-year {
+    width: 280px;
+  }
+}
+
+.ikes-life-item-square .ikes-life-heading-title, .ikes-life-item-square-md .ikes-life-heading-title  {
+  margin-right: 4rem;
+}
+
+.ikes-life-item-square .ikes-life-heading-text, .ikes-life-item-square-md .ikes-life-heading-text {
+  max-width: 520px;
+  margin-top: 0rem;
+}
+
+.ikes-life-item-square .views-field .views-field-title-1 {
+  height: 122px;
+}
+
+.ikes-life-item-square .views-field-title-1 {
+  border-radius: 0 0 1.5rem 1.5rem;
+  background: var(--primary-10);
+  padding: 1.8rem 2rem;
+  height: 116px;
+  /* max-width: 620px; */
+}
+
+.ikes-life-item-square .views-field-field-summary-image a {
+  display: block;
+  width: 100%;
+}
+
+.ikes-life-item-square .views-field-field-summary-image img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 240px;
+}
+
+.ikes-life-item-square .views-field-field-summary-image .field-content {
+  height: 240px;
+}
+
+
+/*****/
+/** Ike's Life Item Medium **/
+/*****/
+
+.ikes-life-item-square-md {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+  margin-top: 6rem;
+}
+
+@media screen and (max-width: 1376px) {
+  .ikes-life-item-square-md {
+    margin-right: var(--gutter-xl);
+    margin-left: var(--gutter-xl);
+    align-items: flex-start;
+  }
+}
+
+.ikes-life-item-square-md .view-content  {
+  display: flex;
+  justify-content: flex-start;
+  width: 960px;
+}
+
+@media screen and (max-width: 1376px) {
+  .ikes-life-item-square-md .view-content  {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .ikes-life-item-square-md .view-content  {
+    flex-wrap: wrap;
+  }
 }
 
 .ikes-life-item-square-md .views-row {
@@ -67,18 +356,6 @@
   margin: 0.5rem;
 }
 
-.ikes-life-item-wide .view-header {
-  width: 420px;
-}
-
-.ikes-life-item-square .view-header, .ikes-life-item-square-md .view-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 28px;
-  width: 100%;
-}
-
 .ikes-life-item-square .view-header .title-text-container, 
 .ikes-life-item-square-md .view-header .title-text-container {
   display: flex;
@@ -86,16 +363,13 @@
   width: 960px;
 }
 
-.ikes-life-item-wide .views-field-field-summary-image img {
-  height: 268px;
-  object-fit: cover;
-  display: block;
-  margin-top: 0px;
-  border-radius: 1.3rem 0 0 1.3rem;
-}
-
-.ikes-life-item-wide .view-content {
-  width: 960px;
+@media screen and (max-width: 1376px) {
+  .ikes-life-item-square .view-header .title-text-container, 
+  .ikes-life-item-square-md .view-header .title-text-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+  }
 }
 
 .ikes-life-item-wide a, 
@@ -104,61 +378,18 @@
   text-decoration: none;
 }
 
-.ikes-life-item-wide .views-row:hover {
-  border-radius: 2.2rem 0 0 2.2rem;
-  transition: transform 0.25s ease, border-radius 0.25s ease;
+@media screen and (max-width: 1376px) {
+  .ikes-life-item-square-md .view-header .ikes-life-heading-year {
+    width: 280px;
+  }
 }
 
-.ikes-life-item-wide .views-row:hover img {
-  transition: transform 0.25s ease, border-radius 0.25s ease;
-  transform: scale(1.03);
-}
-
-
-.ikes-life-item-square .view-content, .ikes-life-item-square-md .view-content  {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  width: 960px;
-}
-
-.ikes-life-item-square-md .view-content {
-  width: 960px;
-}
-
-.ikes-life-item-square .view-header .ikes-life-heading-year {
-  width: 344px;
-}
-
-.ikes-life-item-square .ikes-life-heading-title, .ikes-life-item-square-md .ikes-life-heading-title  {
-  margin-right: 4rem;
-}
-
-.ikes-life-item-square .ikes-life-heading-text, .ikes-life-item-square-md .ikes-life-heading-text {
-  max-width: 520px;
-  margin-top: 0rem;
-}
-
-.ikes-life-item-square .views-field .views-field-title-1 {
-  height: 122px;
-}
-
-.ikes-life-item-wide .views-field-title-1 {
-  border-radius: 0 1.3rem 1.3rem 0;
-  background: var(--primary-10);
-  padding: 3rem 2.5rem;
-}
-
-.ikes-life-item-wide .views-row:hover .views-field-title-1 {
-  border-radius: 0 2rem 2rem 0;
-  transition: .25s all ease;
-}
-
-.ikes-life-item-square .views-field-title-1, .ikes-life-item-square-md .views-field-title-1 {
+.ikes-life-item-square-md .views-field-title-1 {
   border-radius: 0 0 1.5rem 1.5rem;
   background: var(--primary-10);
   padding: 1.8rem 2rem;
   height: 116px;
+  max-width: 620px;
 }
 
 .view-ike-s-life-the-general .views-field-title-1 {
@@ -177,16 +408,6 @@
   overflow: hidden;
 }
 
-.ikes-life-item-square .views-field-field-summary-image img {
-  object-fit: none;
-  max-width: 100%;
-  height: 240px;
-}
-
-.ikes-life-item-square .views-field-field-summary-image .field-content {
-  height: 240px;
-}
-
 .ikes-life-item-square-md .views-field-field-summary-image img {
   object-fit: cover;
   max-width: 100%;
@@ -195,7 +416,6 @@
 
 
 /** Ike's Soldiers **/
-
 .view-soliders-main .views-row .text-container,
 .view-soldiers-featured .text-container {
   background-color: var(--secondary-90);
@@ -247,7 +467,6 @@ p.text-light {
 
 
 /*** card image title ***/
-
 
 .card-image-title {
   width: 312px;

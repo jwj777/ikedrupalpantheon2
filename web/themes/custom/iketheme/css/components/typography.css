@@ -15,6 +15,16 @@ h1, .display-large {
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 968px) {
+  h1, .display-large {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 3.4rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
 .display-medium, h2.display-medium, .view-news-main .view-content > h3 {
   font-family: 'Newsreader', Georgia, serif;
   font-size: 3.5rem;
@@ -59,7 +69,7 @@ h1, .display-large {
 
 .heading-small, 
 .field-text h3, 
-/* .views-row h3, */
+.page-node-type-news-home .views-row h3,
 .ikes-life-item-square h3,
 .ikes-life-item-square-md h3,
 .node-id-1809 .field--name-field-sections-sidebar-right .paragraph h3,

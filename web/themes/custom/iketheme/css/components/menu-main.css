@@ -6,19 +6,25 @@
 .navigation {
   display: flex;
   align-items: center;
-  margin-right: 2rem;
 }
 
 .nav-container {
   display: flex;
   align-items: center;
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 1376px) {
+  .nav-container {
+    display: none;
+  }
 }
 
 .nav-container .nav1 {
   margin-right: 0.5rem;
 }
 
-.dropdown {
+.nav-container .dropdown {
   flex-direction: column;
   position: absolute;
   margin-top: 32px;
@@ -31,16 +37,16 @@
   box-shadow: 3px 6px 6px hsl(227, 0%, 0%) / 0.333;
 }
 
-#joinDropdown {
+.nav-container #joinDropdown {
   width: 210px;
   right: 0px;
 }
 
-.nav2-item {
+.nav-container .nav2-item {
   padding: 10px 0px;
 }
 
-a.nav1-item {
+.nav-container a.nav1-item {
   font-size: 1.2rem;
   color: #fff;
   text-decoration: none;
@@ -52,8 +58,6 @@ a.nav1-item {
   color: red !important;
 }
 
-
-
-a.nav1-item:hover {
+.nav-container a.nav1-item:hover {
   background: rgba(255,255,255,0.16);
 }

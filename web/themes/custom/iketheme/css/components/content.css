@@ -219,6 +219,14 @@
   border-radius: 1.5rem;
 }
 
+@media screen and (max-width: 1216px) {
+  .block-block-content40e06a90-048a-412c-938f-55be4d8845b2 .block-inner {
+    flex-wrap: nowrap;
+    height: auto;
+    margin: 0 var(--gutter-lg);
+  }
+}
+
 #block-iketheme-formforemaillist .text-container {
   max-width: 600px;
   margin-top: 2rem;

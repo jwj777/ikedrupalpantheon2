@@ -19,7 +19,7 @@
 }
 
 .hero-home { 
-  padding: 24rem 0 4rem 0;
+  padding: 26rem 0 6rem 0;
   position: relative;
   z-index: 1;
   position: relative;
@@ -30,7 +30,7 @@
   overflow: hidden;
 }
 
-
+/* top gradient*/
 .path-frontpage .header-hero::before {
   content: "";
   position: absolute;
@@ -43,16 +43,17 @@
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 100%);
 }
 
+/* bottom gradient */
 .path-frontpage .hero-home::before {
   content: "";
   position: absolute;
   left: 0;
   right: 0;
-  height: 50%; /* Adjust the height as needed for gradient coverage */
+  height: 60%; /* Adjust the height as needed for gradient coverage */
   pointer-events: none;
   z-index: 1;
   bottom: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 100%);
 }
 
 
@@ -105,11 +106,17 @@
 }
 
 .hero-alt {
-  max-width: var(--lg);
+  max-width: var(--xl);
   margin: 0 auto;
   padding: 6rem 0 6rem 0;
   position: relative;
   z-index: 2;
+}
+
+@media screen and (max-width: 1376px) {
+  .hero-alt {
+    margin: 0 var(--gutter-xl);
+  }
 }
 
 .hero-alt h1 {
@@ -185,12 +192,20 @@
   padding: 5rem 0 12rem 0;
   margin-bottom: -12rem;
 }
+/* 
+@media screen and (max-width: 1376px) {
+  .view-hero-basic-page-image {
+    margin: 0 var(--gutter-xl)
+  }
+} */
+
 
 .page-node-type-page .views-field-field-hero-image img,
 .page-node-type-ike-s-life .views-field-field-hero-image img
 .page-node-type-newsletter-article .views-field-field-hero-image img {
   object-fit: cover;
   max-height: 440px;
+  max-width: 100%;
 }
 
 .hero-home .views-field-field-hero-image,
@@ -223,6 +238,12 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1376px) {
+  .hero-basic .view-content {
+    margin: 0 var(--gutter-xl);
+  }
+}
+
 
 .hero-home h1, 
 .hero-home .label-large, 
@@ -234,6 +255,9 @@
 .header-hero .views-field-field-subheading, .view-hero-basic-page-alt .views-field-field-subheading {
   max-width: 960px;
   color: var(--neutral-90);
+}
+
+@media screen and (max-width: 1376px) {
 }
 
 /** Ike's Life **/
@@ -343,26 +367,32 @@
 
 /** Ikeducation **/
 
-.view-hero-basic-page-education .views-row {
+.view-hero-basic-page-education .views-row a {
   display: flex; 
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: baseline;
-  max-height: 280px;
+  align-items: center;
+  text-decoration: none;
 }
 
-.views-field-field-hero-icon  {
-  height: 240px;
-}
-
-.views-field-field-hero-icon img {
+.view-hero-basic-page-education img {
   width: 128px;
   object-fit: contain;
   margin-right: 2.8rem;
   margin-top: -1rem;
 }
 
-.view-hero-basic-page-education .label-medium {
+@media screen and (max-width: 560px) {
+  .view-hero-basic-page-education img {
+    display: none;
+  }
+}
+
+.view-hero-basic-page-education .text-container {
+  max-width: 960px;
+}
+
+.view-hero-basic-page-education .label-medium,
+.view-hero-basic-page-education h1, 
+.view-hero-basic-page-education .subheading {
   color: var(--primary-90);
 }
 

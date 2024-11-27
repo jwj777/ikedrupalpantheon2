@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Custom row template for hero_basic_page_education view.
+ *
+ * Available variables:
+ * - fields: An array of fields for this row. Each field contains:
+ *   - content: The field content.
+ *   - raw: The raw field content.
+ *   - class: The safe class id to apply to the field.
+ * - view: The view object.
+ * - row: The raw row from the database query.
+ */
+#}
+
+<div class="row-wrapper">
+  <a href="/node/{{ row._entity.nid.value }}" class="row-link">
+
+    <div class="field-image">
+      <img src="/sites/default/files/2024-10/IKEd_Logo.png" />
+    </div>
+    <div class="text-container">
+      <p class="label-medium">IKEducation</p>
+      <div class="field-title">
+        <h1 class="display-large">{{ fields.title.content|striptags }}</h1>
+      </div>
+      <div class="subheading">
+        {{ fields.field_subheading.content }}
+      </div>
+    </div>
+
+  </a>
+</div>
