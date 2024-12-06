@@ -87,6 +87,14 @@
   padding: 4rem 0 20rem 0;
 }
 
+@media screen and (max-width: 712px) {
+  .node-id-37 .hero-basic {
+    max-width: var(--xl);
+    margin: 0 auto;
+    padding: 4rem 0 24rem 0;
+  }
+}
+
 .node-id-36 .hero-basic {
   padding-bottom: 6rem !important;
   margin-bottom: 2rem;
@@ -244,7 +252,6 @@
   }
 }
 
-
 .hero-home h1, 
 .hero-home .label-large, 
 .hero-basic h1 {
@@ -369,7 +376,7 @@
 
 .view-hero-basic-page-education .views-row a {
   display: flex; 
-  align-items: center;
+  /* align-items: center; */
   text-decoration: none;
 }
 

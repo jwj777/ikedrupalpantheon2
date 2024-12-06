@@ -5,13 +5,16 @@
 
     <div class="paragraph-heading">
       <div class="heading-text">
-        <h2 class="display-medium">{{ content.field_title }}</h2>
-        <p class="body-large">{{ content.field_subheading|render|striptags|raw }}</p>
+        <h2 class="display-large">{{ content.field_title }}</h2>
+        <p class="heading-small">{{ content.field_subheading|render|striptags|raw }}</p>
         {{ content.field_link_button}}
       </div>
         {{ content.field_section_icon }}
     </div>
-    <h3 class="heading-small">Featured Soldiers</h3>
+    <div class="soldiers-row-text">
+      <h3 class="heading-medium">Featured Soldiers</h3>
+      <p class="body-large">{{ content.field_body|render|striptags|raw }}</p>
+    </div>
     {{ content.field_paragraph_view_reference }}
   </div>
   </div>

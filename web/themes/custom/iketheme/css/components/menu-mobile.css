@@ -31,10 +31,16 @@
   overflow-y: auto;
   background: var(--primary-10);
   width: 380px;
-  height: 100vh;
+  height: 90vh;
   padding: 2rem;
   z-index: 1000; /* Ensure it is above other elements */
   transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-nav-container {
+    width: auto;
+  }
 }
 
 .mobile-nav-container.visible {

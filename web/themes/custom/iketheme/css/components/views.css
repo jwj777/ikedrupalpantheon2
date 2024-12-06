@@ -11,21 +11,22 @@
 
 .js-form-item-keys input {
   width: 100%;
-  background: var(--secondary-95);
+  background: var(--secondary-90);
   border-radius: 2rem;
   padding: 1rem 1.25rem;
-  border: 1px solid var(--secondary-95);
+  border: 1px solid var(--secondary-80);
+}
+
+@media screen and (max-width: 440px) {
+  .js-form-item-keys input {
+    width: 88%;
+  }
 }
 
 .js-form-item-keys label {
   position: absolute;
-  top: 41px;
+  top: 66px;
   margin-left: 23px;
-}
-
-.view-lesson-plans .js-form-item-keys label {
-  position: absolute;
-  top: 52px;
 }
 
 
@@ -57,6 +58,13 @@
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 968px) {
+  .view-soliders-main {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
 .view-soliders-main .view-content {
   display: flex;
   flex-wrap: wrap;
@@ -69,13 +77,35 @@
   max-width: 220px;
 }
 
+@media screen and (max-width: 560px) {
+  .view-soliders-main .views-row, 
+  .view-soldiers-featured .views-row {
+    margin: 0.8rem 0;
+    max-width: none;
+    width: 100%
+  }
+}
+
 .view-soliders-main .view-filters {
-  flex: 1 1 22%;
+  flex: 1 1 318px;
   margin-right: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .view-soliders-main .view-filters {
+    flex: 1 1 auto;
+    margin-right: 0rem;
+  }
 }
 
 .view-soliders-main .view-content {
   flex: 1 1 68%;
+}
+
+@media screen and (max-width: 1216px) {
+  .view-soliders-main .view-content {
+    flex: 1 1 490px;
+  }
 }
 
 .view-soliders-main .pager {
@@ -286,24 +316,57 @@
 /** lesson plans **/
 
 .view-lesson-plans {
-  width: var(--xl);
   margin-bottom: 4rem;
   margin-top: -17rem;
+}
+
+@media screen and (max-width: 1376px) {
+  .view-lesson-plans {
+    max-width: 920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .view-lesson-plans {
+    margin-top: -22rem;
+  }
 }
 
 .view-lesson-plans .view-content {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 0rem;
 }
 
-.view-lesson-plans .views-row {
+@media screen and (max-width: 1376px) {
+  .view-lesson-plans .view-content {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1376px) {
+  .view-lesson-plans .view-filters {
+    margin-bottom: 2rem;
+  }
+}
+
+.view-lesson-plans .card-image-title {
   width: 424px;
-  max-width: none;
+  /* max-width: none; */
   margin: 0 1rem 2rem 1rem;
   background: var(--primary-95);
   border-radius: 1.5rem;
   overflow: hidden;
+}
+
+@media screen and (max-width: 712px) {
+  .view-lesson-plans .card-image-title {
+    width: 100%;
+  }
 }
 
 .view-lesson-plans .text-container {
@@ -321,6 +384,7 @@
 .view-lesson-plans a {
   text-decoration: none;
 }
+
 
 .view-lesson-plans img {
   width: 100%;
@@ -353,6 +417,23 @@
   display: block;
   color: var(--primary-90);
   margin-bottom: 1.5rem;
+}
+
+.view-lesson-plans .js-form-item-keys label {
+  position: absolute;
+  top: 52px;
+}
+
+@media screen and (max-width: 1376px) {
+  .view-lesson-plans .js-form-item-keys label {
+    top: -218px;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .view-lesson-plans .js-form-item-keys label {
+    top: -300px;
+  }
 }
 
 #edit-field-grade-levels-select-value ul {
@@ -388,9 +469,25 @@
   align-items: center;
 }
 
+@media screen and (max-width: 1376px) {
+  .view-lesson-plans .form--inline {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
 .view-lesson-plans .js-form-type-textfield {
+  float: none !important;
   width: 280px;
   margin-right: 4rem;
+}
+
+@media screen and (max-width: 1376px) {
+  .view-lesson-plans .js-form-type-textfield {
+    width: 90%;
+    margin-right: 0rem;
+    margin-bottom: 0px;
+  }
 }
 
 
@@ -420,6 +517,37 @@
   margin-top: -4rem;
 }
 
+@media screen and (max-width: 1376px) { 
+  .view-education-programs .view-content {
+    max-width: var(--lg);
+  }
+}
+
+@media screen and (max-width: 1216px) { 
+  .view-education-programs .view-content {
+    max-width: var(--md);
+  }
+}
+
+@media screen and (max-width: 968px) { 
+  .view-education-programs .view-content {
+    margin-top: 0rem;
+    margin-left: 0;
+  }
+}
+
+.view-education-programs .form--inline {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 968px) { 
+  .view-education-programs .form--inline {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 .view-education-programs h3 {
   color: var(--primary-10);
   width: 100%;
@@ -427,6 +555,12 @@
   margin-bottom: 2rem;
   font-size: 3.5rem;
   font-weight: 300;
+}
+
+@media screen and (max-width: 480px) { 
+  .view-education-programs h3 {
+    width: auto;
+  }
 }
 
 .view-education-programs .heading-small {
@@ -439,14 +573,22 @@
   margin-bottom: -2rem;
 }
 
+@media screen and (max-width: 968px) {
+  .view-education-programs .view-filters {
+    justify-content: flex-start;
+    margin-bottom: 0px;
+  }
+}
 
 .view-education-programs .js-form-type-select {
   margin-right: 2rem;
 }
 
 .view-education-programs .js-form-type-checkbox {
-  margin-top: 1rem;
+  height: 24px;
   margin-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .view-education-programs .views-exposed-form {

@@ -110,6 +110,13 @@ abbr.ajax-changed {
   float: none;
 }
 
+.view-soliders-main .views-exposed-form .js-form-type-checkbox {
+  height: 28px;
+}
+.view-soliders-main .views-exposed-form .js-form-type-checkbox input {
+  margin-top: 8px;
+}
+
 .form-type-checkbox {
   display: flex;
   margin-top: 0.4em;

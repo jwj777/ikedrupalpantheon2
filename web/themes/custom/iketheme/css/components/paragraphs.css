@@ -32,8 +32,6 @@
   margin-bottom: 2rem;
 }
 
-
-
 .field--name-field-column-one {
   margin-right: 32px;
 }
@@ -97,7 +95,7 @@
 }
 
 .paragraph-featured-soldiers > .paragraph-inner {
-  max-width: var(--lg);
+  max-width: var(--xl);
   margin: 0 auto;
 }
 
@@ -235,6 +233,12 @@
   padding-bottom: 4rem;
 }
 
+@media screen and (max-width: 1216px) {
+  .paragraph--type--body-text-image {
+    flex-direction: column;
+  }
+}
+
 .paragraph--type--body-text-image h2 {
   margin-bottom: 2.5rem;
 }
@@ -243,8 +247,20 @@
   margin-right: 4rem;
 }
 
+@media screen and (max-width: 712px) {
+  .paragraph--type--body-text-image .field--name-field-text {
+    margin-right: 0rem;
+  }
+}
+
 .paragraph--type--body-text-image .field--name-field-image {
   margin: 0 1rem;
+}
+
+@media screen and (max-width: 1216px) {
+  .paragraph--type--body-text-image .field--name-field-image {
+    margin: 0;
+  }
 }
 
 .paragraph--type--body-text-image .field--type-image img {
@@ -254,8 +270,24 @@
   margin-right: 2.5rem;
 }
 
-/** body quote **/
+@media screen and (max-width: 712px) {
+  .paragraph--type--body-text-image .field--type-image img {
+    max-width: none;
+    margin-right: 0rem;
+  }
+}
 
+@media screen and (max-width: 1216px) {
+  .paragraph--type--body-text-image .field--type-image img {
+    max-width: 100%;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+}
+
+
+/** body quote **/
 .paragraph--type--body-quote {
   margin-top: 2rem;
   margin-bottom: 3rem;
@@ -334,12 +366,6 @@
   padding-top: 3rem;
 }
 
-/* .node-id-1919 .paragraph--type--cards-array {
-  padding: 4rem 0 4rem 0;
-  position: relative;
-  bottom: 8rem;
-} */
-
 .field--name-field-card {
   display: flex;
   flex-wrap: wrap;
@@ -349,33 +375,33 @@
   width: 100%;
 }
 
+@media screen and (max-width: 968px) {
+  .field--name-field-card {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .field--name-field-card {
+    right: 0px;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .node-id-1918 .field--name-field-card .field__item,
+  .node-id-1919 .field--name-field-card .field__item {
+    width: 100%;
+  }
+}
+
 .page-node-type-education .field--name-field-card {
   padding-top: 3rem;
 }
 
 .node-id-1807 .field--name-field-card {
   margin-top: 3rem;
-}
-
-.card-image-title {
-  background-color: var(--primary-95);
-  border-radius: 1.5rem;
-  max-width: 360px;
-  margin: 0 1rem;
-}
-
-.card-image-title img {
-  max-width: 360px;
-  height: auto;
-}
-
-.card-image-title a {
-  text-decoration: none;
-}
-
-.card-title {
-  padding: 1.2rem 1rem 1.6rem 1.5rem;
-  color: var(--primary-10) !important;
+  flex-wrap: nowrap;
 }
 
 .paragraph--type--cards-array .field--name-field-text {
@@ -408,6 +434,7 @@
   object-fit: contain;
   height: auto;
   margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 .paragraph-featured-soldiers .paragraph-heading {
@@ -421,9 +448,17 @@
 }
 
 .paragraph-featured-soldiers .heading-text {
-  max-block-size: 720px;
-  margin-right: 2rem;
+  max-width: 720px;
+  margin-right: 6rem;
   margin-bottom: 4rem;
+}
+
+.paragraph-featured-soldiers .field--name-field-link-button {
+  margin-top: 4rem;
+}
+
+.paragraph-featured-soldiers .soldiers-row-text {
+  max-width: var(--lg);
 }
 
 .paragraph-featured-soldiers .body-large {
@@ -466,6 +501,13 @@
 .paragraph--type--text-array .field__item {
   width: 480px;
   padding: 0 2rem 0.5rem 0;
+}
+
+@media screen and (max-width: 640px) {
+  .paragraph--type--text-array .field__item {
+    width: auto;
+    padding: 0;
+  }
 }
 
 .paragraph--type--text-array .field__item p {
@@ -558,33 +600,94 @@
 
 /** node id 1807 - Book Your Experience **/
 
+.node-id-1807 .field--name-field-card {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+  position: relative;
+  right: 1rem;
+}
+
+/* @media screen and (max-width: 968px) {
+  .node-id-1807 .field--name-field-card {
+    position: relative;
+    right: 0rem;
+  }
+} */
+
 .node-id-1807 .field--name-field-paragraphs {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  /* background-color: var(--primary-95);
+  border-radius: 1.5rem; */
 }
 
-.node-id-1807 .field--name-field-paragraphs .field__item:nth-child(1) {
-  width: 100%;
+.node-id-1807 .field--name-field-paragraphs .field__item {
+  max-width: 100%;
+  margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 1216px) {
+  .node-id-1807 .field--name-field-paragraphs .field__item {
+    width: 100%
+  }
+}
+
+/* @media screen and (max-width: 1376px) {
+  .node-id-1807 .field--name-field-paragraphs .field__item:nth-child(2) {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .node-id-1807 .field--name-field-paragraphs .field__item:nth-child(2) {
+    width: auto;
+  }
+} */
+
+/* .node-id-1807 .field--name-field-paragraphs .field__item:nth-child(3) {
+  max-width: 320px;
+} */
 
 .node-id-1807 .paragraph--type--cards-array {
   background-color: var(--primary-95);
-  padding: 3rem 4rem 4rem 4rem;
+  padding: 3rem 4rem 3rem 4rem;
   border-radius: 1.5rem;
   margin-bottom: 3rem;
 }
 
-.node-id-1807 .paragraph--type--cards-array .field__item:nth-child(1) {
-  width: auto;
+@media screen and (max-width: 1376px) {
+  .node-id-1807 .paragraph--type--cards-array {
+    width: auto;
+    background-color: var(--primary-95);
+    padding: 2rem 3rem 3rem 3rem;
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+  }
 }
 
-.node-id-1807 .field--name-field-paragraphs .field__item:nth-child(3) {
+@media screen and (max-width: 712px) {
+  .node-id-1807 .paragraph--type--cards-array {
+    width: auto;
+    background-color: var(--primary-98);
+    padding: 0;
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/* .node-id-1807 .paragraph--type--cards-array .field__item:nth-child(1) {
+  width: auto;
+} */
+
+/* .node-id-1807 .field--name-field-paragraphs .field__item:nth-child(3) {
   flex: 1;
 }
 
 .node-id-1807 .paragraph--type--cards-array .field__item:nth-child(3) {
   flex: auto;
-}
+} */
 
 .node-id-1807 .paragraph--type--markup {
   width: 920px;
@@ -592,13 +695,34 @@
   margin-right: 2rem;
 }
 
+@media screen and (max-width: 1216px) {
+  .node-id-1807 .paragraph--type--markup {
+    width: 100%;
+    margin-top: 1rem;
+    margin-right: 0rem;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .node-id-1807 .paragraph--type--markup {
+    /* width: 320px;
+    margin-top: 1rem;
+    margin-right: 0rem; */
+  }
+}
+
 .node-id-1807 .paragraph--type--body-text {
-  width: auto;
+  width: 320px;
   margin-top: 1rem;
   background-color: var(--primary-95);
   padding: 2rem 2.5rem 3rem 2.5rem;
   border-radius: 1.5rem;
+}
 
+@media screen and (max-width: 1216px) {
+  .node-id-1807 .paragraph--type--body-text {
+    width: auto;
+  }
 }
 
 .node-id-1807 .paragraph--type--body-text h3 {
@@ -614,8 +738,27 @@
   padding: 2rem 2rem 2rem 2rem;
   border-radius: 1rem;
   margin: 0 1rem;
-  min-height: 134px;
-  width: 320px;
+  height: 216px;
+  width: 286px;
+}
+
+@media screen and (max-width: 1376px) {
+  .paragraph--type--heading-with-icon-text {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .paragraph--type--heading-with-icon-text {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .paragraph--type--heading-with-icon-text {
+    width: auto;
+  }
 }
 
 .paragraph--type--heading-with-icon-text h3 {
@@ -628,9 +771,9 @@
   max-width: 240px;
 }
 
-.paragraph--type--heading-with-icon-text .field--name-field-card-icon img {
+.paragraph--type--heading-with-icon-text img {
   width: 44px;
-  height: 44px;
+  height: 32px;
   object-fit: contain;
   margin-right: 1.5rem;
 }
@@ -647,10 +790,23 @@
   background-color: var(--primary-95);
 }
 
+@media screen and (max-width: 712px) {
+  .paragraph--type--card-image-title-description {
+    max-width: none;
+    margin: 1rem 0;
+  }
+}
+
 .paragraph--type--card-image-title-description img {
   width: 412px;
   height: 328px;
   object-fit: cover;
+}
+
+@media screen and (max-width: 712px) {
+  .paragraph--type--card-image-title-description img {
+    width: 100%;
+  }
 }
 
 .paragraph--type--card-image-title-description .field--name-field-heading-3 {

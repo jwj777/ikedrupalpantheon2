@@ -442,6 +442,17 @@
   height: 310px;
 }
 
+@media screen and (max-width: 560px) {
+  .view-soliders-main .soldier-image img,
+  .view-soldiers-featured img {
+    display: flex;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 310px;
+  }
+}
+
 .view-soliders-main .views-row p,
 .view-soldiers-featured .views-row p {
   margin: 0px;
@@ -474,8 +485,33 @@ p.text-light {
   background: var(--primary-95);
   border-radius: 1.5rem;
   overflow: hidden;
-  /* position: relative;
-  right: 1rem; */
+  position: relative;
+  right: 1rem;
+}
+
+@media screen and (max-width: 712px) {
+  .card-image-title {
+    width: 100%;
+    right: 0rem;
+    margin-bottom: 3rem;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .view-education-programs .card-image-title {
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    right: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card-image-title {
+    right: 0px;
+  }
 }
 
 .card-image-title .text-container {
@@ -483,7 +519,6 @@ p.text-light {
   flex-direction: column;
   justify-content: space-between;
   padding: 2rem 2.5rem 2.5rem 2.5rem;
-  /* height: 112px; */
 }
 
 .view .card-image-title .text-container {
@@ -491,7 +526,6 @@ p.text-light {
   flex-direction: column;
   justify-content: space-between;
   padding: 1.5rem 2.5rem 2.5rem 2.5rem;
-  /* height: 112px; */
 }
 
 .view-primary-source-main  .card-image-title .text-container {
@@ -504,7 +538,7 @@ p.text-light {
 }
 
 .card-image-title img {
-  max-width: 100%;
+  width: 100%;
   height: 316px;
   object-fit: cover;
 }
@@ -531,6 +565,14 @@ p.text-light {
   width: 100%;
 }
 
+@media screen and (max-width: 968px) {
+  .card-news a {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: -16rem;
+  }
+}
+
 .card-news .text-container {
   display: flex;
   flex-direction: column;
@@ -542,6 +584,22 @@ p.text-light {
   padding: 2rem 16rem 2.25rem 3rem;
   border-radius: 1.5rem;
   margin-right: -128px;
+}
+
+@media screen and (max-width: 1216px) {
+  .card-news .text-container {
+    padding: 2rem 16rem 2.25rem 3rem;
+    margin-right: -188px;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .card-news .text-container {
+    padding: 2rem 3rem 14rem 3rem;
+    margin-right: 0px;
+    justify-content: flex-start;
+    min-height: auto;
+  }
 }
 
 .card-news h2 {
@@ -569,6 +627,17 @@ p.text-light {
   object-fit: cover;
   border-radius: 1.5rem;
   margin-top: 3rem;
+}
+
+@media screen and (max-width: 968px) {
+  .card-news img {
+    height: 304px;
+    width: 408px;
+    overflow: hidden;
+    position: relative;
+    right: 60px;
+    bottom: 274px;
+  }
 }
 
 .card-news p {
