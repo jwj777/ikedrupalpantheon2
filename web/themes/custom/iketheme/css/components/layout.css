@@ -54,7 +54,7 @@
 /** containers **/
 
 .lg-container, .container-lg {
-  max-width: var(--xl);
+  max-width: var(--lg);
   margin: 0 auto;
 }
 

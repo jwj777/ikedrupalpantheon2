@@ -39,7 +39,7 @@
 
 @media screen and (max-width: 480px) {
   .mobile-nav-container {
-    width: 80%;
+    width: 72%;
   }
 }
 
@@ -79,6 +79,7 @@
   overflow: hidden;
   opacity: 0;
   visibility: hidden;
+  padding-left: 2rem;
   transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
 }
 
