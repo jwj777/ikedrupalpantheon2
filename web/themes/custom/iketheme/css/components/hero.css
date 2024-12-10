@@ -43,8 +43,7 @@
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 100%);
 }
 
-/* bottom gradient */
-.path-frontpage .hero-home::before {
+.path-frontpage .block-views-blockhero-homepage-block-1::before {
   content: "";
   position: absolute;
   left: 0;
@@ -231,6 +230,7 @@
   object-fit: cover;
   border-radius: 1.5rem;
   margin-right: 1rem;
+  max-width: 100%;
 }
 
 
@@ -246,11 +246,11 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1376px) {
+/* @media screen and (max-width: 1376px) {
   .hero-basic .view-content {
     margin: 0 var(--gutter-xl);
   }
-}
+} */
 
 .hero-home h1, 
 .hero-home .label-large, 

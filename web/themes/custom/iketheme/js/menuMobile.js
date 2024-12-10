@@ -1,7 +1,13 @@
+
 function toggleMenu(event) {
   event.preventDefault();
   const menu = document.getElementById("mobile-nav-container");
   const body = document.body;
+
+  if (!menu) {
+    console.error("Mobile menu container not found.");
+    return;
+  }
 
   if (menu.classList.contains("visible")) {
     menu.classList.remove("visible");
@@ -14,50 +20,36 @@ function toggleMenu(event) {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Select all primary links
-  const primaryLinks = document.querySelectorAll(".lvl1");
+  const dropdownTriggers = document.querySelectorAll(".dropdown-trigger");
 
-  primaryLinks.forEach(link => {
-    link.addEventListener("click", event => {
+  dropdownTriggers.forEach(trigger => {
+    trigger.addEventListener("click", event => {
       event.preventDefault(); // Prevent default link behavior
 
-      // Find the parent `.nav1` and its associated `.accordionToggle`
-      const navContainer = link.closest(".nav1");
-      const accordionToggle = navContainer.querySelector(".accordionToggle");
-
-      if (!accordionToggle) {
-        console.error("Accordion toggle not found for:", link);
+      const dropdown = trigger.nextElementSibling; // Find the corresponding dropdown
+      if (!dropdown || !dropdown.classList.contains("accordionToggle")) {
+        console.error("Dropdown not found for:", trigger);
         return;
       }
 
-      // Toggle visibility of the clicked accordion
-      const isVisible = accordionToggle.classList.contains("visible");
+      const isVisible = dropdown.classList.contains("visible");
 
-      // Close all other accordions
-      document.querySelectorAll(".accordionToggle").forEach(toggle => {
-        if (toggle !== accordionToggle) {
-          toggle.classList.remove("visible");
-          toggle.style.maxHeight = null; // Reset max-height to collapse
+      // Close all other dropdowns
+      document.querySelectorAll(".accordionToggle.visible").forEach(openDropdown => {
+        if (openDropdown !== dropdown) {
+          openDropdown.classList.remove("visible");
+          openDropdown.style.maxHeight = null; // Reset height
         }
       });
 
+      // Toggle the clicked dropdown
       if (isVisible) {
-        // Collapse the currently open accordion
-        accordionToggle.classList.remove("visible");
-        accordionToggle.style.maxHeight = null; // Reset max-height
+        dropdown.classList.remove("visible");
+        dropdown.style.maxHeight = null; // Collapse
       } else {
-        // Expand the clicked accordion
-        accordionToggle.classList.add("visible");
-        accordionToggle.style.maxHeight = accordionToggle.scrollHeight + "px"; // Dynamically set max-height
+        dropdown.classList.add("visible");
+        dropdown.style.maxHeight = dropdown.scrollHeight + "px"; // Expand
       }
     });
   });
 });
-
-
-
-
-
-
-
-

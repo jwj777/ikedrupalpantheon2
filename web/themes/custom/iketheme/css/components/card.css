@@ -181,6 +181,14 @@
   }
 }
 
+@media screen and (max-width: 712px) {
+  .ikes-life-item-square {
+    margin-right: var(--gutter-sm);
+    margin-left: var(--gutter-sm);
+    align-items: flex-start;
+  }
+}
+
 .ikes-life-item-square .view-content {
   display: flex;
   flex-wrap: wrap;
@@ -312,6 +320,14 @@
   .ikes-life-item-square-md {
     margin-right: var(--gutter-xl);
     margin-left: var(--gutter-xl);
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .ikes-life-item-square-md {
+    margin-right: var(--gutter-sm);
+    margin-left: var(--gutter-sm);
     align-items: flex-start;
   }
 }

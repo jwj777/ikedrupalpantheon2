@@ -6,9 +6,9 @@
   --sm: 712px;
   --xs: 440px;
   --gutter-xl: 32px;
-  --gutter-lg: 32px;
+  --gutter-lg: 30px;
   --gutter-md: 28px;
-  --gutter-sm: 28px;
+  --gutter-sm: 26px;
   --gutter-xs: 24px;
 }
 
@@ -105,7 +105,7 @@
 
 .page-node-type-page .layout-content,
 .page-node-type-lesson-plan .layout-content {
-  max-width: var(--xl);
+  max-width: var(--lg);
 }
 
 @media screen and (max-width: 1376px) {
@@ -224,6 +224,15 @@
 .page-node-type-news-home .region-content {
   max-width: var(--lg);
 }
+
+@media screen and (max-width: 1376px) {
+  .page-node-type-ike-s-life .region-content,
+  .page-node-type-soldier .region-content,
+  .page-node-type-news-home .region-content {
+   margin: 0 var(--gutter-xl);
+  }
+}
+
 /* 
 .node__content .field--name-body .field-inner {
   margin: 0 var(--gutter-xl)

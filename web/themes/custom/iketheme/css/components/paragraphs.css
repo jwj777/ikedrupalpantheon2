@@ -32,6 +32,14 @@
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 712px) {
+
+.field--name-field-column-one,
+.field--name-field-column-two {
+  padding: 32px 32px 40px 32px;
+}
+}
+
 .field--name-field-column-one {
   margin-right: 32px;
 }
@@ -117,10 +125,23 @@
 .paragraph--type--two-column-image-text-block .paragraph-inner {
   align-items: center;
 }
-.paragraph--type--two-column-image-text-block .field--name-field-block-image img {
+
+.paragraph--type--two-column-image-text-block .field--name-field-block-image {
   margin-right: 48px;
   margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 968px) {
+  .paragraph--type--two-column-image-text-block .field--name-field-block-image {
+    margin-right: 0px;
+    margin-bottom: 2rem;
+  }
+}
+
+.paragraph--type--two-column-image-text-block .field--name-field-block-image img {
+  max-width: 100%;
+}
+
 .paragraph--type--two-column-image-text-block h2 {
   max-width: 560px;
 }
@@ -136,7 +157,16 @@
 
 @media screen and (max-width: 1216px) {
   .paragraph--type--two-column-text-collage .text-column {
-    padding: 64px 64px 160px 64px;
+    padding: 48px 40px 160px 40px;
+    margin-right: 0px;
+    width: auto;
+  }
+}
+
+
+@media screen and (max-width: 712px) {
+  .paragraph--type--two-column-text-collage .text-column {
+    padding: 32px 32px 160px 32px;
     margin-right: 0px;
     width: auto;
   }
@@ -168,11 +198,47 @@
   }
 }
 
+@media screen and (max-width: 968px) {
+  .paragraph--type--two-column-text-collage .collage {
+    width: auto;
+    bottom: 100px;
+    margin-bottom: -100px;
+    right: 2rem;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .paragraph--type--two-column-text-collage .collage {
+    width: auto;
+    bottom: 100px;
+    margin-bottom: -100px;
+    right: 0rem;
+  }
+}
+
 .paragraph--type--two-column-text-collage .image-row-1 .image-item  {
   border-radius: 1.5rem;
   overflow: hidden;
   width: 560px;
   height: 280px;
+}
+
+.paragraph--type--two-column-text-collage .image-row-1 .image-item img {
+  width: 560px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 960px) {
+  .paragraph--type--two-column-text-collage .image-row-1 .image-item  {
+    width: auto;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .paragraph--type--two-column-text-collage .image-row-1 img {
+    max-width: 100%;
+  }
 }
 
 .paragraph--type--two-column-text-collage .image-row-1 {
@@ -181,11 +247,11 @@
   margin-bottom: 2rem;
 }
 
-.paragraph--type--two-column-text-collage .image-row-1 img {
+/* .paragraph--type--two-column-text-collage .image-row-1 img {
   width: 560px;
   height: 280px;
   object-fit: cover;
-}
+} */
 
 .paragraph--type--two-column-text-collage .image-row-2 {
   display: flex;
@@ -220,6 +286,12 @@
   width: 360px;
   height: 220px;
   object-fit: cover;
+}
+
+@media screen and (max-width: 960px) {
+  .paragraph--type--two-column-text-collage .image-row-2 {
+    display: none;
+  }
 }
 
 
@@ -332,9 +404,22 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 968px) {
+  .paragraph--type--body-text-image-array {
+    flex-direction: column;
+  }
+}
+
 .paragraph--type--body-text-image-array .field--name-field-body {
   max-width: 560px;
   padding-right: 3rem;
+}
+
+@media screen and (max-width: 968px) {
+  .paragraph--type--body-text-image-array .field--name-field-body {
+    max-width: 100%;
+    padding-right: 0px;
+  }
 }
 
 .field--name-field-image-array {
@@ -345,10 +430,26 @@
   margin-top: 1rem;
 }
 
+@media screen and (max-width: 968px) {
+  .field--name-field-image-array {
+    justify-content: flex-start;
+    max-width: none;
+  }
+}
+
 .field--name-field-image-array .field__item img {
   max-width: 280px;
   margin-right: 1rem;
   object-fit: cover;
+}
+
+@media screen and (max-width: 968px) {
+  .field--name-field-image-array .field__item img {
+    max-width: 280px;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    object-fit: cover;
+  }
 }
 
 .field--name-field-image-array img {
@@ -451,6 +552,14 @@
   max-width: 720px;
   margin-right: 6rem;
   margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 712px) {
+  .paragraph-featured-soldiers .heading-text {
+    max-width: 720px;
+    margin-right: 0rem;
+    margin-bottom: 4rem;
+  }
 }
 
 .paragraph-featured-soldiers .field--name-field-link-button {
@@ -594,9 +703,9 @@
   max-width: 560px;
 }
 
-.node-id-2 .field--name-field-paragraphs .field__item:nth-child(3) {
+/* .node-id-2 .field--name-field-paragraphs .field__item:nth-child(3) {
   width: 100%;
-}
+} */
 
 /** node id 1807 - Book Your Experience **/
 
