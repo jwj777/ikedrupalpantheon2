@@ -145,7 +145,12 @@
 
 .page-node-type-lesson-plan .node__content {
   display: flex;
-  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1376px) {
+  .page-node-type-lesson-plan .node__content {
+    flex-direction: column;
+  }
 }
 
 .page-node-type-lesson-plan .layout-content {
@@ -154,6 +159,7 @@
 }
 
 .page-node-type-lesson-plan .text-container {
+  max-width: 532px;
   background-color: var(--primary-95);
   border-radius: 1.5rem;
   padding: 2.5rem 3rem 4rem 3rem;
@@ -162,6 +168,7 @@
 
 @media screen and (max-width: 1376px) {
   .page-node-type-lesson-plan .text-container {
+    max-width: none;
     margin-right: 0rem;
     margin-bottom: 4rem;
   }
