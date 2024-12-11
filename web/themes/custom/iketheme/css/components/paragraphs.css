@@ -463,6 +463,12 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1376px) {
+  .paragraph--type--cards-array {
+    margin: 0 var(--gutter-xl);
+  }
+}
+
 .page-node-type-education .paragraph--type--cards-array {
   padding-top: 3rem;
 }
@@ -472,7 +478,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   position: relative;
-  right: 1rem;
+  /* right: 1rem; */
   width: 100%;
 }
 
@@ -503,6 +509,10 @@
 .node-id-1807 .field--name-field-card {
   margin-top: 3rem;
   flex-wrap: nowrap;
+}
+
+.field--name-field-card p {
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
 }
 
 .paragraph--type--cards-array .field--name-field-text {

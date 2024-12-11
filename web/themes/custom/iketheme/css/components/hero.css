@@ -73,6 +73,11 @@
   padding: 4rem 0 16rem 0;
 }
 
+.header-hero.no-image .hero-basic {
+  padding: 4rem 0 6rem 0;
+  margin-bottom: 11rem;
+}
+
 .page-node-type-primary-source .hero-basic {
   max-width: var(--lg);
   padding: 4rem 0 5rem 0;
@@ -245,6 +250,17 @@
   max-width: var(--xl);
   margin: 0 auto;
 }
+
+.page-node-type-newsletter-article .hero-basic .view-content {
+  max-width: var(--lg);
+  margin: 0 auto;
+}
+
+.page-node-type-newsletter-article .views-field-field-newsletter-article-date {
+  color: var(--primary-90);
+  margin-top: 2rem;
+}
+
 
 /* @media screen and (max-width: 1376px) {
   .hero-basic .view-content {
