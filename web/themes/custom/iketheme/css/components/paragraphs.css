@@ -463,11 +463,11 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1376px) {
+/* @media screen and (max-width: 1376px) {
   .paragraph--type--cards-array {
     margin: 0 var(--gutter-xl);
   }
-}
+} */
 
 .page-node-type-education .paragraph--type--cards-array {
   padding-top: 3rem;

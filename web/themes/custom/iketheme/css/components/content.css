@@ -145,6 +145,7 @@
 
 .page-node-type-lesson-plan .node__content {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .page-node-type-lesson-plan .layout-content {
@@ -159,9 +160,17 @@
   margin-right: 4rem;
 }
 
+@media screen and (max-width: 1376px) {
+  .page-node-type-lesson-plan .text-container {
+    margin-right: 0rem;
+    margin-bottom: 4rem;
+  }
+}
+
 .page-node-type-lesson-plan .field--name-field-summary-image img {
   height: 520px;
   width: 520px;
+  max-width: 100%;
   object-fit: cover;
   border-radius: 1.5rem;
   overflow: hidden;
@@ -233,7 +242,6 @@
   .block-block-content40e06a90-048a-412c-938f-55be4d8845b2 .block-inner {
     flex-wrap: nowrap;
     height: auto;
-    margin: 0 var(--gutter-lg);
   }
 }
 

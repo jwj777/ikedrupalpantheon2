@@ -108,6 +108,11 @@
   max-width: var(--lg);
 }
 
+/** lesson plan page **/
+.node-id-37 .layout-content {
+  max-width: var(--xl);
+}
+
 @media screen and (max-width: 1376px) {
   .page-node-type-page .layout-content,
   .page-node-type-lesson-plan .layout-content {
@@ -139,11 +144,27 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1376px) {
+  .page-node-type-lesson-plan .layout-content,
+  .page-node-type-primary-source .layout-content,
+  .node-id-2117 .layout-content  {
+    margin: 0 var(--gutter-lg);
+  }
+}
+
 .page-node-type-soldier main,
 .page-node-type-primary-source main {
   display: flex;
   max-width: var(--lg);
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1376px) {
+  .page-node-type-soldier main,
+  .page-node-type-primary-source main {
+    flex-direction: column;
+    margin: 0 var(--gutter-lg);
+  }
 }
 
 .page-node-type-primary-source main {
@@ -167,7 +188,8 @@
 }
 
 .page-node-type-basic-page-b .region-content,
-.page-node-type-newsletter-article .region-content {
+.page-node-type-newsletter-article .region-content,
+.page-node-type-education .region-content {
   max-width: var(--xl);
 }
 
@@ -189,18 +211,23 @@
 
 @media screen and (max-width: 1216px) {
   .page-node-type-basic-page-b .region-content,
-  .page-node-type-newsletter-article .region-content {
+  .page-node-type-newsletter-article .region-content,
+  .page-node-type-education .region-content {
     max-width: none;
     margin: 0 var(--gutter-md);
   }
 }
 
-
-
 .page-node-type-primary-source .layout-content {
   padding-right: 4rem;
   padding-bottom: 5rem;
   max-width: 800px;
+}
+
+@media screen and (max-width: 1376px) {
+  .page-node-type-primary-source .layout-content {
+    padding-right: 0rem;
+  }
 }
 
 .page-node-type-newsletter-article .region-content {
@@ -250,8 +277,17 @@
 }
 
 .page-node-type-primary-source .layout-sidebar-second {
-  width: 360px;
+  max-width: 360px;
 }
+
+@media screen and (max-width: 1376px) {
+  .page-node-type-primary-source .layout-sidebar-second {
+    max-width: 100%;
+    width: auto;
+    margin: 0 var(--gutter-lg);
+  }
+}
+
 
 .page-node-type-primary-source .layout-sidebar-second .block {
   background-color: var(--primary-95);
