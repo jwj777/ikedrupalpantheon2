@@ -59,7 +59,7 @@
 }
 
 @media screen and (max-width: 1376px) {
-  .lg-container {
+  .lg-container, .container-lg {
     margin: 0 var(--gutter-lg);
   }
 }
