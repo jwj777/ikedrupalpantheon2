@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+
+        
+        <title>Eisenhower Interactive Timeline</title>
+        
+
+        
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
+        
+        <meta property="og:title" content="EMC"/>
+        <meta property="og:image" content=""/>
+        <meta property="og:description" content=""/>
+        
+        <meta property="og:site_name" content="EMC"/>
+
+        
+        <meta name="twitter:card" content="">
+        <meta name="twitter:url" content="">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="">
+        
+        <meta name="twitter:site" content="@">
+        <meta name="twitter:creator" content="@">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        
+        <link rel="stylesheet" href="/static/css/libs/normalize.css">
+        
+
+        <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="/static/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="/static/img/apple-touch-icon-57x57-precomposed.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/static/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/static/img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/static/img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/img/apple-touch-icon-precomposed.png">
+  
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+        
+
+        <!-- Add your site or application content here 
+        <script>window.jQuery || document.write('<script src="/static/js/libs-bower/jquery/dist/jquery.min.js"><\/script>')</script>-->
+        
+
+    </head> 
+    
+    <body class="is-desktop ">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="site-container">
+            <header class="top-nav">
+	<div class="top-nav-desktop clearfix">
+	
+	<input type="text">
+		<div class="top-nav-desktop-left">
+			<a class="top-nav-txt lg-ml-15 " href="/">Eisenhower Interactive Timeline</a>
+
+		 	<a class="top-nav-txt lg-ml-15 inactive" href="/lessonplans">Lesson Plan Archive</a>
+		</div> 
+		
+		 
+		<div class="top-nav-desktop-right">
+			<div class="top-nav-search-wrapper">
+				<div class="search-icon-desktop"></div>
+			 	
+			 	<input type="text" id="search" class="search-txt" placeholder="search timeline" autocomplete="off">
+			 	
+			 	<div class="close-icon-small"></div>
+			</div>
+		</div>
+		
+	</div>
+</header>
+
+            <section class="site-content-wrap">
+                <div id="container" class="site-content">
+                    <!-- ============ PAGE CONTENT ============ -->
+                    
+                        
+                    
+                </div>
+            </section>
+
+            
+            <footer class="bottom-nav"> 
+ 
+    
+    <div class="bottom-sponsor"  data-duration="4800">
+    	<span class="bottom-sponsor-txt"></span>
+    	  
+    	
+    		<img class="expanded" src="/imagetask/.eJwtjE8LgjAAR7_L77yGLIrYUTGhQ4gdRcayqSN1a1t_RPzuGXR4vMvjlbjY0cfTUSV9HZhIRe4awWpRqJcospjasQUpS-hBtipIf6fWmVp5b5ynvb7SxBm7FhWZMYFv2J7g83endNsF8F1E8Na30IFv2Xapfu0g9RhWhOxtJ8GRnzMQGBu0GT34jMdT9jqsz0O0EDTGDXJ94ZSnGZbqC01RPEU.mdAVeEzfNCPKgvn9WyH3G6gAc9o">
+    	
+    	 
+		
+			<img class="collapsed" src="/imagetask/.eJwVjMsOgyAABP9lz9RY7Stcm8a0h8a7MQQpCqkKBfowxn8vHnayh8lU8Hb0zdRK0YuQMcmsa1kmmJMf5rqGFYcr08KMSQRIVUEPvJOB-2dinRHSe-N80usmOTtjo1GTGRPoZpueCH7rORIoqTsVQHc5wVc_ggLN8v1Sr_LA9RjiGO-t4qAo7wUIjA3ajB50xuvNex1i9JQuBK1xA48t3MpLgaX-A7KmQN0.bOZiJF78aK9P4BANF3RWdr5cl8Q">
+		
+    </div>
+          
+
+    <div class="bottom-nav-desktop clearfix">
+        <div class="bottom-nav-desktop-left">
+            <a href="http://eisenhowermemorial.gov" class="bottom-nav-txt" target="_blank">Dwight D. Eisenhower Memorial</a> 
+        </div> 
+       
+        <div class="bottom-nav-desktop-right">
+        	<!-- SHARE--> 
+			<div class="sharing-list is-invisible">
+				<a class="sharing-item email">
+					<span class="sharing-label-txt">Email</span>
+					<div class="header-icon mail-icon"></div> 
+				</a>
+				<a class="sharing-item facebook">
+					<span class="sharing-label-txt">Facebook</span>
+					<div class="header-icon facebook-icon"></div> 
+				</a>
+				<a class="sharing-item twitter">
+					<span class="sharing-label-txt">Twitter</span>
+					<div class="header-icon twitter-icon"></div> 
+				</a>
+				<a class="sharing-item googleplus">
+					<span class="sharing-label-txt">Google+</span>
+					<div class="header-icon google-icon"></div> 
+				</a>
+				<div class="shim"></div>
+			</div>
+			<!-- END SHARE--> 
+
+			<div class="share-icon btn xs-mt-5"></div>
+            
+            <a href="/credits" class="bottom-nav-txt">Credits</a>
+        </div>
+    </div>
+</footer>
+            
+        </div>
+
+        
+        
+             <!-- ============ PAGE STYLES ============ -->
+             
+            <link rel="stylesheet" href="/static/css/video-js.min.css">
+            
+            
+             
+            <link rel="stylesheet" href="/static/css/screen.css">
+            <link rel="stylesheet" href="/static/css/sprites.css"> 
+             
+
+             
+            <link rel="stylesheet" href="/static/css/font-face.css"> 
+            
+
+            
+                
+                
+                  <script src="https://use.typekit.net/sls0opf.js"></script>
+                  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+                
+             
+            <!-- ============ END PAGE STYLES ============ -->
+
+
+            <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+            <script>  
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', '', '');
+                ga('send', 'pageview');
+            </script>
+
+            
+
+            <script>
+                window.base_url = '/'.replace(/\//g, '')
+                window.require = {
+                    "config":{
+                        "baseUrl":  window.base_url+"/static/js"
+                    }
+                }
+            </script>
+            
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.17/require.min.js" data-main="/static/js/AppMain.1503571918564.min"></script>
+             
+       
+        
+    </body>
+</html>

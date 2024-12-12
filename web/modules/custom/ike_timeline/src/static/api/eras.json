@@ -1,0 +1,35 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "id": "56b789863fdcfe342c064c75",
+      "time_end": " 1911",
+      "time_start": " 1890",
+      "title": "Early Years"
+    },
+    {
+      "id": "56b789953fdcfe342c064c76",
+      "time_end": " 1948",
+      "time_start": " 1911",
+      "title": "Military Career"
+    },
+    {
+      "id": "56b789a43fdcfe342c064c77",
+      "time_end": " 1953",
+      "time_start": " 1948",
+      "title": "Post War"
+    },
+    {
+      "id": "56b789b43fdcfe342c064c78",
+      "time_end": " 1961",
+      "time_start": " 1953",
+      "title": "Presidency"
+    },
+    {
+      "id": "56b789c23fdcfe342c064c79",
+      "time_end": " 1969",
+      "time_start": " 1961",
+      "title": "Post Presidency"
+    }
+  ]
+}

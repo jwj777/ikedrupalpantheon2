@@ -1,0 +1,39 @@
+ike_timeline.legacy:
+  path: '/timeline'
+  defaults:
+    _controller: '\Drupal\ike_timeline\Controller\TimelineController::content'
+    _title: 'Eisenhower Interactive Timeline'
+  requirements:
+    _access: 'TRUE'
+
+ike_timeline.legacy_mobile:
+  path: '/timeline-mobile'
+  defaults:
+    _controller: '\Drupal\ike_timeline\Controller\TimelineController::contentMobile'
+    _title: 'Eisenhower Interactive Timeline'
+  requirements:
+    _access: 'TRUE'
+
+ike_timeline.legacy_internal:
+  path: '/timeline/milestone/{milestone_name}'
+  defaults:
+    _controller: '\Drupal\ike_timeline\Controller\TimelineController::contentInternal'
+    _title: 'Eisenhower Interactive Timeline'
+  requirements:
+    _access: 'TRUE'
+
+ike_timeline.legacy_internal_mobile:
+  path: '/timeline/milestone/{milestone_name}/mobile'
+  defaults:
+    _controller: '\Drupal\ike_timeline\Controller\TimelineController::contentInternalMobile'
+    _title: 'Eisenhower Interactive Timeline'
+  requirements:
+    _access: 'TRUE'
+
+ike_timeline.search:
+  path: '/timeline/search'
+  defaults:
+    _controller: '\Drupal\ike_timeline\Controller\TimelineSearchController::search'
+  methods: [GET]
+  requirements:
+    _access: 'TRUE'

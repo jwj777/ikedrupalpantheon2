@@ -1,0 +1,42 @@
+<li class="accordion-list search">
+	<div class="search-results-num xs-mb-10 xs-ml-20"></div>
+		<ul class="submenu">
+			<li class="grid-sizer"></li>
+			<% _.each(items, function(item) {%>
+			<li class="grid-item" data-id="<%= item.oid %>">
+				<% if(item.category.toLowerCase() == "eisenhower"){ %>
+                    <% if(item.pivotal_moment_link){ %>
+                        <% cat = "pivotal" %>
+                    <% } else { %>
+                        <% cat = "eisenhower" %>
+	                <% } %>
+	            <% } else {%>
+	                <% cat = "history" %>
+	            <% } %>
+	            
+				<% if(item.media_type.toLowerCase() == "audio"){ %>
+						<div class="grid-item-thumbnail <%= cat %> audio lazy">
+							<span class="audioplayer-icon-eisenhower"></span>
+						</div>
+				<% } else { %>		
+					<% if(item.thumbnail_image){ %>		 
+						<div class="grid-item-thumbnail <%= cat %> lazy" style="background-image:url(<%=item.thumbnail_image %>)" data-original="<%= item.thumbnail_image %>"></div> 
+					<% } %> 
+				<% } %> 
+
+				<div class="grid-item-text <%= cat %>">
+					<div class="event-text">
+						<div class="event-title-txt"><%= item.title %></div>
+						<div class="event-date-txt xs-pt-5"><%= item.timespan_display %></div>
+					</div>
+				</div>
+
+				</li>
+
+			<% }); %>
+		</ul>
+		<div class="search-footer">
+			<span class="openarrow-icon"></span>
+			<span class="footer-txt">Top of page</span>
+		</div>
+</li>

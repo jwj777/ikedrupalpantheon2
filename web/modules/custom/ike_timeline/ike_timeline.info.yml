@@ -1,0 +1,10 @@
+name: 'Ike Timeline'
+type: module
+description: 'Module for Interactive Timeline Port'
+core_version_requirement: ^8 || ^9 || ^10
+package: 'Custom'
+
+components:
+  namespaces:
+    ike_timeline:
+      - src/components
