@@ -1,0 +1,27 @@
+{
+  "name": "fastdom",
+  "description": "Eliminates layout thrashing by batching DOM read/write operations",
+  "main": "fastdom.js",
+  "scripts": [
+    "fastdom.js"
+  ],
+  "ignore": [
+    "**/*.",
+    "webpack.config.js",
+    "examples/",
+    "test/",
+    "README.md"
+  ],
+  "license": "MIT",
+  "_source": "https://github.com/wilsonpage/fastdom.git",
+  "homepage": "https://github.com/wilsonpage/fastdom",
+  "version": "1.0.6",
+  "_release": "1.0.6",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.6",
+    "commit": "a1ce65461f28d19961af25530d33a8aafec86a2e"
+  },
+  "_target": "1.0.6",
+  "_originalSource": "fastdom"
+}

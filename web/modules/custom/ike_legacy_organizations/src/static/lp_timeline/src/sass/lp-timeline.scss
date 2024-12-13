@@ -1,0 +1,106 @@
+@import "compass/css3";  
+@import "compass/utilities"; 
+
+@import "bourbon/bourbon";
+
+@import "libs/settings";
+@import "libs/mixins"; 
+@import "libs/reset";
+@import "libs/helper"; 
+@import "libs/forms"; // Import form styles into the cascade (if required)
+// @import "libs/dropkick";
+@import "libs/sass-space"; 
+  
+/**********************************
+ * SUSY IMPORT AND SETTINS     
+ **********************************/
+
+@import "susy"; 
+
+$susy: ( 
+  columns: 10,  
+  gutters: 52/180, 
+  gutter-position: after,
+  math: fluid, 
+  output: float, 
+  //column-width: 90px, 
+  container: 1680px,
+  container-position: center,
+  global-box-sizing: content-box,
+  
+  use-custom: (
+    box-sizing: false,
+  ),
+  
+  debug: (
+    image: show,
+    color: rgba(#66f, .25), 
+    output: background, 
+    toggle: top right, 
+  )
+);
+
+@import "global";
+@import "typography";
+@import "skins";
+@import "modules";
+@import "modals";
+@import "navigation";
+@import "slick";
+@import "video";
+@import "print"; 
+
+// Desktop
+@media only screen and (min-width: $device-min+1) {
+  @import "responsive/desktop";
+}
+
+// Large Desktop 
+@media only screen and (min-width: $large-desktop) {
+  @import "responsive/large-desktop";
+}
+
+/* -------------------- Graceful Degradation Strategy -------------------- */
+
+// All devices
+@media screen and (max-width: $device-min) { 
+    @import "responsive/device";
+}
+
+// 992px 
+@media only screen and (max-width: 992px) {
+    @import "responsive/992";
+}
+
+// 800px
+@media only screen and (max-width: 800px) {
+    @import "responsive/800";
+}
+
+// tablet landscape
+@media only screen and (max-width: $device-min){
+    @import "responsive/tablet_landscape";
+}
+
+// tablet-portrait
+@media only screen and (max-width: $tablet-portrait) {
+    @import "responsive/tablet-portrait";
+}
+
+// 600px
+@media only screen and (max-width: 600px) {
+    @import "responsive/600";
+}
+
+// phone-landscape
+@media only screen and (max-width: $phone-landscape) {
+    @import "responsive/phone-landscape";
+}
+
+// phone-portrait
+@media only screen and (max-width: $phone-portrait) {
+    @import "responsive/phone-portrait";
+}
+ 
+@import "responsive/range";
+@import "shame";

@@ -1,0 +1,35 @@
+{
+  "name": "EMC-legacy",
+  "description": "",
+  "homepage": "https://legacy.eisenhowermemorial.org",
+  "main": "Gruntfile.coffee",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit -v"
+  },
+  "devDependencies": {
+    "bower": "1.7.7",
+    "gaze": "0.3.3",
+    "grunt": "0.4.1",
+    "grunt-cache-breaker": "1.0.1",
+    "grunt-cli": "0.1.13",
+    "grunt-contrib-clean": "0.5.0",
+    "grunt-contrib-coffee": "0.7.0",
+    "grunt-contrib-compass": "0.5.0",
+    "grunt-contrib-internal": "0.4.3", 
+    "grunt-contrib-nodeunit": "0.1.2",
+    "grunt-contrib-requirejs": "0.4.1",
+    "grunt-contrib-sass": "0.2.2",
+    "grunt-contrib-watch": "0.3.1",
+    "grunt-legacy-util": "0.2.0"
+  },
+  "peerDependencies": {
+    "grunt": "0.4.0"
+  },
+  "keywords": [
+    "gruntplugin",
+    "watch"
+  ]
+}

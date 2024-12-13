@@ -1,0 +1,386 @@
+@import "settings";
+@import "compass/css3";
+@import "compass/utilities";
+@import "bourbon/bourbon";
+
+
+// ADD YOUR OWN MIXINS AND HELPERS HERE
+// DESCRIBE WHAT EACH DOES AND HOW TO USE THEM
+
+
+// List styles
+// -------------------------------------------------------
+
+// Mixins for list style types
+@mixin unordered {
+	 list-style-position: outside; 
+	 list-style-type: disc;
+}
+
+@mixin unordered-inside {
+	 list-style-position: inside; 
+	 list-style-type: disc;
+}
+
+@mixin ordered {
+	list-style-position: outside; 
+	list-style-type: decimal;
+}
+
+@mixin ordered-inside {
+	list-style-position: inside; 
+	list-style-type: decimal;
+}
+
+@mixin nobullet {
+	list-style-type: none;
+}
+
+@mixin after-icon($mt:-7px, $ml:5px, $mb:-2px, $mr:-9px){
+    content: " ";
+    display: inline-block !important;
+    margin-top: $mt;
+    margin-left: $ml;
+    margin-bottom: $mb;
+    margin-right: $mr;
+}
+
+// Sizing
+@function vertical-units($units){
+	@return $vertical-unit * $units + px;
+}
+
+@function horizontal-units($units){
+	@return $horizontal-unit * $units + px;
+}
+
+@mixin calc($property, $expression) { 
+  #{$property}: -webkit-calc(#{$expression}); 
+  #{$property}: calc(#{$expression}); 
+} 
+
+@function divide($a, $b) { 
+  @return ($a / $b) * 100%;
+} 
+
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@mixin div-aspect-ration($width:1px, $height:1px){
+  &:after{
+    content: " ";
+    display: block;
+    padding-top: ($height/$width) * 100%;
+  }
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: ($size / $base-font-size) + rem;
+  $perc: ($size / $base-font-size);
+  // line-height: $base-line-height;
+  line-height: $perc * ($base-line-height / $base-font-size) + rem;
+  margin-bottom: $perc * ($base-line-height / $base-font-size) + rem;
+}
+
+@mixin ellipsis(){
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin clearfix() {
+    &:before, 
+    &:after { 
+        content: ""; 
+        display: table; 
+    }
+    
+    &:after { 
+        clear: both;
+    }
+
+    & { *zoom: 1; }
+}
+
+// Advanced typography settings
+// -------------------------------------------------------
+
+// Get advanced with type if needed for ligatures etc...
+
+@mixin advancedtype {
+	//font-variant-ligatures: contextual;  				// Set the default for ligatures
+	//-moz-font-feature-settings: "liga=1,dlig=1";    	// Ligature settings for mozilla
+	font-kerning: normal; 								// Set the default for kerning
+	//-webkit-font-smoothing: antialiased; 				// Improve (or in some cases royally screw with) safari's legibility somewhat
+	//font-synthesis: none; 							// Don't allow the font to create sythetic bold/italic
+	//text-rendering: optimizeLegibility; 				// Improve kerning pairs. Webkit gets funny with this sometimes
+}
+
+
+// Retina images. 
+// Use with care - http://37signals.com/svn/posts/3271-easy-retina-ready-images-using-scss
+// -------------------------------------------------------
+
+@mixin image-2x($image, $width, $height) {
+  @media (min--moz-device-pixel-ratio: 1.3),
+         (-o-min-device-pixel-ratio: 2.6/2),
+         (-webkit-min-device-pixel-ratio: 1.3),
+         (min-device-pixel-ratio: 1.3),
+         (min-resolution: 1.3dppx) {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url($image);
+    background-size: $width $height;
+  }
+}
+
+// Transitions
+// -------------------------------------------------------
+
+// Set-up custom transitions
+
+@mixin trans-prop-dur($prop, $transDuration:0.1s, $easing:linear) {
+    @include transition-property($prop); 
+    @include transition-duration($transDuration); 
+    @include transition-timing-function($easing); 
+}
+
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+
+// HEX to RGB
+// http://codepen.io/sturobson/pen/hdKyv
+// -------------------------------------------------------
+
+@mixin rgba($color, $value) {
+	background-color: $color;
+	background-color: rgba($color, $value);
+}
+
+@mixin full-cover{
+  @include position(absolute, 0 null null 0);
+  @include size(100% 100%);
+}
+// Functions for px to rem conversions
+// ------------------------------------------------------------
+
+@function remify($target, $context) {
+    @if $target == 0 {
+        @return 0;
+    }
+    @return $target / $context + 0rem;
+}
+
+// Make px to rems using base-font-size
+// echo as: font-size: rem-font(#px);
+
+@function rem-font($target, $context: $base-font-size) {
+    @return remify($target, $context);
+}
+
+// Make px to rems using base-line-height
+// echo as: font-size: rem-base(#px);
+
+@function rem-base($target, $context: $base-line-height) {
+    @return remify($target, $context);
+}
+
+@mixin rem-font-styles($font, $line-height) {
+    font-size: rem-font($font);
+    line-height: $line-height/$font + 0em;
+}
+
+
+// Placeholders
+// ------------------------------------------------------------
+
+%center-img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    img, picture{
+        @include transform( translateX(-50%) translateY(-50%) );
+        @include position(relative, 50% null null 50%);
+
+        -webkit-backface-visibility: hidden;
+        visibility: hidden;
+    }
+}
+
+%centering{ 
+  @include transform( translateX(-50%) translateY(-50%) );
+  @include position(relative, 50% null null 50%);
+
+  -webkit-backface-visibility: hidden;
+  visibility: hidden; 
+}
+
+%horizontal-center-img{
+    width: 100%;
+    overflow: hidden;
+
+    img, picture{
+        @include transform(translateX(-50%));
+        
+        position: relative;
+        left: 50%;
+    }
+}
+ 
+%background-cover{
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+}
+
+%background-contain{
+    background-position: center center;
+    background-size: contain;
+    -webkit-background-size: contain;
+    background-repeat: no-repeat;
+}
+
+%background-before-fill{
+    @include position(absolute, 0 0 0 0);
+    @extend %background-cover;
+
+    opacity: 0.85;  
+}
+
+%form-header{
+  height: vertical-units(7);
+  text-align: center;
+}
+
+%image-hover-before{
+  &:before{
+    @include position(absolute, 0 0 0 0);
+    @include opacity(0);
+    @include trans-prop-dur(opacity, 0.1s);
+    
+    content: " ";
+    display: block;
+    background-color: rgb(0,0,0);
+  }
+}
+
+%image-hover{
+  @extend %image-hover-before;
+  
+  &:hover{
+    &:before{
+      @include opacity(0.3);
+    }
+  } 
+}
+
+%text-hover{
+  @include trans-prop-dur(color);
+
+  &:hover, a:hover{
+    color: $gray !important;
+  }
+}
+
+%text-fade-hover{
+  @include trans-prop-dur(opacity);
+ 
+  &:hover{
+    @include opacity(0.7);
+  }
+}
+
+%btn-skin{
+  border: 3px solid $black;
+  background-color: $white;
+}
+
+%rollover-transition{
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.before-wrapper{
+  @extend %rollover-transition;
+  
+  width: 0%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+%rollover-btn-before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $black;
+  color: $white;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+%full-rollover-transition-btn{
+  @extend %rollover-transition;
+ 
+  overflow: hidden;
+
+  span{
+    @extend %rollover-transition;
+    display: block;
+  }
+
+  .before{
+    @extend %rollover-btn-before;
+  }
+
+  &:hover{
+    .before-wrapper{
+      width: 100%;
+    }
+  } 
+}
+
+//TYPOGRAPHY
+@mixin heavy-stack(){
+    font-family: AvenirLTStd-Heavy, "Avenir LT Std 85 Heavy", "Trebuchet MS",Arial,sans-serif;
+}

@@ -1,0 +1,8 @@
+source 'http://rubygems.org'
+
+gem "coffee-script"
+gem "sass"
+gem "compass"
+gem "compass-rgbapng"
+gem "susy"
+gem "bourbon"

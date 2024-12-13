@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains ike_legacy_organizations.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ike_legacy_organizations_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ike_legacy_organizations module.
+    case 'help.page.ike_legacy_organizations':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module for Legacy Organizations Port') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ike_legacy_organizations_theme($existing, $type, $theme, $path) {
+  return [
+    'html__legacy' => [
+      'render element' => 'html',
+      'template' => 'html--legacy',
+      'variables' => [
+        'variables' => [],
+      ],
+    ],
+  ];
+}

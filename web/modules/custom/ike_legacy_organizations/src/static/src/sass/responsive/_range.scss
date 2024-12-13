@@ -1,0 +1,23 @@
+@media screen and (min-width: 1px) and (max-width: 1366px){
+
+
+}
+
+@media screen and (max-width: 1600px){
+	.grid-item .module-txt,
+	.asset-module-quote-credit-txt{
+		font-size: 0.9375rem;
+		line-height: 1.1em;
+	}
+
+	.asset-module-quote-txt{ 
+		font-size: 1.35rem;
+		line-height: 1.25em;
+	}
+}
+
+@media only screen and (max-width: $tablet-portrait - 1) {
+	.asset-modal-ui{
+    	display: none;
+	}
+}

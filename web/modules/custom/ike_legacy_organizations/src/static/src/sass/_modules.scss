@@ -1,0 +1,52 @@
+@import "compass"; 
+
+.scroll-to-begin{
+	@include position(absolute, null null 30px 50%);
+	@include transform(translateX(-50%));
+
+	display: inline-block;
+
+	.section:not(.section-intro) &{
+		cursor: pointer;
+	}
+}
+
+	.module-image-gradient{ 
+		@include position(absolute, 0 0 0 0); 
+		@include background-image(linear-gradient(left, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 30%, rgba(0,0,0,0) 100%));
+		// background-image: url("../img/horizontal_gradient.png");
+		background-size: 100% 1px;
+		//z-index: -1;
+	}
+ 
+	.module-soundcloud-player{
+		background: $black;
+		padding: 6px 7px 0;
+		overflow: hidden;
+	}
+
+	.sharing-list {
+	    position: absolute; 
+	    top: 0;
+	    right: -9px;
+	    width: 142px;
+	    padding-top: 68px; 
+	}
+
+	.sharing-item{
+		@include clearfix();
+
+		display: block;
+		margin-bottom: 15px;
+		text-align: right;
+		cursor: pointer;
+
+		.sharing-label-txt{
+			line-height: 37px;
+		}
+	}
+
+	.header-icon{
+		float: right;
+		margin-left: 10px;
+	}
