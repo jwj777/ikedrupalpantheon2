@@ -19,7 +19,7 @@
                 "version": "2.1.1",
                 "type": "drupal-module",
                 "dist": {
-                    "url": "https://github.com/nkmani/edit_uuid/archive/refs/tags/v.2.1.1.zip",
+                    "url": "https://github.com/nkmani/edit_uuid/archive/refs/tags/2.1.1.zip",
                     "type": "zip"
                 },
                 "require": {
