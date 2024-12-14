@@ -11,6 +11,21 @@
         {
             "type": "path",
             "url": "upstream-configuration"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "nkmani/edit_uuid",
+                "version": "2.1.1",
+                "type": "drupal-module",
+                "dist": {
+                    "url": "https://github.com/nkmani/edit_uuid/archive/refs/tags/v.2.1.1.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
         }
     ],
     "require": {
@@ -31,7 +46,10 @@
         "drupal/feeds": "^3.0@beta",
         "drupal/flag": "^4.0@beta",
         "drupal/field_group": "^3.6",
-        "drupal/webform": "^6.2"
+        "drupal/webform": "^6.2",
+        "drupal/weight": "^3.6",
+        "nkmani/edit_uuid": "^2.1",
+        "drupal/inline_entity_form": "^1.x-dev"
     },
     "require-dev": {
         "drupal/core-dev": "^10"
@@ -39,7 +57,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
         "drupal-scaffold": {
@@ -69,8 +87,31 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
-        "enable-patching": true
-    },
+        "enable-patching": true,
+        "patches": {
+            "drupal/core": {
+              "https://www.drupal.org/project/drupal/issues/3130125 (media entity cant save)": "https://www.drupal.org/files/issues/2020-05-13/3130125-3.patch"
+            },
+            "drupal/paragraphs": {
+              "https://www.drupal.org/project/paragraphs/issues/2901390 (Paragraph langcode null issue)": "https://www.drupal.org/files/issues/2020-06-25/paragraphs-2901390-51.patch"
+            },
+            "drupal/flags": {
+              "https://www.drupal.org/files/issues/2021-08-26 (Uncaught TypeError: Argument 6 passed to Drupal\\Core\\Template\\TwigEnvironmen)": "https://www.drupal.org/files/issues/2021-08-26/flag-TypeError-3229964-2.patch"
+            },
+            "drupal/socialfeed": {
+              "https://www.drupal.org/project/socialfeed/issues/3320072 (Upgrade 1.4 to 2.0 Facebook not working)": "https://www.drupal.org/files/issues/2022-11-09/fix_facebook_post_collector.patch"
+            },
+            "drupal/block_blacklist": {
+              "https://www.drupal.org/files/issues/2023-12-09/block_blacklist.8.x-1.1.rector.patch (d10)": "https://www.drupal.org/files/issues/2023-12-09/block_blacklist.8.x-1.1.rector.patch"
+            },
+            "drupal/config_export_ignore": {
+              "https://www.drupal.org/files/issues/2022-07-18/config_export_ignore.1.1.rector.patch (d10)": "https://www.drupal.org/files/issues/2022-07-18/config_export_ignore.1.1.rector.patch"
+            }
+          },
+          "drupal-lenient": {
+              "allowed-list": ["drupal/block_blacklist", "drupal/ckeditor_templates", "drupal/ckeditor_templates_ui", "drupal/config_export_ignore", "lb_claro"]
+          }
+      },
     "autoload": {
         "classmap": ["upstream-configuration/scripts/ComposerScripts.php"]
     },
@@ -90,7 +131,10 @@
             "drupal/core-composer-scaffold": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "phpstan/extension-installer": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "tbachert/spi": true,
+            "mglaman/composer-drupal-lenient": true,
+            "zaporylie/composer-drupal-optimizations": true
         }
     }
 }
