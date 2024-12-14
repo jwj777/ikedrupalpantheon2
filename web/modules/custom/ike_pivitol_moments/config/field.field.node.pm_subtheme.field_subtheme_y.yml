@@ -1,0 +1,23 @@
+uuid: f918a2ed-a995-432e-b2a0-2f15bb672769
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtheme_y
+    - node.type.pm_subtheme
+id: node.pm_subtheme.field_subtheme_y
+field_name: field_subtheme_y
+entity_type: node
+bundle: pm_subtheme
+label: 'Position Y'
+description: 'Y-coordinate of subtheme position in Pivotal Moment'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

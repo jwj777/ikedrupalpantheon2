@@ -1,0 +1,47 @@
+
+
+<ol class="carousel-indicators"></ol>
+
+<div class="controls">
+	<div class="ui sections-nav left">
+
+		<div class="label wide">
+			Watch the video
+		</div>
+
+		<div class="label narrow">
+			Previous:<br>{{= prevTitle }}
+		</div>
+
+		<a>
+			<img src="/modules/custom/ike_pivitol_moments/src/img/ui/watch_film_icon.png" class="icon-video" alt="play icon">
+			<img src="/modules/custom/ike_pivitol_moments/src/img/ui/chevron_left_small.png" class="chevron" alt="Left Arrow">
+		</a>
+	</div>
+
+	<div class="ui sections-nav right">
+
+		<div class="label wide">
+			Watch the video
+		</div>
+
+		<div class="label narrow">
+			{{ if (nextTitle != ""){ }}
+			Next:<br>{{= nextTitle }}
+			{{ } }}
+
+			{{ if (isFinalSlide){ }}
+			Back to panorama
+			{{ } }}
+		</div>
+
+		<a>
+			<img src="/modules/custom/ike_pivitol_moments/src/img/ui/watch_film_icon.png" class="icon-video" alt="play icon">
+			<img src="/modules/custom/ike_pivitol_moments/src/img/ui/chevron_right_small.png" class="chevron" alt="Right Arrow">
+		</a>
+
+	</div>
+</div>
+<!-- margin-top: 16px;
+width: 100px; -->
+<img src="/modules/custom/ike_pivitol_moments/src/img/ui/close.png" alt="close button" class="close-button" />

@@ -1,0 +1,23 @@
+uuid: ffe42d1a-d868-4bef-9568-6f13be6599a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponsors_display_in_footer
+    - node.type.sponsors
+id: node.sponsors.field_sponsors_display_in_footer
+field_name: field_sponsors_display_in_footer
+entity_type: node
+bundle: sponsors
+label: 'Display in Footer'
+description: 'Select this to display the sponsor in the footer.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

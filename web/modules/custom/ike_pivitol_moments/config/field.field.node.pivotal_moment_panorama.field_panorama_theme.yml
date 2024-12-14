@@ -1,0 +1,32 @@
+uuid: 9beb57fa-3529-4e88-854a-afa01106b920
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_panorama_theme
+    - node.type.pivotal_moment
+    - node.type.pivotal_moment_panorama
+id: node.pivotal_moment_panorama.field_panorama_theme
+field_name: field_panorama_theme
+entity_type: node
+bundle: pivotal_moment_panorama
+label: 'Parent Theme'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      pivotal_moment: pivotal_moment
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      test_field_behavior:
+        status: 0
+      views-select-list:
+        status: 0
+field_type: entity_reference

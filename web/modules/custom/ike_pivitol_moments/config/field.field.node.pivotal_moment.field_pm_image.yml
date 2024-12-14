@@ -1,0 +1,38 @@
+uuid: bb1d7a95-ef64-4470-8f27-59e63a2c339f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pm_image
+    - node.type.pivotal_moment
+  module:
+    - image
+id: node.pivotal_moment.field_pm_image
+field_name: field_pm_image
+entity_type: node
+bundle: pivotal_moment
+label: 'Pivotal Moment Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: experience
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

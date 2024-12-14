@@ -1,0 +1,21 @@
+uuid: f2d9aed7-b447-4ca4-a6b9-ce2db61f647c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponsor_image
+    - node.type.pm_subtheme
+id: node.pm_subtheme.field_sponsor_image
+field_name: field_sponsor_image
+entity_type: node
+bundle: pm_subtheme
+label: 'Sponsor Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings: {  }
+field_type: entity_reference

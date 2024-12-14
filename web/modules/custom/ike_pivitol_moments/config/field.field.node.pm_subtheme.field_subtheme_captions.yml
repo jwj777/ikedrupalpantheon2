@@ -1,0 +1,27 @@
+uuid: 09422e39-0c51-4fc5-9d24-ba978148c1b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtheme_captions
+    - node.type.pm_subtheme
+  module:
+    - file
+id: node.pm_subtheme.field_subtheme_captions
+field_name: field_subtheme_captions
+entity_type: node
+bundle: pm_subtheme
+label: 'Subtheme Video Captions'
+description: 'Captions file for subtheme video'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: experience/subtheme
+  file_extensions: vtt
+  max_filesize: ''
+  description_field: false
+field_type: file

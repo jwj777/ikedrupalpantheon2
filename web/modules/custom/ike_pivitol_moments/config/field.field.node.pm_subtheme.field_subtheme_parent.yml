@@ -1,0 +1,32 @@
+uuid: 052ee0c6-e909-4df6-a3b1-5b64e6c21783
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtheme_parent
+    - node.type.pivotal_moment
+    - node.type.pm_subtheme
+id: node.pm_subtheme.field_subtheme_parent
+field_name: field_subtheme_parent
+entity_type: node
+bundle: pm_subtheme
+label: 'Parent Theme'
+description: 'Select the Pivotal Moment that this Subtheme is related to'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      pivotal_moment: pivotal_moment
+    sort:
+      field: title
+      direction: ASC
+    behaviors:
+      test_field_behavior:
+        status: 0
+      views-select-list:
+        status: 0
+field_type: entity_reference

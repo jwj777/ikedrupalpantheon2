@@ -1,0 +1,23 @@
+uuid: e0a978eb-2a28-46a7-bc62-8013ff0dde1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtheme_x
+    - node.type.pm_subtheme
+id: node.pm_subtheme.field_subtheme_x
+field_name: field_subtheme_x
+entity_type: node
+bundle: pm_subtheme
+label: 'Position X'
+description: 'X-coordinate for subtheme placement on Pivotal Moment page'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

@@ -1,0 +1,23 @@
+uuid: ce193bf4-cf76-4e71-8277-ffcc4e8a780d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pm_enabled
+    - node.type.pivotal_moment
+id: node.pivotal_moment.field_pm_enabled
+field_name: field_pm_enabled
+entity_type: node
+bundle: pivotal_moment
+label: Enabled
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: ''
+  off_label: ''
+field_type: boolean

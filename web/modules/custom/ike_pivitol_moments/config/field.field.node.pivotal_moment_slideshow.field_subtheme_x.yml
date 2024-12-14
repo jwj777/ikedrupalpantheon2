@@ -1,0 +1,23 @@
+uuid: d347c452-8c81-4e08-b72f-db1852ec5882
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtheme_x
+    - node.type.pivotal_moment_slideshow
+id: node.pivotal_moment_slideshow.field_subtheme_x
+field_name: field_subtheme_x
+entity_type: node
+bundle: pivotal_moment_slideshow
+label: 'Position X'
+description: 'X-coordinate for subtheme placement on Pivotal Moment page'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

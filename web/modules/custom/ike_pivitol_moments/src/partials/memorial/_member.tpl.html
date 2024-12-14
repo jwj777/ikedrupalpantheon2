@@ -1,0 +1,23 @@
+<div class="member">
+	{{ if(image_url) { }}
+	<img class="image" src="{{= image_url_h }}" />
+	{{ } }}
+	<div class="text">
+		<h3 class="fullname">{{= fullname }}</h3>
+		{{ if(jobtitle) { }}
+			<p class="position">{{= jobtitle }}</p>
+		{{ } }}
+		{{ if(summary) { }}
+			<div class="summary">{{= summary }}</div>
+		{{ } }}
+		{{ if(biography) { }}
+			<div class="biography">
+				{{= biography }}
+			</div>
+			<a class="link switch active"><span class="label show">MORE</span><span class="label hide">LESS</span> &raquo;</a>
+		{{ } }}
+		<div class="divider">
+			<!-- ___ -->
+		</div>
+	</div>
+</div>

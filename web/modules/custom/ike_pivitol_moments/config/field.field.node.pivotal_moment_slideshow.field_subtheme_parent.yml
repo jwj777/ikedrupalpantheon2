@@ -1,0 +1,32 @@
+uuid: 962eed0b-34e0-4ed6-8d12-779ef4468212
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtheme_parent
+    - node.type.pivotal_moment
+    - node.type.pivotal_moment_slideshow
+id: node.pivotal_moment_slideshow.field_subtheme_parent
+field_name: field_subtheme_parent
+entity_type: node
+bundle: pivotal_moment_slideshow
+label: 'Parent Theme'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      pivotal_moment: pivotal_moment
+    sort:
+      field: title
+      direction: ASC
+    behaviors:
+      test_field_behavior:
+        status: 0
+      views-select-list:
+        status: 0
+field_type: entity_reference

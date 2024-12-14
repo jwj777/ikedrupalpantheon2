@@ -1,0 +1,18 @@
+uuid: 367d8769-c09e-4f75-a34d-22e82906e546
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: 'Pivotal Moment Panorama Object'
+type: pivotal_moment_panorama
+description: "Pivotal Moment Panorama configuration. DO NOT EDIT UNLESS YOU KNOW WHAT YOU'RE DOING!"
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {#
+      Maybe some Meta go up here?
+    #}
+    <link rel="shortcut icon" href="/{{ variables.path }}/src/img/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="/">
+    <meta type="text/javascript" id="_fed_an_ua_tag" src="?agency=GSA&ver=true&yt=true&autotracker=true&maincd=true&cto=24">
+    <title>{{ variables.title }}</title>
+
+    {# Allow SEO Crawling #}
+    <meta name="fragment" content="!">
+
+    {# Specify Open Graph Properties for external access (social media) #}
+    <meta property="og:nid" content="">
+    <meta property="og:url" content="https://www.eisenhowerfoundation.net/experience">
+    <meta property="og:title" content="Pivotal Moments"/>
+    <meta property="og:description" content="As the Supreme Commander of Allied Forces during World War II, Dwight D. Eisenhower would change the course of world history with his decision to launch the D-Day invasion of France. Go inside this extraordinary pivotal moment.">
+    <meta property="og:image" content="/{{ variables.path }}/src/img/logos/EF_LOGO.png"/>
+    <meta property="og:image:width" content="200"/>
+    <meta property="og:image:height" content="200"/>
+
+    {# Assign icon for apple touch devices #}
+    <link rel="apple-touch-icon-precomposed" href="/{{ variables.path }}/src/img/appletouch/icon_57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/{{ variables.path }}/src/img/appletouch/icon_72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/{{ variables.path }}/src/img/appletouch/icon_114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/{{ variables.path }}/src/img/appletouch/icon_144x144.png" />
+
+    {# Load CSS #}
+    <link rel="stylesheet" type="text/css" href="/{{ variables.path }}/src/css/video-js.min.css">
+    <link rel="stylesheet" type="text/css" href="/{{ variables.path }}/src/css/experience_screen.css">
+    <link rel="stylesheet" type="text/css" href="/{{ variables.path }}/src/css/screen.css">
+
+    {# the get-notified formid needs to be passed to the javascript functions #}
+    {# Hardcoding FormID for now because IDK what it does but it seems to be static #}
+    <script type="text/javascript">var gn_formid="webform_client_form_583";</script>
+
+    {# Load Basic Scripts #}
+    <script type="text/javascript" src="//use.typekit.net/vou7rxs.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script src="/modules/custom/ike_pivitol_moments/src/js/libs/require.js" data-main="/{{ variables.path }}/src/js/experience/main" type="text/javascript"></script>
+    <script src="/modules/custom/ike_pivitol_moments/src/js/libs/jquery.js" type="text/javascript"></script>
+    <script src="/modules/custom/ike_pivitol_moments/src/js/experience/extra.js" type="text/javascript"></script>
+  </head>
+
+  <body class="html not-front logged-in no-sidebars page-node page-node- page-node-214 node-type-page toolbar toolbar-drawer  admin-nw admin-vertical admin-df   page-experience" style="">
+    <p class="no-canvas-message">
+      <a href="http://eisenhowermemorial.gov" class="logo"><img src="/{{ variables.path }}/src/img/logos/logo.svg" /></a>
+      Sorry, your browser is not supported.
+      <br />Try installing <a href="https://www.google.com/intl/en/chrome/browser/">Chrome</a>, <a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a> or <a href="http://www.google.com/chromeframe?prefersystemlevel=true">Chrome Frame</a> if you're using Internet Explorer 8 or lower.
+      <br />Or visit our <a href="http://www.youtube.com/user/EisenhowerMemorial">YouTube channel</a> to watch the films in this site. Thank you!
+    </p>
+    <div class="main-site">
+
+      {% include '/modules/custom/ike_pivitol_moments/templates/header.html.twig' %}
+
+      <header id="main-header">
+        <ul class="theme-ul">
+          <li class="option"><a class="link inactive" href="#/west_point">West Point</a></li>
+          <li class="option"><a class="link inactive" href="#/dday">D-Day</a></li>
+          <li class="option"><a class="link inactive" href="#/nato">NATO</a></li>
+          <li class="option"><a class="link inactive" href="#/winning_the_presidency">Winning the Presidency</a></li>
+          <li class="option"><a class="link inactive" href="#/waging_peace">Waging Peace</a></li>
+          <li class="option"><a class="link inactive" href="#/little_rock">Little Rock</a></li>
+          <li class="option"><a class="link inactive" href="#/space_race">Space Race</a></li>
+        </ul>
+        <div id="sub-header"> </div>
+      </header>
+
+      <section id="main-content">
+        <section id="theme">{# Main content will be loaded here if canvas is supported #}</section>
+        <section id="theme-selector">
+          <div class="slider-component">
+            {# Insert slider views for theme selector #}
+          </div>
+          <div class="controls">
+            <div class="ui sections-nav left">
+              <a><img src="/{{ variables.path }}/src/img/ui/chevron_left.png" alt="Left Arrow" /></a>
+            </div>
+            <div class="ui sections-nav right">
+              <a><img src="/{{ variables.path }}/src/img/ui/chevron_right.png" alt="Right Arrow" /></a>
+            </div>
+          </div>
+        </section>
+        <section class="full-layer about-section">
+          {# Add here about view #}
+        </section>
+      </section>
+
+      <footer id="main-footer">
+        {# EF3-101 #}
+{#        <a class="link main-site" href="/eisenhower-memorial">Dwight D. Eisenhower Memorial</a>#}
+        <a class="link credits">Credits</a>
+{#        <div class="ui button audio"></div>#}
+        <div class="ui button share"></div>
+      </footer>
+    </div>
+  </body>
+
+</html>

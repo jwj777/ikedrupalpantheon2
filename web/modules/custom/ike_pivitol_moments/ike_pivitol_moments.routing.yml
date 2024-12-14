@@ -1,0 +1,15 @@
+ike_pivitol_moment.experience:
+  path: '/experience'
+  defaults:
+    _controller: '\Drupal\ike_pivitol_moments\Controller\ExperienceController::content'
+    _title: 'Film Experience'
+  requirements:
+    _access: 'TRUE'
+
+ike_pivitol_moment.weight_form:
+  path: '/admin/weight_form'
+  defaults:
+    _form: '\Drupal\ike_pivitol_moments\Form\WeightsForm'
+    _title: 'Migrate Weights'
+  requirements:
+    _access: 'TRUE'

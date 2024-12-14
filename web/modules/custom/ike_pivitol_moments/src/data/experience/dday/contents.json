@@ -1,0 +1,65 @@
+[
+	{
+		"id": "0",
+		"title": "How do you win a war?",
+		"thumbnail" : "/static/img/experience/dday/title_bg.jpg",
+		"video" : [
+			"http://player.vimeo.com/external/67477298.m3u8?p=high,standard,mobile&s=2769b2c9af515fe33048c2c6f12dd463",
+			"/static/video/dday/dday.mp4"
+		],
+		"captions": "/static/data/experience/dday/subtheme1.vtt",
+		"x": 0.43,
+		"y": 0.17
+	},
+	{
+		"id": "1",
+		"title": "What is the<br />view from<br />above?",
+		"description": "In the months before D-Day, the Allied air forces conducted a dangerous but vital campaign to destroy the Nazi air forces and transportation system in France.",
+		"image": "/static/img/experience/dday/subtheme_1.jpg",
+		"alt": "Image of coast from the air",
+		"captions": "/static/data/experience/dday/subtheme1.vtt",
+		"video": ["http://player.vimeo.com/external/67412405.sd.mp4?s=46810f6e6059fe5f759c7dbb1ee2c2b0"],
+		"x": 0.05,
+		"y": 0.2
+	}, {
+		"id": "2",
+		"title": "How do you keep<br />the world's<br />biggest secret?",
+		"description": "The location of the D-Day landings was the most important secret in the history of warfare. Before the D-Day invasion, the Allies devised a massive and daring deception to conceal the plan from the Nazis.",
+		"image": "/static/img/experience/dday/subtheme_2.jpg",
+		"alt": "Tank image ",
+		"captions": "/static/data/experience/dday/subtheme2.vtt",
+		"video": ["http://player.vimeo.com/external/67412407.sd.mp4?s=196ac45e7a95108332b2f54b4f316529"],
+		"x": 0.3,
+		"y": 0.3
+	}, {
+		"id": "3",
+		"title": "How do you plan<br />an invasion?",
+		"description": "Planning the D-Day invasion was a challenge unlike any other. Eisenhower and his commanders had to devise a plan to overcome the nearly impregnable Nazi defenses along the French coast. There would be no second chances.",
+		"image": "/static/img/experience/dday/subtheme_3.jpg",
+		"alt": "Strategy image",
+		"captions": "/static/data/experience/dday/subtheme3.vtt",
+		"video": ["http://player.vimeo.com/external/67412406.sd.mp4?s=6bf99a8bc567a97e925d6c999c28d831"],
+		"x": 0.54,
+		"y": 0.66
+	}, {
+		"id": "4",
+		"title": "What brings<br />us together<br />to fight?",
+		"description": "To achieve victory on D-Day, Eisenhower had to unify a coalition of nearly 2 million soldiers, sailors, and airmen from a dozen nations.",
+		"image": "/static/img/experience/dday/subtheme_4.jpg",
+		"alt": "Troops image",
+		"captions": "/static/data/experience/dday/subtheme4.vtt",
+		"video": ["http://player.vimeo.com/external/67425828.sd.mp4?s=8882fc30249a4c462a96e6e22247805d"],
+		"x": 0.63,
+		"y": 0.39
+	}, {
+		"id": "5",
+		"title": "How do you<br />prepare<br />for war?",
+		"description": "Before Eisenhower commanded the D-Day invasion, he learned valuable lessons while commanding the Allied invasions of North Africa and Sicily.",
+		"image": "/static/img/experience/dday/subtheme_5.jpg",
+		"alt": "Preparation image",
+		"captions": "/static/data/experience/dday/subtheme5.vtt",
+		"video": ["http://player.vimeo.com/external/67424467.sd.mp4?s=e9075ea44267814c167146a41891c285"],
+		"x": 0.8,
+		"y": 0.4
+	}
+]

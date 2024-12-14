@@ -1,0 +1,51 @@
+[
+	{
+		"image": "/static/img/experience/dday/panorama.jpg",
+		"audio": "/static/audio/dday/pan_audio.mp3",
+		"children": [
+			{
+				"url": "/static/img/experience/dday/sky.jpg",
+				"x": 0,
+				"y": 0,
+				"z": 0
+			}, {
+				"url": "/static/img/experience/dday/clouds.jpg",
+				"data": "/static/data/experience/dday/clouds.json",
+				"alt": "/static/img/experience/dday/clouds_alt.png",
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 1,
+				"h": 0.5,
+				"alpha": 0.3
+			}, {
+				"url": "/static/img/experience/dday/sea.png",
+				"data": "/static/data/experience/dday/sea.json",
+				"alt": "/static/img/experience/dday/sea_alt.png",
+				"x": 0,
+				"y": 0.44,
+				"z": 0,
+				"w": 1,
+				"h": 0.55,
+				"alpha": 1
+			}, {
+				"url": "/static/img/experience/dday/shore.png",
+				"x": 0,
+				"y": 0.33,
+				"z": 0
+			}, {
+				"url": "/static/img/experience/dday/planes.png",
+				"data": "/static/data/experience/dday/planes.json",
+				"alt": "/static/img/experience/dday/planes_alt.png",
+				"x": 0,
+				"y": 0,
+				"z": 2
+			}, {
+				"url": "/static/img/experience/dday/boat.png",
+				"x": 0.32,
+				"y": 0.54,
+				"z": 7
+			}
+		]
+	}
+]

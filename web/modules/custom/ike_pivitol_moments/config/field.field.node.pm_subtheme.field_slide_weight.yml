@@ -1,0 +1,24 @@
+uuid: c25e83a3-0c11-40a4-8958-68128853fd1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slide_weight
+    - node.type.pm_subtheme
+  module:
+    - weight
+id: node.pm_subtheme.field_slide_weight
+field_name: field_slide_weight
+entity_type: node
+bundle: pm_subtheme
+label: Weight
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '0'
+default_value_callback: ''
+settings:
+  range: '50'
+field_type: weight

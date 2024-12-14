@@ -1,0 +1,47 @@
+<div class="main-image" style="background-image: url({{= image }})"><!-- Background Image --></div>
+<div class="vignette"><!-- CSS vignette --></div>
+<div class="subtheme-frame">
+	<div class="subtheme-content outer-panel">
+		<div class="subtheme-content-panel">
+			{{ if(title){ }}
+				<h2 class="title">{{= title }}</h2>
+			{{ } }}
+
+			{{ if(description){ }}
+				<div class="description">
+					{{= description }}
+				</div>
+			{{ } }}
+			<div class="panel-toggle">
+				<img src="/modules/custom/ike_pivitol_moments/src/img/ui/chevron_up.png" class="is-hidden"/>
+				<img src="/modules/custom/ike_pivitol_moments/src/img/ui/chevron_down.png"/>
+			</div>
+		</div>
+		{{ if(sponsor){ }}
+			<div class="donor-slide">
+				<img src="{{= sponsor_image }}">
+				<span class="donor-slide-text">Brought to you by {{= sponsor }}</span>
+			</div>
+		{{ } }}
+	</div>
+	{{ if(zoom_image_thumb.length){ }}
+	<div class="thumbnail-panel">
+		{{ _.each(zoom_image_thumb, function(image, i){ }}
+		<img src="{{= image }}" data-image="image-{{= i }}">
+		{{ }) }}
+	</div>
+	{{ } }}
+</div>
+
+
+{{ if(zoom_image.length){ }}
+<div class="zoom-image-overlay is-hidden">
+	<div class="zoom-image-wrapper">
+		{{ _.each(zoom_image, function(image, i){ }}
+    <!--    src below was {{= image.slice(0, -14) }}. Removed slice to get things to work. Add back if issues? -->
+		<img src="{{= image }}" class="is-hidden zoom-image" id="image-{{= i }}">
+		{{ }) }}
+	</div>
+	<img src="/modules/custom/ike_pivitol_moments/src/img/ui/close.png" alt="close button" class="close-button">
+</div>
+{{ } }}

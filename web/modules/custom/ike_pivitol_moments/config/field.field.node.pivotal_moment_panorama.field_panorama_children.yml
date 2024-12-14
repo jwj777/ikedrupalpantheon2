@@ -1,0 +1,21 @@
+uuid: a0d17f0d-349c-4d68-9c6b-ee58dc857daf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_panorama_children
+    - node.type.pivotal_moment_panorama
+id: node.pivotal_moment_panorama.field_panorama_children
+field_name: field_panorama_children
+entity_type: node
+bundle: pivotal_moment_panorama
+label: 'Panorama Children'
+description: 'Please do NOT edit this content unless you are a developer! Each child should be valid JSON ({"key":"value"}). Note that there is NO validation on this field!'
+required: false
+translatable: false
+default_value:
+  -
+    value: '{"key":"value"}'
+default_value_callback: ''
+settings: {  }
+field_type: string_long

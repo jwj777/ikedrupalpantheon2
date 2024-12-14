@@ -1,0 +1,20 @@
+uuid: 64f6f093-83b3-442a-a046-3286ed7efcec
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - weight
+id: node.field_slide_weight
+field_name: field_slide_weight
+entity_type: node
+type: weight
+settings:
+  unsigned: false
+module: weight
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

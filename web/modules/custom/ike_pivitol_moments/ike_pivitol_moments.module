@@ -1,0 +1,127 @@
+<?php
+
+/**
+ * @file
+ * Contains ike_pivitol_moments.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\file\Entity\File;
+use Drupal\media\Entity\Media;
+use Drupal\views\Plugin\views\cache\CachePluginBase;
+use Drupal\views\Render\ViewsRenderPipelineMarkup;
+use Drupal\views\ViewExecutable;
+
+/**
+ * Implements hook_help().
+ */
+function ike_pivitol_moments_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ike_pivitol_moments module.
+    case 'help.page.ike_pivitol_moments':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module to handle Pivitol Moments') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ike_pivitol_moments_theme($existing, $type, $theme, $path) {
+  return [
+    'html__experience' => [
+      'render element' => 'html',
+      'template' => 'html--experience',
+      'variables' => [
+        'variables' => [],
+      ],
+    ],
+    'html__about_experience' => [
+      'template' => 'html--about-experience',
+      'base hook' => 'html',
+    ],
+    'page__about_experience' => [
+      'template' => 'page--about-experience',
+      'base hook' => 'page',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_views_post_render().
+ */
+function ike_pivitol_moments_views_post_render(ViewExecutable $view, &$output, CachePluginBase $cache) {
+  if ($view->id() == 'pivotal_moment_subtheme_slideshow') {
+    $raw = $output['#markup']->__toString();
+    $json = json_decode($raw, TRUE);
+
+    foreach ($json as &$item) {
+      $item['zoom_image'] = !empty($item['zoom_image']) ? [$item['zoom_image']] : FALSE;
+      $item['zoom_image_thumb'] = !empty($item['zoom_image_thumb']) ? [$item['zoom_image_thumb']] : FALSE;
+    }
+
+    $new = ViewsRenderPipelineMarkup::create(json_encode($json));
+    $output['#markup'] = $new;
+  }
+}
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function ike_pivitol_moments_views_pre_render(ViewExecutable $view) {
+  if ($view->id() == 'pivotal_moment_theme') {
+    foreach ($view->result as $value) {
+      $uri_raw = $value->_entity->get('field_pm_target_url')->getString();
+      $split = explode(",", $uri_raw);
+      $uri = $split[0];
+      $result = str_replace("internal:", ike_pivitol_moments_get_url_prefix(), $uri);
+      $value->_entity->set('field_pm_target_url', $result);
+
+      $sponsor_image_id = $value->_entity->get('field_sponsor_image')->getString();
+      if (!empty($sponsor_image_id)) {
+        $media = Media::load($sponsor_image_id);
+        $fid = $media->field_media_image->target_id;
+        $file = File::load($fid);
+        if ($file != NULL) {
+          $url = \Drupal::service('file_url_generator')->generateAbsoluteString($file->getFileUri());
+          $value->_entity->set('field_sponsor_image', $url);
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_views_post_execute().
+ */
+function ike_pivitol_moments_views_post_execute(ViewExecutable $view) {
+  if ($view->id() == "pivotal_moment_panorama") {
+    foreach ($view->result as $item) {
+      $children = $item->_entity->get('field_panorama_children');
+      foreach ($children as $child) {
+        $str = $child->get('value')->getString();
+        $json = json_decode($str, TRUE);
+        $child->set('value', $json);
+      }
+    }
+  }
+}
+
+/**
+ * Gets the URL prefix from environment variables.
+ */
+function ike_pivitol_moments_get_url_prefix() {
+  $site_host = \Drupal::request()->getHost();
+  $protocol = 'http://';
+  if (
+    (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ||
+    (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
+  ) {
+    $protocol = 'https://';
+  }
+  return $protocol . $site_host;
+}

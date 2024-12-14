@@ -1,0 +1,10 @@
+[{
+	"title": "D-Day",
+	"subtitle": "The decision that changed the world",
+	"year": "1944",
+	"description": "As the Supreme Commander of Allied Forces during World War II, Dwight D. Eisenhower would change the course of world history with his decision to launch the D-Day invasion of France. Go inside this extraordinary pivotal moment.",
+	"image_url": "/static/img/experience/dday/dday_intro_cropped.jpg",
+	"image_caption": "General Dwight D. Eisenhower addresses American paratroopers on D-Day.",
+	"video_url" : "/static/video/dday/dday.mp4",
+	"url": "/dday"
+}]
