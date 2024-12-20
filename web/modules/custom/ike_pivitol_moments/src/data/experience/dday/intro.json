@@ -1,0 +1,9 @@
+[
+	{
+		"title": "D-Day",
+		"description": "As the Supreme Commander of Allied Forces during World War II, Dwight D. Eisenhower would change the course of world history with his decision to launch the D-Day invasion of France. Go inside this extraordinary pivotal moment.",
+		"layers": ["/static/img/experience/dday/intro_back.jpg", "/static/img/experience/dday/intro_front.png"],
+		"image": "/static/img/experience/dday/intro.jpg",
+		"audio": ""
+	}
+]

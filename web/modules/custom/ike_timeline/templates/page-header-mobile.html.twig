@@ -1,0 +1,61 @@
+<header id="header" class="top-nav mobile-menu">
+	<div class="top-nav-mobile clearfix">
+		<div class="top-nav-mobile-left">
+      <a class="top-nav-txt lg-ml-5 inactive" href="/">Eisenhower Foundation</a>
+      <div class="vertical-divider"></div>
+      <a class="top-nav-txt lg-ml-5 active" href="/timeline">Timeline</a>
+      <div class="vertical-divider"></div>
+      <a class="top-nav-txt lg-ml-5 inactive" href="/ikeducation/lesson-plans">Lesson Plan Archive</a>
+		</div>
+
+		<div class="top-nav-mobile-right">
+			<div class="search-icon inactive"></div>
+			<div class="nav-icon">
+				<span></span>
+			</div>
+		</div>
+		<div class="top-nav-search">
+	        <input type="text" id="mobileSearch" class="search-txt" placeholder="search" autocomplete="off">
+	        <span class="close-small-icon"></span>
+	    </div>
+	</div>
+
+	<div class="top-nav-open">
+		<div class="top-nav-menu-container">
+			<div class="top-nav-menu-title-txt xs-pt-75">Menu</div>
+			<ul class="top-nav-menu-items">
+				<li>
+					<a class="top-nav-menu-item-txt" href="/">Eisenhower Foundation</a>
+				</li>
+				<li>
+					<a class="top-nav-menu-item-txt " href="/ikeducation/lesson-plans">Lesson Plan Archive</a>
+				</li>
+				<li>
+					<a class="top-nav-menu-item-txt mobile-credits" href="#">Credits &#9660;</a>
+				</li>
+			</ul>
+
+      <div class="mobile-credits-box closed">
+        {% include '/modules/custom/ike_timeline/templates/block--credits.html.twig' %}
+      </div>
+
+			<div class="top-nav-footer">
+				<div class="share-txt">Share this on</div>
+				<div class="social-icons">
+					<span class="facebook-icon inactive"></span>
+					<span class="google-icon inactive"></span>
+					<span class="twitter-icon inactive"></span>
+				</div>
+
+
+				<div class="top-nav-menu-helper-txt">This site is part of the</div>
+        <a href="/eisenhower-memorial">
+				  <div class="top-nav-menu-footer-txt xs-mt-20">Dwight D. Eisenhower Memorial</div>
+        </a>
+			</div>
+
+			<span class="close-icon"></span>
+		</div>
+	</div>
+
+</header>

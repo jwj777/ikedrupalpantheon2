@@ -1,0 +1,6 @@
+<article class="article-preview">
+	<h4 class="article-metadata"><span class="date">{{= date }}</span></h4>
+	<h3 class="article-title"><a href="{{= pdf }}" target="_blank">{{= title }}</a></h3>
+	{{ if(image_url){ }}<img class="article-image" src="{{= image_url }}" alt="{{= image_caption }}" />{{ } }}
+	<a href="{{= pdf }}" class="link article-url" target="_blank">Download PDF »</a>
+</article>

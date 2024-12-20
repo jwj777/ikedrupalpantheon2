@@ -1,0 +1,30 @@
+uuid: babd9bc3-a451-45e7-828a-3c3dc2c586be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pm_subthemes
+    - node.type.pivotal_moment
+    - node.type.pm_subtheme
+id: node.pivotal_moment.field_pm_subthemes
+field_name: field_pm_subthemes
+entity_type: node
+bundle: pivotal_moment
+label: 'Related Subthemes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      pm_subtheme: pm_subtheme
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

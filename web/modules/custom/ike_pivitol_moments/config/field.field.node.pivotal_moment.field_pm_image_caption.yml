@@ -1,0 +1,19 @@
+uuid: 5d889cb6-85d4-489f-9e7c-f49746c8be07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pm_image_caption
+    - node.type.pivotal_moment
+id: node.pivotal_moment.field_pm_image_caption
+field_name: field_pm_image_caption
+entity_type: node
+bundle: pivotal_moment
+label: 'Pivotal Moment Image Caption'
+description: 'The caption for the PIvotal Moment Image'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

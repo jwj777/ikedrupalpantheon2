@@ -1,0 +1,22 @@
+uuid: 4dd13b29-fdda-49fb-bc38-595297ca7b9f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: sponsors
+label: Sponsors
+type: 'canonical_entities:node'
+pattern: '/join-and-give/sponsors/[node:title]'
+selection_criteria:
+  85f9c906-1886-494a-b752-62742fd13ea8:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 85f9c906-1886-494a-b752-62742fd13ea8
+    context_mapping:
+      node: node
+    bundles:
+      sponsors: sponsors
+selection_logic: and
+weight: -5
+relationships: {  }

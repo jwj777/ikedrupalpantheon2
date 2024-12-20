@@ -1,0 +1,51 @@
+uuid: 4d8c2eac-8250-44b1-a79d-5e0b37c83f6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pivotal_moment_slideshow.body
+    - field.field.node.pivotal_moment_slideshow.field_display_title
+    - field.field.node.pivotal_moment_slideshow.field_slideshow_weight
+    - field.field.node.pivotal_moment_slideshow.field_subtheme_parent
+    - field.field.node.pivotal_moment_slideshow.field_subtheme_slides
+    - field.field.node.pivotal_moment_slideshow.field_subtheme_x
+    - field.field.node.pivotal_moment_slideshow.field_subtheme_y
+    - node.type.pivotal_moment_slideshow
+  module:
+    - text
+    - user
+id: node.pivotal_moment_slideshow.default
+targetEntityType: node
+bundle: pivotal_moment_slideshow
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_slideshow_weight:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_display_title: true
+  field_subtheme_parent: true
+  field_subtheme_slides: true
+  field_subtheme_x: true
+  field_subtheme_y: true
+  search_api_excerpt: true
+  uuid: true

@@ -1,0 +1,32 @@
+uuid: 5899af36-8e83-4011-8910-1f324c945690
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_slideshows
+    - node.type.pivotal_moment
+    - node.type.pivotal_moment_slideshow
+id: node.pivotal_moment.field_related_slideshows
+field_name: field_related_slideshows
+entity_type: node
+bundle: pivotal_moment
+label: 'Related Slideshows'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      pivotal_moment_slideshow: pivotal_moment_slideshow
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      test_field_behavior:
+        status: 0
+      views-select-list:
+        status: 0
+field_type: entity_reference

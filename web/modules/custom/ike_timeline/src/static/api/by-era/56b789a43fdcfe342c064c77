@@ -1,0 +1,592 @@
+
+				<li class="accordion-list" data-id="">
+					<a class="js-accordion-trigger time-period clearfix">
+						<div class="time-period-title-txt">Post War</div>
+							<span class="openarrow-icon"></span>
+							<span class="collapsearrow-icon"></span>
+						<div class="time-period-dates"></div>
+					</a>
+
+					<ul class="submenu">
+						<li class="grid-sizer"></li>
+
+						<li class="grid-item not-loaded" data-id="56969dc00e49b9072d3f9a2c">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<div class="grid-item-thumbnail history lazy" data-aspect-ratio="100" style="background-image:url(http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/724.png)" data-original="http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/724.png"></div>
+
+
+
+
+
+								<div class="grid-item-text history">
+									<div class="event-text">
+										<div class="event-title-txt">North Atlantic Treaty</div>
+										<div class="event-date-txt xs-pt-5">April 4, 1949</div>
+									</div>
+								</div>
+							</li>
+
+
+						<li class="grid-item not-loaded" data-id="56969dc00e49b9072d3f9a2d">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<div class="grid-item-thumbnail history lazy" data-aspect-ratio="100" style="background-image:url(http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/731.png)" data-original="http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/731.png"></div>
+
+
+
+
+
+								<div class="grid-item-text history">
+									<div class="event-text">
+										<div class="event-title-txt">Korean War begins</div>
+										<div class="event-date-txt xs-pt-5">June 25, 1950</div>
+									</div>
+								</div>
+							</li>
+
+
+						<li class="grid-item not-loaded" data-id="56969daf0e49b9072c3e2bd3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<div class="grid-item-thumbnail eisenhower lazy" data-aspect-ratio="100" style="background-image:url(http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/190.png)" data-original="http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/190.png"></div>
+
+
+
+
+
+								<div class="grid-item-text eisenhower">
+									<div class="event-text">
+										<div class="event-title-txt">American Assembly at Columbia University</div>
+										<div class="event-date-txt xs-pt-5">October 2, 1950</div>
+									</div>
+								</div>
+							</li>
+
+
+						<li class="grid-item not-loaded" data-id="56969daf0e49b9072c3e2bd5">
+
+
+
+
+
+
+
+
+
+
+
+								<div class="grid-item-thumbnail pivotal lazy" data-aspect-ratio="100" style="background-image:url(http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/1179.png)" data-original="http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/1179.png"></div>
+
+
+
+								<div class="grid-item-text pivotal">
+									<div class="event-text">
+										<div class="event-title-txt">Chosen as NATO&#8217;s SACEUR</div>
+										<div class="event-date-txt xs-pt-5">December 19, 1950</div>
+									</div>
+								</div>
+							</li>
+
+
+						<li class="grid-item not-loaded" data-id="56969dc00e49b9072d3f9a2e">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<div class="grid-item-thumbnail history lazy" data-aspect-ratio="100" style="background-image:url(http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/738.png)" data-original="http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/738.png"></div>
+
+
+
+
+
+								<div class="grid-item-text history">
+									<div class="event-text">
+										<div class="event-title-txt">&#8220;See it Now&#8221; debuts on national television</div>
+										<div class="event-date-txt xs-pt-5">November 18, 1951</div>
+									</div>
+								</div>
+							</li>
+
+
+						<li class="grid-item not-loaded" data-id="56969dc00e49b9072d3f9a2f">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<div class="grid-item-thumbnail history lazy" data-aspect-ratio="100" style="background-image:url(http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/745.png)" data-original="http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/745.png"></div>
+
+
+
+
+
+								<div class="grid-item-text history">
+									<div class="event-text">
+										<div class="event-title-txt">Queen Elizabeth Ascends The Throne</div>
+										<div class="event-date-txt xs-pt-5">February 6, 1952</div>
+									</div>
+								</div>
+							</li>
+
+
+						<li class="grid-item not-loaded" data-id="56969daf0e49b9072c3e2bd8">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<div class="grid-item-thumbnail eisenhower lazy" data-aspect-ratio="100" style="background-image:url(http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/204.png)" data-original="http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/204.png"></div>
+
+
+
+
+
+								<div class="grid-item-text eisenhower">
+									<div class="event-text">
+										<div class="event-title-txt">Resigns military commission to run for president</div>
+										<div class="event-date-txt xs-pt-5">May 31, 1952</div>
+									</div>
+								</div>
+							</li>
+
+
+						<li class="grid-item not-loaded" data-id="56969daf0e49b9072c3e2bd9">
+
+
+
+
+
+
+
+
+
+
+
+								<div class="grid-item-thumbnail pivotal lazy" data-aspect-ratio="100" style="background-image:url(http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/1180.png)" data-original="http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/1180.png"></div>
+
+
+
+								<div class="grid-item-text pivotal">
+									<div class="event-text">
+										<div class="event-title-txt">Announces Candidacy for GOP Presidential Nomination</div>
+										<div class="event-date-txt xs-pt-5">June 4, 1952</div>
+									</div>
+								</div>
+							</li>
+
+
+						<li class="grid-item not-loaded" data-id="56969dc00e49b9072d3f9a30">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<div class="grid-item-thumbnail history lazy" data-aspect-ratio="100" style="background-image:url(http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/752.png)" data-original="http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/752.png"></div>
+
+
+
+
+
+								<div class="grid-item-text history">
+									<div class="event-text">
+										<div class="event-title-txt">Immigration and Nationality Act</div>
+										<div class="event-date-txt xs-pt-5">June 27, 1952</div>
+									</div>
+								</div>
+							</li>
+
+
+
+
+
+						<li class="grid-item not-loaded" data-id="56969dc00e49b9072d3f9a32">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<div class="grid-item-thumbnail history lazy" data-aspect-ratio="100" style="background-image:url(http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/759.png)" data-original="http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/759.png"></div>
+
+
+
+
+
+								<div class="grid-item-text history">
+									<div class="event-text">
+										<div class="event-title-txt">Full scale Hydrogen bomb tested</div>
+										<div class="event-date-txt xs-pt-5">November 1, 1952</div>
+									</div>
+								</div>
+							</li>
+
+
+						<li class="grid-item not-loaded" data-id="56969dc00e49b9072d3f9a33">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<div class="grid-item-thumbnail history lazy" data-aspect-ratio="100" style="background-image:url(http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/766.png)" data-original="http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/766.png"></div>
+
+
+
+
+
+								<div class="grid-item-text history">
+									<div class="event-text">
+										<div class="event-title-txt">Stalin dies</div>
+										<div class="event-date-txt xs-pt-5">March 5, 1953</div>
+									</div>
+								</div>
+							</li>
+
+
+						<li class="grid-item not-loaded" data-id="56969daf0e49b9072c3e2bdc">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<div class="grid-item-thumbnail eisenhower lazy" data-aspect-ratio="100" style="background-image:url(http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/211.png)" data-original="http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/211.png"></div>
+
+
+
+
+
+								<div class="grid-item-text eisenhower">
+									<div class="event-text">
+										<div class="event-title-txt">Department of Health Education and Welfare</div>
+										<div class="event-date-txt xs-pt-5">April 11, 1953</div>
+									</div>
+								</div>
+							</li>
+
+
+						<li class="grid-item not-loaded" data-id="56969dc00e49b9072d3f9a34">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<div class="grid-item-thumbnail history lazy" data-aspect-ratio="100" style="background-image:url(http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/773.png)" data-original="http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/773.png"></div>
+
+
+
+
+
+								<div class="grid-item-text history">
+									<div class="event-text">
+										<div class="event-title-txt">Watson and Crick Discover DNA</div>
+										<div class="event-date-txt xs-pt-5">April 25, 1953</div>
+									</div>
+								</div>
+							</li>
+
+
+						<li class="grid-item not-loaded" data-id="56969daf0e49b9072c3e2bdf">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<div class="grid-item-thumbnail eisenhower lazy" data-aspect-ratio="100" style="background-image:url(http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/218.png)" data-original="http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/218.png"></div>
+
+
+
+
+
+								<div class="grid-item-text eisenhower">
+									<div class="event-text">
+										<div class="event-title-txt">Camp David</div>
+										<div class="event-date-txt xs-pt-5">May 1953</div>
+									</div>
+								</div>
+							</li>
+
+
+						<li class="grid-item not-loaded" data-id="56969dc00e49b9072d3f9a35">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<div class="grid-item-thumbnail history lazy" data-aspect-ratio="100" style="background-image:url(http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/780.png)" data-original="http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/780.png"></div>
+
+
+
+
+
+								<div class="grid-item-text history">
+									<div class="event-text">
+										<div class="event-title-txt">Korean War armistice</div>
+										<div class="event-date-txt xs-pt-5">July 27, 1953</div>
+									</div>
+								</div>
+							</li>
+
+
+						<li class="grid-item not-loaded" data-id="56969daf0e49b9072c3e2be0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<div class="grid-item-thumbnail eisenhower lazy" data-aspect-ratio="100" style="background-image:url(http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/225.png)" data-original="http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/225.png"></div>
+
+
+
+
+
+								<div class="grid-item-text eisenhower">
+									<div class="event-text">
+										<div class="event-title-txt">U.S. Information Agency</div>
+										<div class="event-date-txt xs-pt-5">August 1, 1953</div>
+									</div>
+								</div>
+							</li>
+
+
+						<li class="grid-item not-loaded" data-id="56969dc00e49b9072d3f9a36">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<div class="grid-item-thumbnail history lazy" data-aspect-ratio="100" style="background-image:url(http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/787.png)" data-original="http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/787.png"></div>
+
+
+
+
+
+								<div class="grid-item-text history">
+									<div class="event-text">
+										<div class="event-title-txt">Iranian coup</div>
+										<div class="event-date-txt xs-pt-5">August 19, 1953</div>
+									</div>
+								</div>
+							</li>
+
+
+						<li class="grid-item not-loaded" data-id="56969daf0e49b9072c3e2be2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<div class="grid-item-thumbnail eisenhower lazy" data-aspect-ratio="100" style="background-image:url(http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/232.png)" data-original="http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/232.png"></div>
+
+
+
+
+
+								<div class="grid-item-text eisenhower">
+									<div class="event-text">
+										<div class="event-title-txt">The &#8220;New Look&#8221; policy</div>
+										<div class="event-date-txt xs-pt-5">October 30, 1953</div>
+									</div>
+								</div>
+							</li>
+
+
+						<li class="grid-item not-loaded" data-id="56969daf0e49b9072c3e2be3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<div class="grid-item-thumbnail eisenhower lazy" data-aspect-ratio="100" style="background-image:url(http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/239.png)" data-original="http://eisenhower-foundation.docksal/modules/custom/ike_timeline/src/static/img/assets/239.png"></div>
+
+
+
+
+
+								<div class="grid-item-text eisenhower">
+									<div class="event-text">
+										<div class="event-title-txt">&#8220;Atoms for Peace&#8221; speech</div>
+										<div class="event-date-txt xs-pt-5">December 8, 1953</div>
+									</div>
+								</div>
+							</li>
+
+
+					</ul>
+				</li>
+

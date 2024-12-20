@@ -1,0 +1,23 @@
+uuid: 2bfaf021-7eaf-40a5-87fb-8fb0d3e779e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponsor_description
+    - node.type.sponsors
+  module:
+    - text
+id: node.sponsors.field_sponsor_description
+field_name: field_sponsor_description
+entity_type: node
+bundle: sponsors
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

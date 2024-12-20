@@ -1,0 +1,60 @@
+<?php
+
+/**
+ * @file
+ * Contains ike_timeline.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ike_timeline_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ike_timeline module.
+    case 'help.page.ike_timeline':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module for Interactive Timeline Port') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ike_timeline_theme($existing, $type, $theme, $path) {
+  return [
+    'html__timeline' => [
+      'render element' => 'html',
+      'template' => 'html--timeline',
+      'variables' => [
+        'variables' => [],
+      ],
+    ],
+    'html__timeline_mobile' => [
+      'render element' => 'html',
+      'template' => 'html--timeline-mobile',
+      'variables' => [
+        'variables' => [],
+      ],
+    ],
+    'html__timeline_internal' => [
+      'render element' => 'html',
+      'template' => 'html--timeline-internal',
+      'variables' => [
+        'variables' => [],
+      ],
+    ],
+    'html__timeline_internal_mobile' => [
+      'render element' => 'html',
+      'template' => 'html--timeline-internal-mobile',
+      'variables' => [
+        'variables' => [],
+      ],
+    ],
+  ];
+}

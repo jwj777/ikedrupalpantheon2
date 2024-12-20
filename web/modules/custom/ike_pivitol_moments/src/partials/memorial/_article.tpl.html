@@ -1,0 +1,28 @@
+<div class="content">
+	<h2 class="title">{{= title }}</h2>
+	<h4 class="article-metadata"><span class="date">{{= date }}</span>{{ if(author){ }}<span class="author"> by {{= author}}</span>{{ } }}</h4>
+	<figure>
+		<img class="article-image" src="{{= image_url }}" alt="{{= image_caption }}" />
+		<figcaption class="article-caption">
+			{{= image_caption }}
+		</figcaption>
+	</figure>
+	<div class="article-summary">
+		{{= summary }}
+	</div>
+	<div class="article-content">
+		{{= content }}
+	</div>
+	{{ if(url){ }}
+	<a href="{{= url }}" target="_blank" class="link article-url">Original Article »</a>
+	{{ } }}
+	{{ if(pdf){ }}
+	<a href="{{= pdf }}" target="_blank" class="link article-url">Download More Info »</a>
+	{{ } }}
+</div>
+<div class="related">
+	<h2 class="list-title">Related Articles</h2>
+	<div class="list paginated-list-view">
+		<!-- Show related news here -->
+	</div>
+</div>

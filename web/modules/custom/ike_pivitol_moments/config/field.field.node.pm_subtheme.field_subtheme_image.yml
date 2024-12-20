@@ -1,0 +1,38 @@
+uuid: 20778add-9be3-4be9-ab2c-53cfb2aed6e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtheme_image
+    - node.type.pm_subtheme
+  module:
+    - image
+id: node.pm_subtheme.field_subtheme_image
+field_name: field_subtheme_image
+entity_type: node
+bundle: pm_subtheme
+label: 'Subtheme Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: experience/subtheme
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

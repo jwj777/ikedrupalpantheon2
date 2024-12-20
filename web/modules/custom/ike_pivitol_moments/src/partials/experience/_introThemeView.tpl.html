@@ -1,0 +1,40 @@
+<section class="full-layer intro-text">
+	<h3 class="year">{{= year }}</h3>
+	<h1 class="title">{{= title }}</h1>
+	<h2 class="subtitle">{{= subtitle }}</h2>
+	<hr class="divider" />
+	<article class="description">{{= description }}</article>
+	{{ if(enabled) { }}
+		<a class="button enter" href="{{= target_url }}/{{= nid }}">
+			<span>Explore this Pivotal Moment</span>
+		</a>
+		<div class="loader"><!-- Update with loader percentage --></div>
+	{{ }else{ }}
+		<div class="signup">
+			<p class="signup-text">
+				Sign up to be notified when this pivotal moment launches.
+			</p>
+			<p class="signup-form">
+				<form method="post" action="/content/get-notified">
+					<input type="hidden" name="form_id" value="{{= formid }}">
+					<input type="hidden" name="submitted[node_uuid]" value="{{= nid }}">
+					<input type="hidden" name="op" value="Submit">
+					<input type="text" name="submitted[email]" class="input email" placeholder="">
+					<input type="submit" value="Sign Up" class="button submit" />
+				</form>
+			</p> 
+		</div>
+	{{ } }}
+
+	{{ if(sponsor){ }}
+		<div class="donor"> 
+			<div class="donor-padding"></div>
+			<img src="{{= sponsor_image }}">			
+			<p class="donor-text">
+				Made possible with the generous donation provided by 
+				<br>
+				{{= sponsor }}
+			</p> 
+		</div>
+	{{ } }}
+</section>

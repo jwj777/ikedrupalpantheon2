@@ -1,0 +1,32 @@
+uuid: 5c3bf005-31f7-4cc2-a496-c3760f8bbb82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtheme_slides
+    - node.type.pivotal_moment_slideshow
+    - node.type.pm_subtheme
+id: node.pivotal_moment_slideshow.field_subtheme_slides
+field_name: field_subtheme_slides
+entity_type: node
+bundle: pivotal_moment_slideshow
+label: Slides
+description: 'This is where you select the slides that will be contained in the subtheme slideshow. It may contain one or multiple slides.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      pm_subtheme: pm_subtheme
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      test_field_behavior:
+        status: 0
+      views-select-list:
+        status: 0
+field_type: entity_reference

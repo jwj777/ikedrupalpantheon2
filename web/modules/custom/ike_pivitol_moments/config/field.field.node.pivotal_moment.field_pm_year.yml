@@ -1,0 +1,23 @@
+uuid: 5c6f6084-39c4-4885-9d2c-259ebbeca6ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pm_year
+    - node.type.pivotal_moment
+id: node.pivotal_moment.field_pm_year
+field_name: field_pm_year
+entity_type: node
+bundle: pivotal_moment
+label: Year
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1850
+  max: 2000
+  prefix: ''
+  suffix: ''
+field_type: integer

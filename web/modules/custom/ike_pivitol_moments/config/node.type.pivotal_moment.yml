@@ -1,0 +1,18 @@
+uuid: 7b9829a3-deb2-4112-b58e-71bd494f8098
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: 'Pivotal Moment'
+type: pivotal_moment
+description: 'Pivotal Moment Overview. Each Pivotal Moment has subthemes associated with it'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

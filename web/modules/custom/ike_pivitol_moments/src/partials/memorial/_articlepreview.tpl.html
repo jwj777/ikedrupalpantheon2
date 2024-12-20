@@ -1,0 +1,22 @@
+{{ if(featured){ }}
+<article class="article-preview featured">
+	<header class="header">
+		<h4 class="article-metadata"><span class="date">{{= date }}</span>{{ if(author){ }}<span class="author"> by {{= author}}</span>{{ } }}</h4>
+		<h3 class="article-title"><a href="#/news?nid={{= nid }}">{{= title }}</a></h3>
+	</header>
+	<img class="article-image" src="{{= image_url }}" alt="{{= image_caption }}" />
+	<p class="article-summary">
+		{{= summary }}
+	</p>
+	<a href="#/news?nid={{= nid }}" class="link article-url">More »</a>
+</article>
+{{ }else{ }}
+<article class="article-preview">
+	<img class="article-image" src="{{= image_url }}" alt="{{= image_caption }}" />
+	<header class="header">
+		<h4 class="article-metadata"><span class="date">{{= date }}</span></h4>
+		<h3 class="article-title"><a href="#/news?nid={{= nid }}">{{= title }}</a></h3>
+		<a href="#/news?nid={{= nid }}" class="link article-url">More »</a>
+	</header>
+</article>
+{{ } }}

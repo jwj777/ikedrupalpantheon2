@@ -1,0 +1,21 @@
+uuid: 8af4599c-38a7-4912-aeff-d66d3c851215
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponsor_image
+    - node.type.pivotal_moment
+id: node.pivotal_moment.field_sponsor_image
+field_name: field_sponsor_image
+entity_type: node
+bundle: pivotal_moment
+label: 'Sponsor Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: dc78ac45-66a1-4f81-a72e-994fcc499a19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slideshow_weight
+    - node.type.pivotal_moment_slideshow
+  module:
+    - weight
+id: node.pivotal_moment_slideshow.field_slideshow_weight
+field_name: field_slideshow_weight
+entity_type: node
+bundle: pivotal_moment_slideshow
+label: Weight
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  range: '20'
+field_type: weight

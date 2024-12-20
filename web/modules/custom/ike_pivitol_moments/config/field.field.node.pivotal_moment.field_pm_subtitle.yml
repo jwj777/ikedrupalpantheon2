@@ -1,0 +1,19 @@
+uuid: 01f7cde0-3724-4300-9fe5-714731747598
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pm_subtitle
+    - node.type.pivotal_moment
+id: node.pivotal_moment.field_pm_subtitle
+field_name: field_pm_subtitle
+entity_type: node
+bundle: pivotal_moment
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
