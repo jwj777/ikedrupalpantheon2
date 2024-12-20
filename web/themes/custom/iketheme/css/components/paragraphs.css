@@ -927,6 +927,10 @@
   background-color: var(--primary-95);
 }
 
+.node-id-1918 .paragraph--type--card-image-title-description {
+  max-width: 378px;
+}
+
 .node-id-1919 .paragraph--type--card-image-title-description {
   max-width: 370px;
 }
