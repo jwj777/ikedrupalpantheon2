@@ -120,6 +120,7 @@
   display: block;
   margin-top: 0px;
   border-radius: 1.3rem 0 0 1.3rem;
+  object-fit: cover;
 }
 
 .ikes-life-item-wide .views-field-field-summary-image .field-content,
@@ -335,6 +336,7 @@
 .ikes-life-item-square-md .view-content  {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   width: 960px;
 }
 
@@ -503,6 +505,33 @@ p.text-light {
   overflow: hidden;
   position: relative;
   /* right: 1rem; */
+}
+
+.view-education-programs .card-image-title {
+  width: 376px;
+}
+
+.view-primary-source-main .card-image-title {
+  width: 370px;
+}
+
+@media screen and (max-width: 1376px) {
+  .view-primary-source-main .card-image-title {
+    width: 44%;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .view-primary-source-main .card-image-title {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .view-primary-source-main .card-image-title {
+    width: 968%;
+    margin: 1rem 2%;
+  }
 }
 
 @media screen and (max-width: 712px) {

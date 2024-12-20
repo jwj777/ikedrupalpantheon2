@@ -117,6 +117,12 @@
   padding: 4rem 0 24rem 0;
 }
 
+@media screen and (max-width: 968px) {
+  .node-id-1967 .hero-basic {
+    padding: 4rem 0 30rem 0;
+  }
+}
+
 .hero-alt {
   max-width: var(--xl);
   margin: 0 auto;
@@ -204,12 +210,6 @@
   padding: 5rem 0 12rem 0;
   margin-bottom: -12rem;
 }
-/* 
-@media screen and (max-width: 1376px) {
-  .view-hero-basic-page-image {
-    margin: 0 var(--gutter-xl)
-  }
-} */
 
 
 .page-node-type-page .views-field-field-hero-image img,

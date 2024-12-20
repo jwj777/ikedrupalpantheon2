@@ -12836,17 +12836,17 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "pantheon-upstreams/upstream-configuration": 20,
+        "drupal/viewsreference": 10,
         "drupal/better_exposed_filters": 10,
         "drupal/feeds": 10,
         "drupal/flag": 10,
-        "drupal/inline_entity_form": 20,
-        "drupal/viewsreference": 10,
-        "pantheon-upstreams/upstream-configuration": 20
+        "drupal/inline_entity_form": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
+    "platform": [],
+    "platform-dev": [],
     "platform-overrides": {
         "php": "8.2.0"
     },

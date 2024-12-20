@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
   // Get the About Us link and dropdown elements
   var aboutUsLink = document.getElementById('aboutUsLink');
   var aboutUsDropdown = document.getElementById('aboutUsDropdown');
+
+  var ikesLifeLink = document.getElementById('ikesLifeLink');
+  var ikesLifeDropdown = document.getElementById('ikesLifeDropdown');
   
   // Get the Education link and dropdown elements
   var eduLink = document.getElementById('eduLink');
@@ -18,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Initially hide all dropdowns
   aboutUsDropdown.style.display = 'none';
+  ikesLifeDropdown.style.display = 'none';
   eduDropdown.style.display = 'none';
   visitDropdown.style.display = 'none';
   joinDropdown.style.display = 'none';
@@ -25,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Function to hide all dropdowns
   function hideAllDropdowns() {
     aboutUsDropdown.style.display = 'none';
+    ikesLifeDropdown.style.display = 'none';
     eduDropdown.style.display = 'none';
     visitDropdown.style.display = 'none';
     joinDropdown.style.display = 'none';
@@ -38,6 +43,16 @@ document.addEventListener('DOMContentLoaded', function () {
       aboutUsDropdown.style.display = 'flex';  // Show the About Us dropdown
     } else {
       aboutUsDropdown.style.display = 'none';  // Toggle to hide it
+    }
+  });
+
+  ikesLifeLink.addEventListener('click', function (event) {
+    event.preventDefault();
+    if (ikesLifeDropdown.style.display === 'none') {
+      hideAllDropdowns();  // Hide all other dropdowns
+      ikesLifeDropdown.style.display = 'flex';  // Show the About Us dropdown
+    } else {
+      ikesLifeDropdown.style.display = 'none';  // Toggle to hide it
     }
   });
 

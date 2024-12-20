@@ -1,0 +1,21 @@
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    <div class="paragraph-inner">
+      {% block content %}
+        <div class="{{ paragraph.field_link_type.value }}">
+          {{ content.field_markup }}
+        </div>
+      {% endblock %}
+    </div>
+  </div>
+{% endblock paragraph %}
