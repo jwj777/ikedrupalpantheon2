@@ -1,0 +1,118 @@
+<div class='asset-modal'>
+    <div class='asset-click'></div>
+    <div class='asset-modal-content clearfix'>
+        <% if (type == 'image'){ %> 
+            <div class='asset-modal-slide single-image'>
+                <img src='<%= data.image %>'>
+            </div> 
+        <% } %>
+
+        <% if (type == 'audioAndImages'){ %> 
+            <div class='asset-modal-slide audio'>
+                <img src='<%= data.image %>'>
+            </div>
+
+            <div class='module-audio-and-image'>
+                <div class='module-data' 
+                    data-mediauri='<%= data.mediauri %>' 
+                    data-id='modal_<%= data.id %>' >
+                </div> 
+                <div class='module-audio-player'>
+                    <div class='audioplay-icon'></div>
+                    
+                    <div class='wave-wrapper'>
+                        <div id='modal_<%= data.id %>' class='wave'></div>
+                    </div>
+                    
+                    <div class='audio-remaining-txt'></div>
+
+                    <div class='module-overlay'></div>
+                </div>
+            </div>
+        <% } %>
+        
+        <% if (type == 'video'){ %>   
+            <div class='video-view'>
+                <div class='video-container'></div>
+            </div>
+        <% } %>  
+
+        <% if (type == 'gallery'){ %>    
+            <div class="asset-modal-counter">
+                <span class="asset-modal-counter-txt"></span>
+            </div>
+            <div class='asset-modal-slideshow'>
+                <% $.each( data.images, function(i, v){ %> 
+                    <% console.log("asset-modal-slide", v) %> 
+                    <div class='asset-modal-slide'> 
+                        <picture>
+                            <source media="(min-width: 2560px)" data-srcset="<%= v.image_xlarge %>">
+                            <source media="(min-width: 1920px)" data-srcset="<%= v.image_large %>">
+                            <source media="(min-width: 800px)" data-srcset="<%= v.image_default %>">
+                            <source media="(min-width: 240px)" data-srcset="<%= v.image_small %>">
+                            <img data-src="<%= v.image_default %>" class="preload lazyload" alt="alt" src="<%= v.image_small %>">
+                        </picture>
+
+                        <div class="show-device"> 
+                            <div class='asset-modal-mobile-text'> 
+                                <h4 class='asset-modal-title-txt lg-mb-10'><%= v.title %></h4>
+                                 
+                                <span class='asset-modal-caption-txt'><%= unescape(v.caption) %></span> 
+                                 
+                                <span class='asset-modal-credit-txt'><%= unescape(v.credit) %></span> 
+                            </div>
+
+                            <div class='asset-modal-nav-dots clearfix'>
+                                <% for(var d = 0; d < data.images.length; d++){ %> 
+                                <div class='asset-modal-nav-dot imageslideshow-icon<% if (d == i){ %> active<% } %>'></div> 
+                                <% } %> 
+                            </div> 
+                        </div>
+                    </div>
+                <% }) %>
+            </div>  
+
+            <div class="asset-modal-slideshow-desktop hide-device"> 
+                <div class='asset-modal-text'> 
+                    <h4 class='asset-modal-title-txt lg-mb-10'><%= data.title %></h4> 
+
+                    <span class='asset-modal-caption-txt'><%= unescape(data.caption) %></span>
+
+                    <span class='asset-modal-credit-txt'><%= unescape(data.credit) %></span> 
+                </div>
+
+                <div class='asset-modal-nav-dots'>
+                    <% i = data.images.length %> 
+                    <% while (i){ %> 
+                    <div class='asset-modal-nav-dot imageslideshow-icon'></div>
+                    <% i-- %> 
+                    <% } %> 
+                </div> 
+            </div>
+
+            <div class='asset-modal-ui'>
+                <div class="asset-modal-prev">
+                    <div class='leftarrow-icon'></div>
+                    <div class="asset-modal-prev-next-txt"></div>
+                </div>
+                
+                <div class="asset-modal-next">
+                    <div class='rightarrow-icon'></div>
+                    <div class="asset-modal-prev-next-txt"></div>
+                </div>
+            </div> 
+        <% } else { %>
+            <div class='asset-modal-text'> 
+                <h4 class='asset-modal-title-txt lg-mb-10'><%= data.title %></h4>
+                 
+                <span class='asset-modal-caption-txt'><%= unescape(data.caption) %></span> 
+                 
+                <span class='asset-modal-credit-txt'><%= unescape(data.credit) %></span> 
+            </div>
+        <% } %>
+
+        
+    </div>
+     
+    <div class='asset-modal-close close-icon'></div>              
+</div>

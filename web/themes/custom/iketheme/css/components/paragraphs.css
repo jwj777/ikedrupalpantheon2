@@ -146,6 +146,32 @@
   max-width: 560px;
 }
 
+.paragraph--type--two-column-image-text-block .tertiary-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  max-width: 420px;
+}
+
+.paragraph--type--two-column-image-text-block .tertiary-links p {
+  margin: 0;
+}
+
+.paragraph--type--two-column-image-text-block .tertiary-links a {
+  display: inline-block;
+  background: var(--primary-40);
+  padding: 10px 18px;
+  border-radius: 10rem;
+  color: var(--primary-90);
+  text-decoration: none;
+  margin: 0 1rem 1rem 0;
+}
+
+.paragraph--type--two-column-image-text-block .tertiary-links a:hover {
+  background: var(--primary-30);
+  transition: all 0.3s;
+}
+
 /** text collages two coloumn **/
 .paragraph--type--two-column-text-collage .text-column {
   padding: 64px 280px 160px 64px;

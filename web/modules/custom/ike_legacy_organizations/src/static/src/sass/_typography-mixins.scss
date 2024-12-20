@@ -1,0 +1,32 @@
+
+//TYPOGRAPHY
+@mixin proxima-bold-stack(){
+    font-family: "proxima-nova", "Proxima Nova Bold", "Open Sans","Gill Sans MT","Gill Sans",Corbel,Arial,sans-serif;
+    font-weight: 700;
+}
+
+@mixin proxima-condensed-stack(){
+    font-family: "proxima-nova-condensed", "Proxima Nova Condensed Regular", "Open Sans","Gill Sans MT","Gill Sans",Corbel,Arial,sans-serif;
+    font-weight: 400;
+}
+
+@mixin proxima-condensed-light-stack(){
+    font-family: "proxima-nova-condensed", "Proxima Nova Condensed Regular", "Open Sans","Gill Sans MT","Gill Sans",Corbel,Arial,sans-serif;
+    font-weight: 300;
+}
+
+@mixin freight-black-stack(){
+    font-family: "freight-text-pro", "FreightText Book Regular", "Times New Roman",Times,Baskerville,Georgia,serif;    
+    font-weight: 900;
+}
+
+@mixin freight-medium-stack(){
+    font-family: "freight-text-pro", "FreightText Book Regular", "Times New Roman",Times,Baskerville,Georgia,serif;  
+    font-weight: 500;  
+}
+
+
+@mixin freight-book-stack(){
+    font-family: "freight-text-pro", "FreightText Book Regular", "Times New Roman",Times,Baskerville,Georgia,serif;  
+    font-weight: 400;  
+}

@@ -1,0 +1,166 @@
+/********************************************************
+ * LP TIMELINE STYLE 
+ ********************************************************/
+
+@import "libs/settings";
+
+.overlay {
+	@include position(fixed, 0 null null 0);
+	@include trans-prop-dur(width, 0.75s);
+
+	display: inline-block; 
+	width: 75px;
+	height: 100%;
+	overflow: hidden;
+	z-index: 998;
+
+	&:hover{
+		@include trans-prop-dur(width, 0.25s);
+	}
+} 
+ 
+	.overlay-bkg {
+		@include trans-prop-dur(transform, 0.25s);
+		@include full-cover; 
+		@include transform( translateX(-100%) );
+
+		width: 100%;	
+		display: block;
+		background-color: $black;
+		will-change: transform;
+
+		.active &{
+			@include transform( translateX(0) ); 
+		}
+	}
+
+	.vertical-breadcrumb { 
+		margin-left: 15px;
+	}
+
+	.bookend-dot{
+		cursor: pointer;
+	}
+
+	.lorg-text,
+	.chapter-text,
+	.chapter-subtext {
+		white-space: nowrap;
+	}
+
+	.introduction-dot{
+		float: left;
+		margin: 0 6px 17px 0;
+	}
+
+	.chapter {
+	 	@include clearfix();
+	}
+ 		.lorg-title,
+		.chapter-title {
+			@include trans-prop-dur(opacity);
+
+			display: block; 
+			cursor: pointer;
+			height: auto;
+
+			.active > &:not(.active){
+				@include opacity(0.5);
+			}
+
+			.active > &:hover{
+				@include opacity(1);
+			}
+		}
+
+		.chapter-title{
+			margin-bottom: 15px;
+		}
+
+		.lorg-dot,
+		.chapter-dot {
+			float: left;
+		}
+
+		.lorg-dot{
+			margin-right: 5px; 
+		}
+
+		.chapter-dot{
+			@include trans-prop-dur(margin-left);
+
+			margin-left: 0;
+			margin-right: 5px; 
+		}
+
+		.lorg-text,
+		.chapter-text,
+		.subchapter-text {
+			@include trans-prop-dur(opacity);
+			@include opacity(0);
+
+			visibility: hidden;
+
+			.chapter-txt{
+				line-height: 20px;
+			}
+		}
+
+	.lorgs {
+	 	height: auto;
+	 	overflow: hidden;
+	} 
+		.lorg {
+	 		margin-bottom: 15px;
+		} 
+
+		.lorg-title,
+		.chapter-title,
+		.subchapter-title{
+			@include trans-prop-dur(opacity);
+			@include opacity(0.5);
+			@include clearfix();
+			
+			display: block; 
+			cursor: pointer;
+
+			&.active{
+				@include opacity(1);
+			}
+			&:hover{
+				@include opacity(1);
+			}
+		}
+
+		.chapter:first-child {
+			margin-top: 15px;
+		}
+
+		.chapter:last-child{
+			margin-bottom: -15px;
+		}
+
+		.subchapter-dot {
+			@include trans-prop-dur(margin-left);
+			
+			float: left;
+			margin: 2px 10px 18px 5px;
+		}
+
+
+ /*********************************
+ * SIDE NAV
+ *********************************/
+
+.overlay-footer{
+	position: absolute;
+	display: none; 
+	bottom: 20px;
+	left: 20px;
+
+	.footer-icon{
+		float: left;
+		margin-right: 10px;
+		cursor: pointer;
+	}
+}

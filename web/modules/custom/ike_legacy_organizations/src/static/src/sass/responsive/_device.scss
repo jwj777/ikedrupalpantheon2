@@ -1,0 +1,93 @@
+/* DEVICE =================================================== */
+@import "compass"; 
+
+/*************************************
+ * GLOBALS / MIXINS / PLACEHOLDERS
+ *************************************/
+ 
+/*************** HELPERS ***************/
+ 
+
+/*************** PLACEHOLDERS ***************/
+ 
+/*************** GLOBAL ***************/
+
+/*************************************
+ * NAVIGATION
+ *************************************/
+ 
+
+
+/*************************************
+ * MODULES
+ *************************************/
+$side-padding:10px;
+
+.intro-header-wrapper{
+ 	margin-top: 6%;
+} 
+
+.chapter-thumbs-wrapper{
+	.chapter-thumb-title{
+		margin-top: 10px;
+	}
+}
+
+// .chapter-thumbs{
+// 	display: flex;
+// 	align-items: center;
+// 	flex-wrap: wrap;
+// }
+// 	.chapter-thumb{
+// 		margin-left: auto !important;
+// 		margin-right: auto !important;
+// 	}
+
+.grid-item .module-txt{
+	margin-top: 13px;
+}
+
+.module-image-gradient{ 
+	@include position(absolute, 0 0 -2px 0); 
+	@include background-image(linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 64%, rgba(0,0,0,1) 100%));
+
+	// background-image: url("../img/vertical_gradient.png");
+	background-size: 1px 100%;
+}
+
+.section-content{
+	&.subchapter-content{
+   		padding: 0 span(1) 63px;  
+    	//margin-top: -180px;
+	}   
+}   
+
+.module-text,
+.slide-subchapter-text{
+    width: 75%; 
+    padding-left: $side-padding;
+    padding-right: $side-padding;
+}
+
+/*************************************
+ * GALLERY & SLIDERS
+ *************************************/
+
+
+/*************************************
+ * TYPOGRPAHY
+ *************************************/
+
+ .slide-subchapter-date-txt{
+	margin-top: 6%;
+	margin-bottom: 5%;
+}
+
+ .chapter-thumb-txt{
+ 	line-height: 1em;
+ }
+ 
+ .intro-header-txt{
+ 	font-size: 2rem;
+ 	line-height: 1em;
+ }

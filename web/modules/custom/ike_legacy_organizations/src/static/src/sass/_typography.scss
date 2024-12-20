@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+@import "libs/settings";
+@import "libs/mixins";  
+@import "typography-mixins";  
+ 
+/*********************************
+ * GLOBAL
+ *********************************/
+%heading-1{
+	@include proxima-bold-stack();
+	@include rem-font-styles(40px,40px);
+
+	text-transform: uppercase;
+	letter-spacing: 0.0167em;
+} 
+ 
+%heading-2{
+	@include proxima-condensed-light-stack();
+	@include rem-font-styles(25px,23px);
+
+	text-transform: uppercase;
+}
+
+%heading-3{
+	@include proxima-bold-stack();
+	@include rem-font-styles(15px,20px);
+
+	text-transform: uppercase;
+	letter-spacing: 0.0167em;
+}
+
+%heading-4{
+	@include proxima-bold-stack();
+	@include rem-font-styles(15px,20px);
+
+	text-transform: uppercase; 
+	letter-spacing: 0.0167em;
+}
+
+%heading-5{
+	@include proxima-bold-stack();
+	@include rem-font-styles(15px,15px);
+	@include trans-prop-dur(color);
+
+	text-transform: uppercase;
+	letter-spacing: 0.0167em;
+}
+
+%heading-6{
+	@include freight-black-stack();
+	@include rem-font-styles(16px,20px);
+}
+
+%paragraph-1{
+	@include freight-book-stack();
+	@include rem-font-styles(20px,25px);
+
+	// a{
+	// 	color: $opaque-light-blue;
+	// }
+
+	a, a:hover, a:visited, a:link, a:active{
+		color: $opaque-light-blue;
+		//text-decoration: underline;
+
+	}
+}
+
+%paragraph-2{
+	@include freight-book-stack();
+	@include rem-font-styles(16px,20px);
+
+	// a{
+	// 	color: $opaque-light-blue;
+	// }
+
+	a, a:hover, a:visited, a:link, a:active{
+		color: $opaque-light-blue;
+		//text-decoration: underline;
+	}
+}
+
+%text-links{
+	@include freight-book-stack();
+	@include rem-font-styles(16px,20px);
+}
+
+%image-credit{
+	@include freight-book-stack();
+	@include rem-font-styles(16px,20px);
+}
+
+%video-player{
+	@include freight-book-stack();
+	@include rem-font-styles(16px,20px);
+}
+
+body{
+	@include freight-book-stack();
+	
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	-webkit-font-smoothing: antialiased;
+
+	color: $white;
+}
+
+/*********************************
+ * NAVIGATION
+ *********************************/
+ .top-nav-txt,
+ .overlay-footer-txt,
+ .sharing-label-txt{
+ 	@extend %heading-4;
+ 	@include trans-prop-dur(color);
+
+ 	color: $light-blue;
+
+	&:hover{
+		color: $opaque-light-blue;
+	}
+	
+	.sharing-item:hover &{
+		color: $opaque-light-blue;
+	}
+ }
+
+
+/*********************************
+ * PAGES
+ *********************************/
+
+// INTRO
+.intro-header-txt{
+	@extend %heading-1;
+
+	color: $white;
+}
+
+.intro-paragraph-txt,
+.intro-paragraph-txt p{
+	@extend %paragraph-1;
+
+	color: $white;
+}
+
+.scroll-cta-txt{
+	@extend %paragraph-2;
+
+	color: $white;
+}
+
+
+/*********************************
+ * NAVIGATION
+ *********************************/
+.lorg-txt,
+.chapter-txt{ 
+	line-height: 20px;
+}	
+
+.lorg-txt,
+.chapter-txt,
+.subchapter-txt{
+	@extend %heading-5;
+	@include trans-prop-dur(opacity);
+
+	color: $light-blue; 
+	white-space: nowrap;
+
+	&.active{
+		opacity: 1;
+	}
+
+}	
+ 
+
+/*********************************
+ * MODULES
+ *********************************/
+.chapter-thumb-txt{
+	@extend %heading-4;
+
+	text-align: center;
+	color: $opaque-light-blue;
+
+	&.coming-soon{
+		color: $gray;
+	}
+	&.more-legacy{
+		color: $nav-hover;
+	}
+}
+
+.module-txt{
+	@extend %heading-4;
+	@include trans-prop-dur(color);
+
+ 	text-align: left;
+ 	color: $opaque-light-blue;
+
+ 	.show-phone{
+ 		@include opacity(0.75);
+ 		font-style: italic;
+    	font-size: 0.75rem;
+ 	}
+}
+
+.asset-modal-title-txt{
+	@extend %heading-5;
+
+	color: $opaque-light-blue;
+}
+
+.asset-modal-caption-txt{
+	@extend %paragraph-2;
+
+	color: $white;
+}
+
+.asset-modal-credit-txt{
+	@extend %paragraph-2;
+ 
+	color: $gray;
+}
+
+.asset-modal-counter-txt{
+	@extend %paragraph-2;
+
+	color: $gray;
+}
+
+.asset-modal-prev-next-txt{
+	@extend %heading-5;
+
+	color: $opaque-light-blue;
+}
+
+.audio-remaining-txt{
+	@include freight-book-stack();
+	@include font-size(16px); 
+
+	color: #8AC9CF; 
+
+	&.total{
+		color: $white;
+	}
+}
+
+.asset-module-quote-txt{
+	@include freight-book-stack();
+
+	font-size: 1.5rem;
+	line-height: 1.25em;
+} 
+
+.asset-module-quote-credit-txt{
+	@extend %heading-4;
+
+ 	color: $light-blue;
+}
+
+/*********************************
+ * SLIDES
+ *********************************/
+.slide-chapter-date-txt{
+	@extend %heading-2;
+}
+
+.slide-chapter-title-txt{
+	@extend %heading-1;
+}
+
+.slide-chapter-subtitle-txt{
+	@extend %heading-3;
+}
+
+.slide-chapter-body-txt,
+.slide-chapter-body-txt p{
+	@extend %paragraph-1;
+}
+
+.slide-subchapter-date-txt{
+	@extend %heading-2;
+
+	text-align: left;
+}
+
+.slide-subchapter-body-txt,
+.slide-subchapter-body-txt p{
+	@extend %paragraph-2;
+
+	text-align: left;
+}
+
+/*********************************
+ * MODALS 
+ *********************************/
+.vjs-current-time-display,
+.vjs-duration-display{
+	@extend %paragraph-2;
+
+	line-height: 37px;
+}
+
+.module-audio-click-txt{
+	@include freight-book-stack();
+	@include font-size(16px); 
+
+	color: #8AC9CF; 
+}

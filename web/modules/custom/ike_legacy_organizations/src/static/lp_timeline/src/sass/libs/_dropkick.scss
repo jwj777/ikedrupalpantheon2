@@ -1,0 +1,245 @@
+@import "libs/settings";
+@import "libs/mixins";
+@import "compass/css3/box-sizing";
+
+select[data-dkcacheid] {
+  display: none;
+}
+ 
+.dk-select {
+  -prefix-box-sizing: border-box;
+  -prefix-box-sizing: border-box;
+  box-sizing: border-box;
+  * {
+    -prefix-box-sizing: border-box;
+    -prefix-box-sizing: border-box;
+    box-sizing: border-box;
+    &:before, &:after {
+      -prefix-box-sizing: border-box;
+      -prefix-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.dk-select-multi {
+  -prefix-box-sizing: border-box;
+  -prefix-box-sizing: border-box;
+  box-sizing: border-box;
+  * {
+    -prefix-box-sizing: border-box;
+    -prefix-box-sizing: border-box;
+    box-sizing: border-box; 
+    &:before, &:after {
+      -prefix-box-sizing: border-box;
+      -prefix-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+}
+ 
+.dk-select, .dk-select-multi {
+  @extend %regular;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  height: 36px;
+  width: 100%;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 36px;
+
+  color: $white;
+  background-color: $black;
+  
+  &.sm{
+    width: horizontal-units(15);
+  }  
+  &.xsm{
+    width: horizontal-units(10);
+  }
+
+  .directory-subfilter-dropdown &{
+    @include calc(width, "100% - 20px");
+    margin: 10px;
+  }
+  
+  .story-units &,
+  .events-units &{
+    width: span(4 of 9);
+    margin: 0 0 55px 0;
+  }
+}
+
+
+.dk-selected {
+  @extend %bold;
+  font-size: em-font(16px);
+
+  height: 100%; 
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  padding-left: 20px;
+  -prefix-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+
+  &:before, &:after {
+    content: '';
+    display: block;
+    position: absolute;
+  }
+  &:before {
+    
+  }
+  &:after {
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: horizontal-units(7);
+    background-image: url(/legacy/static/img/png/arrow-down.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &:hover{
+    color: $white;
+  }
+}
+
+.dk-selected-disabled {
+  color: #bbbbbb;
+}
+ 
+.dk-select .dk-select-options {
+  position: absolute;
+  display: none;
+  left: 0;
+}
+
+// .dk-select-open-up .dk-select-options {
+//   margin-bottom: -1px;
+//   bottom: 100%;
+// }
+
+.dk-select-open-up .dk-select-options,
+.dk-select-open-down .dk-select-options {
+  margin-top: -1px;
+  top: 100%;
+}
+
+.dk-select-multi .dk-select-options {
+  max-height: 10em;
+}
+
+.dk-select-options {
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+  border: 1px solid $gray;
+  overflow-x: hidden;
+  max-height: 10.5em;
+  list-style: none;
+  margin: 0;
+}
+
+.dk-option-selected {
+  display: none;
+  background-color: $gray;
+  color: #fff;
+}
+
+.dk-select-options-highlight .dk-option-selected {
+  background-color: transparent;
+  color: inherit;
+}
+
+.dk-option {
+  padding: 0 20px;
+}
+
+.dk-select-options {
+  background-color: $black;
+  .dk-option-highlight {
+    background-color: $white;
+    color: $black;
+  }
+  .dk-option-disabled {
+    color: #bbbbbb;
+    background-color: transparent;
+  }
+}
+
+.dk-optgroup {
+  border: solid $gray;
+  border-width: 1px 0;
+  padding: 0.25em 0;
+  margin-top: 0.25em;
+  + {
+    .dk-option {
+      margin-top: 0.25em;
+    }
+    .dk-optgroup {
+      border-top-width: 0;
+      margin-top: 0;
+    }
+  }
+  &:last-child {
+    border-bottom-width: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.dk-optgroup-options {
+  list-style: none;
+  padding-left: 0;
+}
+
+.dk-select-open-up .dk-selected {
+  border-color: $gray;
+}
+
+.dk-select-open-down .dk-selected {
+  border-color: $gray;
+  color: $white;
+}
+
+.dk-select-open-up .dk-selected:before, .dk-select-open-down .dk-selected:before {
+  border-width: 0 0.25em 0.25em;
+  border-bottom-color: $gray;
+}
+
+.dk-select-open-up .dk-selected:after, .dk-select-open-down .dk-selected:after {
+  border-left-color: $gray;
+}
+
+.dk-select-open-up .dk-select-options, .dk-select-open-down .dk-select-options, .dk-select-multi:focus .dk-select-options {
+  display: block;
+  border-color: $gray;
+}
+
+.dk-select {
+  &:hover, &:focus {
+    outline: none;
+  }
+}
+
+.dk-select-multi {
+  &:hover, &:focus {
+    outline: none;
+  }
+}
+
+.dk-select {
+  &:hover .dk-selected, &:focus .dk-selected {
+    border-color: $gray;
+  }
+  &:hover .dk-selected:before, &:focus .dk-selected:before {
+    border-top-color: $gray;
+  }
+  &:hover .dk-selected:after, &:focus .dk-selected:after {
+    border-left-color: $gray;
+  }
+}

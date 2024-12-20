@@ -22,6 +22,9 @@
         <p class="label-medium">{{ paragraph.field_block_label.0.value }}</p>
         <h2 class="heading-large">{{ paragraph.field_heading_2.0.value }}</h2>
         <p class="body-medium">{{ paragraph.field_body.value|render|striptags|raw }}</p>
+        <div class="tertiary-links">
+          <p class="body-medium">{{ paragraph.field_tertiary_links.value|render|raw }}</p>
+        </div>
       </div>
       {% endblock %}
     </div>

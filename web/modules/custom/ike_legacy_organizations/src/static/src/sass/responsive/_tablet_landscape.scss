@@ -1,0 +1,27 @@
+/*************************************
+ * TABLET LANDSCAPE
+ *************************************/
+@media screen and (orientation: portrait) {
+	 
+}
+
+body.debug{
+	background-color: red;
+}
+
+.grid-item{
+	float: left;
+	
+	&:nth-child(even){
+		padding-left: 10px;
+		margin-right: 5%;
+	}
+}
+
+/*************************************
+ * TYPOGRPAHY
+ *************************************/
+.intro-header-txt,
+.slide-chapter-title-txt{
+    @include rem-font-styles(32px, 32px);
+}

@@ -1,0 +1,96 @@
+/********************************************************
+ * LP TIMELINE STYLE 
+ ********************************************************/ 
+.show-mobile{ 
+	display: none !important; 
+}
+
+.hide-mobile{ 
+	display: block !important;
+
+	.grid-unit-type-txt &{
+		display: inline!important; 
+	}
+}
+
+.show-mobile-inline{
+	display: none !important; 
+}
+ 
+/*************************************
+ * NAVIGATION
+ *************************************/
+.top-nav-desktop{
+	display: block;
+}
+
+.top-nav-mobile{
+	display: none;
+}
+
+
+.overlay:hover{
+	.overlay-bkg{
+		@include transform( translateX(0) ); 
+	}
+
+	.lorg-text, 
+	.chapter-text, 
+	.subchapter-text {
+		@include opacity(1);
+
+	 	visibility: visible;
+	}
+
+	.chapter-dot{
+		margin-left: 5px;
+	}
+
+	.subchapter-dot { 
+		margin-left: 25px;
+	}
+}
+ 
+/************************************* 
+ * MODULES
+ *************************************/
+
+.intro{
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.img-full {
+	@include opacity(0); 
+	@include trans-prop-dur(opacity, 0.5s); 
+	// @include transform( translateX(-50%) translateY(-50%) );
+ 	// @include position(relative, 50% null null 50%);
+
+	position: absolute;
+    -webkit-backface-visibility: hidden;
+	
+	&.onload {
+		@include opacity(1); 
+	}
+}
+
+.asset-modal{
+	height: 100%;
+}
+
+.asset-modal-slideshow-desktop{
+	position: absolute;
+    width: 100%;
+    bottom: 30px;
+    text-align: center;
+}
+
+/*************************************
+ * DIRECTORY
+ *************************************/
+ 
+ 
+/*************************************
+ * TYPOGRPAHY
+ *************************************/
+ 

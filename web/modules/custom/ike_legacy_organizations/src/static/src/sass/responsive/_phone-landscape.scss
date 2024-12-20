@@ -1,0 +1,221 @@
+/* 480 =================================================== */
+
+
+/*************************************
+ * NAVIGATION
+ *************************************/
+.introduction-dot,
+.chapter-dot,
+.top-nav-desktop-right,
+.subchapter,
+.subchapter-icon,
+.introduction-icon,
+.chapter-icon{
+    display: none !important;
+}
+ 
+.overlay{
+    display: none;
+    width: 100%;
+
+    &.active{ 
+        display: block;
+        z-index: 1000;
+        
+        .overlay-mobile-title{
+            display: block;
+        }
+    } 
+}
+
+.mobile-overlay-nav{
+    display: block;
+}
+
+.vertical-breadcrumb{
+    margin-left: 20px;
+
+    &.display-table{
+        display: block;
+        height: auto;
+        width: auto;
+    }
+} 
+
+.bookend-dot{
+    height: 32px;
+}
+
+.overlay-footer{
+    width: 100%;
+    width: calc(100% - 40px);
+    padding-top: 16px;
+    border-top: 1px solid $white;
+}
+
+ /*************************************
+ * HELPER
+ *************************************/
+
+.show-phone{ 
+    display: block !important; 
+}
+
+.hide-phone{ 
+    display: none !important; 
+}
+
+ /*************************************
+ * GLOBAL ELEMENTS
+ *************************************/
+.intro-header-wrapper{
+    width: span(6 of 8); 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include transform(translateX(-50%) translateY(-50%));
+}
+
+ /*************************************
+ * MODAL
+ *************************************/
+.asset-modal{
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.asset-modal-ui{
+    display: none;
+}
+
+.asset-modal-slideshow{
+    height: auto;
+}
+
+.asset-modal-slide{
+    height: auto;
+
+    img, picture{
+        padding: 0;
+        max-width: 100%;
+        height: auto;
+    }
+
+    &.asset-modal-slide{
+        margin-left: 0;
+        margin-right: 0;
+    }
+} 
+
+.asset-modal-text{ 
+    width: calc(100% - 80px);
+    margin: auto;
+}
+
+.asset-modal-mobile-text{
+    padding-top: 60px; 
+    width: calc(100% - 80px);
+}
+
+.asset-modal-nav-dots{
+    bottom: auto;
+    margin-top: 10px;
+    top: 0;
+}
+
+.asset-modal-title-txt,
+.asset-modal-caption-txt,
+.asset-modal-credit-txt{
+    display: block;
+    text-align: left;
+}
+
+.asset-modal-title-txt{
+    @include rem-font-styles(15px,15px);
+}
+
+.asset-modal-caption-txt{
+    @include rem-font-styles(16px,20px);
+}
+
+ /*************************************
+ * MODULES
+ *************************************/
+$side-padding:10px;
+
+.section-content{
+    padding-left: $side-padding;
+    padding-right: $side-padding;
+}  
+
+.section-content.subchapter-content{
+    padding-bottom: 0;
+}
+
+.media,
+.grid-item,
+.grid-sizer{
+    width: 100%; 
+}
+
+.grid-item{
+    padding-left: $side-padding;
+    padding-right: $side-padding;
+    float: none;
+    margin-bottom: 56px;
+
+    &:nth-child(even){
+        margin-right: auto;
+    }
+}
+
+#chapterCoverflow {
+    .chapter-thumb-image{
+        position: absolute;
+        width: 100%;        
+        top: 0;
+        left: 0;
+    }
+    .chapter-thumb{ 
+        width: 100%;
+        height: 280px;
+    }
+}
+ 
+.chapter-thumb-title{ 
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.intro{
+    .slide-chapter-title-txt{
+        margin-bottom: 3%;
+    }
+}
+
+.module-text,
+.slide-subchapter-text{
+    width: 100%;  
+    padding-left: $side-padding;
+    padding-right: $side-padding;
+}
+
+ /*************************************
+ * TYPOGRPAHY
+ *************************************/
+.vertical-breadcrumb{
+    .chapter-txt{
+        color: $white;
+    }
+}
+
+.chapter-thumb-txt{
+    color: $white;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.slide-subchapter-body-txt{
+    @include rem-font-styles(20px, 25px);
+}
+

@@ -1,0 +1,112 @@
+// change to false if its not imported into bootstrap
+$use-bootstrap: false;
+
+// margin and padding shorthands
+$space-prefixes : (
+  p  : padding,
+  pt : padding-top,
+  pr : padding-right,
+  pb : padding-bottom,
+  pl : padding-left,
+  m  : margin,
+  mt : margin-top,
+  mr : margin-right,
+  mb : margin-bottom,
+  ml : margin-left,
+) !default;
+
+// change these values if its not imported into bootstrap
+$grid-breakpoints-custom: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 480px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 960px,
+  // Extra large screen / wide desktop
+  xl: 1280px
+) !default;
+
+$breakpoints : $grid-breakpoints-custom;
+@if $use-bootstrap {
+  $breakpoints : $grid-breakpoints;
+}
+
+
+
+
+// main function definition
+@mixin make-space($prefixes, $breakpoints) {
+  @each $breakpoint-name, $breakpoint-value in $breakpoints {
+    // if xs value = 0, set it global without media queries
+    @if($breakpoint-value == 0) {
+      @each $attr-short, $attr-long in $prefixes {
+        @for $value from 0 to 300 {
+          %#{$breakpoint-name}-#{$attr-short}-#{$value} {
+            #{$attr-long}: #{$value}px;
+          }
+        }
+      }
+    }
+    // breakpoint values that not equal to 0
+    @else {
+      @media screen and (min-width: $breakpoint-value) {
+        @each $attr-short, $attr-long in $prefixes {
+          @for $value from 0 to 300 {
+           %#{$breakpoint-name}-#{$attr-short}-#{$value} {
+              #{$attr-long}: #{$value}px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include make-space($space-prefixes, $breakpoints);
+
+// size-prop-value
+
+// PADDING TOP
+.lg-pt-10{ @extend %lg-pt-10; }
+
+// MARGIN TOP
+.lg-mt-3{ @extend %lg-mt-3; }
+.lg-mt-6{ @extend %lg-mt-6; }
+.lg-mt-14{ @extend %lg-mt-14; }
+.lg-mt-15{ @extend %lg-mt-15; }
+.lg-mt-17{ @extend %lg-mt-17; }
+.lg-mt-22{ @extend %lg-mt-22; }
+.lg-mt-25{ @extend %lg-mt-25; }
+.lg-mt-30{ @extend %lg-mt-30; }
+.lg-mt-39{ @extend %lg-mt-39; }
+.lg-mt-180{ @extend %lg-mt-180; }
+
+.xs-mt-10{ @extend %xs-mt-10; }
+.xs-mt-15{ @extend %xs-mt-15; }
+.xs-mt-135{ @extend %xs-mt-135; }
+
+// MARGIN BOTTOM
+.lg-mb-7{ @extend %lg-mb-7; }
+.lg-mb-24{ @extend %lg-mb-24; }
+.lg-mb-26{ @extend %lg-mb-26; }
+.lg-mb-29{ @extend %lg-mb-29; }
+.lg-mb-30{ @extend %lg-mb-30; }
+.lg-mb-31{ @extend %lg-mb-31; }
+
+.xs-mb-35{ @extend %xs-mb-35; }
+.xs-mb-24{ @extend %xs-mb-24; }
+.xs-mb-15{ @extend %xs-mb-15; }
+.xs-mb-5{ @extend %xs-mb-5; }
+.xs-mb-2{ @extend %xs-mb-2; }
+
+// MARGIN RIGHT
+.lg-mr-17{ @extend %lg-mr-17; }
+.xs-mr-17{ @extend %xs-mr-17; }
+
+
+
+
+

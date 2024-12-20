@@ -1,0 +1,49 @@
+/********************************************************
+ * LP TIMELINE STYLE 
+ ********************************************************/
+
+
+/*************************************
+ * TABLET LANDSCAPE
+ *************************************/
+@media screen and (orientation: portrait) {
+	 
+}
+
+body.debug{
+	background-color: red;
+}
+
+.asset-modal{
+    height: 100%;
+}
+
+    .asset-modal-content{
+    	padding-top: 60px;
+    }
+     
+
+    .asset-modal-mobile-text{
+        width: span(6 of 8);
+        padding-top: 60px;
+        margin: auto;
+        text-align: left; 
+    }
+ 
+
+.img-full-wrapper:not(.intro-wrapper){
+    position: relative;
+    height: auto;
+    width: auto;
+    margin-bottom: -33%;
+
+    img, picture{
+        position: relative;
+        height: auto !important;
+        width: 150% !important; 
+    }
+
+    .onload{
+    	@include opacity(1);
+    }
+}

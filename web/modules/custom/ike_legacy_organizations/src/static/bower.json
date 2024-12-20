@@ -1,0 +1,34 @@
+{
+  "name": "static",
+  "version": "0.0.0",
+  "authors": [
+    "Matt Lohmann <MattLohmann@localprojects.net>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/libs/*/src/*",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.1.1",
+    "modernizer": "2.8.2",
+    "backbone": "1.1.2",
+    "requirejs": "2.1.14",
+    "underscore": "1.6.0",
+    "hammerjs": "2.0.4",
+    "unslider": "1.0.0",
+    "masonry": "3.3.2",
+    "jQuery.dotdotdot": "1.7.2",
+    "dropkick": "2.1.4",
+    "jquery.transit": "0.9.12",
+    "backbone.marionette": "2.4.4",
+    "lazysizes": "3.0.0",
+    "objectFitPolyfill": "2.0.4",
+    "fastdom": "1.0.6"
+  }
+}

@@ -1,0 +1,192 @@
+@import "retina-sprites"; 
+
+@mixin sprite-and-rollover($file){
+	@include use-sprite("#{$file}"); 
+
+	&:hover{
+		@include use-sprite("#{$file}-hover"); 
+	}
+}
+
+@mixin sprite-active-inactive($file){
+	@include use-sprite("#{$file}-active"); 
+
+	&.inactive{
+		@include use-sprite("#{$file}-inactive"); 
+	}
+}
+ 
+.top-nav-share-icon{ 
+	@include sprite-active-inactive("share");
+
+	cursor: pointer;
+}
+
+.down-arrow-icon{
+	@include sprite-active-inactive("scrolldown");
+
+	left: 50%;
+	margin-left: -17px;
+}
+
+.up-arrow-icon{
+	@include sprite-active-inactive("scrollup");
+
+	left: 50%;
+	margin-left: -17px;
+}
+
+
+.introduction-icon{ 
+	@include use-sprite("introduction-inactive");
+	
+	.bookend-dot:hover &{
+		@include use-sprite("introduction-hover");
+	}	
+
+	.bookend-dot.active &{
+		@include use-sprite("introduction-active");
+	}
+}
+ 
+.lorg-icon{ 
+	@include use-sprite("lorg-inactive");
+	
+	.bookend-dot:hover &{
+		@include use-sprite("lorg-hover");
+	}	
+
+	.bookend-dot.active &{
+		@include use-sprite("lorg-active");
+	}
+}
+ 
+.chapter-icon{
+	//@include sprite-active-inactive("chapter");
+	@include use-sprite("chapter-inactive"); 
+	
+	.chapter:hover &{
+		@include use-sprite("chapter-hover"); 
+	}
+	
+	.chapter.active & {
+		@include use-sprite("chapter-active"); 
+		
+		&:hover{
+			@include use-sprite("chapter-activeintro"); 
+		}
+	}
+
+}
+
+.subchapter-icon{
+	@include use-sprite("subchapter-inactive");
+
+	.subchapter-title.active &{
+		@include use-sprite("subchapter-active");
+	}
+
+	.subchapter-title:hover &{
+		@include use-sprite("subchapter-active");
+	}
+	
+	&:hover{
+		@include use-sprite("subchapter-hover");
+	}
+}
+
+.audioplay-icon{
+	@include use-sprite("button-audio-play");
+}
+
+.audiopause-icon{
+	@include use-sprite("button-audio-pause");
+}
+
+.video-icon{
+	@include use-sprite("video-inactive");
+	
+	&:hover{
+		@include use-sprite("video-hover");
+	}
+}
+
+.slideshow-icon{
+	@include sprite-active-inactive("slideshow");
+	@include position(absolute, null null 10px 10px);
+}
+
+.leftarrow-icon{
+	@include sprite-active-inactive("leftarrow");
+}
+
+.rightarrow-icon{
+	@include sprite-active-inactive("rightarrow");
+}
+
+.close-icon{
+	@include sprite-active-inactive("close");
+}
+
+.imageslideshow-icon{
+	@include use-sprite("imageslideshow-unselected");
+
+	&.active{
+		@include use-sprite("imageslideshow-selected");
+	}
+}
+
+.hamburger-icon{
+	@include use-sprite("hamburger");
+}
+
+
+
+.facebook-icon{
+	@include use-sprite("facebook-active"); 
+
+	&:hover{
+		@include use-sprite("facebook-inactive"); 
+	}
+
+	.sharing-item:hover &{
+		@include use-sprite("facebook-inactive"); 
+	}
+}
+
+.twitter-icon{
+	@include use-sprite("twitter-active"); 
+
+	&:hover{
+		@include use-sprite("twitter-inactive"); 
+	}
+
+	.sharing-item:hover &{
+		@include use-sprite("twitter-inactive"); 
+	}
+}
+
+.google-icon{
+	@include use-sprite("google-active"); 
+
+	&:hover{
+		@include use-sprite("google-inactive"); 
+	}
+
+	.sharing-item:hover &{
+		@include use-sprite("google-inactive"); 
+	}
+}
+
+.mail-icon{
+	@include use-sprite("mail-active"); 
+
+	&:hover{
+		@include use-sprite("mail-inactive"); 
+	}
+
+	.sharing-item:hover &{
+		@include use-sprite("mail-inactive"); 
+	}
+}
+

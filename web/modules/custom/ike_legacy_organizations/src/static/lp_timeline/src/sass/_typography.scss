@@ -1,0 +1,144 @@
+/********************************************************
+ * LP TIMELINE STYLE 
+ ********************************************************/
+
+@charset "UTF-8";
+@import "libs/settings";
+@import "libs/mixins"; 
+
+
+%super {
+  font-family: 'Graphik Web';
+  font-weight:  900;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+%black {
+  font-family: 'Graphik Web';
+  font-weight:  800;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+%bold {
+  font-family: 'Graphik Web';
+  font-weight:  700;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+%medium {
+  font-family: 'Graphik Web';
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+%regular {
+  font-family: 'Graphik Web';
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+%light {
+  font-family: 'Graphik Web';
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+%thin {
+  font-family: 'Graphik Web';
+  font-weight:  100;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+%extra-lrg{
+  @extend %super;
+
+  font-size: em-font(48px);
+  line-height: em-line(48px, 46px);
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+%para-wysiwyg{
+    ol, ul{
+      li{
+        margin-left: 55px;
+        margin-bottom: 10px;
+      }
+    }
+
+    blockquote{
+      margin: 5px 50px 0 40px;
+      padding-left: 10px;
+      border-left: solid 1px $black;
+      font-size: 15px;
+      line-height: 21px;
+      p{
+        font-weight: 400 !important;
+      }
+    }
+
+    h1, h2, h3, h4, h5, h6{
+      font-size: 1.1em;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      letter-spacing: .05em;
+    }
+}
+
+/*********************************
+ * GLOBAL
+ *********************************/
+body {
+  @extend %regular;
+
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  -webkit-font-smoothing: antialiased;
+}
+
+a:hover, a:visited, a:link, a:active{
+  text-decoration: none;
+  color: inherit;
+}
+
+strong, .strong{
+  font-weight: 700
+}
+
+em, .em{
+  font-style: italic;
+}
+
+
+/*********************************
+ * NAVIGATION
+ *********************************/
+
+/********* FOOTER *********/
+
+/*********************************
+ * OVERLAY 
+ *********************************/
+
+
+/*********************************
+ * MODULES
+ *********************************/
+
+/***************************
+ * FACILITY & LEGAl
+ ***************************/
+
+
+/***************************
+ * SEARCH
+ ***************************/

@@ -1,0 +1,46 @@
+/********************************************************
+ * LP TIMELINE STYLE 
+ ********************************************************/
+
+.slick-gallery-overlay {
+	@include position(fixed, 0 null null 0);
+	@include size(100% 100%);
+
+	z-index: 1000;
+}
+
+.slick-gallery-bkg{ 
+	@include size(100% 100%);
+
+	position: absolute;
+	background-color: $gray;
+}
+
+.slick-gallery-text{
+	@include position(absolute, 200px null null 50px);
+	width: 150px;
+}
+
+.slick-gallery {
+	@include position(absolute, 200px null null 450px);
+	@include size(80% 450px);
+}
+
+	.slick-slide {
+		height: 450px;
+		width: 250px;
+		margin-right: 50px;
+
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+
+.slick-next {
+	&:before{
+
+	}
+}
+
+

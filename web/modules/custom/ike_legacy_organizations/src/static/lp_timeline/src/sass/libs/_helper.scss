@@ -1,0 +1,297 @@
+@import 'compass/css3/filter';
+@import 'bourbon/bourbon';
+@import 'libs/mixins';
+
+/* DISPLAY ----------------------------------------------------------- */
+.is-hidden{ display: none !important; }
+
+.hide{ display: none !important; }
+
+.is-invisible { visibility: hidden !important; }
+
+.is-visible { visibility: visible !important; }
+ 
+.is-shown, .is-block{ display: block !important; }
+ 
+.is-inline { display: inline !important; }
+
+.is-fixed{ position:fixed !important; }
+
+.is-relative{ position:relative !important; }
+
+.show-phone{ display: none; }
+
+.hide-phone{ display: block; }
+
+.show-device{ display: none;}
+  
+.hide-device{ display: block; }
+ 
+.display-table{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.display-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.clearfix{
+    display:inline-block;
+    display:block;
+    
+    &:after{ 
+        content:" "; 
+        display:block; 
+        height:0; 
+        clear:both; 
+        visibility:hidden;
+    }
+}
+
+.no-wrap{ white-space: nowrap; }
+
+.full-width{ width: 100%; } 
+
+.half-width{ width: 50% ; }
+
+.full-height{ height: 100%; }
+
+.full-size{ @include size(100% 100%); }
+
+.left{ float: left; }
+
+.right{ float: right; }
+
+.blur{
+   @include filter(blur(10px));
+} 
+
+.center-cell{
+   display: table-cell;
+   vertical-align: middle;
+}
+
+.center-txt{ text-align: center; }
+
+.center{
+    @include margin(null auto null auto);
+    @extend .center-txt;
+}
+.center-txt-blk{
+    display: inline-block;
+    margin: 0 auto;
+    width: auto;
+}
+
+.table{ display: table; }
+
+.table-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.centering{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%) translateX(-50%); 
+  transform: translateY(-50%) translateX(-50%); 
+}
+
+%plain-list{ list-style: none; }
+
+%background-img-full{
+    background-size: cover;
+    background-position: center top; 
+    background-repeat: no-repeat;
+}
+
+.background-img-full{
+    @include position(absolute, 0px null null 0px);
+    @include size(100% 100%);
+    
+    @extend %background-img-full;
+}
+
+.preloader{
+    @include position(absolute, 0px null null 0px);
+    @include size(100% 100%);
+
+    z-index: 100;
+
+    >div{
+        @include position(absolute, 50% 0 0 50%);
+        @include margin(null -25px null -25px);
+    }
+}
+
+.last{ margin-right: 0 !important; }
+
+.nav-ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li { display: inline; }  
+}
+
+.ul-links{
+    @extend  .nav-ul;
+    
+    a{ text-decoration: none; }
+    li{ cursor: pointer; }
+}
+
+
+.error{ 
+    
+}
+ 
+.seo-img{
+    position: absolute;
+    top: -1000%;
+}
+
+/* POSITION ----------------------------------------------------------- */
+@for $i from 0 through 200{
+  %mgt-#{$i}{
+    margin-top: $i + "px";
+  }
+  %mgr-#{$i}{
+    margin-right: $i + "px";
+  }
+  %mgb-#{$i}{
+    margin-bottom: $i + "px";
+  }
+  %mgl-#{$i}{
+    margin-left: $i + "px";
+  }
+  %mgtb-#{$i}{
+    margin-top: $i + "px";
+    margin-bottom: $i + "px";
+  }
+  %mgtb-#{$i}{
+    margin-top: $i + "px";
+    margin-bottom: $i + "px";
+  }
+  %lh-#{$i}{
+    line-height: #{$i}em !important;
+  }
+
+  /////////////////////////////////
+  %mgt-desktop-#{$i}{
+    margin-top: $i + "px";
+  }
+  %mgr-#{$i}{
+    margin-right: $i + "px";
+  }
+  %mgb-#{$i}{
+    margin-bottom: $i + "px";
+  }
+  %mgl-#{$i}{
+    margin-left: $i + "px";
+  }
+  %mgtb-#{$i}{
+    margin-top: $i + "px";
+    margin-bottom: $i + "px";
+  }
+  %mgtb-#{$i}{
+    margin-top: $i + "px";
+    margin-bottom: $i + "px";
+  }
+  %lh-#{$i}{
+    line-height: #{$i}em !important;
+  }
+  ///////////////////////////////
+}
+
+
+/*
+// top and bottom
+.mgtb-0x{@extend %mgtb-0x; } 
+ */
+
+/* TYPE ----------------------------------------------------------- */
+.is-uppercase { text-transform: uppercase; }
+ 
+.is-lowercase{ text-transform: lowercase; }
+ 
+.no-ul{ text-decoration: none; }
+ 
+/* POSITIONING AND SPACING ----------------------------------------------------------- */
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.abs{
+    position: absolute !important;
+}
+
+.center{
+    text-align: center;
+}
+
+.full-spacer{
+    height: 100%;
+    width: 100%;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.full-height{
+    height: 100%;
+}
+
+.last{
+  margin-right: 0 !important;
+}
+
+/* MISC ----------------------------------------------------------- */
+.btn {cursor: pointer; }
+
+/* ::Debugs and #grid by Jon Gibbins */
+/* ----------------------------------------------------------- */
+
+#debug-grid{
+    @include size(100% 5000px);
+    @include position(absolute, 0 null null 0);
+
+    background-image: url(../img/overlays/debug-grid.png);
+    background-repeat: repeat-y;
+    background-size: 100% 20px;
+    z-index: 9999;
+}
+
+#grid {
+    width: 100%;
+    @include position(absolute, 0 null null 0);
+}
+
+#grid div.horiz{
+    // Use this one NOT using a global border-box setting
+    // height: $base-line-height - 1px;
+
+    // Use this one if you ARE using a global border-box setting
+    height: $base-line-height;
+
+    // Carry on...
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,7 @@
+ike_legacy_organization.legacy:
+  path: '/legacy'
+  defaults:
+    _controller: '\Drupal\ike_legacy_organizations\Controller\LegacyController::content'
+    _title: 'DWIGHT D. EISENHOWER LEGACY ORGANIZATIONS'
+  requirements:
+    _access: 'TRUE'

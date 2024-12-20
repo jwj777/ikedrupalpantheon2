@@ -1,0 +1,65 @@
+/*********************************
+ * TOP NAV
+ *********************************/
+.top-nav-mobile,
+.top-nav-desktop{
+	@include position(fixed, 0 null null 0);
+	@include box-shadow(2px 2px 4px rgba(0,0,0,0.9)); 
+
+	background-color: $dark-blue;
+	height: $top-nav-height-desktop;
+	width: 100%;
+	z-index: 999;
+	
+	.top-nav-txt{
+		line-height: $top-nav-height-desktop;
+	}
+} 
+	.top-nav-mobile-left,
+	.top-nav-desktop-left{
+		float: left;
+		text-align: left;
+		margin-left: 20px;
+	}
+
+	.top-nav-mobile-right,
+	.top-nav-desktop-right{
+		float: right;
+		text-align: right;
+		margin-right: 20px;
+	}
+
+	.top-nav-desktop-right{
+		.top-nav-share-icon{
+			float: right;
+    		margin-top: 14px;
+		}
+	}
+
+	.hamburger{
+		float: left;
+		margin: 17px 20px 0 0;
+		cursor: pointer;
+	}
+
+	.top-nav-mobile-left .top-nav-txt{
+		float: left;
+	}
+
+
+ /*********************************
+ * SIDE NAV
+ *********************************/
+.overlay-bkg {
+	background-color: $dark-blue;
+}
+
+.overlay-mobile-title{
+	display: none;
+	margin: 20px 20px 45px;
+
+	.close-icon{
+		float: right;
+		cursor: pointer;
+	}
+}
