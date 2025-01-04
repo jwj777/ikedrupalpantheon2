@@ -32,10 +32,17 @@
   <div class="nav-container">
   
     <div class="nav1 nav-about">
-      <a href="" class="nav1-item" id="aboutUsLink">About Us</a>
+      <div class="nav1-wrapper">
+        <a href="" class="nav1-item" id="aboutUsLink">
+          <span>About Us</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+        </a>
+      </div>        
       <div class="dropdown" id="aboutUsDropdown" style="display: none">
-        <a href="/page/about-foundation" class="nav2-item">About The Fondation</a>
-        <a href="/resources/home" class="nav2-item">IKE Insights</a>
+        <a href="/page/about-foundation" class="nav2-item">About The Foundation</a>
+        <a href="/resources/home" class="nav2-item">IKE Insight</a>
         <a href="https://www.eisenhowerlibrary.gov/" class="nav2-item" target="_blank">Eisenhower Presidential Library</a>
         <a href="/page/research-travel-grants" class="nav2-item">Research Travel Grants</a>
         <a href="/legacy" class="nav2-item">Legacy Organizations</a>
@@ -44,7 +51,14 @@
     </div>
 
     <div class="nav1 nav-ikes-life">
-      <a href="" class="nav1-item" id="ikesLifeLink">Ike's Life</a>
+      <div class="nav1-wrapper">
+        <a href="" class="nav1-item" id="ikesLifeLink">
+          <span>Ike's Life</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+        </a>
+      </div>
       <div class="dropdown" id="ikesLifeDropdown" style="display: none">
         <a href="/page/ikes-life" class="nav2-item">Ike's Life Eras</a>
         <a href="/timeline" class="nav2-item" target="_blank">Interactive Timeline</a>
@@ -57,23 +71,53 @@
     </div> #}
 
     <div class="nav1 nav-edu">
-      <a href="/#" class="nav1-item" id="eduLink">IKEducation</a>
+      <div class="nav1-wrapper">
+        <a href="/#" class="nav1-item" id="eduLink">
+          <span>IKEducation</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+        </a>
+      </div>
       <div class="dropdown" id="eduDropdown" style="display: none">
         <a href="/education-home/ikeducation" class="nav2-item">Overview</a>
         <a href="/page/educators-guide" class="nav2-item">Educator's Guide</a>
-        <a href="/page/lesson-plans" class="nav2-item">Lesson Plans</a>
-        <a href="/page/book-your-experience" class="nav2-item">Book Your Experience</a>
         <a href="/page/virtual-classroom" class="nav2-item">Virtual Classroom</a>
-        <a href="/page/teachers-resources" class="nav2-item">Teacher's Resources</a>
+        {# <a href="/page/lesson-plans" class="nav2-item">Lesson Plans</a> #}
+        <a href="/page/book-your-experience" class="nav2-item">Book Your Experience</a>
+        {# <a href="/page/teachers-resources" class="nav2-item">Teacher's Resources</a> #}
         <a href="/page/primary-source-library" class="nav2-item">Primary Source Library</a>
       </div>
     </div>
 
-    <div class="nav1">
-      <a href="/page/ikes-soldiers" class="nav1-item">Ike's Solders</a>
+    {# <div class="nav1">
+      <a href="/page/ikes-soldiers" class="nav1-item">Ike's Soldiers</a>
+    </div> #}
+
+    <div class="nav1 nav-soldiers">
+      <div class="nav1-wrapper">
+        <a href="/#" class="nav1-item" id="soldiersLink">
+          <span>Ike's Soldiers</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+        </a>
+      </div>
+      <div class="dropdown" id="soldiersDropdown" style="display: none;">
+        <a href="/page/hours-visit-details" class="nav2-item">See Ike's Soldiers</a>
+        <a href="/page/events" class="nav2-item">Submit a Soldier</a>
+      </div>
     </div>
+
     <div class="nav1 nav-visit">
-      <a href="/#" class="nav1-item" id="visitLink">Plan Your Visit</a>
+      <div class="nav1-wrapper">
+        <a href="/#" class="nav1-item" id="visitLink">
+          <span>Plan Your Visit</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+        </a>
+      </div>
       <div class="dropdown" id="visitDropdown" style="display: none;">
         <a href="/page/hours-visit-details" class="nav2-item">Hours & Visit Details</a>
         <a href="/page/events" class="nav2-item">Events</a>
@@ -81,9 +125,16 @@
       </div>
     </div>
 
-    <div class="nav1">
-      <a href="" class="nav1-item" id="joinLink">Join & Give</a>
-      <div class="dropdown" id="joinDropdown">
+    <div class="nav1 nav-join">
+      <div class="nav1-wrapper">
+        <a href="/#" class="nav1-item" id="joinLink">
+          <span>Join &amp; Give</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+        </a>
+      </div>
+      <div class="dropdown" id="joinDropdown" style="display: none;">
         <a href="https://interland3.donorperfect.net/weblink/weblink.aspx?name=E252963&id=4" class="nav2-item">Donate</a>
         <a href="/page/friends-foundation" class="nav2-item">Friends of the Foundation</a>
         <a href="/page/sponsors" class="nav2-item">Sponsors</a>

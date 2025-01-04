@@ -27,10 +27,10 @@
 .nav-container .dropdown {
   flex-direction: column;
   position: absolute;
-  margin-top: 32px;
-  background: #fff;
+  margin-top: 20px;
+  background: var(--neutral-95);
   z-index: 2;
-  padding: 22px 40px 28px 28px;
+  padding: 19px 40px 24px 28px;
   border-radius: 20px;
   box-shadow: 1px 2px 2px hsl(227, 0%, 0%) / 0.333;
   box-shadow: 2px 4px 4px hsl(227, 0%, 0%) / 0.333;
@@ -46,11 +46,19 @@
   padding: 10px 0px;
 }
 
+.nav-container .dropdown a {
+  color: var(--primary-50);
+}
+
+.nav-container .dropdown a:hover {
+  color: var(--primary-30);
+}
+
 .nav-container a.nav1-item {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   color: #fff;
   text-decoration: none;
-  padding: 1rem 1.7rem;
+  padding: 1rem 1.6rem;
   border-radius: 10rem;
 }
 
@@ -60,4 +68,42 @@
 
 .nav-container a.nav1-item:hover {
   background: rgba(255,255,255,0.16);
+}
+
+.nav1-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.nav1-wrapper svg {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 4px;
+  left: 4px;
+  transition: transform 0.3s ease-in-out; /* Adjust timing and easing as needed */
+  transform: rotate(0deg);
+}
+
+.nav1-wrapper path {
+  stroke: var(--neutral-90)
+}
+
+body.dropdown-visible-aboutUsDropdown .nav-about a.nav1-item,
+body.dropdown-visible-ikesLifeDropdown .nav-ikes-life a.nav1-item,
+body.dropdown-visible-eduDropdown .nav-edu a.nav1-item,
+body.dropdown-visible-soldiersDropdown .nav-soldiers a.nav1-item,
+body.dropdown-visible-visitDropdown .nav-visit a.nav1-item,
+body.dropdown-visible-joinDropdown .nav-join a.nav1-item {
+  background: rgba(255,255,255,0.16);
+}
+
+body.dropdown-visible-aboutUsDropdown .nav-about svg,
+body.dropdown-visible-ikesLifeDropdown .nav-ikes-life svg,
+body.dropdown-visible-eduDropdown .nav-edu svg,
+body.dropdown-visible-soldiersDropdown .nav-soldiers svg,
+body.dropdown-visible-visitDropdown .nav-visit svg,
+body.dropdown-visible-joinDropdown .nav-join svg {
+  transition: transform 0.1s ease-in-out; /* Adjust timing and easing as needed */
+  transform: rotate(180deg);
 }

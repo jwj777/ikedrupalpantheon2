@@ -1,7 +1,11 @@
 {{ attach_library('iketheme/flag') }}
 
 {# Default scheduling link if no link field data is present #}
-{% set scheduling_link = fields.field_scheduling_link.content ?? 'https://ikeducation.as.me/schedule/d836f757' %}
+{% if fields.field_scheduling_link.content is not empty and 'https' in fields.field_scheduling_link.content|striptags %}
+  {% set scheduling_link = fields.field_scheduling_link.content|striptags %}
+{% else %}
+  {% set scheduling_link = 'https://ikeducation.as.me' %}
+{% endif %}
 
 {% set url = "/node/" ~ row._entity.nid.value %}
 {% set image = fields.field_summary_image.content %}
@@ -24,7 +28,8 @@
       {% set grade_levels = grade_levels_raw|split(',') %}
       
       {# Debug the grade_levels array #}
-      {{ dump(grade_levels) }}
+      {# {{ dump(grade_levels) }} #}
+      {# {{ dump(fields.field_scheduling_link.content) }} #}
       
       {# Check if grade_levels array is properly set and has values #}
       {% if grade_levels is defined and grade_levels|length > 0 %}

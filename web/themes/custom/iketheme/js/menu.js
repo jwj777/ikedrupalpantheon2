@@ -1,92 +1,60 @@
 document.addEventListener('DOMContentLoaded', function () {
-  
-  // Get the About Us link and dropdown elements
-  var aboutUsLink = document.getElementById('aboutUsLink');
-  var aboutUsDropdown = document.getElementById('aboutUsDropdown');
+  const menuItems = [
+    { linkId: 'aboutUsLink', dropdownId: 'aboutUsDropdown' },
+    { linkId: 'ikesLifeLink', dropdownId: 'ikesLifeDropdown' },
+    { linkId: 'eduLink', dropdownId: 'eduDropdown' },
+    { linkId: 'soldiersLink', dropdownId: 'soldiersDropdown' },
+    { linkId: 'visitLink', dropdownId: 'visitDropdown' },
+    { linkId: 'joinLink', dropdownId: 'joinDropdown' },
+  ];
 
-  var ikesLifeLink = document.getElementById('ikesLifeLink');
-  var ikesLifeDropdown = document.getElementById('ikesLifeDropdown');
-  
-  // Get the Education link and dropdown elements
-  var eduLink = document.getElementById('eduLink');
-  var eduDropdown = document.getElementById('eduDropdown');
-  
-  // Get the Visit link and dropdown elements
-  var visitLink = document.getElementById('visitLink');
-  var visitDropdown = document.getElementById('visitDropdown');
+  const dropdowns = menuItems.map(item => document.getElementById(item.dropdownId));
 
-  // Get the join link and dropdown elements
-  var joinLink = document.getElementById('joinLink');
-  var joinDropdown = document.getElementById('joinDropdown');
-
-  // Initially hide all dropdowns
-  aboutUsDropdown.style.display = 'none';
-  ikesLifeDropdown.style.display = 'none';
-  eduDropdown.style.display = 'none';
-  visitDropdown.style.display = 'none';
-  joinDropdown.style.display = 'none';
-
-  // Function to hide all dropdowns
   function hideAllDropdowns() {
-    aboutUsDropdown.style.display = 'none';
-    ikesLifeDropdown.style.display = 'none';
-    eduDropdown.style.display = 'none';
-    visitDropdown.style.display = 'none';
-    joinDropdown.style.display = 'none';
+    console.log('Hiding all dropdowns...');
+    dropdowns.forEach(dropdown => {
+      if (dropdown) {
+        dropdown.style.display = 'none';
+      }
+    });
+    document.body.className = document.body.className
+      .split(' ')
+      .filter(cls => !cls.startsWith('dropdown-visible-'))
+      .join(' ');
   }
 
-  // Add click event listener for the About Us link
-  aboutUsLink.addEventListener('click', function (event) {
-    event.preventDefault();
-    if (aboutUsDropdown.style.display === 'none') {
-      hideAllDropdowns();  // Hide all other dropdowns
-      aboutUsDropdown.style.display = 'flex';  // Show the About Us dropdown
+  menuItems.forEach(({ linkId, dropdownId }) => {
+    const link = document.getElementById(linkId);
+    const dropdown = document.getElementById(dropdownId);
+
+    if (link && dropdown) {
+      // Add click event listener to the link
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+        event.stopPropagation(); // Prevent click event from reaching the document
+
+        const isVisible = dropdown.style.display === 'flex';
+        hideAllDropdowns();
+
+        if (!isVisible) {
+          console.log('Showing dropdown and adding class:', `dropdown-visible-${dropdownId}`);
+          dropdown.style.display = 'flex';
+          document.body.classList.add(`dropdown-visible-${dropdownId}`);
+        }
+      });
+
+      // Prevent clicks inside the dropdown from closing it
+      dropdown.addEventListener('click', function (event) {
+        event.stopPropagation();
+      });
     } else {
-      aboutUsDropdown.style.display = 'none';  // Toggle to hide it
+      console.error('Missing link or dropdown:', { linkId, dropdownId });
     }
   });
 
-  ikesLifeLink.addEventListener('click', function (event) {
-    event.preventDefault();
-    if (ikesLifeDropdown.style.display === 'none') {
-      hideAllDropdowns();  // Hide all other dropdowns
-      ikesLifeDropdown.style.display = 'flex';  // Show the About Us dropdown
-    } else {
-      ikesLifeDropdown.style.display = 'none';  // Toggle to hide it
-    }
+  // Optional: Close dropdowns when clicking outside
+  document.addEventListener('click', function () {
+    console.log('Clicked outside dropdowns. Hiding all.');
+    hideAllDropdowns();
   });
-
-  // Add click event listener for the Education link
-  eduLink.addEventListener('click', function (event) {
-    event.preventDefault();
-    if (eduDropdown.style.display === 'none') {
-      hideAllDropdowns();  // Hide all other dropdowns
-      eduDropdown.style.display = 'flex';  // Show the Education dropdown
-    } else {
-      eduDropdown.style.display = 'none';  // Toggle to hide it
-    }
-  });
-
-  // Add click event listener for the Visit link
-  visitLink.addEventListener('click', function (event) {
-    event.preventDefault();
-    if (visitDropdown.style.display === 'none') {
-      hideAllDropdowns();  // Hide all other dropdowns
-      visitDropdown.style.display = 'flex';  // Show the Visit dropdown
-    } else {
-      visitDropdown.style.display = 'none';  // Toggle to hide it
-    }
-  });
-
-  // Add click event listener for the Visit link
-  joinLink.addEventListener('click', function (event) {
-    event.preventDefault();
-    if (joinDropdown.style.display === 'none') {
-      hideAllDropdowns();  // Hide all other dropdowns
-      joinDropdown.style.display = 'flex';  // Show the join dropdown
-    } else {
-      joinDropdown.style.display = 'none';  // Toggle to hide it
-    }
-  });
-
 });
