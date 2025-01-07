@@ -24,7 +24,8 @@
         <p class="label-medium">{{ paragraph.field_block_label.0.value }}</p>
         <h2 class="heading-large">{{ paragraph.field_heading_2.0.value }}</h2>
         <p class="body-large">{{ paragraph.field_body.value|render|striptags|raw }}</p>
-          {{ content.field_link }}
+        {{ content.field_link }}
+        {{ paragraph.field_link.value }}
       </div>
 
 {% if paragraph.field_image_collage %}

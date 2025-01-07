@@ -32,7 +32,12 @@
   text-decoration: none;
 }
 
-.paragraph--type--link .button a {
+.paragraph--type--two-column-text-collage .field--name-field-link {
+  margin-top: 4rem;
+}
+
+.paragraph--type--link .button a,
+.paragraph--type--two-column-text-collage .field--name-field-link a {
   background-color: var(--primary-40);
   color: var(--neutral-100);
   padding: 1rem 1.4rem;

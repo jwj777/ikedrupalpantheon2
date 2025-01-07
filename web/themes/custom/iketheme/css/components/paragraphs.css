@@ -21,7 +21,7 @@
 }
 
 .paragraph-padding {
-  padding: 8rem 0;
+  padding: 6rem 0;
 }
 
 .field--name-field-column-one,
@@ -211,8 +211,8 @@
   width: 700px;
   align-self: flex-end;
   position: relative;
-  bottom: 440px;
-  margin-bottom: -400px;
+  bottom: 480px;
+  margin-bottom: -460px;
 }
 
 @media screen and (max-width: 1216px) {
@@ -1005,3 +1005,8 @@
 }
 
 
+.paragraph--type--view-reference .field--name-field-tertiary-links a {
+  display: block;
+  margin-top: 2rem;
+  font-size: 1.15rem;
+}
