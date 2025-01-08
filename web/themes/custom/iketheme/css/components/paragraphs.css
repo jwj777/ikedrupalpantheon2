@@ -391,36 +391,54 @@
   margin-bottom: 3rem;
 }
 
-.field--name-field-text-quote,
+/* General blockquote paragraph styling */
+.field--name-field-text blockquote,
 .field--name-field-text blockquote p,
-.field--name-body blockquote p {
-  quotes: "“" "”" "‘" "’";
+.field--name-body blockquote {
   font-size: 2rem;
   line-height: 2.3rem;
-  font-family: 'Newsreader';
+  font-family: 'Newsreader', serif;
   color: var(--primary-40);
-  margin-bottom: 1rem;
+  margin: 0 0 2rem 0; /* Reset margins to prevent default spacing */
+  padding: 0;
+  position: relative; /* Required for pseudo-elements to position correctly */
+  quotes: "“" "”";
 }
 
-.field--name-body blockquote {
-  margin-left: 0px;
-  margin-bottom: 2rem;
-  margin-right: 0rem;
+/* Paragraph inside blockquote */
+.field--name-field-text blockquote p,
+.field--name-body blockquote p {
+  display: inline; /* Ensure the content stays inline */
+  margin: 0; /* Remove default margins */
 }
 
-.field--name-field-quote-attribution {
-  font-size: 1.1rem;
-  font-family: 'Newsreader';
-  color: var(--primary-40);
+/* Add open and close quotes as inline elements */
+.field--name-field-text blockquote::before,
+.field--name-field-text blockquote::after,
+.field--name-body blockquote::before,
+.field--name-body blockquote::after {
+  content: '';
+  font-size: 2.5rem; /* Adjust as needed */
+  color: var(--primary-40); /* Match the text color */
+  vertical-align: middle;
 }
 
-.field--name-field-text blockquote::before {
+/* Opening quote styling */
+.field--name-field-text blockquote::before,
+.field--name-body blockquote::before {
   content: open-quote;
+  margin-right: 0.25rem; /* Space between the quote and text */
 }
 
-.field--name-field-text blockquote::after {
+/* Closing quote styling */
+.field--name-field-text blockquote::after,
+.field--name-body blockquote::after {
   content: close-quote;
+  margin-left: 0.25rem; /* Space between the text and closing quote */
 }
+
+
+
 
 
 /** text and image array **/

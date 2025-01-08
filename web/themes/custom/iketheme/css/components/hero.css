@@ -305,6 +305,7 @@
 .ikes-life-breadcrumbs a, .ikes-life-breadcrumbs p {
   color: #fff;
   text-decoration: none;
+  margin: 0;
 }
 
 .ikes-life-breadcrumbs a:hover {

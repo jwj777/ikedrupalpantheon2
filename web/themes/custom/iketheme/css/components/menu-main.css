@@ -89,6 +89,21 @@
   stroke: var(--neutral-90)
 }
 
+.nav2-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav2-section.first {
+  border-bottom: 1px solid var(--neutral-80);
+  margin-bottom: 8px;
+  padding-bottom: 12px;
+}
+
+.nav2-section .highlight {
+  font-weight: 600;
+}
+
 body.dropdown-visible-aboutUsDropdown .nav-about a.nav1-item,
 body.dropdown-visible-ikesLifeDropdown .nav-ikes-life a.nav1-item,
 body.dropdown-visible-eduDropdown .nav-edu a.nav1-item,

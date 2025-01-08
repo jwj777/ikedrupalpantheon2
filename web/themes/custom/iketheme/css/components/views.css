@@ -54,6 +54,12 @@
   }
 }
 
+.view-ike-s-life-the-general .view-content {
+  max-width: 630px;
+  position: relative;
+  right: 339px;
+}
+
 /** Ike's Soldiers **/
 
 .view-soliders-main {
@@ -227,7 +233,7 @@
 }
 
 .view-news-main-v2 h3.title-medium {
-  height: 96px;
+  /* height: 96px; */
   color: var(--primary-10) !important;
   text-decoration: none;
   margin-top: 0px;

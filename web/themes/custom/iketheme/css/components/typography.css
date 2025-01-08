@@ -42,7 +42,8 @@ h1, .display-large {
 }
 
 .heading-large, 
-.view-content h3 {
+.view-content h3,
+.text-formatted h2 {
   font-family: 'Newsreader', Georgia, serif;
   font-size: 2.7rem;
   font-weight: 400;
@@ -56,10 +57,11 @@ h1, .display-large {
 .paragraph--type--membership-level .field--name-field-heading-3,
 .paragraph--type--sponsorship-level .field--name-field-heading-3,
 .field--name-field-level-price,
-.view-header h2,
-.text-formatted h2 {
+.text-formatted h3,
+.field-text h3, 
+.view-header h2 {
   font-family: 'Newsreader', Georgia, serif;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   line-height: 2.6rem;
   font-weight: 400;
   margin-top: 1rem;
@@ -68,26 +70,29 @@ h1, .display-large {
 }
 
 .heading-small, 
-.field-text h3, 
 .page-node-type-news-home .views-row h3,
 .ikes-life-item-square h3,
 .ikes-life-item-square-md h3,
 .node-id-1809 .field--name-field-sections-sidebar-right .paragraph h3,
 .node-id-1809 .field--name-field-sections-sidebar-right .paragraph .field--name-field-heading-2,
 .paragraph--type--heading-with-icon-text .field--name-field-heading-3,
-.text-formatted h3,
 .paragraph--type--card-image-title-description .field--name-field-heading-3,
 .field--name-field-sections-sidebar-right .field--name-field-heading-2,
 .view-lesson-plans .view-content h3,
 .view-primary-source-main .view-content h3  {
   font-family: 'Newsreader', Georgia, serif;
   font-size: 1.6rem;
-  line-height: 2rem;
+  line-height: 1.95rem;
   font-weight: 400;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
   color: var(--neutral-10)
 }
+
+/* .page-node-type-news-home .views-row h3 {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+} */
 
 .title-large {
   font-family: 'Figtree', Georgia, serif;
