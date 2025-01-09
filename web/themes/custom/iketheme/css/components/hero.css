@@ -10,7 +10,8 @@
 .page-node-type-news-home .header-hero,
 .page-node-type-newsletter-article .header-hero,
 .page-node-type-education .header-hero,
-.page-node-type-lesson-plan .header-hero {
+.page-node-type-lesson-plan .header-hero,
+.page-node-type-ike-s-life-era-group .header-hero {
   background-image: linear-gradient(to right, var(--primary-20), var(--primary-40)) !important;
 }
 
@@ -149,7 +150,8 @@
   background-position: center;
 }
 
-.page-node-type-basic-page-b .header-hero::after {
+.page-node-type-basic-page-b .header-hero::after,
+.page-node-type-homepage .header-hero::after {
   content: '';
   position: absolute;
   top: 0;
@@ -160,7 +162,7 @@
   pointer-events: none; /* This makes the overlay 'click-through' */
 }
 
-.page-node-type-homepage .header-hero::after {
+/* .page-node-type-homepage .header-hero::after {
   content: '';
   position: absolute;
   top: 0;
@@ -168,8 +170,9 @@
   right: 0;
   bottom: 0;
   background: linear-gradient(to right, rgba(0, 0, 0, .44) 0%, rgba(0, 0, 0, 0.36) 100%);
-  pointer-events: none; /* This makes the overlay 'click-through' */
-}
+  pointer-events: none; /* This makes the overlay 'click-through' 
+} 
+**/
 
 .hero-basic .views-field-title, .hero-basic .views-field-subheading {
   max-width: 840px;
@@ -178,13 +181,16 @@
 .page-node-type-page .views-field-field-hero-image,
 .page-node-type-primary-source .views-field-field-hero-image,
 .page-node-type-ike-s-life .views-field-field-hero-image,
-.page-node-type-newsletter-article .views-field-field-hero-image {
+.page-node-type-newsletter-article .views-field-field-hero-image,
+.page-node-type-ike-s-life-era-group .views-field-field-hero-image {
   max-width: var(--lg);
   position: relative;
   bottom: 12rem;
   margin-bottom: -9rem;
   overflow: hidden;
   border-radius: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-node-type-page .views-field-field-hero-image {
