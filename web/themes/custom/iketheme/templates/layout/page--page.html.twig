@@ -1,7 +1,9 @@
 
+{% set header_hero_class = node.field_hero_image is not empty ? 'header-hero' : 'header-hero no-image' %}
+
 <div class="layout-container {% if node is defined %}node-id-{{ node.id }}{% endif %}">
 
-  <div class="header-hero" style="background-image: url('{{ hero_background_image_url }}');">
+  <div class="{{ header_hero_class }}" style="background-image: url('{{ hero_background_image_url }}');">
     <header role="banner">
       {{ page.header }}
     </header>

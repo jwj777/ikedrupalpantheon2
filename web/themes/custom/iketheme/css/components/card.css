@@ -176,7 +176,7 @@
 
 .ikes-life-era {
   align-items: flex-start;
-  margin-bottom: 8rem;
+  margin-bottom: 8rem !important;
 }
 
 @media screen and (max-width: 1376px) {
@@ -197,7 +197,8 @@
 
 @media screen and (max-width: 1376px) {
   .ikes-life-era  {
-    margin: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     margin-bottom: 8rem;
     align-items: flex-start;
   }
