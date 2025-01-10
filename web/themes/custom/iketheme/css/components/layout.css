@@ -173,6 +173,7 @@
 }
 
 .page-node-type-ike-s-life .region-content,
+.page-node-type-ike-s-life-era-group .region-content,
 .page-node-type-soldier .region-content,
 .page-node-type-news-home .region-content {
   max-width: var(--lg);
@@ -180,9 +181,11 @@
 
 @media screen and (max-width: 1376px) {
   .page-node-type-ike-s-life .region-content,
+  .page-node-type-ike-s-life-era-group .region-content,
   .page-node-type-soldier .region-content,
   .page-node-type-news-home .region-content {
    margin: 0 var(--gutter-xl);
+   width: auto;
   }
 }
 

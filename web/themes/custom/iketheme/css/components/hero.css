@@ -193,6 +193,17 @@
   margin-right: auto;
 }
 
+.page-node-type-ike-s-life-era-group .views-field-field-hero-image {
+  margin-bottom: -14rem;
+}
+
+@media screen and (max-width: 1376px) {
+  .page-node-type-ike-s-life-era-group .views-field-field-hero-image {
+    margin-bottom: -9rem;
+  }
+}
+
+
 .page-node-type-page .views-field-field-hero-image {
   max-width: var(--xl);
 }
@@ -236,7 +247,8 @@
   display: flex;
 }
 
-.page-node-type-ike-s-life .views-field-field-hero-image .field-content img {
+.page-node-type-ike-s-life .views-field-field-hero-image .field-content img,
+.page-node-type-ike-s-life-era-group .views-field-field-hero-image .field-content img {
   height: 400px;
   object-fit: cover;
   border-radius: 1.5rem;
