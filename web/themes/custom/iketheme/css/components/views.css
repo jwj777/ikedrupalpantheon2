@@ -385,10 +385,10 @@
 
 /** lesson plans **/
 
-.view-lesson-plans {
+/* .view-lesson-plans {
   margin-bottom: 4rem;
   margin-top: -17rem;
-}
+} */
 
 @media screen and (max-width: 1376px) {
   .view-lesson-plans {
@@ -601,7 +601,7 @@
 
 @media screen and (max-width: 968px) { 
   .view-education-programs .view-content {
-    margin-top: 0rem;
+    margin-top: 6rem;
     margin-left: 0;
   }
 }
@@ -625,6 +625,16 @@
   margin-bottom: 2rem;
   font-size: 3.5rem;
   font-weight: 300;
+}
+
+.view-education-programs h3:first-child {
+  color: var(--primary-95);
+}
+
+@media screen and (max-width: 968px) {
+  .view-education-programs h3:first-child {
+    color: var(--primary-10);
+  }
 }
 
 @media screen and (max-width: 480px) { 

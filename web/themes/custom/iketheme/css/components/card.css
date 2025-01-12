@@ -530,11 +530,11 @@ p.text-light {
   border-radius: 1.5rem;
   overflow: hidden;
   position: relative;
-  /* right: 1rem; */
 }
 
 .view-education-programs .card-image-title {
   width: 376px;
+  right: 1rem;
 }
 
 .view-primary-source-main .card-image-title {

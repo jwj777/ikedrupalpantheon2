@@ -439,8 +439,6 @@
 
 
 
-
-
 /** text and image array **/
 
 .paragraph--type--body-text-image-array {
@@ -515,6 +513,10 @@
 
 .page-node-type-education .paragraph--type--cards-array {
   padding-top: 3rem;
+}
+
+.page-node-type-education .paragraph--type--cards-array .card-title {
+  padding: 1.1rem 1.5rem 1.4rem 1.5rem;
 }
 
 .field--name-field-card {

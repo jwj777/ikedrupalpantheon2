@@ -79,18 +79,41 @@
   margin-bottom: 11rem;
 }
 
+/** reset for pages that need extra padding and have no image **/
+.node-id-36 .header-hero.no-image .hero-basic,
+.node-id-37 .header-hero.no-image .hero-basic {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .page-node-type-primary-source .hero-basic {
   max-width: var(--lg);
   padding: 4rem 0 5rem 0;
 }
 
-
-/* base pages that don't use adjustment to move content up */
-.node-id-37 .hero-basic {
+/** basic pages with extra hero padding bottom, and have no hero image */
+.node-id-36 .hero-basic .view-content {
   max-width: var(--xl);
   margin: 0 auto;
-  padding: 4rem 0 20rem 0;
+  padding: 4rem 0 28rem 0 !important;
 }
+
+.node-id-37 .hero-basic .view-content {
+  max-width: var(--xl);
+  margin: 0 auto;
+  padding: 4rem 0 20rem 0 !important;
+}
+
+.node-id-36 .region-content {
+  margin-top: -24rem !important;
+}
+
+.node-id-37 .region-content {
+  margin-top: -10rem !important;
+}
+
+
 
 @media screen and (max-width: 712px) {
   .node-id-37 .hero-basic {
@@ -98,11 +121,6 @@
     margin: 0 auto;
     padding: 4rem 0 24rem 0;
   }
-}
-
-.node-id-36 .hero-basic {
-  padding-bottom: 6rem !important;
-  margin-bottom: 2rem;
 }
 
 .node-id-2117 .hero-basic {
@@ -203,7 +221,6 @@
   }
 }
 
-
 .page-node-type-page .views-field-field-hero-image {
   max-width: var(--xl);
 }
@@ -225,7 +242,7 @@
 
 .page-node-type-education .hero {
   padding: 5rem 0 12rem 0;
-  margin-bottom: -12rem;
+  margin-bottom: -14rem;
 }
 
 
@@ -248,12 +265,17 @@
 }
 
 .page-node-type-ike-s-life .views-field-field-hero-image .field-content img,
-.page-node-type-ike-s-life-era-group .views-field-field-hero-image .field-content img {
+.page-node-type-ike-s-life-era-group .views-field-field-hero-image .field-content img ,
+.page-node-type-education .views-field-field-hero-image .field-content img {
   height: 400px;
   object-fit: cover;
   border-radius: 1.5rem;
   margin-right: 1rem;
   max-width: 100%;
+}
+
+.page-node-type-education .views-field-field-hero-image {
+  margin-bottom: 4rem;
 }
 
 
@@ -433,10 +455,14 @@
 }
 
 .view-hero-basic-page-education .label-medium,
-.view-hero-basic-page-education h1, 
 .view-hero-basic-page-education .subheading {
   color: var(--primary-90);
 }
+
+.view-hero-basic-page-education .label-medium {
+  display: none;
+}
+
 
 /*** lesson plans ***/
 
