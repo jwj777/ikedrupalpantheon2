@@ -204,6 +204,7 @@
   right: 1rem;
 }
 
+.view-news-main-v2 .views-row:hover,
 .view-news-main-v2 .views-row:hover .text-container {
   background: var(--primary-90);
 }
@@ -729,7 +730,7 @@
 
 .person {
   margin-bottom: 1.5rem;
-  width: 420px;
+  width: 460px;
 }
 
 @media screen and (max-width: 712px) {
@@ -739,7 +740,14 @@
 }
 
 .person .views-field-title-1 {
-  margin-bottom: 3px;
+  margin-bottom: 4px;
+  font-weight: 500;
+  color: var(--neutral-10);
+}
+
+.views-field.views-field-field-state {
+  color: var(--neutral-40);
+  font-size: 1rem;
 }
 
 .view-people-staff .view-content {
@@ -748,7 +756,7 @@
 }
 
 .view-people-staff .person {
-  /* width: 560px; */
+  width: 560px;
   margin-right: 3rem;
 }
 

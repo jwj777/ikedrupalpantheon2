@@ -82,6 +82,12 @@
   flex: 2;
 }
 
+@media screen and (max-width: 968px) {
+  .two-column-left {
+    width: 100%;
+  }
+}
+
 .paragraph--type--two-column-section > .paragraph-inner,
 .paragraph--type--two-column-image-text-block > .paragraph-inner,
 .paragraph--type--two-column-text-collage > .paragraph-inner {
@@ -129,6 +135,10 @@
 .paragraph--type--two-column-image-text-block .field--name-field-block-image {
   margin-right: 48px;
   margin-bottom: 2rem;
+  width: 360px;
+  height: 320px;
+  border-radius: 1.5rem;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 968px) {
@@ -137,6 +147,27 @@
     margin-bottom: 2rem;
   }
 }
+
+@media screen and (max-width: 712px) {
+  .paragraph--type--two-column-image-text-block .field--name-field-block-image {
+    width: 100%;
+    height: 320px;
+  }
+}
+
+.paragraph--type--two-column-image-text-block .field--name-field-block-image img {
+  width: 360px;
+  height: 320px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 712px) {
+  .paragraph--type--two-column-image-text-block .field--name-field-block-image img {
+    width: 100%;
+    height: 320px;
+  }
+}
+
 
 .paragraph--type--two-column-image-text-block .field--name-field-block-image img {
   max-width: 100%;
@@ -249,8 +280,15 @@
   height: 280px;
 }
 
+@media screen and (max-width: 960px) {
+  .paragraph--type--two-column-text-collage .image-row-1 .image-item  {
+    border-radius: 1rem;
+  }
+}
+
 .paragraph--type--two-column-text-collage .image-row-1 .image-item img {
   width: 560px;
+  height: 280px;
   object-fit: cover;
 }
 
@@ -365,6 +403,7 @@
   max-width: 440px;
   height: auto;
   border-radius: 1.1rem;
+  margin-top: 1rem;
   margin-right: 2.5rem;
 }
 
@@ -385,58 +424,16 @@
 }
 
 
-/** body quote **/
-.paragraph--type--body-quote {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
+/** Body Quote Paragraph **/
 
-/* General blockquote paragraph styling */
-.field--name-field-text blockquote,
-.field--name-field-text blockquote p,
-.field--name-body blockquote {
-  font-size: 2rem;
-  line-height: 2.3rem;
-  font-family: 'Newsreader', serif;
-  color: var(--primary-40);
-  margin: 0 0 2rem 0; /* Reset margins to prevent default spacing */
-  padding: 0;
-  position: relative; /* Required for pseudo-elements to position correctly */
-  quotes: "“" "”";
+.body-quote {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  background: var(--neutral-95);
+  padding: 3.5rem 4rem 2.5rem 2.5rem;
+  border-radius: 1.5rem;
 }
-
-/* Paragraph inside blockquote */
-.field--name-field-text blockquote p,
-.field--name-body blockquote p {
-  display: inline; /* Ensure the content stays inline */
-  margin: 0; /* Remove default margins */
-}
-
-/* Add open and close quotes as inline elements */
-.field--name-field-text blockquote::before,
-.field--name-field-text blockquote::after,
-.field--name-body blockquote::before,
-.field--name-body blockquote::after {
-  content: '';
-  font-size: 2.5rem; /* Adjust as needed */
-  color: var(--primary-40); /* Match the text color */
-  vertical-align: middle;
-}
-
-/* Opening quote styling */
-.field--name-field-text blockquote::before,
-.field--name-body blockquote::before {
-  content: open-quote;
-  margin-right: 0.25rem; /* Space between the quote and text */
-}
-
-/* Closing quote styling */
-.field--name-field-text blockquote::after,
-.field--name-body blockquote::after {
-  content: close-quote;
-  margin-left: 0.25rem; /* Space between the text and closing quote */
-}
-
 
 
 /** text and image array **/
@@ -516,7 +513,10 @@
 }
 
 .page-node-type-education .paragraph--type--cards-array .card-title {
-  padding: 1.1rem 1.5rem 1.4rem 1.5rem;
+  padding: 1.4rem 2rem 1.6rem 1.8rem;
+  font-family: 'Newsreader';
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .field--name-field-card {
@@ -760,7 +760,7 @@
 
 .node-id-2 .field--name-field-paragraphs .field__item:nth-child(2) {
   /* width: 560px; */
-  max-width: 560px;
+  /* max-width: 560px; */
 }
 
 /* .node-id-2 .field--name-field-paragraphs .field__item:nth-child(3) {
