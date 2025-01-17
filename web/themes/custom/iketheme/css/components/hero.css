@@ -78,6 +78,11 @@
   margin-bottom: 11rem;
 }
 
+.node-id-1918 .header-hero.no-image .hero-basic {
+  padding: 0;
+  margin-bottom: 15rem;
+}
+
 /** reset for pages that need extra padding and have no image **/
 .node-id-36 .header-hero.no-image .hero-basic,
 .node-id-37 .header-hero.no-image .hero-basic {

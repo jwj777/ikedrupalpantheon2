@@ -101,6 +101,15 @@
   flex-grow: 2 !important;
 }
 
+@media screen and (max-width: 712px) {
+  .node-id-1809 .field--name-field-sections-sidebar-right,
+  .node-id-1918 .field--name-field-sections-sidebar-right {
+    max-width: none !important;
+    margin-left: 0rem;
+    flex-grow: 2 !important;
+  }
+}
+
 @media screen and (max-width: 560px) {
   .node-id-1809 .field--name-field-sections-sidebar-right,
   .node-id-1918 .field--name-field-sections-sidebar-right {
