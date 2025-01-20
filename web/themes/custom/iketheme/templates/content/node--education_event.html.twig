@@ -1,0 +1,59 @@
+
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+{{ attach_library('iketheme/node') }}
+
+<article{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label and not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  <div{{ content_attributes.addClass('node__content') }}>
+
+    <div class="education-event-details">
+      {% if content.field_education_event_date %}
+        <div class="field education-event-date">
+          <p class="field__label">Event Date</p>
+          <div class="field-value">{{ content.field_education_event_date['#items'][0].value  }}</div>
+        </div>
+      {% endif %}
+    
+      {% if content.field_grade_levels_select %}
+        <div class="field grade-levels">
+          {# <p class="label">Grade Levels</p> #}
+          {{ content.field_grade_levels_select }}
+        </div>
+      {% endif %}
+    </div>
+      
+      <div class="body-image-container">
+        {# Render the body field #}
+        {% if content.body %}
+          <div class="body-content">
+            <h2 class="heading-small">Event Description</h2>
+            {{ content.body }}
+          </div>
+        {% endif %}
+
+        {# Render the summary image #}
+        {% if content.field_summary_image %}
+          <div class="image-container">
+            {{ content.field_summary_image }}
+          </div>
+        {% endif %}
+      </div>
+  
+  </div>
+</article>

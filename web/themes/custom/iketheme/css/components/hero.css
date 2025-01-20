@@ -10,6 +10,7 @@
 .page-node-type-news-home .header-hero,
 .page-node-type-newsletter-article .header-hero,
 .page-node-type-education .header-hero,
+.page-node-type-education-event .header-hero,
 .page-node-type-lesson-plan .header-hero,
 .page-node-type-ike-s-life-era-group .header-hero {
   background-image: linear-gradient(to right, var(--primary-20), var(--primary-40)) !important;
@@ -83,6 +84,17 @@
   margin-bottom: 15rem;
 }
 
+.view-hero-education-event {
+  max-width: var(--lg);
+  margin: 0 auto;
+  padding: 4rem 0 4rem 0;
+}
+
+.view-hero-education-event h1 {
+  color: var(--primary-100);
+  max-width: 680px;
+}
+
 /** reset for pages that need extra padding and have no image **/
 .node-id-36 .header-hero.no-image .hero-basic,
 .node-id-37 .header-hero.no-image .hero-basic {
@@ -132,8 +144,6 @@
 .node-id-1967 .region-content {
   margin-top: -12rem !important;
 }
-
-
 
 @media screen and (max-width: 712px) {
   .node-id-37 .hero-basic {
@@ -200,18 +210,6 @@
   pointer-events: none; /* This makes the overlay 'click-through' */
 }
 
-/* .page-node-type-homepage .header-hero::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, .44) 0%, rgba(0, 0, 0, 0.36) 100%);
-  pointer-events: none; /* This makes the overlay 'click-through' 
-} 
-**/
-
 .hero-basic .views-field-title, .hero-basic .views-field-subheading {
   max-width: 840px;
 }
@@ -276,9 +274,9 @@
 
 .hero-home .views-field-field-hero-image,
 .hero-basic .views-field-field-hero-image {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
+}
 
 .views-field-field-hero-image .field-content {
   display: flex;
@@ -298,6 +296,14 @@
   margin-bottom: 4rem;
 }
 
+.education-home-hero .views-field-field-hero-image .field-content img:first-of-type {
+  max-width: 500px !important;
+  margin-right: 2rem;
+}
+
+.education-home-hero .views-field-field-hero-image .field-content img:nth-child(2) {
+  max-width: 680px !important;
+}
 
 .hero-home .view-content {
   position: relative;
@@ -321,26 +327,16 @@
   margin-top: 2rem;
 }
 
-
-/* @media screen and (max-width: 1376px) {
-  .hero-basic .view-content {
-    margin: 0 var(--gutter-xl);
-  }
-} */
-
 .hero-home h1, 
 .hero-home .label-large, 
 .hero-basic h1 {
-    color: var(--primary-100);
-  }
+  color: var(--primary-100);
+}
 
 /* subheading */
 .header-hero .views-field-field-subheading, .view-hero-basic-page-alt .views-field-field-subheading {
   max-width: 960px;
   color: var(--neutral-90);
-}
-
-@media screen and (max-width: 1376px) {
 }
 
 /** Ike's Life **/

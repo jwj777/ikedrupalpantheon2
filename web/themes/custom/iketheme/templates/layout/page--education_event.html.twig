@@ -1,0 +1,66 @@
+
+{% set header_hero_class = node.field_hero_image is not empty ? 'header-hero' : 'header-hero no-image' %}
+
+<div class="layout-container {% if node is defined %}node-id-{{ node.id }}{% endif %}">
+
+  <div class="{{ header_hero_class }}" style="background-image: url('{{ hero_background_image_url }}');">
+    <header role="banner">
+      {{ page.header }}
+    </header>
+
+    {{ page.primary_menu }}
+    {{ page.secondary_menu }}
+
+    {{ page.breadcrumb }}
+
+    {{ page.highlighted }}
+  </div>
+
+  {% if page.hero_bottom %}
+    <div class="hero-bottom">
+      {{ page.hero_bottom }}
+    </div>
+  {% endif %}
+
+  {{ page.help }}
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+    <div class="layout-content">
+      {{ page.content }}
+    </div>{# /.layout-content #}
+
+    {% if page.sidebar_first %}
+      <aside class="layout-sidebar-first" role="complementary">
+        {{ page.sidebar_first }}
+      </aside>
+    {% endif %}
+
+    {# Render second sidebar if there is content or paragraphs to display #}
+    {% if page.sidebar_second or content.field_paragraphs is defined %}
+      <aside class="layout-sidebar-second" role="complementary">
+        {# Render sidebar blocks #}
+        {{ page.sidebar_second }}
+
+        {# Render paragraphs from node #}
+        {% if content.field_paragraphs %}
+          <div class="paragraphs-sidebar">
+            {{ content.field_paragraphs }} {# This will render the field content correctly #}
+          </div>
+        {% endif %}
+      </aside>
+    {% endif %}
+
+  </main>
+
+  {% if page.footer %}
+    <footer role="contentinfo">
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+
+
+    {% include '@iketheme/templates/layout/footer.html.twig' %}
+
+</div>{# /.layout-container #}

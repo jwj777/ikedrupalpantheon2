@@ -147,7 +147,7 @@
 .field--name-field-sections-sidebar-right .field--name-field-heading-2,
 .field--name-field-sections-sidebar-right h3 {
   margin-top: 0px !important;
-  margin-bottom: 3rem !important;
+  margin-bottom: 2rem !important;
 }
 
 /** lesson plans **/
@@ -239,44 +239,110 @@
 
 /** join newsletter form **/
 
-.block-block-content40e06a90-048a-412c-938f-55be4d8845b2 {
+.subscription-form {
   max-width: var(--xl);
   margin: 4rem auto;
 }
 
-.block-block-content40e06a90-048a-412c-938f-55be4d8845b2 .block-inner {
+.subscription-form .block-inner {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  height: 432px;
+  /* flex-direction: column; */
+  /* height: 432px; */
   background-color: var(--primary-10);
   padding: 3rem;
   border-radius: 1.5rem;
 }
 
 @media screen and (max-width: 1216px) {
-  .block-block-content40e06a90-048a-412c-938f-55be4d8845b2 .block-inner {
+  .subscription-form .block-inner {
     flex-wrap: nowrap;
     height: auto;
   }
 }
 
-#block-iketheme-formforemaillist .text-container {
-  max-width: 600px;
-  margin-top: 2rem;
+.subscription-form .text-container {
+  max-width: 520px;
+  margin-top: 1rem;
+  margin-right: 4rem;
 }
 
-#block-iketheme-formforemaillist .label-medium {
+.subscription-form .label-medium {
   color: var(--primary-90);
   margin-bottom: 2rem;
 }
 
-#block-iketheme-formforemaillist .heading-large {
+.subscription-form .heading-large {
   margin-bottom: 1.5rem;
   color: var(--primary-95);
 }
 
-#block-iketheme-formforemaillist .body-medium {
+.subscription-form .body-medium,
+.block-block-contentc39111bd-c41f-4539-9e64-7ce51cc26b0f {
   color: var(--primary-90);
+}
 
+.subscription-form .form-container {
+  max-width: 520px;
+  /* margin-top: -2.3rem; */
+}
+
+
+/** education event content **/
+
+.page-node-type-education-event .body-image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-node-type-education-event .field--name-field-summary-image img {
+  margin-top: 2rem;
+  max-width: 520px;
+  max-height: 440px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 712px) {
+  .page-node-type-education-event .field--name-field-summary-image img {
+    max-width: 100%;
+  }
+}
+
+.page-node-type-education-event .body-content {
+  padding-right: 4rem;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 1376px) {
+  .page-node-type-education-event .body-content {
+    max-width: 100%;
+    padding-right: 0;
+  }
+}
+
+.page-node-type-education-event .education-event-date {
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+.page-node-type-education-event .field__label {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  line-height: 1rem;
+  font-size: 1.05rem;
+}
+
+.page-node-type-education-event .field--name-field-grade-levels-select .field__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-node-type-education-event .field--name-field-grade-levels-select .field__item {
+  margin-right: 0.75rem;
+}
+
+.page-node-type-education-event .education-event-details {
+  display: flex;
+  flex-wrap: wrap;
 }

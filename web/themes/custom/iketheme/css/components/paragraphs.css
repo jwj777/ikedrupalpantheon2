@@ -88,6 +88,10 @@
   }
 }
 
+.paragraph--type--two-column-section {
+  margin-bottom: 3rem;
+}
+
 .paragraph--type--two-column-section > .paragraph-inner,
 .paragraph--type--two-column-image-text-block > .paragraph-inner,
 .paragraph--type--two-column-text-collage > .paragraph-inner {

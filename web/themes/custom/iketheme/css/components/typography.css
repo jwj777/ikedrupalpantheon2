@@ -238,3 +238,7 @@ p {
   font-size: 1.2rem;
 }
 
+.field__label {
+  font-weight: 600;
+}
+

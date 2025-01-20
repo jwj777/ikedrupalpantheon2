@@ -82,12 +82,13 @@
 .page-node-type-soldier .layout-content,
 .page-node-type-news-home .layout-content,
 .page-node-type-lesson-plan .layout-content,
-.page-node-type-education .layout-content {
+.page-node-type-education .layout-content,
+.page-node-type-education-event .layout-content {
   display: flex;
   justify-content: center;
   padding-right: 0rem;
   padding-top: 1rem;
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
 }
 
 .page-node-type-page main {
@@ -110,12 +111,17 @@
 .page-node-type-page .layout-content,
 .page-node-type-lesson-plan .layout-content,
 .page-node-type-education .layout-content,
+.page-node-type-education-event .layout-content,
 .page-node-type-primary-source .layout-content,
 .page-node-type-newsletter-article .layout-content,
 .page-node-type-ike-s-life-era-group .layout-content,
 .node-id-2117 .layout-content {
   max-width: var(--lg);
   margin: 0 auto;
+}
+
+.page-node-type-education-event .layout-content {
+  margin-top: 3rem;
 }
 
 
@@ -130,6 +136,21 @@
     max-width: var(--lg);
     margin: 0 var(--gutter-xl);
   } 
+}
+
+@media screen and (max-width: 1376px) {
+  /* .page-node-type-lesson-plan .layout-content, */
+  .page-node-type-primary-source .layout-content,
+  .node-id-2117 .layout-content  {
+    margin: 0 var(--gutter-lg);
+  }
+}
+
+@media screen and (max-width: 1376px) {
+  .page-node-type-education-event .layout-content {
+    margin-right: var(--gutter-lg);
+    margin-left: var(--gutter-lg);
+  }
 }
 
 @media screen and (max-width: 1216px) {
@@ -148,14 +169,6 @@
   } 
 }
 
-
-@media screen and (max-width: 1376px) {
-  .page-node-type-lesson-plan .layout-content,
-  .page-node-type-primary-source .layout-content,
-  .node-id-2117 .layout-content  {
-    margin: 0 var(--gutter-lg);
-  }
-}
 
 .page-node-type-soldier main,
 .page-node-type-primary-source main {
