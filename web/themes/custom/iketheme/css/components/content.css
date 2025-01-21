@@ -150,6 +150,14 @@
   margin-bottom: 2rem !important;
 }
 
+
+/** content sections of basic pages **/
+
+.page-node-type-page #block-iketheme-content {
+  max-width: 1080px;
+  margin-top: 1rem;
+}
+
 /** lesson plans **/
 
 .page-node-type-lesson-plan .node__content {

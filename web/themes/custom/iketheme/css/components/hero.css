@@ -447,7 +447,7 @@
 
 /** Ikeducation **/
 
-.view-hero-basic-page-education .views-row a {
+.view-hero-basic-page-education .views-row .row-wrapper {
   display: flex; 
   /* align-items: center; */
   text-decoration: none;
@@ -475,7 +475,7 @@
   color: var(--primary-90);
 }
 
-.view-hero-basic-page-education .label-medium {
+.page-node-type-education .view-hero-basic-page-education .label-medium {
   display: none;
 }
 
