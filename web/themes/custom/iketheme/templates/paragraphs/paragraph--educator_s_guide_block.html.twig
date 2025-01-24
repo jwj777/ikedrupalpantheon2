@@ -1,0 +1,22 @@
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    <div class="paragraph-inner">
+      {% block content %}
+        <h2 class="heading-medium">{{ content.field_heading_2 }}</h2>
+        <p class="subheading body-medium">{{ content.field_subheading|render|striptags|raw }}</p>
+        {# {{ content|without('field_heading_2') }} #}
+        {{ content.field_card }}
+        {{ content.field_call_to_action }}
+      {% endblock %}
+    </div>
+  </div>
+{% endblock paragraph %}

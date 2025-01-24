@@ -255,17 +255,23 @@
 .subscription-form .block-inner {
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: column; */
-  /* height: 432px; */
   background-color: var(--primary-10);
   padding: 3rem;
   border-radius: 1.5rem;
 }
 
+@media screen and (max-width: 712px) {
+  .subscription-form .block-inner {
+    padding: 2rem;
+    border-radius: 1.25rem;
+  }
+}
+
 @media screen and (max-width: 1216px) {
   .subscription-form .block-inner {
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     height: auto;
+    flex-direction: column;
   }
 }
 
@@ -273,6 +279,13 @@
   max-width: 520px;
   margin-top: 1rem;
   margin-right: 4rem;
+}
+
+@media screen and (max-width: 1216px) {
+  .subscription-form .text-container {
+    max-width: 100%;
+    margin-right: 0rem;
+  }
 }
 
 .subscription-form .label-medium {

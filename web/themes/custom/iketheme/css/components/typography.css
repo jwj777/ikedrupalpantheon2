@@ -156,6 +156,7 @@ p, li, .body-medium {
   text-transform: uppercase;
   letter-spacing: 4px;  
   margin-bottom: 0.5rem;
+  line-height: 1.6rem;
 }
 
 .label-small {

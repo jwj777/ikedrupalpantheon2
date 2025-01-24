@@ -52,7 +52,6 @@
 }
 
 /** containers **/
-
 .lg-container, .container-lg {
   max-width: var(--lg);
   margin: 0 auto;
@@ -255,6 +254,15 @@
   .page-node-type-education .region-content {
     max-width: none;
     margin: 0 var(--gutter-md);
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .page-node-type-basic-page-b .region-content,
+  .page-node-type-newsletter-article .region-content,
+  .page-node-type-education .region-content {
+    max-width: none;
+    margin: 0 var(--gutter-sm);
   }
 }
 

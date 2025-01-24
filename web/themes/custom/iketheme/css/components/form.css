@@ -206,6 +206,12 @@ abbr.ajax-changed {
   width: 320px;
 }
 
+@media screen and (max-width: 712px) {
+  .webform-submission-form .js-form-type-select select {
+    width: auto;
+  }
+}
+
 .webform-submission-form .webform-button--submit {
   background: var(--tertiary-40);
   color: var(--neutral-100);

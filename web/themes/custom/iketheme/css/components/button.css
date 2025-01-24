@@ -24,12 +24,17 @@
 
 .paragraph--type--text-and-links .field--name-field-call-to-action a,
 .paragraph--type--text-and-links .field--name-field-link-2 a,
-.paragraph--type--text-and-links .field--name-field-link-3 a {
+.paragraph--type--text-and-links .field--name-field-link-3 a,
+.paragraph--type--educator-s-guide-block .field--name-field-call-to-action a {
   background-color: var(--tertiary-40);
   color: var(--neutral-100);
   padding: 1rem 1.4rem;
   border-radius: 10rem;
   text-decoration: none;
+}
+
+.paragraph--type--educator-s-guide-block .field--name-field-call-to-action a {
+
 }
 
 .paragraph--type--two-column-text-collage .field--name-field-link {

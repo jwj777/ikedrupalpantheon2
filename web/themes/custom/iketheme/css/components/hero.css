@@ -296,6 +296,12 @@
   margin-bottom: 4rem;
 }
 
+/* @media screen and (max-width: 1376px) {
+  .page-node-type-education .views-field-field-hero-image {
+    margin: 0 var(--gutter-xl);
+  }
+} */
+
 .education-home-hero .views-field-field-hero-image .field-content img:first-of-type {
   max-width: 500px !important;
   margin-right: 2rem;
@@ -303,6 +309,20 @@
 
 .education-home-hero .views-field-field-hero-image .field-content img:nth-child(2) {
   max-width: 680px !important;
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1376px) {
+  .education-home-hero .views-field-field-hero-image .field-content img:first-of-type {
+    max-width: 100% !important;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1376px) {
+  .education-home-hero .views-field-field-hero-image .field-content img:nth-child(2) {
+    display: none;
+  }
 }
 
 .hero-home .view-content {
