@@ -541,10 +541,13 @@ p.text-light {
 .view-education-programs .card-image-title {
   width: 376px;
   right: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
 }
 
 .view-primary-source-main .card-image-title {
-  width: 370px;
+  width: 382px;
 }
 
 @media screen and (max-width: 1376px) {

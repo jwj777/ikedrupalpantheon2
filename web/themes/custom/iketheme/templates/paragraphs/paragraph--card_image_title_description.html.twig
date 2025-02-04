@@ -1,20 +1,28 @@
+{# Initialize link_url as null #}
+{% set link_url = null %}
 
-{# Check if field_link has a value #}
-{% if paragraph.field_link and paragraph.field_link.uri %}
-  {# Set the link URL #}
-  {% set link_url = paragraph.field_link.uri %}
-  
-  <div class="paragraph--type--card-image-title-description">
+{# Check if field_link exists and has at least one value #}
+{% if paragraph.field_link|length > 0 %}
+  {% set link_item = paragraph.field_link.0 %} {# Get the first item #}
+
+  {# Use url.toString() for internal links, otherwise use uri #}
+  {% if link_item.url is not empty %}
+    {% set link_url = link_item.url.toString() %}
+  {% else %}
+    {% set link_url = link_item.uri %}
+  {% endif %}
+{% endif %}
+
+<div class="paragraph--type--card-image-title-description">
+  {% if link_url %}
     <a href="{{ link_url }}">
-      <div class="paragraph-content">
-        {{ content }}
-      </div>
-    </a>
-  </div>
-
-{% else %}
-  {# If no link is provided, just render the content without a link #}
-  <div class="paragraph--type--card-image-title-description">
+  {% endif %}
+  
+  <div class="paragraph-content">
     {{ content }}
   </div>
-{% endif %}
+
+  {% if link_url %}
+    </a>
+  {% endif %}
+</div>

@@ -1,0 +1,20 @@
+
+{%
+  set classes = [
+    'content-wrapper',
+    'flex-container',
+    paragraph.field_image_position.value == 'image_right' ? 'imageRight' : 'imageLeft'
+  ]
+%}
+
+<div class="paragraph paragraph--type--body-text">
+  <div class="paragraph-inner">
+    <div class="text-container">
+      {% if content.field_heading_2|render|striptags is not empty %}
+        <h2 class="field-text heading-medium">{{ content.field_heading_2|render|striptags|raw  }}</h2>
+      {% endif %}
+      <div class="field-view-reference
+      ">{{ content.field_reference_field }}</div>
+    </div>
+  </div>
+</div>

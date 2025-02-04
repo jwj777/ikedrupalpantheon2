@@ -856,7 +856,7 @@
 
 .view-primary-source-main {
   position: relative;
-  bottom: 12rem;
+  bottom: 14rem;
 }
 
 @media screen and (max-width: 968px) {
@@ -880,7 +880,7 @@
 .view-primary-source-main .view-content, .view-primary-source-main {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -16px;
+  gap: 2rem;
 }
 
 @media screen and (max-width: 1376px) {
@@ -890,11 +890,9 @@
   }
 }
 
-
-
 .view-primary-source-main .view-filters {
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0rem;
 }
 
 .view-primary-source-main .view-filters .js-form-item {

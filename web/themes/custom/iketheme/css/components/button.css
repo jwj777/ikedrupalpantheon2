@@ -43,6 +43,7 @@
 
 .paragraph--type--link .button a,
 .paragraph--type--two-column-text-collage .field--name-field-link a {
+  display: inline-block;
   background-color: var(--primary-40);
   color: var(--neutral-100);
   padding: 1rem 1.4rem;
