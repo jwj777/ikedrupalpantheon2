@@ -76,7 +76,14 @@
 
 .header-hero.no-image .hero-basic {
   padding: 4rem 0 6rem 0;
-  margin-bottom: 11rem;
+}
+
+.node-id-1791 .hero-basic {
+  padding: 4rem 0 16rem 0 !important;
+}
+
+.node-id-1791 .region-content {
+  margin-top: -13rem !important;
 }
 
 .node-id-1918 .header-hero.no-image .hero-basic {
@@ -135,6 +142,11 @@
 .node-id-36 .region-content {
   margin-top: -24rem !important;
 }
+
+/* .view-events-featured {
+  margin-top: -12rem;
+  margin-bottom: 17rem;
+} */
 
 .node-id-37 .region-content,
 .node-id-1918 .region-content {
@@ -295,12 +307,6 @@
 .page-node-type-education .views-field-field-hero-image {
   margin-bottom: 4rem;
 }
-
-/* @media screen and (max-width: 1376px) {
-  .page-node-type-education .views-field-field-hero-image {
-    margin: 0 var(--gutter-xl);
-  }
-} */
 
 .education-home-hero .views-field-field-hero-image .field-content img:first-of-type {
   max-width: 500px !important;

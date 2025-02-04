@@ -401,7 +401,7 @@
 }
 
 .paragraph--type--body-text-image .field--name-field-text {
-  margin-right: 4rem;
+  margin-right: 2rem;
 }
 
 @media screen and (max-width: 712px) {
@@ -688,10 +688,11 @@
   flex-wrap: wrap;
   padding: 2.25rem 2.8rem;
   border-radius: 1.5rem;
+  margin-top: 3rem;
 }
 
 .paragraph--type--text-array .field__item {
-  width: 480px;
+  width: 440px;
   padding: 0 2rem 0.5rem 0;
 }
 
@@ -704,9 +705,11 @@
 
 .paragraph--type--text-array .field__item p {
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .paragraph--type--text-array h4 {
+  margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
@@ -865,8 +868,8 @@
 
 
 .paragraph--type--body-text {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 
@@ -964,12 +967,6 @@
   }
 }
 
-/* @media screen and (max-width: 712px) {
-  .paragraph--type--card-image-title-description {
-    max-width: none;
-  }
-} */
-
 .paragraph--type--card-image-title-description img {
   width: 412px;
   height: 328px;
@@ -1031,7 +1028,6 @@
   margin-bottom: 1.25rem;
   margin-left: 0.25rem;
 }
-
 
 .paragraph--type--view-reference .field--name-field-tertiary-links a {
   display: block;
