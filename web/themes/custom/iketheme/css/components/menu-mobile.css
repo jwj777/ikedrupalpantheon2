@@ -121,12 +121,13 @@
 }
 
 .lvl1 svg {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
 }
 
 .lvl1 path {
   fill: var(--neutral-90);
+  stroke: var(--neutral-90);
 }
 
 .mobile-nav-container a.lvl1:hover {
@@ -142,4 +143,16 @@
 
 .mobile-nav-container .nav2-item:hover {
   color: var(--neutral-100);
+}
+
+.mobile-nav-container .nav2-section {
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mobile-nav-container .nav2-section.last {
+  border-bottom: none;
+  padding-bottom: 0rem;
+  margin-bottom: 0rem;
 }

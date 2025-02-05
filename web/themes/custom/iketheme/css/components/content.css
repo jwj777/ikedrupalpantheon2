@@ -158,6 +158,16 @@
   margin-bottom: 2rem;
 }
 
+
+
+.field--name-field-sections-sidebar-right .paragraph {
+  background: var(--neutralVariant-95);
+  width: 372px;
+  border-radius: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+
 @media screen and (max-width: 968px) {
   .node-id-1809 .field--name-field-sections-sidebar-right .paragraph,
   .node-id-1918 .field--name-field-sections-sidebar-right .paragraph {
@@ -171,6 +181,11 @@
 
 .node-id-1809 .field--name-field-sections-sidebar-right .paragraph-inner,
 .node-id-1918 .field--name-field-sections-sidebar-right .paragraph-inner {
+  padding: 2rem;
+  padding-top: 2.5rem;
+}
+
+.field--name-field-sections-sidebar-right .paragraph-inner {
   padding: 2rem;
   padding-top: 2.5rem;
 }

@@ -678,7 +678,7 @@
 
 .paragraph--type--text-array {
   position: relative;
-  bottom: 3rem;
+  /* bottom: 3rem; */
   margin-bottom: 2rem;
 }
 
@@ -1089,4 +1089,14 @@
   margin-right: 2rem;
   display: inline-block;
   margin-bottom: 1rem;
+}
+
+
+.paragraph--type--text-and-links .paragraph-inner {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 2.5rem;
+  padding-top: 1.6rem;
+  background: var(--primary-95);
+  border-radius: 1.5rem;
 }
