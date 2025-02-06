@@ -1096,7 +1096,13 @@
   margin-top: 2rem;
   margin-bottom: 3rem;
   padding: 2.5rem;
-  padding-top: 1.6rem;
+  /* padding-top: 1.6rem; */
   background: var(--primary-95);
   border-radius: 1.5rem;
+}
+.paragraph--type--text-and-links .paragraph-inner .paragraph-inner {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 0rem;
+  padding-top: 0rem;
 }

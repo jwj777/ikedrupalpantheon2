@@ -25,7 +25,9 @@ h1, .display-large {
   }
 }
 
-.display-medium, h2.display-medium, .view-news-main .view-content > h3 {
+.display-medium, 
+h2.display-medium, 
+.view-news-main .view-content > h3 {
   font-family: 'Newsreader', Georgia, serif;
   font-size: 3.5rem;
   font-weight: 300;
@@ -43,10 +45,11 @@ h1, .display-large {
 
 .heading-large, 
 .view-content h3,
-.text-formatted h2 {
+.text-formatted h2,
+.ikes-life-item .heading-large {
   font-family: 'Newsreader', Georgia, serif;
   font-size: 2.7rem;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 1rem;
   margin-bottom: 1.4rem;
 }
@@ -243,3 +246,6 @@ p {
   font-weight: 600;
 }
 
+.ikes-life-item h2 {
+  margin-top: 0rem;
+}
