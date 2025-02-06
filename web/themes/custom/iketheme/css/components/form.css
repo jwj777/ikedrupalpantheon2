@@ -212,6 +212,12 @@ abbr.ajax-changed {
   }
 }
 
+.js-form-item.form-item.js-form-type-radio {
+  display: flex;
+  align-items: center;
+  height: 18px;
+}
+
 .webform-submission-form .webform-button--submit {
   background: var(--tertiary-40);
   color: var(--neutral-100);
@@ -223,7 +229,6 @@ abbr.ajax-changed {
 
 
 /** view bef exposed filters **/
-
 .bef-exposed-form .js-form-type-checkbox {
   display: flex;
   align-items: center;
