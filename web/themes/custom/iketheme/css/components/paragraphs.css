@@ -26,7 +26,7 @@
 
 .field--name-field-column-one,
 .field--name-field-column-two {
-  background-color: var(--primary-95);
+  background-color: var(--neutral-90);
   padding: 32px 72px 48px 48px;
   border-radius: 24px;
   margin-bottom: 2rem;
@@ -110,7 +110,7 @@
   display: flex;
   max-width: var(--xl);
   margin: 0 auto;
-  align-items: baseline;
+  align-items: flex-start;
 }
 
 @media screen and (max-width: 1376px) {
@@ -149,9 +149,10 @@
 .paragraph--type--two-column-image-text-block {
   margin-top: 40px;
 }
-.paragraph--type--two-column-image-text-block .paragraph-inner {
+
+/* .paragraph--type--two-column-image-text-block .paragraph-inner {
   align-items: center;
-}
+} */
 
 .paragraph--type--two-column-image-text-block .field--name-field-block-image {
   margin-right: 48px;
@@ -198,10 +199,14 @@
   max-width: 560px;
 }
 
+.paragraph--type--two-column-image-text-block .label-medium {
+  margin-bottom: 2rem;
+}
+
 .paragraph--type--two-column-image-text-block .tertiary-links {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 3rem;
   max-width: 420px;
 }
 
@@ -226,11 +231,11 @@
 
 /** text collages two coloumn **/
 .paragraph--type--two-column-text-collage .text-column {
-  padding: 64px 280px 160px 64px;
+  padding: 64px 380px 160px 64px;
   border-radius: 1.5rem;
   margin-right: -64px;
-  background: var(--neutral-95);
-  width: 540px;
+  background: var(--neutral-90);
+  width: 640px;
 }
 
 @media screen and (max-width: 1216px) {
@@ -613,6 +618,24 @@
 
 /* featured soldiers */
 
+.paragraph-featured-soldiers {
+  max-width: var(--xl);
+  margin: 3rem auto;
+}
+
+.paragraph-featured-soldiers .paragraph-inner {
+  background: var(--primary-95);
+  padding: 3rem 3rem 3rem 3rem;
+  border-radius: 1.5rem;
+  max-width: auto;
+}
+
+@media screen and (max-width: 712px) {
+  .paragraph-featured-soldiers .paragraph-inner {
+    padding: 2rem 1.5rem 2rem 1.5rem;
+  }
+}
+
 .paragraph-featured-soldiers .field--name-field-section-icon img {
   max-width: 240px;
   object-fit: contain;
@@ -646,7 +669,7 @@
 }
 
 .paragraph-featured-soldiers .field--name-field-link-button {
-  margin-top: 4rem;
+  margin-top: 3.5rem;
 }
 
 .paragraph-featured-soldiers .soldiers-row-text {
@@ -661,6 +684,7 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 
 /* ike education - upcoming programs */
 

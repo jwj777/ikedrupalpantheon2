@@ -50,7 +50,8 @@
         "drupal/weight": "^3.6",
         "nkmani/edit_uuid": "^2.1",
         "drupal/inline_entity_form": "^1.x-dev",
-        "drupal/metatag": "^2.1"
+        "drupal/metatag": "^2.1",
+        "drupal/image_field_caption": "^2.0"
     },
     "require-dev": {
         "drupal/core-dev": "^10"

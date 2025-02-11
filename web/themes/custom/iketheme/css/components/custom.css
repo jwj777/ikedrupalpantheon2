@@ -1,10 +1,11 @@
 
 /** site logo **/
 #block-iketheme-site-branding img {
-  max-width: 80px;
+  max-width: 164px;
   background: #fff;
-  padding: 8px 8px 10px 12px;
+  padding: 10px 10px 12px 12px;
   margin-top: 1rem;
+  border-radius: 0.6rem;
 }
 
 /* hide site name */

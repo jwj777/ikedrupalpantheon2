@@ -81,10 +81,16 @@
   max-width: var(--xl);
 }
 
-.view-soliders-main .views-row, 
+.view-soliders-main .views-row {
+  margin: 0.8rem;
+  max-width: 224px;
+  overflow: hidden;
+}
+
 .view-soldiers-featured .views-row {
   margin: 0.8rem;
-  max-width: 218px;
+  max-width: 230px;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 560px) {
@@ -651,7 +657,7 @@
 .view-education-programs .view-filters {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: -2rem;
+  margin-bottom: -6rem;
 }
 
 @media screen and (max-width: 968px) {

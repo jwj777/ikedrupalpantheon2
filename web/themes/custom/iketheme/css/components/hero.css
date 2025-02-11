@@ -32,29 +32,58 @@
   overflow: hidden;
 }
 
-/* top gradient*/
+/* vertical gradient - darkens top behind nav and header */
+
 .path-frontpage .header-hero::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 30%; /* Adjust height as needed */
+  height: 44%; /* Adjust height as needed */
   pointer-events: none;
   z-index: 1;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0) 100%);
 }
+
+.header-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40%; /* Adjust height as needed */
+  pointer-events: none;
+  z-index: 1;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0) 100%);
+}
+
+/* vertical gradient - darkens bottom of hero */
 
 .path-frontpage .block-views-blockhero-homepage-block-1::before {
   content: "";
   position: absolute;
   left: 0;
   right: 0;
-  height: 60%; /* Adjust the height as needed for gradient coverage */
+  height: 48%; /* Adjust the height as needed for gradient coverage */
   pointer-events: none;
   z-index: 1;
   bottom: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 100%);
+}
+
+/* horizontal gradient - darkens the left side */
+
+.page-node-type-basic-page-b .header-hero::after,
+.page-node-type-homepage .header-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, .44) 0%, rgba(0, 0, 0, 0.16) 100%);
+  pointer-events: none; /* This makes the overlay 'click-through' */
 }
 
 .hero-video-background {
@@ -208,18 +237,6 @@
   position: relative;
   background-size: cover;
   background-position: center;
-}
-
-.page-node-type-basic-page-b .header-hero::after,
-.page-node-type-homepage .header-hero::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, .60) 0%, rgba(0, 0, 0, 0.48) 100%);
-  pointer-events: none; /* This makes the overlay 'click-through' */
 }
 
 .hero-basic .views-field-title, .hero-basic .views-field-subheading {
