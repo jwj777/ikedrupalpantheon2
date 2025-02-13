@@ -1,9 +1,9 @@
 
 /** site logo **/
 #block-iketheme-site-branding img {
-  max-width: 164px;
+  max-width: 136px;
   background: #fff;
-  padding: 10px 10px 12px 12px;
+  padding: 6px 6px 5px 8px;
   margin-top: 1rem;
   border-radius: 0.6rem;
 }

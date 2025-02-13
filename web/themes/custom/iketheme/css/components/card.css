@@ -612,9 +612,12 @@ p.text-light {
   padding: 1.5rem 2.5rem 1.8rem 2rem;
 }
 
-
 .card-image-title a {
   text-decoration: none;
+}
+
+.card-image-title:hover {
+  background: var(--primary-90);
 }
 
 .card-image-title img {
