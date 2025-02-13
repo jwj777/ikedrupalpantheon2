@@ -699,7 +699,6 @@
 }
 
 /* text array */
-
 .paragraph--type--text-array {
   position: relative;
   /* bottom: 3rem; */
@@ -713,6 +712,10 @@
   padding: 2.25rem 2.8rem;
   border-radius: 1.5rem;
   margin-top: 3rem;
+}
+
+.node-id-1793 .paragraph--type--text-array .field--name-field-paragraph-reference {
+  margin-bottom: 4rem;
 }
 
 .paragraph--type--text-array .field__item {

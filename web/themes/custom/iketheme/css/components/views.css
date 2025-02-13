@@ -10,7 +10,7 @@
 }
 
 .js-form-item-keys input {
-  width: 100%;
+  width: 96%;
   background: var(--secondary-90);
   border-radius: 2rem;
   padding: 1rem 1.25rem;
@@ -83,7 +83,7 @@
 
 .view-soliders-main .views-row {
   margin: 0.8rem;
-  max-width: 224px;
+  max-width: 218px;
   overflow: hidden;
 }
 

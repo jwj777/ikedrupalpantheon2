@@ -107,6 +107,12 @@ abbr.ajax-changed {
   max-width: 280px;
 }
 
+@media screen and (max-width: 1216px) {
+  .view-soliders-main .views-exposed-form {
+    max-width: none;
+  }
+}
+
 .view-soliders-main .views-exposed-form .form-item {
   float: none;
 }
