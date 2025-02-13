@@ -8,16 +8,80 @@
 %}
 
 <div class="paragraph--type--body-text-image">
+
+
+
+  {# {% if content.field_image['#items']|length > 0 %}
+    {% set image = content.field_image['#items'].get(0) %}
+    {% if image and image.entity %}
+      <div class="image-item">
+        <img src="{{ file_url(image.entity.uri.value) }}" alt="{{ image.alt }}" />
+        {% if image.caption is not empty %}
+          <p class="image-caption">{{ image.caption }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endif %} #}
+
+
+
+
+
   {% if paragraph.field_image_position.value == 'image_right' %}
     <div class="text-container">
+      {# {{ dump(content.field_image['#items']) }}
+      {{ dump(content.field_image['#items'].list[0].values) }} #}
       {% if content.field_heading_2|render|striptags is not empty %}
         <h2 class="field-text heading-large">{{ content.field_heading_2|render|striptags|raw  }}</h2>
       {% endif %}
       <div class="field-text">{{ content.field_text }}</div>
     </div>
-    <div class="field-image">{{ content.field_image }}</div>
+
+    <div class="field-image-container">
+      <div class="field-image"> 
+        {% if content.field_image['#items']|length > 0 %}
+          {% set image = content.field_image['#items'].get(0) %}
+          {% if image and image.entity %}
+            {# <div class="image-item"> #}
+              <img src="{{ file_url(image.entity.uri.value) }}" alt="{{ image.alt }}" />
+              {% if image.caption is not empty %}
+                <p class="image-caption">{{ image.caption }}</p>
+              {% endif %}
+            {# </div> #}
+          {% endif %}
+        {% endif %}
+      </div>
+      {% if item.entity._referringItem.value.caption is not empty %}
+        <p class="image-caption">{{ item.entity._referringItem.value.caption }}</p>
+      {% endif %}
+    </div>
+
   {% else %}
-    <div class="field-image">{{ content.field_image }}</div>
+
+    {# <div class="field-image-container">
+      <div class="field-image">{{ content.field_image }}</div>
+    </div> #}
+
+    <div class="field-image-container">
+      <div class="field-image"> 
+        {% if content.field_image['#items']|length > 0 %}
+          {% set image = content.field_image['#items'].get(0) %}
+          {% if image and image.entity %}
+            {# <div class="image-item"> #}
+              <img src="{{ file_url(image.entity.uri.value) }}" alt="{{ image.alt }}" />
+              {% if image.caption is not empty %}
+                <p class="image-caption">{{ image.caption }}</p>
+              {% endif %}
+            {# </div> #}
+          {% endif %}
+        {% endif %}
+      </div>
+      {% if item.entity._referringItem.value.caption is not empty %}
+        <p class="image-caption">{{ item.entity._referringItem.value.caption }}</p>
+      {% endif %}
+    </div>
+
+
     <div class="text-container">
       {% if content.field_heading_2|render|striptags is not empty %}
         <h2 class="field-text heading-large">{{ content.field_heading_2|render|striptags|raw }}</h2>
