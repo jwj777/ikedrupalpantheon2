@@ -24,20 +24,47 @@
   padding: 6rem 0;
 }
 
-.field--name-field-column-one,
+/* .field--name-field-column-one,
 .field--name-field-column-two {
   background-color: var(--neutral-90);
   padding: 32px 72px 48px 48px;
   border-radius: 24px;
   margin-bottom: 2rem;
+} */
+
+/* @media screen and (max-width: 712px) {
+  .field--name-field-column-one,
+  .field--name-field-column-two {
+    padding: 32px 32px 40px 32px;
+  }
+} */
+
+.field--name-field-column-one .paragraph--type--link-array,
+.field--name-field-column-two .paragraph--type--link-array,
+.field--name-field-column-one .paragraph--type--body-text,
+.field--name-field-column-two .paragraph--type--body-text,
+.field--name-field-column-one .paragraph--type--upcoming-programs,
+.field--name-field-column-two .paragraph--type--upcoming-programs,
+.field--name-field-column-one .paragraph--type--text-and-links,
+.field--name-field-column-two .paragraph--type--text-and-links {
+  background-color: var(--neutral-95);
+  padding: 28px 68px 48px 40px;
+  border-radius: 24px;
 }
 
-@media screen and (max-width: 712px) {
+/* .paragraph--type--text-and-links .paragraph-inner {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 2.5rem;
+  background: var(--primary-95);
+  border-radius: 1.5rem;
+} */
 
-.field--name-field-column-one,
-.field--name-field-column-two {
-  padding: 32px 32px 40px 32px;
-}
+.paragraph--type--text-and-links .paragraph-inner .paragraph-inner {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 0rem;
+  padding-top: 0rem;
 }
 
 .field--name-field-column-one {
@@ -412,7 +439,7 @@
 }
 
 .paragraph--type--body-text-image .field--name-field-text {
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 
 @media screen and (max-width: 712px) {
@@ -536,12 +563,6 @@
   margin: 0 auto;
 }
 
-/* @media screen and (max-width: 1376px) {
-  .paragraph--type--cards-array {
-    margin: 0 var(--gutter-xl);
-  }
-} */
-
 .page-node-type-education .paragraph--type--cards-array {
   padding-top: 3rem;
 }
@@ -551,6 +572,7 @@
   font-family: 'Newsreader';
   font-size: 1.5rem;
   font-weight: 400;
+  color: var(--primary-10);
 }
 
 .field--name-field-card {
@@ -1124,22 +1146,6 @@
   margin-right: 2rem;
   display: inline-block;
   margin-bottom: 1rem;
-}
-
-
-.paragraph--type--text-and-links .paragraph-inner {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-  padding: 2.5rem;
-  /* padding-top: 1.6rem; */
-  background: var(--primary-95);
-  border-radius: 1.5rem;
-}
-.paragraph--type--text-and-links .paragraph-inner .paragraph-inner {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-  padding: 0rem;
-  padding-top: 0rem;
 }
 
 p.image-caption {

@@ -11,7 +11,7 @@
 .nav-container {
   display: flex;
   align-items: center;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
 }
 
 @media screen and (max-width: 1376px) {

@@ -326,7 +326,7 @@
 }
 
 .page-node-type-education .views-field-field-hero-image {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .education-home-hero .views-field-field-hero-image .field-content img:first-of-type {
@@ -403,6 +403,7 @@
 .ikes-life-breadcrumbs {
   display: flex;
   align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 .ikes-life-breadcrumbs a, .ikes-life-breadcrumbs p {
