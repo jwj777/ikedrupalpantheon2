@@ -103,6 +103,10 @@
   padding: 4rem 0 16rem 0;
 }
 
+.page-node-type-ike-s-life .hero-basic {
+  padding: 4rem 0 14rem 0;
+}
+
 .header-hero.no-image .hero-basic {
   padding: 4rem 0 8rem 0;
 }
@@ -528,6 +532,7 @@
 .hero-lesson-plans .views-row {
   display: flex;
   align-items: center;
+  max-width: 960px;
 }
 
 .hero-lesson-plans .label-medium {
