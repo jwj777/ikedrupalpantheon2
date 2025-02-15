@@ -381,7 +381,6 @@
 /** Image 1 **/
 .paragraph--type--two-column-text-collage .image-row-2 .image-item:first-child {
   border-radius: 1.5rem;
-  overflow: hidden;
   width: 280px;
   height: 230px;
 }
@@ -391,6 +390,7 @@
   width: 280px;
   height: 230px;
   object-fit: cover;
+  border-radius: 1.5rem;
 }
 
 /** Image 2 **/
@@ -1149,7 +1149,7 @@
 }
 
 p.image-caption {
-  position: relative;
+  /* position: relative;
   bottom: 54px;
   left: 12px;
   background: var(--neutral-90);
@@ -1159,5 +1159,13 @@ p.image-caption {
   font-size: 14px;
   line-height: 1.2rem;
   color: var(--neutral-30);
-  max-width: 80%;
+  max-width: 80%; */
+
+  display: inline-block;
+  border-radius: 1rem;
+  font-size: 14px;
+  line-height: 1.2rem;
+  color: var(--neutral-30);
+  margin-top: 6px;
+  margin-left: 12px;
 }
