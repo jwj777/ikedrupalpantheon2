@@ -68,6 +68,7 @@ if (isset($_SERVER['REQUEST_URI'])) {
       "/ikeducation/lesson-plans/dogs-defense-hero-hounds" => "/lesson-plan/dogs-defense-hero-hounds",
       "/ikeducation/lesson-plans/dogs-defense-k-9-corps-3-5" => "/lesson-plan/dogs-defense-k-9-corps",
       "/ikeducation/lesson-plans/eisenhower-and-origins-nato" => "/lesson-plan/eisenhower-and-origins-nato",
+      "/ikeducation/lesson-plans/plain-sight-d-day-deception" => "/lesson-plan/plain-sight-d-day-deception",
       "/ikeducation/lesson-plans/eisenhower-and-responsibility-president" => "/lesson-plan/eisenhower-and-responsibility-president",
       "/ikeducation/lesson-plans/eisenhower-and-troops-story-photograph" => "/lesson-plan/eisenhower-and-troops-story-photograph",
       "/ikeducation/teachers" => "/page/teachers-resources",

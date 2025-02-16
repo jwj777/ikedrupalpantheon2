@@ -24,6 +24,7 @@
   We call a macro which calls itself to render the full tree.
   @see https://twig.symfony.com/doc/3.x/tags/macro.html
 #}
+
 {{ menus.menu_links(items, attributes, 0) }}
 
 {% macro menu_links(items, attributes, menu_level) %}
@@ -46,7 +47,6 @@
         <a href="https://www.eisenhowerlibrary.gov/" class="nav2-item" target="_blank">Eisenhower Presidential Library</a>
         <a href="/page/research-travel-grants" class="nav2-item">Research Travel Grants</a>
         <a href="/legacy" class="nav2-item">Legacy Organizations</a>
-        {# <a href="/page/eisenhower-memorial" class="nav2-item in-progress">Eisenhower Memorial</a> #}
       </div>
     </div>
 
@@ -86,19 +86,14 @@
         </a>
       </div>
       <div class="dropdown" id="eduDropdown" style="display: none">
-        <a href="/education-home/ikeducation" class="nav2-item">Explore Education</a>
+        <a href="/education-home/ikeducation" class="nav2-item">Explore IKEducation</a>
         <a href="/page/educators-guide" class="nav2-item">Educator's Guide</a>
         <a href="/page/virtual-classroom" class="nav2-item">IKE Online</a>
         {# <a href="/page/lesson-plans" class="nav2-item">Lesson Plans</a> #}
         <a href="/page/book-your-experience" class="nav2-item">Book Your Experience</a>
-        {# <a href="/page/teachers-resources" class="nav2-item">Teacher's Resources</a> #}
         <a href="/page/primary-source-library" class="nav2-item">Primary Source Library</a>
       </div>
     </div>
-
-    {# <div class="nav1">
-      <a href="/page/ikes-soldiers" class="nav1-item">Ike's Soldiers</a>
-    </div> #}
 
     <div class="nav1 nav-soldiers">
       <div class="nav1-wrapper">
