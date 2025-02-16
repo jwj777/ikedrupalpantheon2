@@ -26,7 +26,7 @@ if (isset($_SERVER['REQUEST_URI'])) {
   // Redirect /ikessoldiers/<soldier-name> to /soldiers/<soldier-name>
   if (preg_match('#^/ikessoldiers/(.*)$#', $path, $matches)) {
       header("HTTP/1.1 301 Moved Permanently");
-      header("Location: /soldiers/" . $matches[1]);
+      header("Location: /soldier/" . $matches[1]);
       exit();
   }
 }
