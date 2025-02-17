@@ -20,14 +20,20 @@ if (getenv('IS_DDEV_PROJECT') == 'true' && is_readable($ddev_settings)) {
 
 
 // Redirects
-
 if (isset($_SERVER['REQUEST_URI'])) {
   $path = $_SERVER['REQUEST_URI'];
 
-  // Redirect /ikessoldiers/<soldier-name> to /soldiers/<soldier-name>
+  // Redirect /ikessoldiers/<soldier-name> to /soldier/<soldier-name>
   if (preg_match('#^/ikessoldiers/(.*)$#', $path, $matches)) {
       header("HTTP/1.1 301 Moved Permanently");
       header("Location: /soldier/" . $matches[1]);
+      exit();
+  }
+
+  // Redirect /primary-source/item/<page> to /primary-source/<page>
+  if (preg_match('#^/primary-source/item/(.*)$#', $path, $matches)) {
+      header("HTTP/1.1 301 Moved Permanently");
+      header("Location: /primary-source/" . $matches[1]);
       exit();
   }
 }
