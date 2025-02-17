@@ -18,6 +18,7 @@ if (getenv('IS_DDEV_PROJECT') == 'true' && is_readable($ddev_settings)) {
   require $ddev_settings;
 }
 
+
 // Redirects
 
 if (isset($_SERVER['REQUEST_URI'])) {
