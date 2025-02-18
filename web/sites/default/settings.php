@@ -83,7 +83,6 @@ if (isset($_SERVER['REQUEST_URI'])) {
       "/quotes" => "/page/eisenhower-quotes",
       // Ike's Life
       "/ikes-life" => "/page/ikes-life",
-      "/ikes-life/boyhood" => "/ikes-life/boyhood",
       "/ikes-life/candidate-1951-1953" => "/ikes-life/candidate",
       "/ikes-life/clouds-war-1935-1940" => "/ikes-life/clouds-war",
       "/ikes-life/early-military" => "/era/early-military",
