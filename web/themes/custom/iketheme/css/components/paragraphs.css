@@ -668,7 +668,7 @@
 
 .paragraph-featured-soldiers {
   max-width: var(--xl);
-  margin: 3rem auto;
+  margin: 3rem auto 4rem auto;
 }
 
 .paragraph-featured-soldiers .paragraph-inner {
