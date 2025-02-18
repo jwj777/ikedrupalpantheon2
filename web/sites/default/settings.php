@@ -3,6 +3,7 @@
 /**
  * Load services definition file.
  */
+
 $settings['container_yamls'][] = __DIR__ . '/services.yml';
 
 include __DIR__ . "/settings.pantheon.php";
@@ -97,10 +98,8 @@ if (isset($_SERVER['REQUEST_URI'])) {
       "/ikes-life/nothing-less-full-victory-1944-1945" => "/ikes-life/nothing-less-full-victory",
       "/ikes-life/post-war-1945-1951" => "/ikes-life/post-war",
       "/ikes-life/president" => "/era/presidency",
-      "/ikes-life/statesman" => "/ikes-life/statesman",
       "/ikes-life/washington-years-1927-1935" => "/ikes-life/washington-years",
       "/ikes-life/watershed-years-1919-1927" => "/ikes-life/watershed-years",
-      "/ikes-life/west-point" => "/ikes-life/west-point",
       // Articles
       "/ike-insight/2019-eisenhower-legacy-award" => "/resources/home",
       "/ike-insight/2020-uss-dwight-d-eisenhower-leadership-awards" => "/resources/home",
