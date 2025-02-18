@@ -57,7 +57,7 @@
 }
 
 .page-node-type-primary-source .field--name-field-main-image img {
-  max-width: 100%;
+  width: 100%;
   margin-bottom: 2rem;
   height: 100%;
 }

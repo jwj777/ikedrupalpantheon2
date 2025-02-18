@@ -441,3 +441,13 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+
+.page-node-type-primary-source .field.field--name-field-audio-file {
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+}
+
+.page-node-type-primary-source .field.field--name-field-audio-file audio {
+  width: 100%;
+}
