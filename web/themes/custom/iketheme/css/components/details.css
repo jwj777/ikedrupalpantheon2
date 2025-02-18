@@ -62,7 +62,7 @@ summary span {
   border-radius: 2rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1376px) {
   #block-iketheme-views-block-soliders-main-block-1 details.form-item {
     width: auto;
   }
