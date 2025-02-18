@@ -27,6 +27,12 @@
   position: relative;
 }
 
+@media screen and (max-width: 712px) {
+  .hero-home {
+    padding: 12rem 0 4rem 0;
+  }
+}
+
 .path-frontpage .header-hero {
   position: relative;
   overflow: hidden;

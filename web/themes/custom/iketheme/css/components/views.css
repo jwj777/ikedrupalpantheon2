@@ -826,11 +826,8 @@
 
 @media screen and (max-width: 968px) {
   .view-featured-events-insights .text-container {
-    width: 100%;
     min-width: auto;
-    background-color: var(--primary-100);
-    border: 1px solid var(--neutral-90);
-    padding: 1.75rem 3rem 1rem 2rem;
+    padding: 1.75rem 1.5rem 1rem 1.5rem;
     border-radius: 1rem;
   }
 }
