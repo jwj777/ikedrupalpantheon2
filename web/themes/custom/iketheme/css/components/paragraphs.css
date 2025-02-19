@@ -757,6 +757,7 @@
   background-color: var(--primary-95);
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 2.25rem 2.8rem;
   border-radius: 1.5rem;
   margin-top: 3rem;
