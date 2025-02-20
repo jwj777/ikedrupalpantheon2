@@ -101,6 +101,7 @@ if (isset($_SERVER['REQUEST_URI'])) {
       "/ikes-life/washington-years-1927-1935" => "/ikes-life/washington-years",
       "/ikes-life/watershed-years-1919-1927" => "/ikes-life/watershed-years",
       // Articles
+      "/index.php/ike-insight/meeting-real-rosie-connie-palacioz" => "/article/meeting-real-rosie-connie-palacioz",
       "/ike-insight/2019-eisenhower-legacy-award" => "/resources/home",
       "/ike-insight/2020-uss-dwight-d-eisenhower-leadership-awards" => "/resources/home",
       "/ike-insight/2021-2022-educators-guide" => "/resources/home",

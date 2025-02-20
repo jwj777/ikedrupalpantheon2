@@ -453,7 +453,8 @@
 }
 
 .paragraph--type--body-text-image h2 {
-  margin-bottom: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 .paragraph--type--body-text-image .field--name-field-text {
@@ -591,6 +592,18 @@
   font-size: 1.5rem;
   font-weight: 400;
   color: var(--primary-10);
+}
+
+.paragraph--type--cards-array .card-title {
+  padding: 1.4rem 2rem 1.6rem 1.8rem;
+  font-family: 'Newsreader';
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--primary-10);
+}
+
+.paragraph--type--cards-array .field--name-field-heading-2 {
+  margin-bottom: 2rem;
 }
 
 .field--name-field-card {
@@ -815,6 +828,24 @@
 
 .paragraph--type--membership-level .paragraph--type--text-and-links {
   margin-bottom: 4rem;
+}
+
+.paragraph--type--text-and-links {
+  background: var(--neutral-95);
+  padding: 3rem;
+  padding-bottom: 3.5rem;
+  border-radius: 1.5rem;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.paragraph--type--text-and-links .paragraph-inner {
+  max-width: 960px;
+}
+
+.paragraph--type--text-and-links h2,
+.paragraph--type--text-and-links .field--name-field-heading-2 {
+  margin-top: 0px;
 }
 
 
