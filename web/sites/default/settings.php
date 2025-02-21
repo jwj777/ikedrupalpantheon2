@@ -42,6 +42,7 @@ if (isset($_SERVER['REQUEST_URI'])) {
 
 if (isset($_SERVER['REQUEST_URI'])) {
   $redirects = [
+      "/field-trip" => "/page/field-trip-teacher-information",
       "/learn/about-the-foundation" => "/page/about-foundation",
       "/ike-insight" => "/resources/home",
       "/index.php/research-travel-grants" => "/page/research-travel-grants",

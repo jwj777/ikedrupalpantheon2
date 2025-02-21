@@ -9,6 +9,7 @@ no background
 .paragraph--type--cards-array {
   max-width: var(--xl);
   margin: 0 auto;
+  margin-bottom: 4rem;
 }
 
 .page-node-type-education .paragraph--type--cards-array {
@@ -102,9 +103,3 @@ with backgrounds
     padding: 28px 32px 44px 32px;
   }
 }
-
-
-/*** 
-columns container
-with backgrounds 
-***/
