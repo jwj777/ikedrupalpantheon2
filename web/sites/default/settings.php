@@ -55,7 +55,7 @@ if (isset($_SERVER['REQUEST_URI'])) {
       "/join-and-give/donor-wall" => "/page/donor-wall",
       "/index.php/ks-tax-credits" => "/page/kansas-tax-credits",
       "/volunteer-0" => "/page/volunteer-eisenhower-foundation",
-      "/sites/default/files/2024-11/I%20LIKE%20IKE%20Case%20Statement.pdf" => "/sites/default/files/2024-11/I%20LIKE%20IKE%20Case%20Statement.pdf",
+      "/sites/default/files/2024-11/I%20LIKE%20IKE%20Case%20Statement.pdf" => "/sites/default/files/2025-02/I%20LIKE%20IKE%20Case%20Statement.pdf",
       // Education Redirects
       "/ikeducation" => "/education-home/ikeducation",
       "/ikeducation/experience" => "/page/book-your-experience",
