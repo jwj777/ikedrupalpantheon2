@@ -1,0 +1,110 @@
+
+
+
+/***
+paragraphs container
+no background
+***/
+
+.paragraph--type--cards-array {
+  max-width: var(--xl);
+  margin: 0 auto;
+}
+
+.page-node-type-education .paragraph--type--cards-array {
+  padding-top: 3rem;
+}
+
+
+/***
+paragraphs container
+with background
+***/
+
+.paragraph--type--text-and-links {
+  background: var(--neutral-95);
+  border-radius: 1.5rem;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+/***
+paragraphs inner
+with background
+***/
+
+.paragraph--type--text-and-links .paragraph-inner {
+  max-width: 960px;
+  padding: 2rem;
+  padding-top: 2.5rem;
+}
+
+
+.node-id-1807 .paragraph--type--cards-array {
+  background-color: var(--primary-95);
+  padding: 3rem 4rem 3rem 4rem;
+  border-radius: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1376px) {
+  .node-id-1807 .paragraph--type--cards-array {
+    width: auto;
+    background-color: var(--primary-95);
+    padding: 2rem 3rem 3rem 3rem;
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .node-id-1807 .paragraph--type--cards-array {
+    width: auto;
+    background-color: var(--primary-98);
+    padding: 0;
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+
+
+/*** 
+columns container
+with backgrounds 
+***/
+
+/** margin for paragraphs in columns **/
+.field--name-field-column-one .paragraph,
+.field--name-field-column-two .paragraph {
+  margin-top: 0px;
+  margin-bottom: 2rem;
+}
+
+.field--name-field-column-one .paragraph--type--link-array,
+.field--name-field-column-two .paragraph--type--link-array,
+.field--name-field-column-one .paragraph--type--body-text,
+.field--name-field-column-two .paragraph--type--body-text,
+.field--name-field-column-one .paragraph--type--upcoming-programs,
+.field--name-field-column-two .paragraph--type--upcoming-programs {
+  background-color: var(--neutral-95);
+  padding: 28px 68px 48px 40px;
+  border-radius: 24px;
+}
+
+@media screen and (max-width: 440px) {
+  .field--name-field-column-one .paragraph--type--link-array,
+  .field--name-field-column-two .paragraph--type--link-array,
+  .field--name-field-column-one .paragraph--type--body-text,
+  .field--name-field-column-two .paragraph--type--body-text,
+  .field--name-field-column-one .paragraph--type--upcoming-programs,
+  .field--name-field-column-two .paragraph--type--upcoming-programs {
+    padding: 28px 32px 44px 32px;
+  }
+}
+
+
+/*** 
+columns container
+with backgrounds 
+***/

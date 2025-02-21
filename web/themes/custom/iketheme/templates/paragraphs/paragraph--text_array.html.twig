@@ -1,0 +1,14 @@
+
+{%
+  set classes = [
+    'content-wrapper',
+    'flex-container',
+    paragraph.field_image_position.value == 'image_right' ? 'imageRight' : 'imageLeft'
+  ]
+%}
+
+<div class="paragraph paragraph--type--text-array">
+  <div class="paragraph-inner">
+    {{ content }}
+  </div>
+</div>

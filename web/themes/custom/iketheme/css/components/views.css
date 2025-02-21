@@ -738,14 +738,20 @@
 
 /** people on the about page **/
 
+.view-people-trustees .view-content,
+.view-people-board-of-directors .view-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .person {
   margin-bottom: 1.5rem;
-  width: 460px;
+  width: 360px;
 }
 
 @media screen and (max-width: 712px) {
   .person {
-    width: auto;
+    width: 92%;
   }
 }
 

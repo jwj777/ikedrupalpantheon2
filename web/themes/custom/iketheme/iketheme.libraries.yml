@@ -64,6 +64,8 @@ base:
         weight: -10
       css/components/layout.css:
         weight: -10
+      css/components/paragraphs-layout.css:
+        weight: -10
       css/components/paragraphs.css:
         weight: -10
       css/components/card.css:

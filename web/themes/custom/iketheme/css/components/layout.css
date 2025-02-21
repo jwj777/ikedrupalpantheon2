@@ -300,8 +300,39 @@
 
 
 /** sidebar right **/
+
+.has-sidebar .node__content {
+  display: flex;
+}
+
+@media screen and (max-width: 968px) {
+  .has-sidebar .node__content {
+    flex-direction: column;
+  }
+}
+
+.has-sidebar .field--name-field-sections-sidebar-right,
 .layout-sidebar-second {
+  flex: 2;
   max-width: 360px;
+}
+
+@media screen and (max-width: 968px) {
+  .has-sidebar .field--name-field-sections-sidebar-right,
+  .layout-sidebar-second {
+    max-width: 100%;
+  }
+}
+
+.has-sidebar .field--name-field-paragraphs {
+  margin-right: 4rem;
+  flex: 1;
+}
+
+@media screen and (max-width: 968px) {
+  .has-sidebar .field--name-field-paragraphs {
+    margin-right: 0rem;
+  }
 }
 
 .page-node-type-primary-source .layout-sidebar-second {

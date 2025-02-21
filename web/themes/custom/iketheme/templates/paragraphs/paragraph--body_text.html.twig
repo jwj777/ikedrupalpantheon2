@@ -10,11 +10,8 @@
 <div class={{"paragraph--type--body-text" ~ content.field_color_scheme|striptags}}>
   <div class="paragraph-inner">
     <div class="text-container">
-      {% if content.field_color_scheme|render|striptags is not empty %}
-        <p class="test">{{ content.field_color_scheme }}</p>
-      {% endif %}
       {% if content.field_heading_2|render|striptags is not empty %}
-        <h2 class="field-text heading-large">{{ content.field_heading_2|render|striptags|raw  }}</h2>
+        <h2 class="field-text heading-medium">{{ content.field_heading_2|render|striptags|raw  }}</h2>
       {% endif %}
       <div class="field-text">{{ content.field_text }}</div>
     </div>

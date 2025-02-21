@@ -39,7 +39,7 @@
   }
 } */
 
-.field--name-field-column-one .paragraph--type--link-array,
+/* .field--name-field-column-one .paragraph--type--link-array,
 .field--name-field-column-two .paragraph--type--link-array,
 .field--name-field-column-one .paragraph--type--body-text,
 .field--name-field-column-two .paragraph--type--body-text,
@@ -50,9 +50,9 @@
   background-color: var(--neutral-95);
   padding: 28px 68px 48px 40px;
   border-radius: 24px;
-}
+} */
 
-@media screen and (max-width: 440px) {
+/* @media screen and (max-width: 440px) {
   .field--name-field-column-one .paragraph--type--link-array,
   .field--name-field-column-two .paragraph--type--link-array,
   .field--name-field-column-one .paragraph--type--body-text,
@@ -63,7 +63,7 @@
   .field--name-field-column-two .paragraph--type--text-and-links {
     padding: 28px 32px 44px 32px;
   }
-}
+} */
 
 .paragraph--type--text-and-links .paragraph-inner .paragraph-inner {
   margin-top: 2rem;
@@ -488,6 +488,13 @@
 }
 
 @media screen and (max-width: 712px) {
+  .paragraph--type--body-text-image .field-image-container img {
+    max-width: 100%;
+    margin-right: 0rem;
+  }
+}
+
+@media screen and (max-width: 712px) {
   .paragraph--type--body-text-image .field--type-image img {
     max-width: none;
     margin-right: 0rem;
@@ -577,15 +584,6 @@
 
 /** cards array **/
 
-.paragraph--type--cards-array {
-  max-width: var(--xl);
-  margin: 0 auto;
-}
-
-.page-node-type-education .paragraph--type--cards-array {
-  padding-top: 3rem;
-}
-
 .page-node-type-education .paragraph--type--cards-array .card-title {
   padding: 1.4rem 2rem 1.6rem 1.8rem;
   font-family: 'Newsreader';
@@ -602,16 +600,13 @@
   color: var(--primary-10);
 }
 
-.paragraph--type--cards-array .field--name-field-heading-2 {
-  margin-bottom: 2rem;
-}
-
 .field--name-field-card {
   display: flex;
   flex-wrap: wrap;
   position: relative;
   width: 100%;
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 968px) {
@@ -637,10 +632,6 @@
   }
 }
 
-.page-node-type-education .field--name-field-card {
-  padding-top: 1.75rem;
-}
-
 .node-id-1807 .field--name-field-card {
   display: flex;
   flex-wrap: nowrap;
@@ -649,10 +640,6 @@
   right: 1rem;
   margin-top: 3rem;
 }
-
-/* .field--name-field-card p {
-  padding: 1rem 1.5rem 1.5rem 1.5rem;
-} */
 
 .paragraph--type--cards-array .field--name-field-text {
   max-width: var(--sm);
@@ -830,17 +817,9 @@
   margin-bottom: 4rem;
 }
 
-.paragraph--type--text-and-links {
-  background: var(--neutral-95);
-  padding: 3rem;
-  padding-bottom: 3.5rem;
-  border-radius: 1.5rem;
-  margin-top: 4rem;
-  margin-bottom: 6rem;
-}
-
-.paragraph--type--text-and-links .paragraph-inner {
-  max-width: 960px;
+.field--name-field-sections-sidebar-right .paragraph--type--text-and-links {
+  margin-top: 0rem;
+  padding-bottom: 0rem;
 }
 
 .paragraph--type--text-and-links h2,
@@ -879,23 +858,6 @@
   color: var(--tertiary-40);
 }
 
-/** about page **/
-
-.node-id-2 .field--name-field-paragraphs {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.node-id-2 .field--name-field-paragraphs .field__item:nth-child(1) {
-  /* width: 560px; */
-  max-width: 560px;
-}
-
-.node-id-2 .field--name-field-paragraphs .field__item:nth-child(2) {
-  /* width: 560px; */
-  /* max-width: 560px; */
-}
-
 .node-id-1807 .field--name-field-paragraphs {
   display: flex;
   flex-wrap: wrap;
@@ -911,33 +873,6 @@
 @media screen and (max-width: 1216px) {
   .node-id-1807 .field--name-field-paragraphs .field__item {
     width: 100%
-  }
-}
-
-.node-id-1807 .paragraph--type--cards-array {
-  background-color: var(--primary-95);
-  padding: 3rem 4rem 3rem 4rem;
-  border-radius: 1.5rem;
-  margin-bottom: 3rem;
-}
-
-@media screen and (max-width: 1376px) {
-  .node-id-1807 .paragraph--type--cards-array {
-    width: auto;
-    background-color: var(--primary-95);
-    padding: 2rem 3rem 3rem 3rem;
-    border-radius: 1.5rem;
-    margin-bottom: 3rem;
-  }
-}
-
-@media screen and (max-width: 712px) {
-  .node-id-1807 .paragraph--type--cards-array {
-    width: auto;
-    background-color: var(--primary-98);
-    padding: 0;
-    border-radius: 1.5rem;
-    margin-bottom: 3rem;
   }
 }
 

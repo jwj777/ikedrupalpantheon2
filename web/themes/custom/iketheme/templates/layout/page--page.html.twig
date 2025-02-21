@@ -1,7 +1,7 @@
-
 {% set header_hero_class = node.field_hero_image is not empty ? 'header-hero' : 'header-hero no-image' %}
+{% set has_sidebar = node.field_sections_sidebar_right is defined and node.field_sections_sidebar_right is not empty ? 'has-sidebar' : 'no-sidebar' %}
 
-<div class="layout-container {% if node is defined %}node-id-{{ node.id }}{% endif %}">
+<div class="layout-container {{ has_sidebar }} {% if node is defined %}node-id-{{ node.id }}{% endif %}">
 
   <div class="{{ header_hero_class }}" style="background-image: url('{{ hero_background_image_url }}');">
     <header role="banner">
@@ -10,9 +10,7 @@
 
     {{ page.primary_menu }}
     {{ page.secondary_menu }}
-
     {{ page.breadcrumb }}
-
     {{ page.highlighted }}
   </div>
 
@@ -28,41 +26,8 @@
     <a id="main-content" tabindex="-1"></a>
 
     <div class="layout-content">
-
       {{ page.content }}
-
-      {# {% if node.field_paragraphs %}
-        <div class="paragraphs-content">
-          <p>Paragraphs Content</p>
-          {% for paragraph in node.field_paragraphs %}
-            {{ paragraph.entity.view }}
-          {% endfor %}
-        </div>
-      {% endif %} #}
-
     </div>
-
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
-
-    {# Render second sidebar if there is content or paragraphs to display #}
-    {% if page.sidebar_second or content.field_paragraphs_sidebar_second is defined %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {# Render sidebar blocks #}
-        {{ page.sidebar_second }}
-
-        {# Render paragraphs from node #}
-        {% if content.field_paragraphs_sidebar_right %}
-          <div class="paragraphs-sidebar">
-            <p>paragraphs sidebar</p>
-            {{ content.field_paragraphs_sidebar_right }} 
-          </div>
-        {% endif %}
-      </aside>
-    {% endif %}
 
   </main>
 
@@ -72,7 +37,6 @@
     </footer>
   {% endif %}
 
+  {% include '@iketheme/templates/layout/footer.html.twig' %}
 
-    {% include '@iketheme/templates/layout/footer.html.twig' %}
-
-</div>{# /.layout-container #}
+</div>
