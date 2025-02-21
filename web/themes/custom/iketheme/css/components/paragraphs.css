@@ -827,6 +827,13 @@
   margin-top: 0px;
 }
 
+.field--name-field-sections-sidebar-right .paragraph .field--name-field-image img {
+  max-width: 100%;
+  object-fit: cover;
+  max-height: 360px;
+  border-radius: 1.5rem;
+}
+
 
 /** sponsorship level **/
 
