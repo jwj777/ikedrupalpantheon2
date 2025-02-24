@@ -1,0 +1,117 @@
+/* General navigation styles */
+.navigation {
+  margin-right: 4rem;
+}
+
+.navigation > ul {
+  display: flex;
+}
+
+/* Top-level menu item styles */
+.navigation .menu-level-0 > li > a {
+  padding: 0.7rem 1.4rem;
+  display: inline-block; 
+  color: var(--neutral-95);
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10rem;
+  text-decoration: none;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-right: 20px;
+}
+
+/* Submenu container */
+.menu-level-1 {
+  display: none; /* Hidden by default */
+  position: absolute;
+  left: 0;
+  background: var(--neutral-95);
+  padding: 1rem 1.5rem !important;
+  border-radius: 1.25rem;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  margin-top: 0.75rem !important;
+  min-width: max-content; /* Ensures container fits the longest menu item */
+}
+
+/* Ensure submenu items stack vertically */
+.menu-level-1 > li {
+  display: block; /* Stack items vertically */
+  margin-bottom: 5px; /* Spacing between items */
+}
+
+/* Submenu item styles */
+.navigation .menu-level-1 > li > a {
+  display: block; /* Ensures full clickable area */
+  padding: 0.4rem 0.2rem;
+  color: var(--primary-50) !important; 
+  text-decoration: underline;
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.navigation .menu-level-1 > li > a:hover {
+  color: var(--primary-30) !important; 
+}
+
+/* Hide markers */
+/* Remove bullets and default markers */
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Ensure child lists also don't have markers */
+.navigation ul li {
+  list-style: none;
+  position: relative;
+}
+
+/* Target any remaining Drupal pseudo-elements */
+.navigation .menu-level-0 > li > a::before,
+.navigation .menu-level-0 > li > a::after {
+  content: none !important;
+  display: none !important;
+}
+/* End Hide Markers */
+
+/* Prevent hover from opening submenus */
+.menu-level-0 > li:hover > .menu-level-1 {
+  display: none;
+}
+
+/* Show submenu when parent has an 'active' class */
+.menu-level-0 > li.active > .menu-level-1 {
+  display: block;
+}
+
+/* Hide default Drupal menu markers */
+.menu-level-0 > li:has(> ul) > a::after {
+  display: none !important;
+}
+
+/* Position the dropdown SVG beside the top-level links */
+.menu-level-0 > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-right: 20px;
+}
+
+/* Style the SVG */
+.menu-level-0 > li > a .dropdown-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  margin-top: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Rotate dropdown icon when submenu is active */
+.menu-level-0 > li.active > a .dropdown-icon {
+  transform: rotate(180deg);
+}
