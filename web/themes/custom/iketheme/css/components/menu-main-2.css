@@ -13,7 +13,7 @@
   display: inline-block; 
   color: var(--neutral-95);
   font-size: 1rem;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.12);
   border-radius: 10rem;
   text-decoration: none;
   margin-right: 1rem;
@@ -21,6 +21,10 @@
   align-items: center;
   position: relative;
   padding-right: 20px;
+}
+
+.navigation .menu-level-0 > li > a:hover {
+  background: rgba(255, 255, 255, 0.20);
 }
 
 /* Submenu container */
