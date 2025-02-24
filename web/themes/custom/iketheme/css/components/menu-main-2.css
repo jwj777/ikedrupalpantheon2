@@ -1,5 +1,11 @@
 
 
+@media screen and (max-width: 1376px) {
+  .navigation {
+    display: none;
+  }
+}
+
 .navigation > ul {
   display: flex;
 }
