@@ -1,9 +1,16 @@
+
+
 document.addEventListener("DOMContentLoaded", function () {
-  // Select all top-level menu items that have submenus
-  const topLevelItems = document.querySelectorAll(".menu-level-0 > li");
+  // Select the desktop navigation container
+  const desktopNav = document.getElementById("block-iketheme-mainnavigation2");
+
+  if (!desktopNav) return; // Exit if desktop nav isn't found
+
+  // Select all top-level menu items that have submenus inside the desktop nav
+  const topLevelItems = desktopNav.querySelectorAll(".menu-level-0 > li");
 
   topLevelItems.forEach((li) => {
-    const link = li.querySelector(":scope > a"); // Select only direct <a> child
+    const link = li.querySelector(":scope > a"); // Direct <a> child
     const submenu = li.querySelector(":scope > .menu-level-1"); // Direct submenu
 
     if (submenu) {

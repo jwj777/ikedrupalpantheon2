@@ -1,0 +1,135 @@
+/* MOBILE MENU CONTAINER (Slide from Left) */
+#block-iketheme-mainnavigation2-2 {
+  position: fixed;
+  top: 0rem;
+  left: -100%; /* Initially offscreen */
+  width: 400px;
+  height: 100vh;
+  background: var(--primary-10);
+  transition: left 0.2s ease-in-out;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  padding: 20px;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+}
+
+/* When active, slide menu into view */
+#block-iketheme-mainnavigation2-2.mobile-menu-open {
+  left: 0 !important;
+}
+
+#block-iketheme-mainnavigation2-2 > ul {
+  width: 100%;
+  padding-left: 0;
+  margin-top: 3rem;
+}
+
+/* Submenus should push content DOWN rather than expanding from center */
+#block-iketheme-mainnavigation2-2 .menu-level-0 > li {
+  position: relative;
+  display: block;
+}
+
+/* Disable background scrolling when menu is open */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Hide all submenus initially */
+#block-iketheme-mainnavigation2-2 .menu-level-1 {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.1s ease-in-out;
+  display: block; /* Prevent flex styling from affecting layout */
+  position: relative; /* Keeps submenu in place */
+  /* padding: 4px; */
+  padding-left: 4px;
+}
+
+/* Ensure submenu items are stacked vertically */
+#block-iketheme-mainnavigation2-2 .menu-level-1 > li {
+  display: block;
+}
+
+/* Style top-level links */
+#block-iketheme-mainnavigation2-2 .menu-level-0 > li > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 14px 24px;
+  border-radius: 10rem;
+  text-decoration: none;
+  color: var(--primary-95);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/** submenu background **/
+#block-iketheme-mainnavigation2-2 .menu-level-0 > li {
+  background: rgba(255, 255, 255, .08);
+  border-radius: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/** submenu background **/
+#block-iketheme-mainnavigation2-2 .menu-level-0 > li li {
+  background: none;
+  border-radius: 0rem;
+  margin-bottom: 0.75rem;
+}
+
+/** submenu links **/
+#block-iketheme-mainnavigation2-2 .menu-level-1 > li > a {
+  background: none;
+  padding: 2px 24px;
+  font-size: 1rem;
+  color: var(--secondary-90);
+}
+
+#block-iketheme-mainnavigation2-2 .menu-level-1 > li > a:hover {
+  color: var(--neutral-100);
+}
+
+/* Style the dropdown icon */
+#block-iketheme-mainnavigation2-2 .menu-dropdown-icon {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Rotate dropdown icon when submenu is active */
+#block-iketheme-mainnavigation2-2 .menu-level-0 > li.active > a .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+#block-iketheme-mainnavigation2-2 svg {
+  height: 16px;
+  width: 16px;
+  color: var(--secondary-90);
+}
+
+/* Style submenu links */
+#block-iketheme-mainnavigation2-2 .menu-level-1 a {
+  display: block;
+  padding: 10px;
+  font-size: 1rem;
+  color: var(--primary-50);
+  text-decoration: none;
+}
+
+/* Ensure submenus expand downward, pushing items below */
+#block-iketheme-mainnavigation2-2 .menu-level-0 > li.active .menu-level-1 {
+  max-height: 500px; /* Adjust this value as needed */
+  transition: max-height 0.1s ease-in-out;
+  padding-top: 1.25rem;
+  padding-bottom: 8px;
+}
+
+/* MOBILE MENU ICON (Now on the Left) */
+.mobile-menu-icon {
+  cursor: pointer;
+  z-index: 10;
+}

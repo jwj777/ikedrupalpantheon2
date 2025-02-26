@@ -1,17 +1,17 @@
 
 
 @media screen and (max-width: 1376px) {
-  .navigation {
+  #block-iketheme-mainnavigation2 {
     display: none;
   }
 }
 
-.navigation > ul {
+#block-iketheme-mainnavigation2 > ul {
   display: flex;
 }
 
 /* Top-level menu item styles */
-.navigation .menu-level-0 > li > a {
+#block-iketheme-mainnavigation2 .menu-level-0 > li > a {
   padding: 0.7rem 1.4rem;
   display: inline-block; 
   color: var(--neutral-95);
@@ -26,12 +26,12 @@
   padding-right: 20px;
 }
 
-.navigation .menu-level-0 > li > a:hover {
+#block-iketheme-mainnavigation2 .menu-level-0 > li > a:hover {
   background: rgba(255, 255, 255, 0.20);
 }
 
 /* Submenu container */
-.menu-level-1 {
+#block-iketheme-mainnavigation2 .menu-level-1 {
   display: none; /* Hidden by default */
   position: absolute;
   left: 0;
@@ -44,18 +44,18 @@
   min-width: max-content; /* Ensures container fits the longest menu item */
 }
 
-.navigation .menu-level-0 > li:last-child > .menu-level-1 {
+#block-iketheme-mainnavigation2 .menu-level-0 > li:last-child > .menu-level-1 {
   left: -7rem;
 }
 
 /* Ensure submenu items stack vertically */
-.menu-level-1 > li {
+#block-iketheme-mainnavigation2 .menu-level-1 > li {
   display: block; /* Stack items vertically */
   margin-bottom: 5px; /* Spacing between items */
 }
 
 /* Submenu item styles */
-.navigation .menu-level-1 > li > a {
+#block-iketheme-mainnavigation2 .menu-level-1 > li > a {
   display: block; /* Ensures full clickable area */
   padding: 0.4rem 0.2rem;
   color: var(--primary-50) !important; 
@@ -63,49 +63,49 @@
   white-space: nowrap; /* Prevents text from wrapping */
 }
 
-.navigation .menu-level-1 > li > a:hover {
+#block-iketheme-mainnavigation2 .menu-level-1 > li > a:hover {
   color: var(--primary-30) !important; 
 }
 
 /* Hide markers */
 /* Remove bullets and default markers */
-.navigation ul {
+#block-iketheme-mainnavigation2 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 /* Ensure child lists also don't have markers */
-.navigation ul li {
+#block-iketheme-mainnavigation2 ul li {
   list-style: none;
   position: relative;
 }
 
 /* Target any remaining Drupal pseudo-elements */
-.navigation .menu-level-0 > li > a::before,
-.navigation .menu-level-0 > li > a::after {
+#block-iketheme-mainnavigation2 .menu-level-0 > li > a::before,
+#block-iketheme-mainnavigation2 .menu-level-0 > li > a::after {
   content: none !important;
   display: none !important;
 }
 /* End Hide Markers */
 
 /* Prevent hover from opening submenus */
-.menu-level-0 > li:hover > .menu-level-1 {
+#block-iketheme-mainnavigation2 .menu-level-0 > li:hover > .menu-level-1 {
   display: none;
 }
 
 /* Show submenu when parent has an 'active' class */
-.menu-level-0 > li.active > .menu-level-1 {
+#block-iketheme-mainnavigation2 .menu-level-0 > li.active > .menu-level-1 {
   display: block;
 }
 
 /* Hide default Drupal menu markers */
-.menu-level-0 > li:has(> ul) > a::after {
+#block-iketheme-mainnavigation2 .menu-level-0 > li:has(> ul) > a::after {
   display: none !important;
 }
 
 /* Position the dropdown SVG beside the top-level links */
-.menu-level-0 > li > a {
+#block-iketheme-mainnavigation2 .menu-level-0 > li > a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -114,7 +114,7 @@
 }
 
 /* Style the SVG */
-.menu-level-0 > li > a .dropdown-icon {
+#block-iketheme-mainnavigation2 .menu-level-0 > li > a .dropdown-icon {
   width: 16px;
   height: 16px;
   margin-left: 8px;
@@ -123,6 +123,6 @@
 }
 
 /* Rotate dropdown icon when submenu is active */
-.menu-level-0 > li.active > a .dropdown-icon {
+#block-iketheme-mainnavigation2 .menu-level-0 > li.active > a .dropdown-icon {
   transform: rotate(180deg);
 }

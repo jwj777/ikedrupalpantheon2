@@ -1,11 +1,7 @@
-/**
- * @file
- * Visual styles for menu.
- */
 
  body.menu-open {
   overflow: hidden;
-  height: 100%; /* Prevent background scrolling */
+  height: 100%; 
 }
 
 .mobile-menu-icon {
@@ -33,7 +29,7 @@
   width: 380px;
   height: 90vh;
   padding: 2rem;
-  z-index: 1000; /* Ensure it is above other elements */
+  z-index: 1000; 
   transition: all 0.3s ease-in-out;
 }
 
@@ -83,7 +79,7 @@
 }
 
 .accordionToggle.visible {
-  max-height: 500px; /* Adjust to fit content */
+  max-height: 500px; 
   opacity: 1;
   visibility: visible;
   padding: 0.75rem 2rem 1rem 2rem;

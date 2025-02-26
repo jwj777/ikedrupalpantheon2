@@ -320,7 +320,7 @@
 @media screen and (max-width: 1216px) {
   .paragraph--type--two-column-text-collage .collage {
     width: 800px;
-    bottom: 100px;
+    bottom: 140px;
     margin-bottom: -100px;
     right: 4rem;
   }
