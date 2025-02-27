@@ -1150,18 +1150,6 @@
 }
 
 p.image-caption {
-  /* position: relative;
-  bottom: 54px;
-  left: 12px;
-  background: var(--neutral-90);
-  display: inline-block;
-  padding: 6px 14px;
-  border-radius: 1rem;
-  font-size: 14px;
-  line-height: 1.2rem;
-  color: var(--neutral-30);
-  max-width: 80%; */
-
   display: inline-block;
   border-radius: 1rem;
   font-size: 14px;
@@ -1169,4 +1157,18 @@ p.image-caption {
   color: var(--neutral-30);
   margin-top: 6px;
   margin-left: 12px;
+}
+
+/** markup and title **/
+
+.paragraph--type--markup-and-title {
+  background: var(--primary-95);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  max-width: 360px;
+}
+
+.paragraph--type--markup-and-title .field--name-field-heading-3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
