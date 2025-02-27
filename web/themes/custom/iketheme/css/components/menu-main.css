@@ -1,17 +1,7 @@
-/**
- * @file
- * Visual styles for menu.
- */
-
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
+/* 
 .nav-container {
   display: flex;
   align-items: center;
-  /* margin-right: 2rem; */
 }
 
 @media screen and (max-width: 1376px) {
@@ -37,7 +27,7 @@
   box-shadow: 3px 6px 6px hsl(227, 0%, 0%) / 0.333;
 }
 
-.nav-container #joinDropdown {
+/* .nav-container #joinDropdown {
   width: 210px;
   right: 0px;
 }
@@ -52,9 +42,9 @@
 
 .nav-container .dropdown a:hover {
   color: var(--primary-30);
-}
+} */
 
-.nav-container a.nav1-item {
+/* .nav-container a.nav1-item {
   font-size: 1.15rem;
   color: #fff;
   text-decoration: none;
@@ -73,15 +63,16 @@
 .nav1-wrapper {
   display: flex;
   align-items: center;
-}
+} */
 
-.nav1-wrapper svg {
+
+/* .nav1-wrapper svg {
   width: 20px;
   height: 20px;
   position: relative;
   top: 4px;
   left: 4px;
-  transition: transform 0.3s ease-in-out; /* Adjust timing and easing as needed */
+  transition: transform 0.3s ease-in-out; 
   transform: rotate(0deg);
 }
 
@@ -102,8 +93,10 @@
 
 .nav2-section .highlight {
   font-weight: 600;
-}
+} */
 
+
+/* 
 body.dropdown-visible-aboutUsDropdown .nav-about a.nav1-item,
 body.dropdown-visible-ikesLifeDropdown .nav-ikes-life a.nav1-item,
 body.dropdown-visible-eduDropdown .nav-edu a.nav1-item,
@@ -119,6 +112,6 @@ body.dropdown-visible-eduDropdown .nav-edu svg,
 body.dropdown-visible-soldiersDropdown .nav-soldiers svg,
 body.dropdown-visible-visitDropdown .nav-visit svg,
 body.dropdown-visible-joinDropdown .nav-join svg {
-  transition: transform 0.1s ease-in-out; /* Adjust timing and easing as needed */
+  transition: transform 0.1s ease-in-out; 
   transform: rotate(180deg);
-}
+} */ 

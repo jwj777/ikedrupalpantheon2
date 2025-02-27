@@ -1,4 +1,30 @@
 
+/** make logo push nav and donate button to the right **/
+#block-iketheme-site-branding {
+  flex: 2;
+}
+
+.donate-button {
+  margin-top: 45px;
+}
+
+@media screen and (max-width: 712px) {
+  .donate-button {
+    display: none;
+  }
+}
+
+.donate-button a {
+  padding: 1.1rem 1.6rem;
+  display: inline-block;
+  background: var(--tertiary-40) !important;
+  color: var(--neutral-95);
+  font-size: 1.05rem;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 10rem;
+  text-decoration: none;
+}
+
 .content-card-light {
   display: inline-block;
   background: var(--primary-95);

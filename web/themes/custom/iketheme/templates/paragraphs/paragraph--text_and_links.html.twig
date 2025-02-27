@@ -12,7 +12,13 @@
     <div class="paragraph-inner">
       {% block content %}
         <h2 class="heading-medium">{{ content.field_heading_2 }}</h2>
-        {{ content|without('field_heading_2') }}
+        {# {{ content|without('field_heading_2') }} #}
+        <p>{{ content.field_body }}</p>
+        <div class="link-container">
+          {{ content.field_call_to_action }}
+          {{ content.field_link_2 }}
+          {{ content.field_link_3 }}
+        </div>
       {% endblock %}
     </div>
   </div>

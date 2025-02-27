@@ -7,17 +7,16 @@
     not paragraph.isPublished() ? 'paragraph--unpublished'
   ]
 %}
-{% block paragraph %}
 
+{% block paragraph %}
   <div class="body-quote">
     <div class="paragraph-inner">
       {% block content %}
-      <div class="field--name-body">
-        <blockquote>{{ content.field_text_quote|render|striptags|raw }}</blockquote>
-        <p class="attribution">{{ '--' ~ content.field_quote_attribution|render|striptags|replace({'’': "'"}) }}</p>
-      </div>
-    {% endblock %}
-    
+        <div class="field--name-body">
+          <blockquote>{{ content.field_text_quote|render|striptags|raw }}</blockquote>
+          <p class="attribution">{{ '--' ~ content.field_quote_attribution|render|striptags|replace({'’': "'"}) }}</p>
+        </div>
+      {% endblock %}
     </div>
   </div>
 {% endblock paragraph %}
