@@ -417,6 +417,7 @@
 .view-lesson-plans .view-content {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 @media screen and (max-width: 1376px) {
@@ -432,9 +433,7 @@
 }
 
 .view-lesson-plans .card-image-title {
-  width: 424px;
-  /* max-width: none; */
-  margin: 0 1rem 2rem 1rem;
+  width: 392px;
   background: var(--primary-90);
   border-radius: 1.5rem;
   overflow: hidden;
@@ -590,8 +589,9 @@
 .view-education-programs .view-content {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -1rem;
   margin-top: -4rem;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 @media screen and (max-width: 1376px) { 
@@ -865,7 +865,7 @@
 
 .view-primary-source-main {
   position: relative;
-  bottom: 6rem;
+  bottom: 12rem;
 }
 
 @media screen and (max-width: 968px) {

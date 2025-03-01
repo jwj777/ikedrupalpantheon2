@@ -114,7 +114,11 @@
 }
 
 .header-hero.no-image .hero-basic {
-  padding: 4rem 0 8rem 0;
+  padding: 4rem 0 14rem 0;
+}
+
+.no-paragraphs.no-image .hero-basic {
+  padding: 4rem 0 4rem 0 !important;
 }
 
 .node-id-1791 .hero-basic {
@@ -125,10 +129,10 @@
   margin-top: -13rem !important;
 }
 
-.node-id-1918 .header-hero.no-image .hero-basic {
+/* .node-id-1918 .header-hero.no-image .hero-basic {
   padding: 0;
   margin-bottom: 15rem;
-}
+} */
 
 .view-hero-education-event {
   max-width: var(--lg);
@@ -162,21 +166,26 @@
 .node-id-36 .hero-basic .view-content {
   max-width: var(--xl);
   margin: 0 auto;
-  padding: 4rem 0 28rem 0 !important;
+  padding: 0rem 0 24rem 0 !important;
 }
 
-.node-id-37 .hero-basic .view-content,
-.node-id-1967 .hero-basic .view-content {
+.node-id-37 .hero-basic .view-content {
   max-width: var(--xl);
   margin: 0 auto;
   padding: 4rem 0 20rem 0 !important;
 }
 
-.node-id-1918 .hero-basic .view-content {
+.node-id-1967 .hero-basic .view-content {
+  max-width: var(--xl);
+  margin: 0 auto;
+  padding: 0rem 0 20rem 0 !important;
+}
+
+/* .node-id-1918 .hero-basic .view-content {
   max-width: var(--xl);
   margin: 0 auto;
   padding: 4rem 0 10rem 0 !important;
-}
+} */
 
 .node-id-36 .region-content {
   margin-top: -24rem !important;
@@ -187,8 +196,9 @@
   margin-bottom: 17rem;
 } */
 
-.node-id-37 .region-content,
-.node-id-1918 .region-content {
+.node-id-37 .region-content
+/* .node-id-1918 .region-content  */
+{
   margin-top: -10rem !important;
 }
 
@@ -253,19 +263,46 @@
   max-width: 840px;
 }
 
-.page-node-type-page .views-field-field-hero-image,
-.page-node-type-primary-source .views-field-field-hero-image,
+.page-node-type-page .view-hero-basic-page-image .row-wrapper,
+.page-node-type-primary-source .views-field-field-hero-image ,
 .page-node-type-ike-s-life .views-field-field-hero-image,
 .page-node-type-newsletter-article .views-field-field-hero-image,
 .page-node-type-ike-s-life-era-group .views-field-field-hero-image {
   max-width: var(--lg);
   position: relative;
   bottom: 12rem;
-  margin-bottom: -9rem;
+  margin-bottom: -12rem;
   overflow: hidden;
   border-radius: 1.5rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.page-node-type-page .view-hero-basic-page-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 440px;
+}
+
+.page-node-type-page .field--name-field-paragraphs {
+  position: relative;
+  bottom: 12rem;
+  margin-top: 2rem;
+}
+
+.page-node-type-page .has-paragraphs.has-image .field--name-field-paragraphs {
+  position: relative;
+  bottom: 0rem;
+}
+
+.page-node-type-page .has-sidebar .field--name-field-sections-sidebar-right {
+  position: relative;
+  bottom: 12rem;
+  margin-top: 2rem;
+}
+
+.page-node-type-page .has-sidebar.has-image .field--name-field-sections-sidebar-right {
+  bottom: 0px;
 }
 
 .page-node-type-ike-s-life-era-group .views-field-field-hero-image {

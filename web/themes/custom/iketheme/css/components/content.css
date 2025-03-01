@@ -33,6 +33,14 @@
   margin-bottom: 3rem;
 }
 
+.page-node-type-page .field--name-body {
+  padding-top: 1rem;
+}
+
+/* .has-paragraphs .field--name-body.field--type-text-with-summary {
+  margin-bottom: 14rem;
+} */
+
 .label-value {
   display: flex;
   align-items: center;

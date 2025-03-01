@@ -1,7 +1,11 @@
-{% set header_hero_class = node.field_hero_image is not empty ? 'header-hero' : 'header-hero no-image' %}
+
+{% set header_hero_class = node.field_hero_image is not empty ? 'header-hero has-image' : 'header-hero no-image' %}
+{% set has_hero_image = node.field_hero_image is not empty ? 'has-image' : 'no-image' %}
+{% set page_has_paragraphs = node.field_paragraphs is not empty ? 'has-paragraphs' : 'no-paragraphs' %}
+{# field--name-field-paragraphs #}
 {% set has_sidebar = node.field_sections_sidebar_right is defined and node.field_sections_sidebar_right is not empty ? 'has-sidebar' : 'no-sidebar' %}
 
-<div class="layout-container {{ has_sidebar }} {% if node is defined %}node-id-{{ node.id }}{% endif %}">
+<div class="layout-container {{ has_sidebar }} {{ page_has_paragraphs }} {{ has_hero_image }} {% if node is defined %}node-id-{{ node.id }}{% endif %}">
 
   <div class="{{ header_hero_class }}" style="background-image: url('{{ hero_background_image_url }}');">
     <header role="banner">

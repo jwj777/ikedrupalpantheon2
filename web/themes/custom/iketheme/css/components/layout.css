@@ -127,12 +127,6 @@
   margin-top: 3rem;
 }
 
-
-/** lesson plan page **/
-.node-id-37 .layout-content {
-  max-width: var(--xl);
-}
-
 @media screen and (max-width: 1376px) {
   .page-node-type-page .layout-content,
   .page-node-type-lesson-plan .layout-content {
@@ -303,6 +297,7 @@
 
 .has-sidebar .node__content {
   display: flex;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 968px) {

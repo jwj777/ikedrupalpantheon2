@@ -118,7 +118,7 @@
 }
 
 .lg-sm-width .field--name-field-column-two {
-  max-width: 400px;
+  max-width: 464px;
   flex: 2;
 }
 
@@ -518,7 +518,7 @@
   margin-bottom: 2rem;
   display: inline-block;
   background: var(--neutral-95);
-  padding: 3.5rem 4rem 2.5rem 2.5rem;
+  padding: 3.5rem 4rem 3.5rem 2.5rem;
   border-radius: 1.5rem;
 }
 
@@ -602,11 +602,11 @@
 
 .field--name-field-card {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
   width: 100%;
-  gap: 2rem;
-  /* margin-top: 2rem; */
+  gap: 1rem;
 }
 
 @media screen and (max-width: 968px) {
@@ -634,11 +634,10 @@
 
 .node-id-1807 .field--name-field-card {
   display: flex;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
   align-content: stretch;
-  position: relative;
-  right: 1rem;
-  margin-top: 3rem;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .paragraph--type--cards-array .field--name-field-text {
@@ -779,15 +778,22 @@
   }
 }
 
-.paragraph--type--text-array .field__item p {
+.paragraph--type--text-array .paragraph--type--body-text p {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 0.75rem;
 }
 
 .paragraph--type--text-array h4 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
+
+.paragraph--type--text-array .paragraph--type--body-text h5 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+
 
 /** friends of the foundation - body paragraph wrapper **/
 
@@ -936,10 +942,10 @@
 .paragraph--type--heading-with-icon-text {
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--primary-90);
+  justify-content: space-between;
+  background-color: var(--neutral-90);
   border-radius: 1rem;
-  margin: 0 1rem;
-  width: 286px;
+  width: 336px;
 }
 
 .paragraph--type--heading-with-icon-text .paragraph-inner {
@@ -985,10 +991,14 @@
 }
 
 .paragraph--type--card-image-title-description {
-  max-width: 412px;
+  max-width: 360px;
   border-radius: 1.5rem;
   overflow: hidden;
   background-color: var(--primary-95);
+}
+
+.no-sidebar .paragraph--type--card-image-title-description {
+  max-width: 348px;
 }
 
 @media screen and (max-width: 712px) {
@@ -1098,10 +1108,14 @@
 
 .paragraph--type--educator-s-guide-block {
   background: var(--neutral-95);
-  padding: 2.5rem 2.5rem 5rem 2.5rem;
+  padding: 2.5rem 2.5rem 4rem 2.5rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
   border-radius: 1.5rem;
+}
+
+.paragraph--type--educator-s-guide-block .subheading {
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 440px) {
@@ -1115,7 +1129,7 @@
 }
 
 .paragraph--type--educator-s-guide-block .paragraph--type--heading-with-icon-text {
-  width: 350px;
+  width: 356px;
   height: 100%;
   margin: 0;
 }
@@ -1125,7 +1139,7 @@
 }
 
 .paragraph--type--educator-s-guide-block .paragraph--type--heading-with-icon-text .paragraph-inner {
-  padding: 2rem 2rem 1rem 2rem;
+  padding: 2rem 2rem 2rem 2rem;
 }
 
 @media screen and (max-width: 440px) {
@@ -1140,7 +1154,7 @@
 .paragraph--type--educator-s-guide-block .field--name-field-call-to-action {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .paragraph--type--educator-s-guide-block .field--name-field-call-to-action a {
@@ -1163,9 +1177,10 @@ p.image-caption {
 
 .paragraph--type--markup-and-title {
   background: var(--primary-95);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 1.5rem;
-  max-width: 360px;
+  max-width: 325px;
+  margin-right: 1rem;
 }
 
 .paragraph--type--markup-and-title .field--name-field-heading-3 {

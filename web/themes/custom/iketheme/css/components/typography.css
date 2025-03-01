@@ -139,6 +139,10 @@ p, li, .body-medium {
   color: var(--neutral-10);
 }
 
+.paragraph p {
+  color: var(--neutral-40);
+}
+
 .body-small {
   font-family: 'Figtree', Georgia, serif;
   font-size: 0.95rem;

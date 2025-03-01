@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * Custom row template for hero_basic_page_education view.
+ *
+ * Available variables:
+ * - fields: An array of fields for this row. Each field contains:
+ *   - content: The field content.
+ *   - raw: The raw field content.
+ *   - class: The safe class id to apply to the field.
+ * - view: The view object.
+ * - row: The raw row from the database query.
+ */
+#}
+
+{% if fields.field_hero_image.content|render is not empty and fields.field_hero_image.content|render matches '/<img/' %}
+  <div class="row-wrapper">
+    {{ fields.field_hero_image.content }}
+  </div>
+{% endif %}

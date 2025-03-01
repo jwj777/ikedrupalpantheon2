@@ -525,11 +525,11 @@ p.text-light {
 
 .card-image-title {
   width: 368px;
-  /* margin: 0 1rem 2rem 1rem; */
   background: var(--primary-95);
   border-radius: 1.5rem;
   overflow: hidden;
   position: relative;
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 968px) {
@@ -539,10 +539,7 @@ p.text-light {
 }
 
 .view-education-programs .card-image-title {
-  width: 376px;
-  right: 1rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  width: 368px;
   margin-bottom: 2rem;
 }
 
