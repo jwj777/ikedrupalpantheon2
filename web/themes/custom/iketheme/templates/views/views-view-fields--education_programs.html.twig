@@ -10,6 +10,8 @@
 {% set url = "/node/" ~ row._entity.nid.value %}
 {% set image = fields.field_summary_image.content %}
 {% set title = fields.title.content|render|striptags|raw %}
+{# {% set subheading = fields.field_subheading.content|striptags|raw %} #}
+{% set subheading = fields.field_subheading_1.content %}
 {% set grade_levels_raw = fields.field_grade_levels_select.content|striptags %}
 {% set flag_link = fields['link_flag'].content %}
 
@@ -21,21 +23,23 @@
   </div>
   <div class="text-container">
     <div class="heading-small">{{ title|raw }}</div>
+    <p class="body-small">{{ subheading }}</p>
+
+    {% if fields.field_subheading is defined %}
+  <p>{{ fields.field_subheading.content }}</p>
+{% else %}
+  <p>Field not found</p>
+{% endif %}
     
     {# Check if grade_levels_raw is set and not empty #}
     {% if grade_levels_raw is not empty %}
       {# Split grade levels by commas #}
       {% set grade_levels = grade_levels_raw|split(',') %}
-      
-      {# Debug the grade_levels array #}
-      {# {{ dump(grade_levels) }} #}
-      {# {{ dump(fields.field_scheduling_link.content) }} #}
-      
       {# Check if grade_levels array is properly set and has values #}
       {% if grade_levels is defined and grade_levels|length > 0 %}
         {% set first_grade = grade_levels|first %}
         {% set last_grade = grade_levels|last %}
-        <p>Grade Levels: {{ first_grade }} - {{ last_grade }}</p>
+        <p class="grade-levels">Grade Levels: {{ first_grade }} - {{ last_grade }}</p>
       {% else %}
         <p>No grade levels available</p>
       {% endif %}

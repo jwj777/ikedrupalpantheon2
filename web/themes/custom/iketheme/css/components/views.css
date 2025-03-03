@@ -698,6 +698,10 @@
   margin-top: 0px;
 }
 
+.view-education-programs .grade-levels {
+  margin-top: 1rem;
+}
+
 .view-education-programs .view-filters {
   display: flex;
   justify-content: flex-end;
