@@ -546,15 +546,15 @@
 
 @media screen and (max-width: 1376px) {
   .view-lesson-plans .js-form-item-keys label {
-    top: -218px;
+    top: 52px;
   }
 }
 
-@media screen and (max-width: 712px) {
+/* @media screen and (max-width: 712px) {
   .view-lesson-plans .js-form-item-keys label {
     top: -300px;
   }
-}
+} */
 
 #edit-field-grade-levels-select-value ul {
   display: flex;
