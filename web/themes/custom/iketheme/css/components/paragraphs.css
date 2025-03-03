@@ -252,7 +252,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 3rem;
-  max-width: 420px;
+  /* max-width: 420px; */
 }
 
 .paragraph--type--two-column-image-text-block .tertiary-links p {
