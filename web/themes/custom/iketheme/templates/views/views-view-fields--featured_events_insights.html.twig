@@ -42,8 +42,7 @@
     {% endif %}
   </div>
   <div class="text-container">
-    <div class="label-small">Insights</div>
-    <p class="title-large">{{ title|raw }}</p>
-    <p class="body-small">{{ date }}</p>
+    <h4 class="heading-small">{{ title|raw }}</h4>
+    <p class="body-small">{{ fields.field_summary_text.content }}</p>
   </div>
 </a>

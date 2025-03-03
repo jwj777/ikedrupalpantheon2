@@ -200,14 +200,34 @@
 .view-news-main-v2 .view-content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 1216px) {
+  .view-news-main-v2 .view-content {
+    max-width: 968px;
+  }
 }
 
 .view-news-main-v2 .views-row {
-  flex: 1 1 370px;
-  max-width: 370px;
-  margin: 0 1rem 2rem 1rem;
-  position: relative;
-  right: 1rem;
+  flex: 1 1 368px;
+  max-width: 368px;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1216px) {
+  .view-news-main-v2 .views-row {
+    flex: 1 1 432px;
+    max-width: 432px;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .view-news-main-v2 .views-row {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
 
 .view-news-main-v2 .views-row:hover,
@@ -234,6 +254,23 @@
   max-height: 400px;
   object-fit: cover;
 }
+
+@media screen and (max-width: 1216px) {
+  .view-news-main-v2 img {
+    max-width: 432px;
+    max-height: 432px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .view-news-main-v2 img {
+    max-width: 100%;
+    max-height: 432px;
+    object-fit: cover;
+  }
+}
+
 
 .view-news-main-v2 h4 {
   display: none;
@@ -324,6 +361,13 @@
   }
 }
 
+@media screen and (max-width: 968px) {
+  .view-news-featured .views-field-nothing {
+    padding: 3rem 3rem 2.5rem 2.5rem;
+    margin-right: 0rem;
+  }
+}
+
 .view-news-featured .views-field-nothing h2,
 .view-news-featured .views-field-nothing p,
 .view-news-featured .views-field-nothing a,
@@ -353,7 +397,7 @@
 
 .view-news-featured .views-field-field-summary-image .field-content {
   border-radius: 1.5rem;
-  margin-top: 5rem;
+  margin-top: 4rem;
   overflow: hidden;
 }
 
@@ -364,8 +408,8 @@
 }
 
 .view-news-featured img {
-  height: 360px;
-  width: 396px;
+  height: 440px;
+  width: 540px;
   object-fit: cover;
 }
 
@@ -838,16 +882,21 @@
   }
 }
 
-.view-featured-events-insights .title-large {
-  max-width: 360px;
-  margin-bottom: 1.5rem;
+.view-featured-events-insights h2 {
+  margin-bottom: 2rem;
+}
+
+.view-featured-events-insights h4 {
+  max-width: 400px;
+  margin: 0;
+  color: var(--primary-50);
 }
 
 
 .view-featured-events-insights img {
-  width: 192px;
+  width: 212px;
   height: 100%;
-  max-height: 192px;
+  height: 124px;
   object-fit: cover;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;

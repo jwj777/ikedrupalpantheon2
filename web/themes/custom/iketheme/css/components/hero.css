@@ -267,6 +267,7 @@
 .page-node-type-primary-source .views-field-field-hero-image ,
 .page-node-type-ike-s-life .views-field-field-hero-image,
 .page-node-type-newsletter-article .views-field-field-hero-image,
+.page-node-type-newsletter-article .view-hero-basic-page-image .row-wrapper,
 .page-node-type-ike-s-life-era-group .views-field-field-hero-image {
   max-width: var(--lg);
   position: relative;
@@ -276,6 +277,7 @@
   border-radius: 1.5rem;
   margin-left: auto;
   margin-right: auto;
+  height: 440px;
 }
 
 .page-node-type-page .view-hero-basic-page-image img {
@@ -407,8 +409,15 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1216px) {
+  .page-node-type-news-home .hero-basic .view-content {
+    margin-right: var(--gutter-lg);
+    margin-left: var(--gutter-lg);
+  }
+}
+
 .page-node-type-newsletter-article .hero-basic .view-content {
-  max-width: var(--lg);
+  max-width: var(--lg-article);
   margin: 0 auto;
 }
 

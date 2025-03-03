@@ -446,3 +446,7 @@
 .page-node-type-primary-source .field.field--name-field-audio-file audio {
   width: 100%;
 }
+
+.page-node-type-newsletter-article .node__content {
+  margin-top: 3rem;
+}

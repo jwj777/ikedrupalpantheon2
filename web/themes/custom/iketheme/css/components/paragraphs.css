@@ -89,7 +89,7 @@
 }
 
 .sm-lg-width .field--name-field-column-one {
-  max-width: 420px;
+  max-width: 440px;
 }
 
 @media screen and (max-width: 1216px) {
@@ -99,7 +99,7 @@
 }
 
 .sm-lg-width .field--name-field-column-two {
-  max-width: 880px;
+  max-width: none;
   flex: 2;
 }
 
@@ -737,6 +737,10 @@
 
 .field--name-field-column-two {
   min-width: 360px;
+}
+
+.field--name-field-column-two h2 {
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 560px) {

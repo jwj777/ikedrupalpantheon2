@@ -2,6 +2,7 @@
 :root {
   --xl: 1376px;
   --lg: 1216px;
+  --lg-article: 1040px;
   --md: 968px;
   --sm: 712px;
   --xs: 440px;
@@ -227,6 +228,11 @@
 .page-node-type-newsletter-article .region-content,
 .node-id-1918 .region-content {
   max-width: var(--xl);
+  margin: 0 auto;
+}
+
+.page-node-type-newsletter-article .region-content {
+  max-width: var(--lg-article);
   margin: 0 auto;
 }
 
