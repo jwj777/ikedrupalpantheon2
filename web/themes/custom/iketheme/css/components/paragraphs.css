@@ -1177,8 +1177,8 @@ p.image-caption {
   margin-left: 12px;
 }
 
-/** markup and title **/
 
+/** markup and title **/
 .paragraph--type--markup-and-title {
   background: var(--primary-95);
   padding: 1.5rem;
@@ -1190,4 +1190,51 @@ p.image-caption {
 .paragraph--type--markup-and-title .field--name-field-heading-3 {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+}
+
+.paragraph--type--webform-reference .paragraph-inner {
+  display: flex;
+  background: var(--neutral-95);
+  padding: 2rem 3rem;
+  border-radius: 1.5rem;
+}
+
+@media screen and (max-width: 1216px) {
+  .paragraph--type--webform-reference .paragraph-inner {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .paragraph--type--webform-reference .paragraph-inner {
+    flex-direction: column;
+  }
+}
+
+.paragraph--type--webform-reference .text-container {
+  padding-right: 4rem;
+}
+
+@media screen and (max-width: 1216px) {
+  .paragraph--type--webform-reference .text-container {
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .paragraph--type--webform-reference .text-container {
+    padding-right: 0;
+  }
+}
+
+.paragraph--type--webform-reference .text-container h2 {
+  max-width: 480px;
+}
+
+.paragraph--type--webform-reference input {
+  border: 1px solid var(--neutral-70);
+}
+
+.field--name-field-webform-reference-field {
+  margin-top: -2rem;
 }

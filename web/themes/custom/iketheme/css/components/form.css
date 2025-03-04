@@ -255,3 +255,8 @@ abbr.ajax-changed {
   color: red;
   font-weight: bold;
 }
+
+/** paragraph form reference **/
+.paragraph--type--webform-reference .field__label {
+  display: none;
+}

@@ -1,0 +1,12 @@
+
+<div class="paragraph paragraph--type--webform-reference">
+  <div class="paragraph-inner">
+    <div class="text-container">
+      {% if content.field_heading_2|render|striptags is not empty %}
+        <h2 class="field-text heading-medium">{{ content.field_heading_2|render|striptags|raw  }}</h2>
+      {% endif %}
+      <p>{{ content.field_body }}</p>
+    </div>
+      <div class="field-webform-reference">{{ content.field_webform_reference_field }}</div>
+  </div>
+</div>
