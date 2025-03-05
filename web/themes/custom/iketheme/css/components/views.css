@@ -630,6 +630,12 @@
   margin-top: 0rem;
 }
 
+@media screen and (max-width: 968px) {
+  .view-education-programs {
+    margin-top: 7rem;
+  }
+}
+
 .view-education-programs .view-content {
   display: flex;
   flex-wrap: wrap;
@@ -652,7 +658,7 @@
 
 @media screen and (max-width: 968px) { 
   .view-education-programs .view-content {
-    margin-top: 6rem;
+    margin-top: -2rem;
     margin-left: 0;
   }
 }
@@ -705,13 +711,13 @@
 .view-education-programs .view-filters {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: -6rem;
+  margin-bottom: -7rem;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1216px) {
   .view-education-programs .view-filters {
     justify-content: flex-start;
-    margin-bottom: 0px;
+    margin-bottom: 4rem;
   }
 }
 
@@ -731,6 +737,13 @@
   padding: 0.4rem 2rem;
   border-radius: 1rem;
   border: 1px solid var(--neutral-90);
+}
+
+@media screen and (max-width: 968px) {
+  .view-education-programs .views-exposed-form {
+    padding: 0.4rem 2rem 1rem 2rem;
+    width: 80%;
+  }
 }
 
 .view-education-programs .form-actions {
@@ -895,7 +908,6 @@
   margin: 0;
   color: var(--primary-50);
 }
-
 
 .view-featured-events-insights img {
   width: 212px;

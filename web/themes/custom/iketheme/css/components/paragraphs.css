@@ -1195,7 +1195,7 @@ p.image-caption {
 .paragraph--type--webform-reference .paragraph-inner {
   display: flex;
   background: var(--neutral-95);
-  padding: 2rem 3rem;
+  padding: 2rem 3rem 3rem 3rem;
   border-radius: 1.5rem;
 }
 
