@@ -612,9 +612,10 @@
 @media screen and (max-width: 968px) {
 }
 
-@media screen and (max-width: 1216px) {
+@media screen and (max-width: 968px) {
   .node-id-1918 .field--name-field-card {
     justify-content: center;
+    gap: 2rem;
   }
 }
 

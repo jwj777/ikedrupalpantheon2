@@ -233,7 +233,7 @@ primary sources
   .node-id-36 .hero-basic .view-content {
     max-width: var(--xl);
     margin: 0 auto;
-    padding: 0rem 0 36rem 0 !important;
+    padding: 4rem 0 36rem 0 !important;
   }
 }
 
@@ -241,7 +241,7 @@ primary sources
   .node-id-36 .hero-basic .view-content {
     max-width: var(--sm);
     margin: 0 auto;
-    padding: 0rem 0 0rem 0 !important;
+    padding: 4rem 0 4rem 0 !important;
   }
 }
 
@@ -249,7 +249,6 @@ primary sources
   .node-id-36 .hero-basic .view-content {
     max-width: none;
     margin: 0 var(--gutter-lg);
-    padding: 0rem 0 0rem 0 !important;
   }
 }
 
@@ -358,7 +357,7 @@ primary sources
 
 .page-node-type-page .field--name-field-paragraphs {
   position: relative;
-  bottom: 12rem;
+  /* bottom: 12rem; */
   margin-top: 2rem;
 }
 
@@ -680,7 +679,7 @@ primary sources
 .hero-buttons {
   display: flex;
   margin-top: 2.5rem;
-  margin-bottom: 7em;
+  /* margin-bottom: 7em; */
 }
 
 
@@ -709,4 +708,5 @@ primary sources
   border-radius: 10rem;
   text-decoration: none;
   line-height: 24px;
+  color: var(--primary-10);
 }

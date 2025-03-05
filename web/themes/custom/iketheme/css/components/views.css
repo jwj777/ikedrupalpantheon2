@@ -630,6 +630,12 @@
   margin-top: 0rem;
 }
 
+@media screen and (max-width: 1216px) {
+  .view-education-programs {
+    margin-top: 5rem;
+  }
+}
+
 @media screen and (max-width: 968px) {
   .view-education-programs {
     margin-top: 7rem;
