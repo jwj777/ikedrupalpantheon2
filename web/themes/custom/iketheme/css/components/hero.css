@@ -366,6 +366,11 @@ primary sources
   bottom: 0rem;
 }
 
+.page-node-type-page .has-paragraphs.no-image .field--name-field-paragraphs {
+  position: relative;
+  bottom: 12rem;
+}
+
 .page-node-type-page .has-sidebar .field--name-field-sections-sidebar-right {
   position: relative;
   bottom: 12rem;

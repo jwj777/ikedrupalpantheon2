@@ -1,10 +1,14 @@
-
 document.addEventListener('DOMContentLoaded', function () {
   const formItems = document.querySelectorAll('.webform-submission-form .form-item');
 
   formItems.forEach(function (formItem) {
     const input = formItem.querySelector('input');
     const label = formItem.querySelector('label');
+
+    // Ensure both input and label exist before applying logic
+    if (!input || !label) {
+      return; // Skip this form item if input or label is missing
+    }
 
     // Check if input contains text on page load and apply 'active' class
     if (input.value.trim() !== '') {
