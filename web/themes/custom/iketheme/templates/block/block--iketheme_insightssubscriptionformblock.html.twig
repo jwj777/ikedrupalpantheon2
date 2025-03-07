@@ -1,57 +1,26 @@
-<div class="contextual-region block block-block-content subscription-form insights-form">
+<div id="block-iketheme-formforinsights" class="contextual-region block block-block-content subscription-form insights-form">
   <div class="block-inner">
     
-    <div class="text-container"> {# Wrap only the text fields inside this div #}
-
+    <div class="text-container">
       <div class="field field--name-field-form-title label-medium">
         Subscribe To Insights
       </div>
-      
+
       <div class="heading-large">
         Get Updates Delivered To Your Inbox
       </div>
-      
+
       <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
         <div class="field-inner">
           <p class="body-medium">Enter your information below to receive emails about news and updates about the foundation.</p>
         </div>
       </div>
+    </div>
 
-    </div> {# Close text-container #}
-    
-    {# The form is not inside the text-container #}
+    {# Render the Webform using Drupal's `content` variable #}
     <div class="form-container">
-      <form class="webform-submission-form webform-submission-add-form webform-submission-join-mailing-list-form js-webform-details-toggle" method="post" accept-charset="UTF-8">
-        
-        <div class="js-form-item form-item js-form-type-textfield form-type-textfield required">
-          <label for="edit-first-name">First Name</label>
-          <div class="form-item">
-            <input type="text" id="edit-first-name" name="first_name" value="" size="60" class="form-text">
-          </div>
-        </div>
+      {{ content }}
+    </div>
 
-        <div class="js-form-item form-item js-form-type-textfield form-type-textfield required">
-          <label for="edit-last-name">Last Name</label>
-          <div class="form-item">
-            <input type="text" id="edit-last-name" name="last_name" value="" size="60" class="form-text">
-          </div>
-        </div>
-
-        <div class="js-form-item form-item js-form-type-email form-type-email required">
-          <label for="edit-email">Email</label>
-          <div class="form-item">
-            <input type="email" id="edit-email" name="email" value="" size="60" class="form-email">
-          </div>
-        </div>
-
-        <div class="form-actions js-form-wrapper form-wrapper">
-          <div class="form-item">
-            <input class="webform-button--submit button button--primary js-form-submit form-submit" type="submit" id="edit-submit" name="op" value="Submit">
-          </div>
-        </div>
-
-      </form>
-    </div> {# Close form wrapper #}
-
-  </div> {# Close block-inner #}
-</div> {# Close block #}
+  </div>
+</div>

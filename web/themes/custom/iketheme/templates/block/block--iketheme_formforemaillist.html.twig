@@ -1,125 +1,26 @@
 <div id="block-iketheme-formforemaillist" class="contextual-region block block-block-content subscription-form education-form">
   <div class="block-inner">
     
-    <div class="text-container"> {# Wrap only the text fields inside this div #}
-
+    <div class="text-container">
       <div class="field field--name-field-form-title label-medium">
         Subscribe To Education Updates
       </div>
-      
+
       <div class="heading-large">
         Get Updates About Our Education Programs Delivered To Your Inbox
       </div>
-      
+
       <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
         <div class="field-inner">
           <p class="body-medium">Enter your information below to receive emails about foundation news and upcoming events.</p>
         </div>
       </div>
+    </div>
 
-    </div> {# Close text-container #}
-    
-    {# The form is not inside the text-container #}
+    {# Render the Webform using Drupal's `content` variable #}
     <div class="form-container">
-      <form class="webform-submission-form webform-submission-add-form webform-submission-join-mailing-list-form js-webform-details-toggle" method="post" accept-charset="UTF-8">
-        
-        <div class="js-form-item form-item js-form-type-textfield form-type-textfield required">
-          <label for="edit-first-name">First Name</label>
-          <div class="form-item">
-            <input type="text" id="edit-first-name" name="first_name" value="" size="60" class="form-text" required>
-          </div>
-        </div>
+      {{ content }}
+    </div>
 
-        <div class="js-form-item form-item js-form-type-textfield form-type-textfield required">
-          <label for="edit-last-name">Last Name</label>
-          <div class="form-item">
-            <input type="text" id="edit-last-name" name="last_name" value="" size="60" class="form-text" required>
-          </div>
-        </div>
-
-        <div class="js-form-item form-item js-form-type-email form-type-email required">
-          <label for="edit-email">Email</label>
-          <div class="form-item">
-            <input type="email" id="edit-email" name="email" value="" size="60" class="form-email" required>
-          </div>
-        </div>
-
-        <div class="js-form-item form-item js-form-type-select form-type-select required">
-          {# <label for="edit-grade-level">Grade Level</label> #}
-          <select id="edit-grade-level" name="grade_level" class="form-select" required>
-            <option value="" selected="selected">- Select Grade Level -</option>
-            <option value="K - 2nd">K - 2nd</option>
-            <option value="3rd - 5th">3rd - 5th</option>
-            <option value="Middle School">Middle School</option>
-            <option value="High School">High School</option>
-          </select>
-        </div>
-
-        <div class="js-form-item form-item js-form-type-select form-type-select required">
-          {# <label for="edit-state">Your State</label> #}
-          <select id="edit-state" name="state" class="form-select" required>
-            <option value="" selected="selected">- Select Your State -</option>
-            <option value="Alabama">Alabama</option>
-            <option value="Alaska">Alaska</option>
-            <option value="Arizona">Arizona</option>
-            <option value="Arkansas">Arkansas</option>
-            <option value="California">California</option>
-            <option value="Colorado">Colorado</option>
-            <option value="Connecticut">Connecticut</option>
-            <option value="Delaware">Delaware</option>
-            <option value="Florida">Florida</option>
-            <option value="Georgia">Georgia</option>
-            <option value="Hawaii">Hawaii</option>
-            <option value="Idaho">Idaho</option>
-            <option value="Illinois">Illinois</option>
-            <option value="Indiana">Indiana</option>
-            <option value="Iowa">Iowa</option>
-            <option value="Kansas">Kansas</option>
-            <option value="Kentucky">Kentucky</option>
-            <option value="Louisiana">Louisiana</option>
-            <option value="Maine">Maine</option>
-            <option value="Maryland">Maryland</option>
-            <option value="Massachusetts">Massachusetts</option>
-            <option value="Michigan">Michigan</option>
-            <option value="Minnesota">Minnesota</option>
-            <option value="Mississippi">Mississippi</option>
-            <option value="Missouri">Missouri</option>
-            <option value="Montana">Montana</option>
-            <option value="Nebraska">Nebraska</option>
-            <option value="Nevada">Nevada</option>
-            <option value="New Hampshire">New Hampshire</option>
-            <option value="New Jersey">New Jersey</option>
-            <option value="New Mexico">New Mexico</option>
-            <option value="New York">New York</option>
-            <option value="North Carolina">North Carolina</option>
-            <option value="North Dakota">North Dakota</option>
-            <option value="Ohio">Ohio</option>
-            <option value="Oklahoma">Oklahoma</option>
-            <option value="Oregon">Oregon</option>
-            <option value="Pennsylvania">Pennsylvania</option>
-            <option value="Rhode Island">Rhode Island</option>
-            <option value="South Carolina">South Carolina</option>
-            <option value="South Dakota">South Dakota</option>
-            <option value="Tennessee">Tennessee</option>
-            <option value="Texas">Texas</option>
-            <option value="Utah">Utah</option>
-            <option value="Vermont">Vermont</option>
-            <option value="Virginia">Virginia</option>
-            <option value="Washington">Washington</option>
-            <option value="West Virginia">West Virginia</option>
-            <option value="Wisconsin">Wisconsin</option>
-            <option value="Wyoming">Wyoming</option>
-          </select>
-        </div>
-
-        <div class="form-actions js-form-wrapper form-wrapper">
-          <div class="form-item">
-            <input class="webform-button--submit button button--primary js-form-submit form-submit" type="submit" id="edit-submit" name="op" value="Submit">
-          </div>
-        </div>
-
-      </form>
-    </div> {# Close form wrapper #}
-
-  </div> {# Close block-inner #}
-</div> {# Close block #}
+  </div>
+</div>

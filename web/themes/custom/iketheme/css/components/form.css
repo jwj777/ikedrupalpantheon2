@@ -211,7 +211,8 @@ fieldset.webform-composite-hidden-title {
 }
 
 .webform-submission-form .js-form-type-number label,
-.webform-submission-form .js-form-type-textfield label {
+.webform-submission-form .js-form-type-textfield label,
+.webform-submission-form .js-form-type-email label {
   display: inline-block;
   position: relative;
   top: 60px;
@@ -237,7 +238,8 @@ fieldset.webform-composite-hidden-title {
 }
 
 .webform-submission-form .js-form-type-number label.active,
-.webform-submission-form .js-form-type-textfield label.active {
+.webform-submission-form .js-form-type-textfield label.active,
+.webform-submission-form .js-form-type-email label.active {
   top: 34px;
   left: 20px;
   color: var(--neutral-40);

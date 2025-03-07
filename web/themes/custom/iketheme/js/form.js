@@ -1,30 +1,53 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const formItems = document.querySelectorAll('.webform-submission-form .form-item');
+  console.log("Form script loaded!");
 
-  formItems.forEach(function (formItem) {
-    const input = formItem.querySelector('input');
-    const label = formItem.querySelector('label');
+  function initializeForm() {
+    const formItems = document.querySelectorAll('.webform-submission-form .form-item');
 
-    // Ensure both input and label exist before applying logic
-    if (!input || !label) {
-      return; // Skip this form item if input or label is missing
+    console.log(`Found ${formItems.length} form items`);
+
+    if (formItems.length === 0) {
+      console.warn("No form items found. Retrying in 500ms...");
+      setTimeout(initializeForm, 500); // Retry after delay
+      return;
     }
 
-    // Check if input contains text on page load and apply 'active' class
-    if (input.value.trim() !== '') {
-      label.classList.add('active');
-    }
+    formItems.forEach(function (formItem, index) {
+      const input = formItem.querySelector('input, select');
+      const label = formItem.querySelector('label');
 
-    // Add 'active' class when input is focused
-    input.addEventListener('focus', function () {
-      label.classList.add('active');
-    });
+      if (!input || !label) {
+        console.warn(`Skipping form item ${index}: Missing input or label`);
+        return;
+      }
 
-    // Remove 'active' class when input loses focus, but only if input is empty
-    input.addEventListener('blur', function () {
-      if (input.value.trim() === '') {
-        label.classList.remove('active');
+      console.log(`Processing input: ${input.name || input.id}`);
+
+      function checkInput() {
+        if (input.value.trim() !== '') {
+          label.classList.add('active');
+        } else {
+          label.classList.remove('active');
+        }
+      }
+
+      checkInput();
+
+      input.addEventListener('focus', function () {
+        label.classList.add('active');
+      });
+
+      input.addEventListener('blur', function () {
+        checkInput();
+      });
+
+      if (input.tagName === 'SELECT') {
+        input.addEventListener('change', function () {
+          checkInput();
+        });
       }
     });
-  });
+  }
+
+  initializeForm();
 });

@@ -23,7 +23,7 @@
   background: rgba(255, 255, 255, 0.12);
   border-radius: 10rem;
   text-decoration: none;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   display: flex;
   align-items: center;
   position: relative;
@@ -40,8 +40,8 @@
   position: absolute;
   left: 0;
   background: var(--neutral-95);
-  padding: 1rem 1.5rem !important;
-  border-radius: 1.25rem;
+  padding: 1.25rem 1.5rem 1rem 1.5rem !important;
+  border-radius: 1.4rem;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
   z-index: 10;
   margin-top: 0.75rem !important;
