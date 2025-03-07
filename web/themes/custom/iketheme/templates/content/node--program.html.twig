@@ -1,0 +1,43 @@
+{{ attach_library('iketheme/node') }}
+
+<article{{ attributes.addClass(classes) }}>
+
+  <div{{ content_attributes.addClass('node__content') }}>
+    
+    {# Wrap text content fields inside text-container #}
+    <div class="text-container">
+      
+      {# Render the Subheading if it exists #}
+      {% if node.field_subheading.value is not empty %}
+        <div class="subheading">
+          <p>{{ node.field_subheading.value }}</p>
+        </div>
+      {% endif %}
+
+      {# Render the Body Field #}
+      {% if node.body.value is not empty %}
+        <div class="body-content">
+          {{ node.body.value|raw }}
+        </div>
+      {% endif %}
+
+      {# Render the Grade Levels Field #}
+      {% if node.field_grade_levels_select.value is not empty %}
+        <div class="grade-levels">
+          <p class="label">Grade Levels</p>
+          <p>{{ node.field_grade_levels_select.value }}</p>
+        </div>
+      {% endif %}
+
+    </div> {# /.text-container #}
+
+    {# Render the Summary Image if it exists #}
+    {% if node.field_summary_image.entity.uri.value is not empty %}
+      <div class="image-container">
+        <img src="{{ file_url(node.field_summary_image.entity.uri.value) }}" alt="Summary Image">
+      </div>
+    {% endif %}
+  
+  </div>
+
+</article>

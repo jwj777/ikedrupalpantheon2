@@ -115,6 +115,8 @@
 .page-node-type-primary-source .layout-content,
 .page-node-type-newsletter-article .layout-content,
 .page-node-type-ike-s-life-era-group .layout-content,
+.page-node-type-event .layout-content,
+.page-node-type-program .layout-content,
 .node-id-2117 .layout-content {
   max-width: var(--lg);
   margin: 0 auto;
@@ -130,14 +132,15 @@
 
 @media screen and (max-width: 1376px) {
   .page-node-type-page .layout-content,
-  .page-node-type-lesson-plan .layout-content {
+  .page-node-type-lesson-plan .layout-content,
+  .page-node-type-event .layout-content,
+  .page-node-type-program .layout-content {
     max-width: var(--lg);
     margin: 0 var(--gutter-xl);
   } 
 }
 
 @media screen and (max-width: 1376px) {
-  /* .page-node-type-lesson-plan .layout-content, */
   .page-node-type-primary-source .layout-content,
   .node-id-2117 .layout-content  {
     margin: 0 var(--gutter-lg);
@@ -167,6 +170,11 @@
   } 
 }
 
+.page-node-type-event .region-content,
+.page-node-type-program .region-content {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
 
 .page-node-type-soldier main,
 .page-node-type-primary-source main {

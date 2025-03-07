@@ -10,6 +10,7 @@
 .page-node-type-news-home .header-hero,
 .page-node-type-newsletter-article .header-hero,
 .page-node-type-education .header-hero,
+.page-node-type-event .header-hero,
 .page-node-type-education-event .header-hero,
 .page-node-type-lesson-plan .header-hero,
 .page-node-type-ike-s-life-era-group .header-hero {
@@ -117,11 +118,16 @@
   padding: 4rem 0 14rem 0;
 }
 
-.no-paragraphs.no-image .hero-basic {
+.no-paragraphs.no-image .hero-basic,
+.page-node-type-event .hero-basic {
   padding: 4rem 0 4rem 0 !important;
 }
 
-.node-id-1791 .hero-basic {
+.page-node-type-event .hero-basic .label-medium {
+  color: var(--neutral-90);
+}
+
+.node-id-1791 .region-highlighted .hero-basic {
   padding: 4rem 0 16rem 0 !important;
 }
 
@@ -135,6 +141,8 @@
   margin-top: -13rem !important;
 }
 
+
+.node-id-1791 
 
 
 .view-hero-education-event {
