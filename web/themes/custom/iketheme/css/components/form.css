@@ -390,3 +390,81 @@ fieldset.webform-composite-hidden-title {
   margin-bottom: 0.5rem;
   display: block;
 }
+
+.node-soldier-form {
+  max-width: var(--md);
+  margin: 0 auto;
+  padding: 3rem;
+  padding-bottom: 4rem;
+  background: var(--neutral-95);
+}
+
+.node-soldier-form details > .details-wrapper {
+  padding: 0;
+}
+
+.node-soldier-form .js-form-item label {
+  font-weight: 600;
+}
+
+.node-soldier-form .form-item {
+  margin-top: 4px;
+}
+
+.node-soldier-form select {
+  margin-top: 4px;
+  padding: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.node-soldier-form input.js-text-full {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--neutral-70);
+}
+
+.node-soldier-form .js-media-library-widget {
+  background: var(--neutral-90);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.node-soldier-form .js-form-type-textarea {
+  margin-bottom: 1rem;
+}
+
+.node-soldier-form textarea {
+  min-height: 120px;
+  background: var(--neutral-100);
+  border: 1px solid var(--neutral-70);
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.node-soldier-form .js-form-type-select {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.node-soldier-form .js-form-type-date {
+  margin-bottom: 4px;
+  margin-top: 0px;
+}
+
+.node-soldier-form .js-filter-wrapper {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.node-soldier-form .js-form-type-managed-file {
+  background: var(--neutral-90);
+  padding: 1.5rem 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-radius: 1.5rem;
+}
+
