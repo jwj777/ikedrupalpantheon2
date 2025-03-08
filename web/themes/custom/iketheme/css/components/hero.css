@@ -1,7 +1,7 @@
 
 
 .header-hero {
-  background: #333;
+  background-image: linear-gradient(to right, var(--primary-20), var(--primary-40)) !important;
 }
 
 .page-node-type-page .header-hero,

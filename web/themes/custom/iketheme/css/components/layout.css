@@ -13,6 +13,15 @@
   --gutter-xs: 24px;
 }
 
+/** soldiers form header **/
+.path-node .region-header .region-inner {
+  padding-bottom: 1rem;
+}
+
+.path-node .layout-content {
+  background: var(--neutral-95);
+}
+
 .region-header {
   display: flex;
   justify-content: center;
