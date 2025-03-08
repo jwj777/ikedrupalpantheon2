@@ -39,13 +39,19 @@
 }
 
 .paragraph--type--link .button a,
-.paragraph--type--two-column-text-collage .field--name-field-link a {
+.paragraph--type--two-column-text-collage .field--name-field-link a,
+.view-content-for-programs a.button {
   display: inline-block;
   background-color: var(--primary-40);
   color: var(--neutral-100);
   padding: 1rem 1.4rem;
   border-radius: 10rem;
   text-decoration: none;
+}
+
+.view-content-for-programs a.button {
+  margin-left: 0px;
+  margin-top: 1rem;
 }
 
 .paragraph--type--link .button a:hover {
