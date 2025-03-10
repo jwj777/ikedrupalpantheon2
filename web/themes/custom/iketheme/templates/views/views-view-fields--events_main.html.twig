@@ -42,7 +42,7 @@
       <h2 class="heading-large">{{ title }}</h2>
       <p class="body-medium">{{ subheading }}</p>
     </div>
-    <p class="body-medium">{{ date }}</p>
+    <p class="body-medium">{{ date|date('F d, Y') }}</p>
   </div>
   <div class="events-summary-image">
     {% if image %}
