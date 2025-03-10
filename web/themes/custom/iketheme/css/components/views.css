@@ -935,6 +935,12 @@
   margin-bottom: 8px;
 }
 
+.view-featured-events-insights .view-footer a {
+  display: block;
+  margin-top: 2rem;
+  text-decoration: underline;
+}
+
 /** primary source main **/
 
 .view-primary-source-main {
