@@ -1,8 +1,8 @@
 
 
-.header-hero {
-  background-image: linear-gradient(to right, var(--primary-20), var(--primary-40)) !important;
-}
+/* .header-hero {
+  background: linear-gradient(to right, var(--primary-20), var(--primary-40)) !important;
+} */
 
 .page-node-type-page .header-hero,
 .page-node-type-primary-source .header-hero,

@@ -12,7 +12,7 @@ database:
 use_dns_when_possible: true
 composer_version: "2"
 web_environment:
-- TERMINUS_MACHINE_TOKEN=3PvNoEc2_euhZeKcFyCDbWVYaB23i9YWDb6j6M5oc8Le6
+    - TERMINUS_MACHINE_TOKEN=3PvNoEc2_euhZeKcFyCDbWVYaB23i9YWDb6j6M5oc8Le6
 
 # Key features of DDEV's config.yaml:
 
