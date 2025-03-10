@@ -120,12 +120,14 @@
 }
 
 .no-paragraphs.no-image .hero-basic,
-.page-node-type-event .hero-basic {
+.page-node-type-event .hero-basic,
+.page-node-type-education-event .hero-basic {
   padding: 4rem 0 4rem 0 !important;
 }
 
-.page-node-type-event .hero-basic .label-medium {
-  color: var(--neutral-90);
+.page-node-type-event .hero-basic .label-medium,
+.page-node-type-education-event .hero-basic .label-medium  {
+  color: var(--secondary-90);
 }
 
 .node-id-1791 .region-highlighted .hero-basic {

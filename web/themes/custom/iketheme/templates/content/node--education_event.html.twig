@@ -26,7 +26,9 @@
       {% if content.field_education_event_date %}
         <div class="field education-event-date">
           <p class="field__label">Event Date</p>
-          <div class="field-value">{{ content.field_education_event_date['#items'][0].value  }}</div>
+          <div class="field-value">
+            {{ content.field_education_event_date['#items'][0].value|date('F d, Y') }}
+          </div>
         </div>
       {% endif %}
     
