@@ -8,14 +8,16 @@
 <div class="layout-container {{ has_sidebar }} {{ page_has_paragraphs }} {{ has_hero_image }} {% if node is defined %}node-id-{{ node.id }}{% endif %}">
 
   <div class="{{ header_hero_class }}" style="background-image: url('{{ hero_background_image_url }}');">
-    <header role="banner">
-      {{ page.header }}
-    </header>
+    <div class="hero-inner">
+      <header role="banner">
+        {{ page.header }}
+      </header>
 
-    {{ page.primary_menu }}
-    {{ page.secondary_menu }}
-    {{ page.breadcrumb }}
-    {{ page.highlighted }}
+      {{ page.primary_menu }}
+      {{ page.secondary_menu }}
+      {{ page.breadcrumb }}
+      {{ page.highlighted }}
+    </div>
   </div>
 
   {% if page.hero_bottom %}
