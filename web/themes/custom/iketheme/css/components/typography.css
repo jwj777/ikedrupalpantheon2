@@ -83,7 +83,8 @@ h2.display-medium,
 .paragraph--type--card-image-title-description .field--name-field-heading-3,
 .field--name-field-sections-sidebar-right .field--name-field-heading-2,
 .view-lesson-plans .view-content h3,
-.view-primary-source-main .view-content h3  {
+.view-primary-source-main .view-content h3,
+.field--name-field-sections-sidebar-right .paragraph--type--body-text h3  {
   font-family: 'Newsreader', Georgia, serif;
   font-size: 1.7rem;
   line-height: 1.95rem;
@@ -132,7 +133,8 @@ h2.display-medium,
   line-height: 1.8rem;
 }
 
-p, li, .body-medium {
+p, li, .body-medium,
+.field--name-field-subheading {
   font-family: 'Figtree', Georgia, serif;
   font-size: 1.05rem;
   line-height: 1.6rem;

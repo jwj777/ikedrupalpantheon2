@@ -532,6 +532,10 @@ p.text-light {
   margin-bottom: 1rem;
 }
 
+.has-sidebar .card-image-title {
+  width: 388px;
+}
+
 @media screen and (max-width: 968px) {
   .card-image-title {
     width: 312px;

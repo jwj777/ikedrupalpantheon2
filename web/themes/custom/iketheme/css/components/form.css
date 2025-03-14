@@ -3,6 +3,12 @@
  * Visual styles for form components.
  */
 
+
+ /** hides revision fields on node add form for soldiers **/
+.node-soldier-form .js-form-type-vertical-tabs {
+  display: none;
+}
+
 form .field-multiple-table {
   margin: 0;
 }
@@ -120,6 +126,17 @@ abbr.ajax-changed {
     height: auto;
     margin-bottom: -4rem;
   }
+}
+
+.webform-submission-form .js-webform-type-checkboxes {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.webform-submission-form .js-webform-type-checkboxes .js-form-type-checkbox {
+  height: 28px;
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
 }
 
 .webform-submission-form .js-form-type-number {

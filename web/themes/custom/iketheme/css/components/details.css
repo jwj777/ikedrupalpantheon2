@@ -33,6 +33,10 @@ summary {
   padding: 1rem 1.45rem;
 }
 
+.node-soldier-form summary {
+  background: var(--neutral-90);
+}
+
 details{
   border: none;
 }

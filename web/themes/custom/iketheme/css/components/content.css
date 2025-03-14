@@ -160,8 +160,6 @@
   margin-bottom: 2rem;
 }
 
-
-
 .field--name-field-sections-sidebar-right .paragraph {
   background: var(--neutralVariant-95);
   width: 372px;
@@ -169,6 +167,11 @@
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 440px) {
+  .field--name-field-sections-sidebar-right .paragraph {
+    width: auto;
+  }
+}
 
 @media screen and (max-width: 968px) {
   .node-id-1809 .field--name-field-sections-sidebar-right .paragraph,

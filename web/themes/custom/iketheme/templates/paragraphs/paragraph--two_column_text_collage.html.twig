@@ -34,47 +34,45 @@
       
       </div>
 
-    {% if paragraph.field_image_collage %}
-      <div class="collage">
-        {% for item in paragraph.field_image_collage %}
-        {# {{ dump(item.entity._referringItem.value.caption) }} #}
-          {# Check if it's the first item #}
-          {% if loop.index == 1 %}
-            <div class="image-row-1">
-              <div class="image-item">
-                <img src="{{ file_url(item.entity.fileuri) }}" alt="{{ item._referringItem.values.alt }}" />
-                {% if item.entity._referringItem.value.caption is not empty %}
-                    <p class="image-caption">{{ item.entity._referringItem.value.caption }}</p>
-                {% endif %}
+      {% if paragraph.field_image_collage %}
+        <div class="collage">
+          {% for item in paragraph.field_image_collage %}
+          {# {{ dump(item.entity._referringItem.value.caption) }} #}
+            {# Check if it's the first item #}
+            {% if loop.index == 1 %}
+              <div class="image-row-1">
+                <div class="image-item">
+                  <img src="{{ file_url(item.entity.fileuri) }}" alt="{{ item._referringItem.values.alt }}" />
+                  {% if item.entity._referringItem.value.caption is not empty %}
+                      <p class="image-caption">{{ item.entity._referringItem.value.caption }}</p>
+                  {% endif %}
+                </div>
               </div>
-            </div>
-          {% endif %}
-          
-          {# For the second and third items, open a new div before the second item #}
-          {% if loop.index == 2 %}
-            <div class="image-row-2">
-          {% endif %}
-          
-          {# Render the second and third items #}
-          {% if loop.index > 1 and loop.index < 4 %}
-              <div class="image-item">
-                <img src="{{ file_url(item.entity.fileuri) }}" alt="{{ item._referringItem.values.alt }}" />
-                {% if item.entity._referringItem.value.caption is not empty %}
-                    <p class="image-caption">{{ item.entity._referringItem.value.caption }}</p>
-                {% endif %}
-              </div>
-          {% endif %}
-          
-          {# Close the div after the third item #}
-          {% if loop.index == 3 %}
-            </div> {# Closing .image-row-2 #}
-          {% endif %}
-        {% endfor %}
-      </div>
-    {% endif %}
-    
-    {{ dump(paragraph.field_link) }}
-    {{ dump(content.field_link) }}
+            {% endif %}
+            
+            {# For the second and third items, open a new div before the second item #}
+            {% if loop.index == 2 %}
+              <div class="image-row-2">
+            {% endif %}
+            
+            {# Render the second and third items #}
+            {% if loop.index > 1 and loop.index < 4 %}
+                <div class="image-item">
+                  <img src="{{ file_url(item.entity.fileuri) }}" alt="{{ item._referringItem.values.alt }}" />
+                  {% if item.entity._referringItem.value.caption is not empty %}
+                      <p class="image-caption">{{ item.entity._referringItem.value.caption }}</p>
+                  {% endif %}
+                </div>
+            {% endif %}
+            
+            {# Close the div after the third item #}
+            {% if loop.index == 3 %}
+              </div> {# Closing .image-row-2 #}
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+  
 
       {% endblock %}
     </div>

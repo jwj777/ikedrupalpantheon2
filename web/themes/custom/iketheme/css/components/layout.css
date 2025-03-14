@@ -38,6 +38,10 @@
   }
 }
 
+.layout-container {
+  margin: 0;
+}
+
 .node-id-1807 {
   background-color: var(--primary-98);
 }
@@ -48,7 +52,6 @@
 
 .layout-content {
   flex: 2;
-  /* padding-right: 8rem; */
   background: #fff;
 }
 
