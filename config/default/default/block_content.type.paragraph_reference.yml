@@ -1,8 +1,0 @@
-uuid: 05843400-0124-4ba5-8d84-41a4293fd3c4
-langcode: en
-status: true
-dependencies: {  }
-id: paragraph_reference
-label: 'Paragraph Reference'
-revision: false
-description: ''
