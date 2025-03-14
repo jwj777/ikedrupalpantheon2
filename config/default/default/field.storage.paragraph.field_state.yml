@@ -1,0 +1,36 @@
+uuid: 04f96032-e858-4c86-8aee-8c6e775907e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_state
+field_name: field_state
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: alabama
+      label: Alabama
+    -
+      value: alaska
+      label: Alaska
+    -
+      value: arizona
+      label: Arizona
+    -
+      value: arkansas
+      label: Arkansas
+    -
+      value: california
+      label: California
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

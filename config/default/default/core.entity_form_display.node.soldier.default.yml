@@ -1,0 +1,354 @@
+uuid: 318959a6-69d4-41b5-879b-e2b725bb8a6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.soldier.body
+    - field.field.node.soldier.feeds_item
+    - field.field.node.soldier.field_approximate_date_discharge
+    - field.field.node.soldier.field_approximate_date_enlisted
+    - field.field.node.soldier.field_battle
+    - field.field.node.soldier.field_biographical_information
+    - field.field.node.soldier.field_birthplace
+    - field.field.node.soldier.field_branch_of_service
+    - field.field.node.soldier.field_date_of_birth
+    - field.field.node.soldier.field_date_of_death
+    - field.field.node.soldier.field_discharge_date
+    - field.field.node.soldier.field_documents
+    - field.field.node.soldier.field_enlisted_commissioned_date
+    - field.field.node.soldier.field_featured
+    - field.field.node.soldier.field_first_name
+    - field.field.node.soldier.field_gender
+    - field.field.node.soldier.field_highest_rank
+    - field.field.node.soldier.field_home_town
+    - field.field.node.soldier.field_honored_by
+    - field.field.node.soldier.field_killed_in_action
+    - field.field.node.soldier.field_last_name
+    - field.field.node.soldier.field_meta_tags
+    - field.field.node.soldier.field_middle_initial
+    - field.field.node.soldier.field_military_honors
+    - field.field.node.soldier.field_prisoner_of_war
+    - field.field.node.soldier.field_solider_image
+    - field.field.node.soldier.field_suffix
+    - field.field.node.soldier.field_theater_of_operation
+    - field.field.node.soldier.field_unit
+    - field.field.node.soldier.field_video
+    - field.field.node.soldier.field_video_url
+    - field.field.node.soldier.field_your_email_address
+    - field.field.node.soldier.field_your_phone_number
+    - image.style.thumbnail
+    - node.type.soldier
+    - workflows.workflow.soldiers_workflow
+  module:
+    - content_moderation
+    - datetime
+    - file
+    - image
+    - media_library
+    - metatag
+    - path
+    - text
+id: node.soldier.default
+targetEntityType: node
+bundle: soldier
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 31
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_approximate_date_discharge:
+    type: boolean_checkbox
+    weight: 23
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_approximate_date_enlisted:
+    type: boolean_checkbox
+    weight: 22
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_battle:
+    type: options_select
+    weight: 25
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_biographical_information:
+    type: text_textarea
+    weight: 10
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_birthplace:
+    type: string_textfield
+    weight: 17
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_branch_of_service:
+    type: options_select
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_date_of_birth:
+    type: datetime_default
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_date_of_death:
+    type: datetime_default
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_discharge_date:
+    type: datetime_default
+    weight: 24
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_documents:
+    type: file_generic
+    weight: 30
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_enlisted_commissioned_date:
+    type: datetime_default
+    weight: 21
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_featured:
+    type: boolean_checkbox
+    weight: 35
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_first_name:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_gender:
+    type: options_select
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_highest_rank:
+    type: string_textfield
+    weight: 32
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_home_town:
+    type: string_textfield
+    weight: 18
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_honored_by:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_killed_in_action:
+    type: boolean_checkbox
+    weight: 28
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_last_name:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 37
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
+  field_middle_initial:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_military_honors:
+    type: string_textarea
+    weight: 26
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_prisoner_of_war:
+    type: boolean_checkbox
+    weight: 29
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_solider_image:
+    type: image_image
+    weight: 11
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_suffix:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_theater_of_operation:
+    type: options_select
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_unit:
+    type: string_textfield
+    weight: 19
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_video:
+    type: media_library_widget
+    weight: 33
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_video_url:
+    type: string_textfield
+    weight: 34
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_your_email_address:
+    type: string_textfield
+    weight: 39
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_your_phone_number:
+    type: string_textfield
+    weight: 40
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 38
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 36
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  feeds_item: true

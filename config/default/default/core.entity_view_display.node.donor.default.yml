@@ -1,0 +1,48 @@
+uuid: fd0d36dd-34be-4a18-b593-4d26ddfad41a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.donor.body
+    - field.field.node.donor.feeds_item
+    - field.field.node.donor.field_club_affiliation
+    - field.field.node.donor.field_sort_order
+    - node.type.donor
+  module:
+    - options
+    - text
+    - user
+id: node.donor.default
+targetEntityType: node
+bundle: donor
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_club_affiliation:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_sort_order:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true

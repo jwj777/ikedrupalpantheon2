@@ -1,0 +1,29 @@
+uuid: 4949ec21-cdd2-44ee-9be9-6bc37b3151f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_program_reference
+    - node.type.education_event
+    - node.type.program
+id: node.education_event.field_program_reference
+field_name: field_program_reference
+entity_type: node
+bundle: education_event
+label: 'Program Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      program: program
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

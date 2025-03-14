@@ -1,0 +1,22 @@
+uuid: c71ee730-6dff-48e1-a37b-4177a6ea156e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: soldier
+label: Soldier
+type: 'canonical_entities:node'
+pattern: '/soldier/[node:title]'
+selection_criteria:
+  389c904d-12f9-4ad9-b5af-e237aa0f3fea:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 389c904d-12f9-4ad9-b5af-e237aa0f3fea
+    context_mapping:
+      node: node
+    bundles:
+      soldier: soldier
+selection_logic: and
+weight: -5
+relationships: {  }

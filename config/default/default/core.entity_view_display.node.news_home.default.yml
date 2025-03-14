@@ -1,0 +1,30 @@
+uuid: 447712d5-910c-47e3-a8b9-37785fb8afbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news_home.body
+    - field.field.node.news_home.field_subheading
+    - node.type.news_home
+  module:
+    - text
+    - user
+id: node.news_home.default
+targetEntityType: node
+bundle: news_home
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_subheading: true

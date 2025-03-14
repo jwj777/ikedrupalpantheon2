@@ -1,0 +1,82 @@
+uuid: 5bdced2c-f3d2-43bf-b608-278f53b082fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.join_email_list
+    - field.field.contact_message.join_email_list.field_email_address
+    - field.field.contact_message.join_email_list.field_first_name
+    - field.field.contact_message.join_email_list.field_grade_level_of_your_studen
+    - field.field.contact_message.join_email_list.field_last_name
+id: contact_message.join_email_list.default
+targetEntityType: contact_message
+bundle: join_email_list
+mode: default
+content:
+  copy:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_email_address:
+    type: string_textfield
+    weight: 53
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_first_name:
+    type: string_textfield
+    weight: 51
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_grade_level_of_your_studen:
+    type: options_select
+    weight: 54
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_last_name:
+    type: string_textfield
+    weight: 52
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  mail:
+    weight: -40
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 12
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    weight: -50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  preview:
+    weight: 40
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

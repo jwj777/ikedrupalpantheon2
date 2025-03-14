@@ -1,0 +1,22 @@
+uuid: d574c72d-1312-4ace-b026-8f8cf6ebf6ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: primary_sources
+label: 'Primary Sources'
+type: 'canonical_entities:node'
+pattern: '/primary-source/[node:title]'
+selection_criteria:
+  101c2717-2b29-48d0-98b0-7e7984cba821:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 101c2717-2b29-48d0-98b0-7e7984cba821
+    context_mapping:
+      node: node
+    bundles:
+      primary_source: primary_source
+selection_logic: and
+weight: -5
+relationships: {  }

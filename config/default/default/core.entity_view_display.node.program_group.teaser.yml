@@ -1,0 +1,22 @@
+uuid: b4cafd9c-87bf-47df-98be-25a4772bcdfe
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.program_group.field_subheading
+    - node.type.program_group
+  module:
+    - user
+id: node.program_group.teaser
+targetEntityType: node
+bundle: program_group
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_subheading: true

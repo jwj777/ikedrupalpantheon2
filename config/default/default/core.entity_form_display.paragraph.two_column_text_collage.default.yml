@@ -1,0 +1,78 @@
+uuid: 989828bc-3c76-4be9-a099-d7b9adbb6e26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.two_column_text_collage.field_block_label
+    - field.field.paragraph.two_column_text_collage.field_body
+    - field.field.paragraph.two_column_text_collage.field_heading_2
+    - field.field.paragraph.two_column_text_collage.field_image_collage
+    - field.field.paragraph.two_column_text_collage.field_link
+    - field.field.paragraph.two_column_text_collage.field_paragraph_padding_bottom
+    - field.field.paragraph.two_column_text_collage.field_paragraph_padding_top
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.two_column_text_collage
+  module:
+    - image
+    - link
+    - text
+id: paragraph.two_column_text_collage.default
+targetEntityType: paragraph
+bundle: two_column_text_collage
+mode: default
+content:
+  field_block_label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_body:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_heading_2:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_image_collage:
+    type: image_image
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_paragraph_padding_bottom:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_paragraph_padding_top:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

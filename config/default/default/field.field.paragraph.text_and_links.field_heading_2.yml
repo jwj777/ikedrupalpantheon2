@@ -1,0 +1,19 @@
+uuid: 20c4b811-96eb-42e8-980e-ce5a0bf4e2e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading_2
+    - paragraphs.paragraphs_type.text_and_links
+id: paragraph.text_and_links.field_heading_2
+field_name: field_heading_2
+entity_type: paragraph
+bundle: text_and_links
+label: 'Heading 2'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

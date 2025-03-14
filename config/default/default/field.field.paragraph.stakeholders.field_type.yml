@@ -1,0 +1,21 @@
+uuid: d5a29807-4476-4556-a8c9-b07661f3f056
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_type
+    - paragraphs.paragraphs_type.stakeholders
+  module:
+    - options
+id: paragraph.stakeholders.field_type
+field_name: field_type
+entity_type: paragraph
+bundle: stakeholders
+label: Type
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

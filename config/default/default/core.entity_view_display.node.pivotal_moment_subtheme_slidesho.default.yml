@@ -1,0 +1,56 @@
+uuid: a96e5b12-ecdd-4d9e-9adc-01538c1bec8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pivotal_moment_subtheme_slidesho.body
+    - field.field.node.pivotal_moment_subtheme_slidesho.feeds_item
+    - field.field.node.pivotal_moment_subtheme_slidesho.field_display_title
+    - field.field.node.pivotal_moment_subtheme_slidesho.field_subtheme_parent
+    - field.field.node.pivotal_moment_subtheme_slidesho.field_subtheme_slides
+    - field.field.node.pivotal_moment_subtheme_slidesho.field_subtheme_x
+    - field.field.node.pivotal_moment_subtheme_slidesho.field_subtheme_y
+    - node.type.pivotal_moment_subtheme_slidesho
+  module:
+    - text
+    - user
+id: node.pivotal_moment_subtheme_slidesho.default
+targetEntityType: node
+bundle: pivotal_moment_subtheme_slidesho
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  flag_bookmark:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  flag_save_lesson:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  flag_save_program:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  feeds_item: true
+  field_display_title: true
+  field_subtheme_parent: true
+  field_subtheme_slides: true
+  field_subtheme_x: true
+  field_subtheme_y: true
+  uuid: true

@@ -1,0 +1,31 @@
+uuid: caa478b1-01c2-47e1-944e-261857fed6c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.webform
+    - field.field.block_content.webform.body
+    - field.field.block_content.webform.field_form_title
+    - field.field.block_content.webform.field_headline
+    - field.field.block_content.webform.field_webform_reference
+  module:
+    - webform
+id: block_content.webform.default
+targetEntityType: block_content
+bundle: webform
+mode: default
+content:
+  field_webform_reference:
+    type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: true
+      lazy: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_form_title: true
+  field_headline: true
+  uuid: true

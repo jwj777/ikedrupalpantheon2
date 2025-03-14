@@ -1,0 +1,19 @@
+uuid: dd97c0cd-0e74-439c-972d-c9ae8adde37e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subheading
+    - node.type.ike_s_life_era_group
+id: node.ike_s_life_era_group.field_subheading
+field_name: field_subheading
+entity_type: node
+bundle: ike_s_life_era_group
+label: Subheading
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

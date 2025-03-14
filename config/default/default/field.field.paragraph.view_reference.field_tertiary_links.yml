@@ -1,0 +1,24 @@
+uuid: 3bbe298e-e1de-434d-b6d4-9db54195568b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tertiary_links
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.view_reference
+  module:
+    - text
+id: paragraph.view_reference.field_tertiary_links
+field_name: field_tertiary_links
+entity_type: paragraph
+bundle: view_reference
+label: 'Tertiary Links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

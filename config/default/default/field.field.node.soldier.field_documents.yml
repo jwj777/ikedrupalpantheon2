@@ -1,0 +1,27 @@
+uuid: 446be7a9-9cbc-4844-aff3-a39fce640afd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_documents
+    - node.type.soldier
+  module:
+    - file
+id: node.soldier.field_documents
+field_name: field_documents
+entity_type: node
+bundle: soldier
+label: Documents
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf png jpg jpeg doc docx'
+  max_filesize: ''
+  description_field: false
+field_type: file

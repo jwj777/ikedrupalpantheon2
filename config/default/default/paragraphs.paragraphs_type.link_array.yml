@@ -1,0 +1,10 @@
+uuid: a6d6528d-8c3c-4394-8bd8-21a3f1f8f310
+langcode: en
+status: true
+dependencies: {  }
+id: link_array
+label: 'Link Array'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

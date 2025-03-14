@@ -1,0 +1,23 @@
+uuid: 350a6835-134b-4475-a043-a3701782c1d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_padding_top
+    - paragraphs.paragraphs_type.two_column_image_text_block
+  module:
+    - options
+id: paragraph.two_column_image_text_block.field_paragraph_padding_top
+field_name: field_paragraph_padding_top
+entity_type: paragraph
+bundle: two_column_image_text_block
+label: 'Paragraph Padding Top'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: md
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,18 @@
+uuid: 35e7d2be-8fda-4eb4-9074-a695e83b608d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'News Home'
+type: news_home
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

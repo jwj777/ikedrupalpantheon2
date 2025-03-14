@@ -1,0 +1,30 @@
+uuid: d92361b0-26f7-4537-8e9c-d1af5c669e58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_reference_field
+    - paragraphs.paragraphs_type.view_reference
+  module:
+    - viewsreference
+id: paragraph.view_reference.field_reference_field
+field_name: field_reference_field
+entity_type: paragraph
+bundle: view_reference
+label: 'Reference Field'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  plugin_types:
+    block: block
+  preselect_views: {  }
+  enabled_settings:
+    limit: 0
+field_type: viewsreference

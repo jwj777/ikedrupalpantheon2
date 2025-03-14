@@ -1,0 +1,123 @@
+uuid: 3059cdbf-a763-4a40-ab0d-67e1d505c610
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sections_sidebar_right
+    - node.type.page
+    - paragraphs.paragraphs_type.body_text
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.link
+    - paragraphs.paragraphs_type.link_array
+    - paragraphs.paragraphs_type.text_and_links
+    - paragraphs.paragraphs_type.two_column_image_text_block
+    - paragraphs.paragraphs_type.two_column_text_collage
+    - paragraphs.paragraphs_type.view_reference
+  module:
+    - entity_reference_revisions
+id: node.page.field_sections_sidebar_right
+field_name: field_sections_sidebar_right
+entity_type: node
+bundle: page
+label: 'Sections Sidebar Right'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text_and_links: text_and_links
+      two_column_image_text_block: two_column_image_text_block
+      two_column_text_collage: two_column_text_collage
+      view_reference: view_reference
+      body_text: body_text
+      link: link
+      image: image
+      link_array: link_array
+    negate: 0
+    target_bundles_drag_drop:
+      body_quote:
+        weight: 24
+        enabled: false
+      body_text:
+        weight: 25
+        enabled: true
+      body_text_image:
+        weight: 26
+        enabled: false
+      body_text_image_array:
+        weight: 27
+        enabled: false
+      card_image_title:
+        weight: 29
+        enabled: false
+      card_image_title_description:
+        weight: 33
+        enabled: false
+      cards_array:
+        weight: 28
+        enabled: false
+      educator_s_guide_block:
+        weight: 35
+        enabled: false
+      featured_soldiers:
+        weight: 30
+        enabled: false
+      heading_2:
+        weight: 31
+        enabled: false
+      heading_with_icon_text:
+        weight: 37
+        enabled: false
+      ike_s_life_item_wide:
+        weight: 32
+        enabled: false
+      image:
+        weight: 33
+        enabled: true
+      link:
+        weight: 27
+        enabled: true
+      link_array:
+        weight: 40
+        enabled: true
+      markup:
+        weight: 34
+        enabled: false
+      membership_level:
+        weight: 35
+        enabled: false
+      sidebar_content:
+        weight: 36
+        enabled: false
+      sponsorship_level:
+        weight: 37
+        enabled: false
+      stakeholders:
+        weight: 8
+        enabled: false
+      text_and_links:
+        weight: 10
+        enabled: true
+      text_array:
+        weight: 41
+        enabled: false
+      two_column_image_text_block:
+        weight: 11
+        enabled: true
+      two_column_section:
+        weight: 12
+        enabled: false
+      two_column_text_collage:
+        weight: 13
+        enabled: true
+      upcoming_programs:
+        weight: 45
+        enabled: false
+      view_reference:
+        weight: 14
+        enabled: true
+field_type: entity_reference_revisions

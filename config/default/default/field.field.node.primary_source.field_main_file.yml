@@ -1,0 +1,27 @@
+uuid: d573647c-7c46-42c4-bf77-0957fed8f752
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_file
+    - node.type.primary_source
+  module:
+    - file
+id: node.primary_source.field_main_file
+field_name: field_main_file
+entity_type: node
+bundle: primary_source
+label: 'Main File'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+field_type: file

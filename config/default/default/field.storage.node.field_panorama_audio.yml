@@ -1,0 +1,23 @@
+uuid: 65d90643-86a7-44cb-9eae-6f1e0a156a47
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_panorama_audio
+field_name: field_panorama_audio
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

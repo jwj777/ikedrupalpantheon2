@@ -1,0 +1,184 @@
+uuid: 172ee2dc-c10f-4042-9a36-8c50adc6e511
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pivotal_moment_subtheme_slide.body
+    - field.field.node.pivotal_moment_subtheme_slide.field_parent_slideshow
+    - field.field.node.pivotal_moment_subtheme_slide.field_sponsor_displaytext
+    - field.field.node.pivotal_moment_subtheme_slide.field_sponsor_image
+    - field.field.node.pivotal_moment_subtheme_slide.field_subtheme_image
+    - field.field.node.pivotal_moment_subtheme_slide.field_subtheme_parent
+    - field.field.node.pivotal_moment_subtheme_slide.field_subtheme_x
+    - field.field.node.pivotal_moment_subtheme_slide.field_subtheme_y
+    - node.type.pivotal_moment_subtheme_slide
+  module:
+    - node
+label: slide
+id: slide
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: pivotal_moment_subtheme_slide
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  skip_validation: false
+  skip_validation_types: {  }
+  authorize: true
+  revision: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  title:
+    value: Title
+    label: Title
+    machine_name: title
+    type: csv
+  pos_x:
+    value: pos_x
+    label: pos_x
+    machine_name: pos_x
+    type: csv
+  pos_y:
+    value: pos_y
+    label: pos_y
+    machine_name: pos_y
+    type: csv
+  sponsor_image:
+    value: 'Sponsor Image'
+    label: 'Sponsor Image'
+    machine_name: sponsor_image
+    type: csv
+  sponsor_text:
+    value: 'Sponsor Text'
+    label: 'Sponsor Text'
+    machine_name: sponsor_text
+    type: csv
+  subtheme_image:
+    value: 'Subtheme Image'
+    label: 'Subtheme Image'
+    machine_name: subtheme_image
+    type: csv
+  subtheme_image_full:
+    value: 'Subtheme Image Full'
+    label: 'Subtheme Image Full'
+    machine_name: subtheme_image_full
+    type: csv
+  subtheme_video:
+    value: 'Subtheme Video'
+    label: 'Subtheme Video'
+    machine_name: subtheme_video
+    type: csv
+  body:
+    value: Body
+    label: Body
+    machine_name: body
+    type: csv
+  parent_id:
+    value: 'Parent ID'
+    label: 'Parent ID'
+    machine_name: parent_id
+    type: csv
+  parent_slideshow_id:
+    value: 'Parent Slideshow ID'
+    label: 'Parent Slideshow ID'
+    machine_name: parent_slideshow_id
+    type: csv
+  parent_theme_id:
+    value: 'Parent Theme ID'
+    label: 'Parent Theme ID'
+    machine_name: parent_theme_id
+    type: csv
+mappings:
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique:
+      value: 1
+  -
+    target: field_subtheme_x
+    map:
+      value: pos_x
+    settings:
+      language: null
+  -
+    target: field_subtheme_y
+    map:
+      value: pos_y
+    settings:
+      language: null
+  -
+    target: field_sponsor_image
+    map:
+      target_id: sponsor_image
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      autocreate_bundle: image
+  -
+    target: field_sponsor_displaytext
+    map:
+      value: sponsor_text
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_subtheme_image
+    map:
+      target_id: subtheme_image_full
+      alt: ''
+      title: ''
+    settings:
+      existing: 2
+      language: null
+      reference_by: filename
+      autocreate: false
+      autocreate_bundle: false
+  -
+    target: body
+    map:
+      value: body
+      summary: ''
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: field_parent_slideshow
+    map:
+      target_id: parent_slideshow_id
+    settings:
+      language: ''
+      reference_by: nid
+      feeds_item: guid
+      autocreate: 0
+      autocreate_bundle: pivotal_moment_subtheme_slidesho
+  -
+    target: field_subtheme_parent
+    map:
+      target_id: parent_theme_id
+    settings:
+      language: ''
+      reference_by: nid
+      feeds_item: guid
+      autocreate: 0
+      autocreate_bundle: pivotal_moment

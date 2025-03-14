@@ -1,0 +1,29 @@
+uuid: 9a32b229-3fb4-4514-8780-30999ddb037c
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+id: save_program
+label: 'Save Program'
+bundles: {  }
+entity_type: node
+global: false
+flag_short: 'Save To My Collection'
+flag_long: ''
+flag_message: ''
+unflag_short: 'Remove From My Collection'
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+weight: 0
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+linkTypeConfig: {  }

@@ -1,0 +1,23 @@
+uuid: 8c66d6eb-b248-4fc9-a46a-6519b6afe19e
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - iketheme
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: iketheme_search_form_wide
+theme: iketheme
+region: secondary_menu
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

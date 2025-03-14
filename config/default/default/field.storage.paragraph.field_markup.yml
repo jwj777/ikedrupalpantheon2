@@ -1,0 +1,19 @@
+uuid: b4e5d283-bedd-44c8-90a6-c3ffd9dccab9
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_markup
+field_name: field_markup
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

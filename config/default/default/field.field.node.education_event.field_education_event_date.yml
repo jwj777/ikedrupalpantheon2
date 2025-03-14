@@ -1,0 +1,21 @@
+uuid: 5011c8af-66a1-47ad-875d-73c2de0883a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_education_event_date
+    - node.type.education_event
+  module:
+    - datetime
+id: node.education_event.field_education_event_date
+field_name: field_education_event_date
+entity_type: node
+bundle: education_event
+label: 'Education Event Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

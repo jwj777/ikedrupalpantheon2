@@ -1,0 +1,24 @@
+uuid: df695440-5555-4bdb-83f5-b0907608ceda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.soldier
+  module:
+    - text
+id: node.soldier.body
+field_name: body
+entity_type: node
+bundle: soldier
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

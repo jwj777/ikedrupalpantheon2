@@ -1,0 +1,29 @@
+uuid: 6c217088-30a5-4ec7-8a8c-500819bc83c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.ike_s_life_west_point
+  module:
+    - system
+    - views
+  theme:
+    - iketheme
+id: ike_s_life_west_point_block
+theme: iketheme
+region: content
+weight: -21
+provider: null
+plugin: 'views_block:ike_s_life_west_point-block_1'
+settings:
+  id: 'views_block:ike_s_life_west_point-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /page/ikes-life

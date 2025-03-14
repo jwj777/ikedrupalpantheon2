@@ -1,0 +1,25 @@
+uuid: ead0def5-7411-4964-a054-21f2da27cbed
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3ccaec7f-0815-4877-a8a9-dbf0249fa48d'
+  module:
+    - block_content
+  theme:
+    - iketheme
+id: iketheme_headerdonate
+theme: iketheme
+region: header
+weight: -24
+provider: null
+plugin: 'block_content:3ccaec7f-0815-4877-a8a9-dbf0249fa48d'
+settings:
+  id: 'block_content:3ccaec7f-0815-4877-a8a9-dbf0249fa48d'
+  label: 'Header Donate'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

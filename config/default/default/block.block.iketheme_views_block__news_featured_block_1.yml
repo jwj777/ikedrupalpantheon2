@@ -1,0 +1,29 @@
+uuid: 1f8eeb42-0d60-40a8-8f54-b122648cf736
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_featured
+  module:
+    - system
+    - views
+  theme:
+    - iketheme
+id: iketheme_views_block__news_featured_block_1
+theme: iketheme
+region: content
+weight: -14
+provider: null
+plugin: 'views_block:news_featured-block_1'
+settings:
+  id: 'views_block:news_featured-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /resources/home

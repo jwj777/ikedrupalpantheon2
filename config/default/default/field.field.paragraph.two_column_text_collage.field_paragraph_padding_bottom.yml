@@ -1,0 +1,21 @@
+uuid: 0406ad2d-d7e3-4609-8e77-278d103f5476
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_padding_bottom
+    - paragraphs.paragraphs_type.two_column_text_collage
+  module:
+    - options
+id: paragraph.two_column_text_collage.field_paragraph_padding_bottom
+field_name: field_paragraph_padding_bottom
+entity_type: paragraph
+bundle: two_column_text_collage
+label: 'Paragraph Padding Bottom'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

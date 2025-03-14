@@ -1,0 +1,10 @@
+uuid: 70ae313f-df49-4ced-9b78-1251a65835ff
+langcode: en
+status: true
+dependencies: {  }
+id: text_array
+label: 'Text Array'
+icon_uuid: null
+icon_default: null
+description: 'A series of text blocks'
+behavior_plugins: {  }

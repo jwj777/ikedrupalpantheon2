@@ -1,0 +1,19 @@
+uuid: 1a49dfa7-f686-49b3-95c4-3b16a5ccca44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_headline_label
+    - node.type.page
+id: node.page.field_headline_label
+field_name: field_headline_label
+entity_type: node
+bundle: page
+label: 'Headline Label'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

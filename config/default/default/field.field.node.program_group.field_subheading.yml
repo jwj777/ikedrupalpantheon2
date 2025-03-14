@@ -1,0 +1,19 @@
+uuid: 4f86298f-e6b0-4076-926e-ba91688bdda6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subheading
+    - node.type.program_group
+id: node.program_group.field_subheading
+field_name: field_subheading
+entity_type: node
+bundle: program_group
+label: Subheading
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

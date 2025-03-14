@@ -1,0 +1,29 @@
+uuid: 211d9952-890b-4dda-8ef8-fe0eaddc6404
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_logo
+    - media.type.image
+    - node.type.sponsors
+id: node.sponsors.field_logo
+field_name: field_logo
+entity_type: node
+bundle: sponsors
+label: Logo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

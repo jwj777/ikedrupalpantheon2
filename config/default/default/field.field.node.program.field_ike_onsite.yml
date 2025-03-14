@@ -1,0 +1,21 @@
+uuid: ffe1099e-9bf6-4f26-ad5b-aa9bef6134be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ike_onsite
+    - node.type.program
+id: node.program.field_ike_onsite
+field_name: field_ike_onsite
+entity_type: node
+bundle: program
+label: 'IKE Onsite'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

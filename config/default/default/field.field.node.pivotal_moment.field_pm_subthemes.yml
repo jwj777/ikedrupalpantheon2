@@ -1,0 +1,29 @@
+uuid: 81ef1621-72ad-4a8f-b05c-648933ea3100
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pm_subthemes
+    - node.type.pivotal_moment
+    - node.type.pivotal_moment_subtheme_slide
+id: node.pivotal_moment.field_pm_subthemes
+field_name: field_pm_subthemes
+entity_type: node
+bundle: pivotal_moment
+label: 'Related Subthemes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      pivotal_moment_subtheme_slide: pivotal_moment_subtheme_slide
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

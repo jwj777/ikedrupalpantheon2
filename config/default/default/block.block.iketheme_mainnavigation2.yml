@@ -1,0 +1,25 @@
+uuid: ad65ca82-286a-451d-9cf0-b5382d58ebc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main-navigation-2
+  module:
+    - system
+  theme:
+    - iketheme
+id: iketheme_mainnavigation2
+theme: iketheme
+region: header
+weight: -25
+provider: null
+plugin: 'system_menu_block:main-navigation-2'
+settings:
+  id: 'system_menu_block:main-navigation-2'
+  label: 'Main Navigation 2'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

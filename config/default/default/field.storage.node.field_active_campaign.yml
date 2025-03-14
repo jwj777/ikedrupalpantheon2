@@ -1,0 +1,27 @@
+uuid: a04a6644-1dec-479c-92f3-cb5e2a8a8b02
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_active_campaign
+field_name: field_active_campaign
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'yes'
+      label: 'Yes'
+    -
+      value: 'no'
+      label: 'No'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,10 @@
+uuid: ee4a6f61-a946-4798-984b-6cb8235af739
+langcode: en
+status: true
+dependencies: {  }
+id: body_quote
+label: 'Body Quote'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,11 @@
+uuid: 96c73d8e-659a-4ac1-a6e6-e7e1a06924f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.ike_s_life
+label: "Ike's Life"
+description: ''
+targetEntityType: node
+cache: true

@@ -1,0 +1,19 @@
+uuid: 11fc53db-36ad-4670-87c6-e0fd6b02f0a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_highest_rank
+    - node.type.soldier
+id: node.soldier.field_highest_rank
+field_name: field_highest_rank
+entity_type: node
+bundle: soldier
+label: 'Highest Rank'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

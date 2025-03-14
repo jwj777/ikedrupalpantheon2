@@ -1,0 +1,23 @@
+uuid: a766b5af-daa0-49ad-9a60-54764edcb2ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ike_s_life_item_wide.field_title
+    - paragraphs.paragraphs_type.ike_s_life_item_wide
+id: paragraph.ike_s_life_item_wide.default
+targetEntityType: paragraph
+bundle: ike_s_life_item_wide
+mode: default
+content:
+  field_title:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

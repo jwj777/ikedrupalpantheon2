@@ -1,0 +1,23 @@
+uuid: a9c8a328-05f2-4b87-81e1-38124c486662
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtheme_x
+    - node.type.pivotal_moment_subtheme_slide
+id: node.pivotal_moment_subtheme_slide.field_subtheme_x
+field_name: field_subtheme_x
+entity_type: node
+bundle: pivotal_moment_subtheme_slide
+label: 'Position X'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

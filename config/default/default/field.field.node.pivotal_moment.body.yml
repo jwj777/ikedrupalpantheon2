@@ -1,0 +1,24 @@
+uuid: 1aaab6e9-0288-41fa-a9f6-996116d4b78d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pivotal_moment
+  module:
+    - text
+id: node.pivotal_moment.body
+field_name: body
+entity_type: node
+bundle: pivotal_moment
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

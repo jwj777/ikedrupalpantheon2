@@ -1,0 +1,22 @@
+uuid: 18a8607a-c287-4076-8683-18ff52036f3d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - iketheme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: iketheme_content
+theme: iketheme
+region: content
+weight: -23
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

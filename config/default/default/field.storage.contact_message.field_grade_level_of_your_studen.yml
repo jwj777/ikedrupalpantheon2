@@ -1,0 +1,33 @@
+uuid: ebc24cb8-08d0-4639-bd04-d5719a515082
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - options
+id: contact_message.field_grade_level_of_your_studen
+field_name: field_grade_level_of_your_studen
+entity_type: contact_message
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: kindergarten_2nd_grade
+      label: 'Kindergarten - 2nd Grade'
+    -
+      value: 3rd_grade_5th_grade
+      label: '3rd Grade - 5th Grade'
+    -
+      value: 6th_grade_8th_grade
+      label: 'Middle School'
+    -
+      value: high_school
+      label: 'High School'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

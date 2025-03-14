@@ -1,0 +1,36 @@
+uuid: 48feedce-98a4-4690-8703-43f5f728222c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.donor.body
+    - field.field.node.donor.feeds_item
+    - field.field.node.donor.field_club_affiliation
+    - field.field.node.donor.field_sort_order
+    - node.type.donor
+  module:
+    - text
+    - user
+id: node.donor.teaser
+targetEntityType: node
+bundle: donor
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_club_affiliation: true
+  field_sort_order: true

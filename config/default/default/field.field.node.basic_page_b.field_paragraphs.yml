@@ -1,0 +1,56 @@
+uuid: aade600e-e1ad-49a6-9707-6327a973fa15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.basic_page_b
+    - paragraphs.paragraphs_type.text_and_links
+    - paragraphs.paragraphs_type.two_column_image_text_block
+    - paragraphs.paragraphs_type.view_reference
+  module:
+    - entity_reference_revisions
+id: node.basic_page_b.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: basic_page_b
+label: Paragraphs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text_and_links: text_and_links
+      two_column_image_text_block: two_column_image_text_block
+      view_reference: view_reference
+    negate: 0
+    target_bundles_drag_drop:
+      sidebar_content:
+        weight: 9
+        enabled: false
+      stakeholders:
+        weight: 3
+        enabled: false
+      test:
+        weight: 11
+        enabled: false
+      text_and_links:
+        weight: 4
+        enabled: true
+      two_column_image_text_block:
+        weight: 13
+        enabled: true
+      two_column_section:
+        weight: 14
+        enabled: false
+      two_column_text_collage:
+        weight: 15
+        enabled: false
+      view_reference:
+        weight: 16
+        enabled: true
+field_type: entity_reference_revisions

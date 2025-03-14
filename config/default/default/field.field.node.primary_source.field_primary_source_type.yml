@@ -1,0 +1,21 @@
+uuid: d1fed95e-1a3e-45f5-82d4-68b3cf7ec4c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_primary_source_type
+    - node.type.primary_source
+  module:
+    - options
+id: node.primary_source.field_primary_source_type
+field_name: field_primary_source_type
+entity_type: node
+bundle: primary_source
+label: 'Primary Source Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,19 @@
+uuid: 8cbcb432-929a-4ef2-99be-20b1c899c07b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_town
+    - node.type.soldier
+id: node.soldier.field_home_town
+field_name: field_home_town
+entity_type: node
+bundle: soldier
+label: 'Home Town'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

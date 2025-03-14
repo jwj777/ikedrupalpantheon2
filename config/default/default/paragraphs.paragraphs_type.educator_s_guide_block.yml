@@ -1,0 +1,10 @@
+uuid: 0c4a8ebd-5e53-484e-9205-d6fe4497a071
+langcode: en
+status: true
+dependencies: {  }
+id: educator_s_guide_block
+label: "Educator's Guide Block"
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

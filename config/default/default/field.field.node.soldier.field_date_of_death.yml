@@ -1,0 +1,21 @@
+uuid: f967fcb4-817b-4c07-bd8b-71b9bc0107a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_of_death
+    - node.type.soldier
+  module:
+    - datetime
+id: node.soldier.field_date_of_death
+field_name: field_date_of_death
+entity_type: node
+bundle: soldier
+label: 'Date of Death'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

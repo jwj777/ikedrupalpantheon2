@@ -1,0 +1,150 @@
+uuid: 38783c36-f83c-4eb6-9919-39506c594102
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.page
+    - paragraphs.paragraphs_type.body_quote
+    - paragraphs.paragraphs_type.body_text
+    - paragraphs.paragraphs_type.body_text_image
+    - paragraphs.paragraphs_type.card_image_title
+    - paragraphs.paragraphs_type.card_image_title_description
+    - paragraphs.paragraphs_type.cards_array
+    - paragraphs.paragraphs_type.heading_2
+    - paragraphs.paragraphs_type.markup
+    - paragraphs.paragraphs_type.membership_level
+    - paragraphs.paragraphs_type.sponsorship_level
+    - paragraphs.paragraphs_type.stakeholders
+    - paragraphs.paragraphs_type.text_and_links
+    - paragraphs.paragraphs_type.text_array
+    - paragraphs.paragraphs_type.two_column_section
+    - paragraphs.paragraphs_type.upload_files
+    - paragraphs.paragraphs_type.view_reference
+    - paragraphs.paragraphs_type.webform_reference
+  module:
+    - entity_reference_revisions
+id: node.page.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: page
+label: Paragraphs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      stakeholders: stakeholders
+      text_and_links: text_and_links
+      two_column_section: two_column_section
+      view_reference: view_reference
+      body_quote: body_quote
+      body_text: body_text
+      body_text_image: body_text_image
+      text_array: text_array
+      markup: markup
+      cards_array: cards_array
+      card_image_title: card_image_title
+      card_image_title_description: card_image_title_description
+      heading_2: heading_2
+      upload_files: upload_files
+      membership_level: membership_level
+      sponsorship_level: sponsorship_level
+      webform_reference: webform_reference
+    negate: 0
+    target_bundles_drag_drop:
+      body_quote:
+        weight: 18
+        enabled: true
+      body_text:
+        weight: 19
+        enabled: true
+      body_text_image:
+        weight: 20
+        enabled: true
+      body_text_image_array:
+        weight: 21
+        enabled: false
+      card_image_title:
+        weight: 23
+        enabled: true
+      card_image_title_description:
+        weight: 25
+        enabled: true
+      cards_array:
+        weight: 22
+        enabled: true
+      educator_s_guide_block:
+        weight: 37
+        enabled: false
+      featured_soldiers:
+        weight: 24
+        enabled: false
+      heading_2:
+        weight: 26
+        enabled: true
+      heading_with_icon_text:
+        weight: 24
+        enabled: false
+      ike_s_life_item_wide:
+        weight: 25
+        enabled: false
+      image:
+        weight: 29
+        enabled: false
+      link:
+        weight: 43
+        enabled: false
+      link_array:
+        weight: 44
+        enabled: false
+      markup:
+        weight: 21
+        enabled: true
+      markup_and_title:
+        weight: 47
+        enabled: false
+      membership_level:
+        weight: 36
+        enabled: true
+      sidebar_content:
+        weight: 9
+        enabled: false
+      sponsorship_level:
+        weight: 39
+        enabled: true
+      stakeholders:
+        weight: 3
+        enabled: true
+      text_and_links:
+        weight: 4
+        enabled: true
+      text_array:
+        weight: 20
+        enabled: true
+      two_column_image_text_block:
+        weight: 13
+        enabled: false
+      two_column_section:
+        weight: 14
+        enabled: true
+      two_column_text_collage:
+        weight: 15
+        enabled: false
+      upcoming_programs:
+        weight: 33
+        enabled: false
+      upload_files:
+        weight: 29
+        enabled: true
+      view_reference:
+        weight: 16
+        enabled: true
+      webform_reference:
+        weight: 60
+        enabled: true
+field_type: entity_reference_revisions

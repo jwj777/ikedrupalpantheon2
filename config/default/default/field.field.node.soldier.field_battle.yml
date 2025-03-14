@@ -1,0 +1,21 @@
+uuid: cd39e6f7-8929-4c35-8ae7-5db491cd825c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_battle
+    - node.type.soldier
+  module:
+    - options
+id: node.soldier.field_battle
+field_name: field_battle
+entity_type: node
+bundle: soldier
+label: Battle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

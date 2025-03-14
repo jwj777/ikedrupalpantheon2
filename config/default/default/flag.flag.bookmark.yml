@@ -1,0 +1,34 @@
+uuid: 5fba3add-4a34-4780-a39d-5d0abc48544a
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - flag_bookmark
+_core:
+  default_config_hash: vuzrLaRZ3xV-FmT127t2gLy_p8JDLMWtsKsnCwdWR2Y
+id: bookmark
+label: 'Save Soldier'
+bundles: {  }
+entity_type: node
+global: false
+flag_short: 'Add To My Collection'
+flag_long: 'Add this page to your collection.'
+flag_message: ''
+unflag_short: 'Remove from your collection'
+unflag_long: 'Remove this page from your collection'
+unflag_message: ''
+unflag_denied_text: ''
+weight: 0
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+linkTypeConfig: {  }

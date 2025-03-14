@@ -1,0 +1,19 @@
+uuid: ced87f24-a321-446b-838a-7cf824cc4eca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subheading
+    - node.type.basic_page_b
+id: node.basic_page_b.field_subheading
+field_name: field_subheading
+entity_type: node
+bundle: basic_page_b
+label: Subheading
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

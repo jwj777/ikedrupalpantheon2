@@ -1,0 +1,21 @@
+uuid: 95effca4-258c-4263-abe7-45a6db83a959
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_theater_of_operation
+    - node.type.soldier
+  module:
+    - options
+id: node.soldier.field_theater_of_operation
+field_name: field_theater_of_operation
+entity_type: node
+bundle: soldier
+label: 'Theater of Operation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

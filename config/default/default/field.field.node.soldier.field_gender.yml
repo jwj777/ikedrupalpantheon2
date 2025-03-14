@@ -1,0 +1,21 @@
+uuid: 15d746b7-2120-4a3d-8b7b-89f89453fc84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gender
+    - node.type.soldier
+  module:
+    - options
+id: node.soldier.field_gender
+field_name: field_gender
+entity_type: node
+bundle: soldier
+label: Gender
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

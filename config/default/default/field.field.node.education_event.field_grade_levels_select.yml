@@ -1,0 +1,21 @@
+uuid: f6a7f39c-194f-458e-8743-8f986539680d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grade_levels_select
+    - node.type.education_event
+  module:
+    - options
+id: node.education_event.field_grade_levels_select
+field_name: field_grade_levels_select
+entity_type: node
+bundle: education_event
+label: 'Grade Levels'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

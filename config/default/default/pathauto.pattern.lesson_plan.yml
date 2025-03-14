@@ -1,0 +1,22 @@
+uuid: 931381f9-268f-4fb7-ae23-2a4c20cf3aa8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: lesson_plan
+label: 'Lesson Plan'
+type: 'canonical_entities:node'
+pattern: '/lesson-plan/[node:title]'
+selection_criteria:
+  4725f36e-17d8-4838-9b0f-ed98e98bf2ee:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 4725f36e-17d8-4838-9b0f-ed98e98bf2ee
+    context_mapping:
+      node: node
+    bundles:
+      lesson_plan: lesson_plan
+selection_logic: and
+weight: -5
+relationships: {  }

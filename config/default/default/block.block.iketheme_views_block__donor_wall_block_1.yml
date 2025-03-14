@@ -1,0 +1,29 @@
+uuid: 65613a25-ee18-4731-976e-305627b9acb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.donor_wall
+  module:
+    - system
+    - views
+  theme:
+    - iketheme
+id: iketheme_views_block__donor_wall_block_1
+theme: iketheme
+region: content
+weight: -26
+provider: null
+plugin: 'views_block:donor_wall-block_1'
+settings:
+  id: 'views_block:donor_wall-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /page/donor-wall

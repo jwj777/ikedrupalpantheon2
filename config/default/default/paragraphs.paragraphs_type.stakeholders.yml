@@ -1,0 +1,10 @@
+uuid: 5f5374a9-1244-450d-bb88-be4aeb3e683f
+langcode: en
+status: true
+dependencies: {  }
+id: stakeholders
+label: Stakeholders
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,19 @@
+uuid: 45bd6026-8258-48ed-9e5d-d9eb55a8580d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading_3
+    - paragraphs.paragraphs_type.link_array
+id: paragraph.link_array.field_heading_3
+field_name: field_heading_3
+entity_type: paragraph
+bundle: link_array
+label: 'Card Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

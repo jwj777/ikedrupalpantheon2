@@ -1,0 +1,12 @@
+uuid: ff7f95a4-a94d-4c26-9d76-0c7dd2d1f84b
+langcode: en
+status: true
+dependencies: {  }
+id: join_email_list
+label: 'Join Email List'
+recipients:
+  - wjorgensen@demandstack.io
+reply: ''
+weight: 0
+message: ''
+redirect: ''

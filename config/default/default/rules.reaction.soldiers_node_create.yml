@@ -1,0 +1,38 @@
+uuid: 97fb1e89-30d1-475f-b29c-1a55ac7cd0f8
+langcode: en
+status: true
+dependencies: {  }
+id: soldiers_node_create
+label: 'Soldiers Node Create'
+events:
+  -
+    event_name: 'rules_entity_insert:node--soldier'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: dc6dd2bc-7bd2-4c2c-af18-8bc3e525e8ff
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 7c35a566-09a3-4bbc-b921-fff799eccfb5
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 0ae70b52-cf4e-42c5-a81c-534ee236ecd8
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 4beeec24-ae28-4b4f-bfde-a59190274eab
+        weight: 0
+        action_id: 'rules_entity_create:webform_submission'
+        context_values:
+          webform_id: soldier_submission
+        context_mapping: {  }
+        context_processors:
+          webform_id:
+            rules_tokens: {  }
+        provides_mapping: {  }

@@ -1,0 +1,19 @@
+uuid: aad4a8ee-03a1-4225-8a74-f710c7548941
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_pm_target_url
+field_name: field_pm_target_url
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: 5338d352-8958-4042-9097-51668400cb87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sort_order
+    - node.type.donor
+id: node.donor.field_sort_order
+field_name: field_sort_order
+entity_type: node
+bundle: donor
+label: 'Sort Order'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

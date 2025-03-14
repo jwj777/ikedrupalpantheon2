@@ -1,0 +1,36 @@
+uuid: 89a0be92-1a6f-4184-a8eb-f707cbfc568d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.upcoming_programs.field_heading_2
+    - field.field.paragraph.upcoming_programs.field_view_reference
+    - paragraphs.paragraphs_type.upcoming_programs
+  module:
+    - viewsreference
+id: paragraph.upcoming_programs.default
+targetEntityType: paragraph
+bundle: upcoming_programs
+mode: default
+content:
+  field_heading_2:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_view_reference:
+    type: viewsreference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

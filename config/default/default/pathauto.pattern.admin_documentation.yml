@@ -1,0 +1,22 @@
+uuid: 4fc1f723-c0eb-4e25-81c4-9f7832410959
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: admin_documentation
+label: 'Admin Documentation'
+type: 'canonical_entities:node'
+pattern: '/docs/[node:title]'
+selection_criteria:
+  2024bf41-d75d-4861-8162-1d4f1eb5cfdf:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 2024bf41-d75d-4861-8162-1d4f1eb5cfdf
+    context_mapping:
+      node: node
+    bundles:
+      admin_documentation: admin_documentation
+selection_logic: and
+weight: -5
+relationships: {  }

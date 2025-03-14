@@ -1,0 +1,48 @@
+uuid: 08fd5b6a-f85b-43f2-8d10-9a47c4289c46
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_branch_of_service
+field_name: field_branch_of_service
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: army
+      label: Army
+    -
+      value: navy
+      label: Navy
+    -
+      value: marine_corps
+      label: 'Marine Corps'
+    -
+      value: air_force
+      label: 'Air Force'
+    -
+      value: army_air_corps
+      label: 'Army Air Corps'
+    -
+      value: women_s_army_corps_wac
+      label: "Women's Army Corps (WAC)"
+    -
+      value: coast_guard
+      label: 'Coast Guard'
+    -
+      value: women_accepted_for_volunteer_emergency_service_waves_navy
+      label: 'Women Accepted for Volunteer Emergency Service (WAVES) Navy'
+    -
+      value: other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

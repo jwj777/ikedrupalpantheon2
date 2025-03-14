@@ -1,0 +1,30 @@
+uuid: d6a4e326-0a88-4415-b4bd-b1812f729838
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0ad3daef-eab7-45b1-a03d-3ef98a0e6a9e'
+  module:
+    - block_content
+    - system
+  theme:
+    - iketheme
+id: iketheme_mobilemenu
+theme: iketheme
+region: header
+weight: -26
+provider: null
+plugin: 'block_content:0ad3daef-eab7-45b1-a03d-3ef98a0e6a9e'
+settings:
+  id: 'block_content:0ad3daef-eab7-45b1-a03d-3ef98a0e6a9e'
+  label: 'Mobile Menu'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/*'

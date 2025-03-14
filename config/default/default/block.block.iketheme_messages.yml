@@ -1,0 +1,22 @@
+uuid: 8b8eade4-eb88-4560-a7a0-4f0050eb788a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - iketheme
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: iketheme_messages
+theme: iketheme
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

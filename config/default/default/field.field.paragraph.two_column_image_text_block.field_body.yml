@@ -1,0 +1,24 @@
+uuid: c5d5e201-911d-4d31-80c9-58afc68515e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.two_column_image_text_block
+  module:
+    - text
+id: paragraph.two_column_image_text_block.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: two_column_image_text_block
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

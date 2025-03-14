@@ -1,0 +1,10 @@
+uuid: fbd025e5-f390-40b9-98d5-68e906dbbfa6
+langcode: en
+status: true
+dependencies: {  }
+id: card_image_title_description
+label: 'Card Image Title Description'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

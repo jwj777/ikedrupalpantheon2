@@ -1,0 +1,39 @@
+uuid: 03e57a12-3adf-42c8-9bae-436dd009f439
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_club_affiliation
+field_name: field_club_affiliation
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: president_s_club
+      label: "President's Club"
+    -
+      value: first_family_s_club
+      label: "First Family's Club"
+    -
+      value: cabinet_s_club
+      label: "Cabinet's Club"
+    -
+      value: allied_commander_s_club
+      label: "Allied Commander's Club"
+    -
+      value: general_s_club
+      label: "General's Club"
+    -
+      value: i_like_ike_club
+      label: 'I Like Ike Club'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

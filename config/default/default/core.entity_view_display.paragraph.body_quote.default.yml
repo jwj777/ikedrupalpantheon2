@@ -1,0 +1,29 @@
+uuid: 30f7b249-aa50-4cde-a742-4bd3d4246a3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.body_quote.field_quote_attribution
+    - field.field.paragraph.body_quote.field_text_quote
+    - paragraphs.paragraphs_type.body_quote
+id: paragraph.body_quote.default
+targetEntityType: paragraph
+bundle: body_quote
+mode: default
+content:
+  field_quote_attribution:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_text_quote:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: 63b49005-9862-4e83-bcbb-464df119a1b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_years
+    - node.type.ike_s_life
+id: node.ike_s_life.field_years
+field_name: field_years
+entity_type: node
+bundle: ike_s_life
+label: Years
+description: 'Range of years covering the event (e.g. 1915-1919)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

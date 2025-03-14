@@ -1,0 +1,46 @@
+uuid: e149375d-2ed7-4ad8-936d-0d09f89fcc33
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.ike_s_life.body
+    - field.field.node.ike_s_life.field_era
+    - field.field.node.ike_s_life.field_hero_image
+    - field.field.node.ike_s_life.field_meta_tags
+    - field.field.node.ike_s_life.field_sections
+    - field.field.node.ike_s_life.field_subheading
+    - field.field.node.ike_s_life.field_summary_image
+    - field.field.node.ike_s_life.field_years
+    - node.type.ike_s_life
+  module:
+    - entity_reference_revisions
+    - user
+id: node.ike_s_life.full
+targetEntityType: node
+bundle: ike_s_life
+mode: full
+content:
+  field_sections:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_era: true
+  field_hero_image: true
+  field_meta_tags: true
+  field_subheading: true
+  field_summary_image: true
+  field_years: true
+  uuid: true

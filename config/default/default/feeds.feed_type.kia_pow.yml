@@ -1,0 +1,78 @@
+uuid: 7bd4fb35-cb83-4848-a29e-77e40209913f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.soldier.title
+    - field.field.node.soldier.field_killed_in_action
+    - field.field.node.soldier.field_prisoner_of_war
+    - node.type.soldier
+  module:
+    - node
+label: kia_pow
+id: kia_pow
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: soldier
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  skip_validation: false
+  skip_validation_types: {  }
+  authorize: true
+  revision: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  pow:
+    value: pow
+    label: pow
+    machine_name: pow
+    type: csv
+  kia:
+    value: kia
+    label: kia
+    machine_name: kia
+    type: csv
+mappings:
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique:
+      value: 1
+  -
+    target: field_prisoner_of_war
+    map:
+      value: pow
+    settings:
+      language: null
+  -
+    target: field_killed_in_action
+    map:
+      value: kia
+    settings:
+      language: null

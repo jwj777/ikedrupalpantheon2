@@ -1,0 +1,10 @@
+uuid: d18a2fc5-352e-4667-aa45-7c73b98d3fcb
+langcode: en
+status: true
+dependencies: {  }
+id: ike_s_life_item_wide
+label: "Ike's Life Item Wide"
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

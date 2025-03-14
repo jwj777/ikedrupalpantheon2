@@ -1,0 +1,40 @@
+uuid: 32adaf51-8294-46bd-a860-e3dcfee105a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.membership_level.field_body
+    - field.field.paragraph.membership_level.field_heading_3
+    - field.field.paragraph.membership_level.field_level_price
+    - paragraphs.paragraphs_type.membership_level
+  module:
+    - text
+id: paragraph.membership_level.default
+targetEntityType: paragraph
+bundle: membership_level
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_heading_3:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_level_price:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

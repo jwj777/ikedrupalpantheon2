@@ -1,0 +1,32 @@
+uuid: 26f8b986-6df3-4503-a12d-c7b9b300c0de
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.restricted_html
+    - node.type.soldier
+    - workflows.workflow.soldiers_workflow
+  module:
+    - contact
+    - content_moderation
+    - filter
+    - media
+    - node
+    - search
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'create soldier content'
+  - 'search content'
+  - 'use soldiers_workflow transition draft_to_needs_review'
+  - 'use text format basic_html'
+  - 'use text format restricted_html'
+  - 'view media'

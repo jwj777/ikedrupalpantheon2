@@ -1,0 +1,21 @@
+uuid: 02e23aa3-3a15-47b3-ab57-6ca129a7885c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_approximate_date_discharge
+    - node.type.soldier
+id: node.soldier.field_approximate_date_discharge
+field_name: field_approximate_date_discharge
+entity_type: node
+bundle: soldier
+label: 'Approximate Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

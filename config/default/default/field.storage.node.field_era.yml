@@ -1,0 +1,39 @@
+uuid: 5d5dd38e-2a4e-45b9-b149-2ebc6e78eeb6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_era
+field_name: field_era
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: boyhood
+      label: Boyhood
+    -
+      value: westpoint
+      label: Westpoint
+    -
+      value: early_military
+      label: 'Early Military'
+    -
+      value: the_general
+      label: 'The General'
+    -
+      value: presidency
+      label: Presidency
+    -
+      value: statesman
+      label: Statesman
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

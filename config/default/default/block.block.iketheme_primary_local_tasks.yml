@@ -1,0 +1,22 @@
+uuid: e787af8c-a90e-4a4f-8521-78eb5e2878aa
+langcode: en
+status: false
+dependencies:
+  theme:
+    - iketheme
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: iketheme_primary_local_tasks
+theme: iketheme
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

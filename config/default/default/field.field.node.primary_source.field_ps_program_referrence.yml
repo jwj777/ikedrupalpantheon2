@@ -1,0 +1,31 @@
+uuid: 3d5ecc6e-a6e9-4406-87b1-22314a54a913
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ps_program_referrence
+    - node.type.lesson_plan
+    - node.type.primary_source
+    - node.type.program
+id: node.primary_source.field_ps_program_referrence
+field_name: field_ps_program_referrence
+entity_type: node
+bundle: primary_source
+label: 'Program Referrence'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      lesson_plan: lesson_plan
+      program: program
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: lesson_plan
+field_type: entity_reference

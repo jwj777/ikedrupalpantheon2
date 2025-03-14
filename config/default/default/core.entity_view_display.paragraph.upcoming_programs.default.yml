@@ -1,0 +1,33 @@
+uuid: 132b2a8b-5def-425e-906f-dfdc3c042e7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.upcoming_programs.field_heading_2
+    - field.field.paragraph.upcoming_programs.field_view_reference
+    - paragraphs.paragraphs_type.upcoming_programs
+  module:
+    - viewsreference
+id: paragraph.upcoming_programs.default
+targetEntityType: paragraph
+bundle: upcoming_programs
+mode: default
+content:
+  field_heading_2:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_view_reference:
+    type: viewsreference_formatter
+    label: above
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

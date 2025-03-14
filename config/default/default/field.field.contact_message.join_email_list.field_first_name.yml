@@ -1,0 +1,19 @@
+uuid: d99dccf6-ae70-4b72-adaf-66e320a5b093
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.join_email_list
+    - field.storage.contact_message.field_first_name
+id: contact_message.join_email_list.field_first_name
+field_name: field_first_name
+entity_type: contact_message
+bundle: join_email_list
+label: 'First Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

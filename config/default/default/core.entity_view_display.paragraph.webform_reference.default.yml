@@ -1,0 +1,43 @@
+uuid: bb9b6765-017d-4add-9d92-d070c03e64f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.webform_reference.field_body
+    - field.field.paragraph.webform_reference.field_heading_2
+    - field.field.paragraph.webform_reference.field_webform_reference_field
+    - paragraphs.paragraphs_type.webform_reference
+  module:
+    - text
+    - webform
+id: paragraph.webform_reference.default
+targetEntityType: paragraph
+bundle: webform_reference
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_heading_2:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_webform_reference_field:
+    type: webform_entity_reference_entity_view
+    label: above
+    settings:
+      source_entity: true
+      lazy: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  uuid: true

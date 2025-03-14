@@ -1,0 +1,29 @@
+uuid: 0f10daa1-2aca-4596-a460-4da390b7dbf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lesson_plan_group
+    - node.type.lesson_plan
+    - node.type.lesson_plan_group
+id: node.lesson_plan.field_lesson_plan_group
+field_name: field_lesson_plan_group
+entity_type: node
+bundle: lesson_plan
+label: 'Lesson Plan Group'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      lesson_plan_group: lesson_plan_group
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

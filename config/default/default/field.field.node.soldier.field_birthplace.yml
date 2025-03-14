@@ -1,0 +1,19 @@
+uuid: ee09639a-babb-4a3d-8431-3f5372d91568
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_birthplace
+    - node.type.soldier
+id: node.soldier.field_birthplace
+field_name: field_birthplace
+entity_type: node
+bundle: soldier
+label: Birthplace
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

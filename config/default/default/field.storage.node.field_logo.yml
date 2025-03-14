@@ -1,0 +1,20 @@
+uuid: 195f6b0b-3aee-4e06-b0f1-0ed50338c21a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_logo
+field_name: field_logo
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

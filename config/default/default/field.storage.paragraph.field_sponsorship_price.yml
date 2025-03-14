@@ -1,0 +1,21 @@
+uuid: 52df62a0-ce49-4b06-88ac-4384f4f04881
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_sponsorship_price
+field_name: field_sponsorship_price
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

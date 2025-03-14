@@ -1,0 +1,33 @@
+uuid: 571957b6-fe9d-47fe-b137-4e0939ffa35c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_for_programs
+  module:
+    - node
+    - views
+  theme:
+    - iketheme
+id: iketheme_views_block__content_for_programs_block_1
+theme: iketheme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:content_for_programs-block_1'
+settings:
+  id: 'views_block:content_for_programs-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      program: program

@@ -1,0 +1,73 @@
+uuid: 415ed87e-13f9-426d-a19a-0476c48c830e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.program.body
+    - field.field.node.program.field_grade_levels_select
+    - field.field.node.program.field_group_reference
+    - field.field.node.program.field_ike_express
+    - field.field.node.program.field_ike_online
+    - field.field.node.program.field_ike_onsite
+    - field.field.node.program.field_meta_tags
+    - field.field.node.program.field_primary_sources
+    - field.field.node.program.field_program_length
+    - field.field.node.program.field_scheduling_link
+    - field.field.node.program.field_sections
+    - field.field.node.program.field_subheading
+    - field.field.node.program.field_summary_image
+    - node.type.program
+  module:
+    - entity_reference_revisions
+    - user
+id: node.program.default
+targetEntityType: node
+bundle: program
+mode: default
+content:
+  field_primary_sources:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_sections:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  flag_bookmark:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  flag_save_lesson:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  flag_save_program:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  body: true
+  field_grade_levels_select: true
+  field_group_reference: true
+  field_ike_express: true
+  field_ike_online: true
+  field_ike_onsite: true
+  field_meta_tags: true
+  field_program_length: true
+  field_scheduling_link: true
+  field_subheading: true
+  field_summary_image: true
+  links: true
+  uuid: true

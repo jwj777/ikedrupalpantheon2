@@ -1,0 +1,30 @@
+uuid: 8a5ae901-a404-440d-ae46-08972f0e2ed5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:637f64c7-9353-40fb-9591-40866fa8fccb'
+  module:
+    - block_content
+    - system
+  theme:
+    - iketheme
+id: iketheme_menuicon
+theme: iketheme
+region: header
+weight: -28
+provider: null
+plugin: 'block_content:637f64c7-9353-40fb-9591-40866fa8fccb'
+settings:
+  id: 'block_content:637f64c7-9353-40fb-9591-40866fa8fccb'
+  label: 'Menu Icon'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/*'

@@ -1,0 +1,19 @@
+uuid: dd33ee77-e25a-4991-b29c-6ac02d2690c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_honored_by
+    - node.type.soldier
+id: node.soldier.field_honored_by
+field_name: field_honored_by
+entity_type: node
+bundle: soldier
+label: 'Honored by'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

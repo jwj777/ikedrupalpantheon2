@@ -1,0 +1,23 @@
+uuid: ef4d681d-076f-4b9c-833c-9abd071f06ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.card_image_title_description
+  module:
+    - link
+id: paragraph.card_image_title_description.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: card_image_title_description
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

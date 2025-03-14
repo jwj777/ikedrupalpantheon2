@@ -1,0 +1,21 @@
+uuid: 2ba905ff-3242-486d-a82e-558d95043a19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_era
+    - node.type.primary_source
+  module:
+    - options
+id: node.primary_source.field_era
+field_name: field_era
+entity_type: node
+bundle: primary_source
+label: Era
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

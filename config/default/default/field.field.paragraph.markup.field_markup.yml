@@ -1,0 +1,24 @@
+uuid: 6ca9f382-d388-41fb-b5a7-3c6c89ed3bb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_markup
+    - filter.format.markup
+    - paragraphs.paragraphs_type.markup
+  module:
+    - text
+id: paragraph.markup.field_markup
+field_name: field_markup
+entity_type: paragraph
+bundle: markup
+label: markup
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - markup
+field_type: text_long

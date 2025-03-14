@@ -1,0 +1,19 @@
+uuid: 0f247105-db35-4b32-adb8-06deae8dd8f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.ike_s_life_item_wide
+id: paragraph.ike_s_life_item_wide.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: ike_s_life_item_wide
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

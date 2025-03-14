@@ -1,0 +1,15 @@
+uuid: a0531544-b219-494c-8c94-5a6344380e26
+langcode: en
+status: true
+dependencies: {  }
+name: card_wide
+label: 'Card Wide'
+effects:
+  eecaec87-e009-4a43-8d84-63b96069668b:
+    uuid: eecaec87-e009-4a43-8d84-63b96069668b
+    id: image_scale
+    weight: -9
+    data:
+      width: 280
+      height: 260
+      upscale: false

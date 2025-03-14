@@ -1,0 +1,29 @@
+uuid: e349e9d6-e5da-4f2c-b4cc-c11fba822cde
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.lesson_plans
+  module:
+    - system
+    - views
+  theme:
+    - iketheme
+id: iketheme_views_block__lesson_plans_block_1
+theme: iketheme
+region: content
+weight: -17
+provider: null
+plugin: 'views_block:lesson_plans-block_1'
+settings:
+  id: 'views_block:lesson_plans-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /page/lesson-plans

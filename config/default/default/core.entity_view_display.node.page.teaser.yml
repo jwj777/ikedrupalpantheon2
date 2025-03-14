@@ -1,0 +1,64 @@
+uuid: 535e0c4f-9b71-4bd3-9e25-02395c628bdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.body
+    - field.field.node.page.field_active_campaign
+    - field.field.node.page.field_headline_label
+    - field.field.node.page.field_hero_icon
+    - field.field.node.page.field_hero_image
+    - field.field.node.page.field_link_text
+    - field.field.node.page.field_meta_tags
+    - field.field.node.page.field_paragraphs
+    - field.field.node.page.field_sections_sidebar_right
+    - field.field.node.page.field_subheading
+    - node.type.page
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: 8BgdRtLbtQ0F__o0FHSH0Mx5fvXOra9tfT1GmNKbRYw
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  flag_bookmark:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  flag_save_lesson:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  flag_save_program:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  links:
+    weight: 101
+    region: content
+hidden:
+  field_active_campaign: true
+  field_headline_label: true
+  field_hero_icon: true
+  field_hero_image: true
+  field_link_text: true
+  field_meta_tags: true
+  field_paragraphs: true
+  field_sections_sidebar_right: true
+  field_subheading: true
+  uuid: true

@@ -1,0 +1,23 @@
+uuid: 8c5a109d-f164-4020-aebe-f8a3b42de8c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.pivotal_moment
+  module:
+    - feeds
+id: node.pivotal_moment.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: pivotal_moment
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

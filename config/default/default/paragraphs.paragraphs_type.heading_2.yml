@@ -1,0 +1,10 @@
+uuid: 182ce583-e7c8-408c-8518-64a5009962a2
+langcode: en
+status: true
+dependencies: {  }
+id: heading_2
+label: 'Heading 2'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

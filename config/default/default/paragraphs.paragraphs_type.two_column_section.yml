@@ -1,0 +1,10 @@
+uuid: c5a8400d-f258-41b5-9096-f401b7b2d268
+langcode: en
+status: true
+dependencies: {  }
+id: two_column_section
+label: 'Two Column Section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

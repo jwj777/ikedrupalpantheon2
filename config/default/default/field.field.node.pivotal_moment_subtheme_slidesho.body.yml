@@ -1,0 +1,24 @@
+uuid: a4fe6969-f51f-4a12-8f40-a925c1b6083f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pivotal_moment_subtheme_slidesho
+  module:
+    - text
+id: node.pivotal_moment_subtheme_slidesho.body
+field_name: body
+entity_type: node
+bundle: pivotal_moment_subtheme_slidesho
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

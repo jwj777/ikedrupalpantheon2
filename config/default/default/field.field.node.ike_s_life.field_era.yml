@@ -1,0 +1,21 @@
+uuid: 20b926e0-c16e-4374-b1c6-f0d3fd14e602
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_era
+    - node.type.ike_s_life
+  module:
+    - options
+id: node.ike_s_life.field_era
+field_name: field_era
+entity_type: node
+bundle: ike_s_life
+label: Era
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

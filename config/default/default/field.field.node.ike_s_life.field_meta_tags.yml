@@ -1,0 +1,21 @@
+uuid: 70199603-0ea5-4e18-beac-d331525036dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.ike_s_life
+  module:
+    - metatag
+id: node.ike_s_life.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: ike_s_life
+label: 'Meta Tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

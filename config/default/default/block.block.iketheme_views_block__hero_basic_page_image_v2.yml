@@ -1,0 +1,36 @@
+uuid: c9bc9558-aa6d-409b-98c8-5e4902d4d9ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hero_basic_page_image
+  module:
+    - node
+    - views
+  theme:
+    - iketheme
+id: iketheme_views_block__hero_basic_page_image_v2
+theme: iketheme
+region: content
+weight: -28
+provider: null
+plugin: 'views_block:hero_basic_page_image-block_hero_page_image'
+settings:
+  id: 'views_block:hero_basic_page_image-block_hero_page_image'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      ike_s_life: ike_s_life
+      ike_s_life_era_group: ike_s_life_era_group
+      newsletter_article: newsletter_article
+      page: page

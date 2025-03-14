@@ -1,0 +1,52 @@
+uuid: 78c36b09-3de0-4574-9305-bc203e26219c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_reference
+    - paragraphs.paragraphs_type.text_and_links
+    - paragraphs.paragraphs_type.two_column_image_text_block
+  module:
+    - entity_reference_revisions
+id: paragraph.two_column_image_text_block.field_paragraph_reference
+field_name: field_paragraph_reference
+entity_type: paragraph
+bundle: two_column_image_text_block
+label: 'Paragraph Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text_and_links: text_and_links
+    negate: 0
+    target_bundles_drag_drop:
+      sidebar_content:
+        weight: 9
+        enabled: false
+      stakeholders:
+        weight: 10
+        enabled: false
+      test:
+        weight: 11
+        enabled: false
+      text_and_links:
+        weight: 12
+        enabled: true
+      two_column_image_text_block:
+        weight: 13
+        enabled: false
+      two_column_section:
+        weight: 14
+        enabled: false
+      two_column_text_collage:
+        weight: 15
+        enabled: false
+      view_reference:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,68 @@
+uuid: d1fb9685-748d-4443-98bf-530b3e72bf15
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pivotal_moment_subtheme_slide.body
+    - field.field.node.pivotal_moment_subtheme_slide.feeds_item
+    - field.field.node.pivotal_moment_subtheme_slide.field_parent_slideshow
+    - field.field.node.pivotal_moment_subtheme_slide.field_sponsor_displaytext
+    - field.field.node.pivotal_moment_subtheme_slide.field_sponsor_image
+    - field.field.node.pivotal_moment_subtheme_slide.field_subtheme_image
+    - field.field.node.pivotal_moment_subtheme_slide.field_subtheme_parent
+    - field.field.node.pivotal_moment_subtheme_slide.field_subtheme_video
+    - field.field.node.pivotal_moment_subtheme_slide.field_subtheme_video_captions
+    - field.field.node.pivotal_moment_subtheme_slide.field_subtheme_x
+    - field.field.node.pivotal_moment_subtheme_slide.field_subtheme_y
+    - field.field.node.pivotal_moment_subtheme_slide.field_zoom_image
+    - node.type.pivotal_moment_subtheme_slide
+  module:
+    - text
+    - user
+id: node.pivotal_moment_subtheme_slide.teaser
+targetEntityType: node
+bundle: pivotal_moment_subtheme_slide
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  flag_bookmark:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  flag_save_lesson:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  flag_save_program:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_parent_slideshow: true
+  field_sponsor_displaytext: true
+  field_sponsor_image: true
+  field_subtheme_image: true
+  field_subtheme_parent: true
+  field_subtheme_video: true
+  field_subtheme_video_captions: true
+  field_subtheme_x: true
+  field_subtheme_y: true
+  field_zoom_image: true
+  uuid: true

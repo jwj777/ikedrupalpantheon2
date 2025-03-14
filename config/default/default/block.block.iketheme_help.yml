@@ -1,0 +1,22 @@
+uuid: 097660aa-3d5f-4d12-8f93-0b5f439f3629
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - iketheme
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: iketheme_help
+theme: iketheme
+region: header
+weight: -21
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

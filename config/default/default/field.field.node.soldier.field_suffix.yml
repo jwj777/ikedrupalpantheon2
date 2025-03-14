@@ -1,0 +1,19 @@
+uuid: 3a6a0f4d-59ab-4daa-b0cc-c40a8c2651be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_suffix
+    - node.type.soldier
+id: node.soldier.field_suffix
+field_name: field_suffix
+entity_type: node
+bundle: soldier
+label: Suffix
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

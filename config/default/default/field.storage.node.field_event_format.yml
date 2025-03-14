@@ -1,0 +1,27 @@
+uuid: 07cecf59-8111-4b56-9be2-ce4c13378dbe
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_event_format
+field_name: field_event_format
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: online
+      label: Online
+    -
+      value: onsite
+      label: Onsite
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

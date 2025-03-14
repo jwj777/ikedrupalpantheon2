@@ -1,0 +1,22 @@
+uuid: 341ddb74-919d-419d-a92d-7e95cdae0a6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.markup.field_markup
+    - paragraphs.paragraphs_type.markup
+  module:
+    - text
+id: paragraph.markup.default
+targetEntityType: paragraph
+bundle: markup
+mode: default
+content:
+  field_markup:
+    type: text_default
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

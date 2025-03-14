@@ -1,0 +1,15 @@
+uuid: 9a2bfe5f-219d-4b22-b856-9d0d0c940255
+langcode: en
+status: true
+dependencies: {  }
+name: card_square
+label: 'Card Square'
+effects:
+  c336d13b-67c5-4bc4-bd25-ada0fdb39a99:
+    uuid: c336d13b-67c5-4bc4-bd25-ada0fdb39a99
+    id: image_scale
+    weight: 2
+    data:
+      width: 400
+      height: 300
+      upscale: true

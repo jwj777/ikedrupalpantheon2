@@ -1,0 +1,15 @@
+uuid: 4f17a5dc-b150-489e-b569-b7e8cfedd165
+langcode: en
+status: true
+dependencies: {  }
+name: card_square_md
+label: 'Card Square Md'
+effects:
+  4dde407b-8049-4cc2-8aa6-216e2419e8ed:
+    uuid: 4dde407b-8049-4cc2-8aa6-216e2419e8ed
+    id: image_scale
+    weight: 2
+    data:
+      width: 420
+      height: 300
+      upscale: true

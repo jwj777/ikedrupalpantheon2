@@ -1,0 +1,29 @@
+uuid: 58dcdf9d-0500-40fb-88b4-5b915d8d5758
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.soliders_main
+  module:
+    - system
+    - views
+  theme:
+    - iketheme
+id: iketheme_views_block__soliders_main_block_1
+theme: iketheme
+region: content
+weight: -15
+provider: null
+plugin: 'views_block:soliders_main-block_1'
+settings:
+  id: 'views_block:soliders_main-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /page/ikes-soldiers

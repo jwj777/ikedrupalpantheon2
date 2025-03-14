@@ -1,0 +1,18 @@
+uuid: 71e93471-5003-42ac-8768-36c86eb9c2ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Newsletter Issue'
+type: newsletter_issue
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true
