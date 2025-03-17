@@ -41,9 +41,18 @@ Main navigation view to select pivotal moment theme
           return;
         }
         url = window.location.href.split("#");
+        _u = url[0]
+        if (_u.length > 0 && _u[_u.length - 1] !== '/') {
+          _u = url[0] + "/#/" + path;
+        } else {
+          _u = url[0] + "#/" + path;
+        }
         model = this.slider.collection.findWhere({
-          target_url: url[0] + "#/" + path
+          target_url: _u
         });
+        if (model === undefined) {
+          console.log("Could not find the model");
+        }
         index = this.slider.collection.indexOf(model);
         if (index >= 0 && index !== this.slider.getIndex()) {
           this.slider.moveTo(index, duration);
