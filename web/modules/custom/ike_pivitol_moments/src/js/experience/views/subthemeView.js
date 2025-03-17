@@ -435,8 +435,11 @@ Triggers:
       },
       isVideoOnly: function() {
         var model;
-        model = this._slideShow[0].model;
-        return model.isPhoto() === false;
+        if (this._slideShow.length && 'model' in this._slideShow[0]) {
+          model = this._slideShow[0].model;
+          return model.isPhoto() === false;
+        }
+        return false;
       }
     });
   });

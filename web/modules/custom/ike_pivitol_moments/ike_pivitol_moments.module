@@ -56,7 +56,17 @@ function ike_pivitol_moments_theme($existing, $type, $theme, $path) {
  */
 function ike_pivitol_moments_views_post_render(ViewExecutable $view, &$output, CachePluginBase $cache) {
   if ($view->id() == 'pivotal_moment_subtheme_slideshow') {
-    $raw = $output['#markup']->__toString();
+    $is_markup = false;
+    if (isset($output['#markup'])) {
+      $raw = $output['#markup']->__toString();
+      $is_markup = true;
+    } else if (isset($output['#plain_text'])) {
+      $raw = $output['#plain_text'];
+    }
+    else {
+      return;
+    }
+
     $json = json_decode($raw, TRUE);
 
     foreach ($json as &$item) {
@@ -65,7 +75,11 @@ function ike_pivitol_moments_views_post_render(ViewExecutable $view, &$output, C
     }
 
     $new = ViewsRenderPipelineMarkup::create(json_encode($json));
-    $output['#markup'] = $new;
+    if ($is_markup) {
+      $output['#markup'] = $new;
+    } else {
+      $output['#plain_text'] = $new;
+    }
   }
 }
 
