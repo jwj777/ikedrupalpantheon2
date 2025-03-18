@@ -56,29 +56,18 @@ function ike_pivitol_moments_theme($existing, $type, $theme, $path) {
  */
 function ike_pivitol_moments_views_post_render(ViewExecutable $view, &$output, CachePluginBase $cache) {
   if ($view->id() == 'pivotal_moment_subtheme_slideshow') {
-    $is_markup = false;
     if (isset($output['#markup'])) {
       $raw = $output['#markup']->__toString();
-      $is_markup = true;
-    } else if (isset($output['#plain_text'])) {
-      $raw = $output['#plain_text'];
-    }
-    else {
-      return;
-    }
 
-    $json = json_decode($raw, TRUE);
+      $json = json_decode($raw, TRUE);
 
-    foreach ($json as &$item) {
-      $item['zoom_image'] = !empty($item['zoom_image']) ? [$item['zoom_image']] : FALSE;
-      $item['zoom_image_thumb'] = !empty($item['zoom_image_thumb']) ? [$item['zoom_image_thumb']] : FALSE;
-    }
+      foreach ($json as &$item) {
+        $item['zoom_image'] = !empty($item['zoom_image']) ? [$item['zoom_image']] : FALSE;
+        $item['zoom_image_thumb'] = !empty($item['zoom_image_thumb']) ? [$item['zoom_image_thumb']] : FALSE;
+      }
 
-    $new = ViewsRenderPipelineMarkup::create(json_encode($json));
-    if ($is_markup) {
+      $new = ViewsRenderPipelineMarkup::create(json_encode($json));
       $output['#markup'] = $new;
-    } else {
-      $output['#plain_text'] = $new;
     }
   }
 }
@@ -113,6 +102,10 @@ function ike_pivitol_moments_views_pre_render(ViewExecutable $view) {
  * Implements hook_views_post_execute().
  */
 function ike_pivitol_moments_views_post_execute(ViewExecutable $view) {
+  if ($view->id() == 'pivotal_moment_subtheme_slideshow') {
+    $q = (string)$view->query->query();
+    dump($q);
+  }
   if ($view->id() == "pivotal_moment_panorama") {
     foreach ($view->result as $item) {
       $children = $item->_entity->get('field_panorama_children');
