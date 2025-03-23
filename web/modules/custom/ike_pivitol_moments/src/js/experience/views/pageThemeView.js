@@ -286,7 +286,7 @@ subnid:
       _onViewReady: function (view) {
         this._pending.splice(this._pending.indexOf(view), 1);
         view.off("ready", this._onViewReady);
-        if (this._pending.length) {
+        if (this._pending.length > 1) {
           return;
         }
         delete this._pending;

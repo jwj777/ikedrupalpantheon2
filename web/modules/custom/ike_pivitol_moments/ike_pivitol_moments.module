@@ -102,10 +102,6 @@ function ike_pivitol_moments_views_pre_render(ViewExecutable $view) {
  * Implements hook_views_post_execute().
  */
 function ike_pivitol_moments_views_post_execute(ViewExecutable $view) {
-  if ($view->id() == 'pivotal_moment_subtheme_slideshow') {
-    $q = (string)$view->query->query();
-    dump($q);
-  }
   if ($view->id() == "pivotal_moment_panorama") {
     foreach ($view->result as $item) {
       $children = $item->_entity->get('field_panorama_children');
