@@ -488,3 +488,12 @@
     border-radius: 1.5rem;
   }
 }
+
+#block-iketheme-pardonourdust {
+  background: var(--tertiary-40);
+}
+
+#block-iketheme-pardonourdust p {
+  padding: 12px 32px;
+  color: #fff;
+}
