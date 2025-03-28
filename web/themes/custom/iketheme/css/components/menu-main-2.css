@@ -65,10 +65,12 @@
   color: var(--primary-50) !important; 
   text-decoration: underline;
   white-space: nowrap; /* Prevents text from wrapping */
+  background: none;
 }
 
 #block-iketheme-mainnavigation2 .menu-level-1 > li > a:hover {
   color: var(--primary-30) !important; 
+  background: none;
 }
 
 /* Hide markers */
