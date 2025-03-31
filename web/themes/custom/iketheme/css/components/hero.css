@@ -115,8 +115,9 @@
   padding: 4rem 0 16rem 0;
 }
 
-.page-node-type-ike-s-life .hero-basic {
-  padding: 4rem 0 14rem 0;
+.page-node-type-ike-s-life .hero-basic,
+.page-node-type-ike-s-life-era-group .hero-basic {
+  padding: 4rem 0 16rem 0;
 }
 
 .header-hero.no-image .hero-basic {
@@ -353,6 +354,8 @@ primary sources
   max-width: 840px;
 }
 
+.page-node-type-ike-s-life .view-hero-basic-page-image .row-wrapper,
+.page-node-type-ike-s-life-era-group .view-hero-basic-page-image .row-wrapper,
 .page-node-type-page .view-hero-basic-page-image .row-wrapper,
 .page-node-type-primary-source .views-field-field-hero-image ,
 .page-node-type-ike-s-life .views-field-field-hero-image,
@@ -368,6 +371,47 @@ primary sources
   margin-left: auto;
   margin-right: auto;
   height: 440px;
+}
+
+.page-node-type-ike-s-life-era-group .view-hero-basic-page-image .row-wrapper {
+  margin-bottom: -14rem;
+}
+
+.page-node-type-ike-s-life .view-hero-basic-page-image .row-wrapper {
+  position: relative;
+  bottom: 14rem;
+  margin-bottom: -11rem;
+}
+
+.page-node-type-ike-s-life .view-hero-basic-page-image img,
+.page-node-type-ike-s-life-era-group .view-hero-basic-page-image img {
+  border-radius: 1.5rem;
+  object-fit: cover;
+  height: 440px;
+}
+
+@media screen and (max-width: 1376px) {
+  .page-node-type-ike-s-life .view-hero-basic-page-image .row-wrapper {
+    height: 100%;
+  }
+}
+
+.page-node-type-ike-s-life .view-hero-basic-page-image .row-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1376px) {
+  .page-node-type-ike-s-life .view-hero-basic-page-image .row-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1376px) {
+  .page-node-type-ike-s-life .view-hero-basic-page-image img {
+    width: 100%;
+    min-height: 280px;
+  }
 }
 
 .page-node-type-page .view-hero-basic-page-image img {
