@@ -342,6 +342,24 @@ primary sources
   color: #fff;
 }
 
+.hero-lesson-plans {
+  max-width: var(--xl);
+  margin: 0 auto;
+  padding: 5rem 0 5rem 0;
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1376px) {
+  .hero-lesson-plans {
+    margin: 0 var(--gutter-xl);
+  }
+}
+
+.hero-lesson-plans h1 {
+  color: #fff;
+}
+
 .page-node-type-basic-page-b .header-hero,
 .page-node-type-homepage .header-hero,
 .page-node-type-education .header-hero {
