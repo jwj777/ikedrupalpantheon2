@@ -37,6 +37,10 @@
   padding-top: 1rem;
 }
 
+.page-node-type-page #block-iketheme-pardonourdust .field--name-body {
+  padding-top: 0;
+}
+
 /* .has-paragraphs .field--name-body.field--type-text-with-summary {
   margin-bottom: 14rem;
 } */
