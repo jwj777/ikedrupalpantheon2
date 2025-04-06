@@ -22,12 +22,32 @@
       {% endif %}
 
       {# Render the Grade Levels Field #}
+      {% if node.field_program_length is not empty %}
+        <div class="field-container grade-levels">
+          <p class="label">Program Length:</p>
+          <p>{{ node.field_program_length.value }}</p>
+        </div>
+      {% endif %}
+
+      {# Render the Grade Levels Field #}
       {% if node.field_grade_levels_select.value is not empty %}
-        <div class="grade-levels">
-          <p class="label">Grade Levels</p>
+        <div class="field-container grade-levels">
+          <p class="label">Grade Levels:</p>
           <p>{{ node.field_grade_levels_select.value }}</p>
         </div>
       {% endif %}
+
+      {% if node.field_group_reference.entity %}
+      <div class="field-container grade-levels">
+        <p class="label">Program Group:</p>
+        <p>{{ node.field_group_reference.entity.label }}</p>
+      </div>
+    {% endif %}
+
+    <div class="button-light">
+      <a href="https://ikeducation.as.me/" class="button">Book Your Experience</a>
+    </div>
+
 
     </div> {# /.text-container #}
 

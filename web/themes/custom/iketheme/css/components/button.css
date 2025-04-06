@@ -38,6 +38,7 @@
   margin-top: 3rem;
 }
 
+.button-light a,
 .paragraph--type--link .button a,
 .paragraph--type--two-column-text-collage .field--name-field-link a,
 .view-content-for-programs a.button {

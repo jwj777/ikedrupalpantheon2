@@ -602,11 +602,10 @@
 
 .field--name-field-card {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
   width: 100%;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 @media screen and (max-width: 968px) {

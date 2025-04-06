@@ -75,3 +75,17 @@ summary span {
 #edit-field-gender-value-collapsible {
   margin-bottom: 1.5rem;
 }
+
+.field-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.field-container p {
+  margin: 0;
+}
+
+.field-container .label {
+  margin-right: 0.3rem;
+}

@@ -501,3 +501,29 @@
   padding: 12px 32px;
   color: #fff;
 }
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.page-node-type-program .node__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-node-type-program .text-container {
+  max-width: 560px;
+}
+
+.page-node-type-program .image-container img {
+  max-width: 600px;
+  border-radius: 1.5rem;
+}
+
+.page-node-type-program .button-light {
+  margin-top: 2rem;
+}

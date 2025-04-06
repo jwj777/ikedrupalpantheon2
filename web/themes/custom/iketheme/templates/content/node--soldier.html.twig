@@ -134,25 +134,25 @@
       </div>
     {% endif %}
 
-{% set enlisted_date = node.field_enlisted_commissioned_date[0].value ?? null %}
-{% set discharge_date = node.field_discharge_date[0].value ?? null %}
+    {% set enlisted_date = node.field_enlisted_commissioned_date[0].value ?? null %}
+    {% set discharge_date = node.field_discharge_date[0].value ?? null %}
 
-{% if enlisted_date or discharge_date %}
-  <div class="label-value">
-    <p class="label">Served:</p>
-    <div class="date-value">
-      {% if enlisted_date %}
-        {{ enlisted_date|date("M j, Y") }}
-      {% endif %}
-      {% if enlisted_date and discharge_date %}
-        {{ ' - ' }}
-      {% endif %}
-      {% if discharge_date %}
-        {{ discharge_date|date("M j, Y") }}
-      {% endif %}
-    </div>
-  </div>
-{% endif %}
+    {% if enlisted_date or discharge_date %}
+      <div class="label-value">
+        <p class="label">Served:</p>
+        <div class="date-value">
+          {% if enlisted_date %}
+            {{ enlisted_date|date("M j, Y") }}
+          {% endif %}
+          {% if enlisted_date and discharge_date %}
+            {{ ' - ' }}
+          {% endif %}
+          {% if discharge_date %}
+            {{ discharge_date|date("M j, Y") }}
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
 
     {% if content.field_battle|render|trim is not empty %}
       <div class="label-value">
@@ -192,6 +192,27 @@
     </div>
 
   </div><!-- end soldier details -->
+
+  <div class="video-container">
+    {% for item in node.field_video_url %}
+      {% set raw_url = item.value|trim %}
+      {% set video_id = raw_url|split('/')|last %}
+      {% set embed_url = 'https://www.youtube.com/embed/' ~ video_id %}
+      <div class="video-item">
+        <iframe 
+          width="588" 
+          height="420" 
+          src="{{ embed_url }}" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    {% endfor %}
+  </div>
+  
 
     <div class="biographical">
       {% if content.field_biographical_information %}
