@@ -132,7 +132,8 @@
 
 .no-paragraphs.no-image .hero-basic,
 .page-node-type-event .hero-basic,
-.page-node-type-education-event .hero-basic {
+.page-node-type-education-event .hero-basic,
+.node-id-2184 .hero-basic {
   padding: 4rem 0 4rem 0 !important;
 }
 
@@ -451,7 +452,7 @@ primary sources
 
 .page-node-type-page .has-paragraphs.no-image .field--name-field-paragraphs {
   position: relative;
-  bottom: 12rem;
+  bottom: 10rem;
 }
 
 .page-node-type-page .has-sidebar .field--name-field-sections-sidebar-right {
