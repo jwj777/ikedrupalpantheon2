@@ -665,7 +665,7 @@ primary sources
 }
 
 .soldier-hero {
-  padding: 5rem 0 16rem 0;
+  padding: 4rem 0 18rem 0;
 }
 
 .soldier-hero .soldier-image { 
@@ -674,11 +674,14 @@ primary sources
   align-items: center;
   border-radius: 1.5rem;
   overflow: hidden;
+  margin-top: -2rem;
 }
 
 .soldier-hero img {
-  min-height: 300px;
+  min-height: 340px;
   max-height: 400px;
+  max-width: 320px;
+  object-fit: cover;
 }
 
 .soldier-hero h1, 
@@ -696,6 +699,11 @@ primary sources
   margin-bottom: 4rem;
   color: var(--primary-95)
 }
+
+.soldier-hero img {
+  border-radius: 1.5rem;
+}
+
 
 .page-node-type-primary-source .hero-basic .label-medium {
   margin-bottom: 2rem;

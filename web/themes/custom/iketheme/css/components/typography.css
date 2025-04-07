@@ -142,7 +142,9 @@ p, li, .body-medium,
   color: var(--neutral-10);
 }
 
-.paragraph p {
+.paragraph p,
+.paragraph--type--body-text-image p,
+.paragraph--type--body-text p {
   color: var(--neutral-40);
 }
 
