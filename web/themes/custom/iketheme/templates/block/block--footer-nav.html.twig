@@ -1,0 +1,85 @@
+{#
+  Template for the footer nav block.
+  File: templates/block/block--footer-nav.html.twig
+#}
+
+{% macro render_menu(items, level) %}
+  <ul class="{{ level == 0 ? 'footer-menu' : 'footer-submenu' }}">
+    {% for item in items %}
+      <li class="{{ item.below is not empty ? 'menu-parent' : 'menu-child' }} {{ item.in_active_trail ? 'active' }}">
+        {% if item.below is not empty %}
+          <span class="menu-label label-small">{{ item.title }}</span>
+          {{ _self.render_menu(item.below, level + 1) }}
+        {% else %}
+          <a href="{{ item.url.toString() }}">{{ item.title }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro %}
+
+
+
+{% import _self as menus %} 
+
+
+<div class="footer-container">
+  <div class="footer-inner">
+
+    <div class="footer-top">
+
+      <div class="footer-info">
+        <a class="logo" href="/">
+          <img src="/sites/default/files/EF_New_transparent_0.png">
+        </a>
+        <div class="footer-info-item address">
+          <p class="label-small">Address</p>
+          <p>200 SE Fourth Street</p>
+          <p>PO Box 295</p>
+          <p>Abilene, KS 67410</p>
+        </div>
+        <div class="footer-info-item hours">
+          <p class="label-small">Office Hours</p>
+          <p>8 am - 5 pm</p>
+        </div>
+        <div class="footer-info-item phone">
+          <p class="label-small">Phone</p>
+          <p>785-280-9531</p>
+        </div>
+        <div class="footer-info-item social">
+          <p class="label-small">Social</p>
+          <div class="icons">
+            <a href="https://www.facebook.com/eisenhowerfoundation" target="_blank">
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="https://twitter.com/eisenhowerfound" target="_blank">
+              <i class="ri-twitter-x-line"></i>
+            </a>  
+            <a href="https://www.youtube.com/user/EisenhowerMemorial" target="_blank">
+              <i class="ri-youtube-fill"></i>
+            </a>  
+            <a href="https://www.instagram.com/eisenhowerfoundation/" target="_blank">
+              <i class="ri-instagram-fill"></i>
+            </a>  
+          </div>
+        </div>
+      </div>
+
+      {# {{ content }} #}
+
+      {{ menus.render_menu(content['#items'], 0) }}
+
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="row1">
+        <a href="/page/privacy-policy">Privacy Policy</a>
+      </div>
+      <div>
+        <p class="label-small">© 2025 Eisenhower Foundation</p>
+      </div>
+    </div>
+
+  </div>
+</div>
