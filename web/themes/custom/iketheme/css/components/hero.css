@@ -436,7 +436,8 @@ primary sources
 .page-node-type-page .view-hero-basic-page-image img {
   width: 100%;
   object-fit: cover;
-  height: 440px;
+  height: 400px;
+  border-radius: 1.5rem;
 }
 
 .page-node-type-page .field--name-field-paragraphs {

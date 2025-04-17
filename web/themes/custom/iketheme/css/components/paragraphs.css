@@ -1196,15 +1196,13 @@
   width: 356px;
   border-radius: 1.5rem;
   overflow: hidden;
-}
-
-paragraph--type--educator-s-guide-block
-
-
-.paragraph--type--educator-s-guide-block .paragraph--type--heading-with-icon-text {
   width: 356px;
   height: 100%;
   margin: 0;
+}
+
+.paragraph--type--educator-s-guide-block a {
+  text-decoration: none;
 }
 
 .paragraph--type--educator-s-guide-block .subheading {
