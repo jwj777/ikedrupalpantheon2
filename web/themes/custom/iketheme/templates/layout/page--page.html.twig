@@ -7,10 +7,13 @@
 
 <div class="layout-container {{ has_sidebar }} {{ page_has_paragraphs }} {{ has_hero_image }} {% if node is defined %}node-id-{{ node.id }}{% endif %}">
 
-  {{ page.header_top }}
+  
 
   <div class="{{ header_hero_class }}" style="background-image: url('{{ hero_background_image_url }}');">
     <div class="hero-inner">
+
+      {{ page.header_top }}
+      
       <header role="banner">
         {{ page.header }}
       </header>

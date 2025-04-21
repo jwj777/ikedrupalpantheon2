@@ -22,13 +22,15 @@
 }
 
 .mobile-nav-container {
-  position: absolute;
+  position: fixed !important;
   left: -800px;
-  overflow-y: auto;
+  overflow-y: auto !important;
+  height: 64vh !important;
+  -webkit-overflow-scrolling: touch;
   background: var(--primary-10);
   width: 380px;
-  height: 90vh;
   padding: 2rem;
+  padding-bottom: 4rem;
   z-index: 1000; 
   transition: all 0.3s ease-in-out;
 }
@@ -79,7 +81,7 @@
 }
 
 .accordionToggle.visible {
-  max-height: 500px; 
+  max-height: none;
   opacity: 1;
   visibility: visible;
   padding: 0.75rem 2rem 1rem 2rem;
@@ -130,7 +132,8 @@
   background: rgba(255,255,255, 0.15);
 }
 
-.mobile-nav-container .nav2-item {
+.mobile-nav-container .nav2-item,
+.mobile-nav-container .nav2-item a {
   display: block;
   margin: 1rem 0;
   text-decoration: none;

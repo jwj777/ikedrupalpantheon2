@@ -1,15 +1,15 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const mobileMenu = document.getElementById("block-iketheme-mainnavigation2-2"); 
-  const mobileMenuIcon = document.querySelector(".mobile-menu-icon a"); 
+// document.addEventListener("DOMContentLoaded", function () {
+//   const mobileMenu = document.getElementById("block-iketheme-mainnavigation2-2"); 
+//   const mobileMenuIcon = document.querySelector(".mobile-menu-icon a"); 
   // const topLevelItems = mobileMenu.querySelectorAll(".menu-level-0 > li"); 
 
-  function toggleMenu(event) {
-    event.preventDefault();
-    mobileMenu.classList.toggle("mobile-menu-open");
-  }
+  // function toggleMenu(event) {
+  //   event.preventDefault();
+  //   mobileMenu.classList.toggle("mobile-menu-open");
+  // }
 
   // Attach event listener to mobile menu button
-  mobileMenuIcon.addEventListener("click", toggleMenu);
+  // mobileMenuIcon.addEventListener("click", toggleMenu);
 
   // Handle accordion-style submenu behavior and add dropdown icons
   // topLevelItems.forEach((li) => {
@@ -70,20 +70,20 @@ document.addEventListener("DOMContentLoaded", function () {
   // });
 
   // Close menu when clicking outside
-  document.addEventListener("click", function (event) {
-    if (!mobileMenu.contains(event.target) && !mobileMenuIcon.contains(event.target)) {
-      mobileMenu.classList.remove("mobile-menu-open");
-      topLevelItems.forEach((li) => {
-        li.classList.remove("active");
-        const submenu = li.querySelector(":scope > .menu-level-1");
-        if (submenu) submenu.style.maxHeight = null;
+//   document.addEventListener("click", function (event) {
+//     if (!mobileMenu.contains(event.target) && !mobileMenuIcon.contains(event.target)) {
+//       mobileMenu.classList.remove("mobile-menu-open");
+//       topLevelItems.forEach((li) => {
+//         li.classList.remove("active");
+//         const submenu = li.querySelector(":scope > .menu-level-1");
+//         if (submenu) submenu.style.maxHeight = null;
 
-        // Reset icon rotation
-        const icon = li.querySelector(".dropdown-icon svg");
-        if (icon) {
-          icon.style.transform = "rotate(0deg)";
-        }
-      });
-    }
-  });
-});
+//         // Reset icon rotation
+//         const icon = li.querySelector(".dropdown-icon svg");
+//         if (icon) {
+//           icon.style.transform = "rotate(0deg)";
+//         }
+//       });
+//     }
+//   });
+// });
