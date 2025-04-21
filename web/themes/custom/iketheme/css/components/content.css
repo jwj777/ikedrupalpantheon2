@@ -276,7 +276,8 @@
   overflow: hidden;
 }
 
-.page-node-type-lesson-plan .field--name-field-grade-levels-select {
+.page-node-type-lesson-plan .field--name-field-grade-levels-select,
+.page-node-type-program .field--name-field-grade-levels-select {
   display: flex;
 }
 
@@ -284,7 +285,18 @@
   margin-bottom: 0px;
 }
 
-.page-node-type-lesson-plan .field--name-field-grade-levels-select .field__item {
+.field-container.grade-levels .label {
+  margin-right: 8px !important;
+}
+
+.field-container.grade-levels {
+  margin-bottom: 1rem;
+}
+
+.page-node-type-lesson-plan .field--name-field-grade-levels-select label 
+
+.page-node-type-lesson-plan .field--name-field-grade-levels-select .field__item,
+.page-node-type-program .field--name-field-grade-levels-select .field__item {
   margin-right: 8px;
 }
 

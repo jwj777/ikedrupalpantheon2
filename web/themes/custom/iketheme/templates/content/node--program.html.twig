@@ -30,15 +30,15 @@
       {% endif %}
 
       {# Render the Grade Levels Field #}
-      {% if node.field_grade_levels_select.value is not empty %}
+      {% if content.field_grade_levels_select %}
         <div class="field-container grade-levels">
           <p class="label">Grade Levels:</p>
-          <p>{{ node.field_grade_levels_select.value }}</p>
+          {{ content.field_grade_levels_select }}
         </div>
       {% endif %}
 
       {% if node.field_group_reference.entity %}
-      <div class="field-container grade-levels">
+      <div class="field-container program-group">
         <p class="label">Program Group:</p>
         <p>{{ node.field_group_reference.entity.label }}</p>
       </div>

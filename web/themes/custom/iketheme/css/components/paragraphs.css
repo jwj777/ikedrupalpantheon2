@@ -1284,6 +1284,13 @@ p.image-caption {
   margin-bottom: 0.5rem;
 }
 
+.paragraph--type--markup-and-title .field--name-field-link a {
+  display: block;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+
 
 /***
  webform paragraphs 
