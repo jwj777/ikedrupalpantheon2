@@ -133,6 +133,10 @@
   flex: 1 1 100%;
 }
 
+.view-news-main-v2 .pager {
+  margin-top: 4rem;
+}
+
 .view-soliders-main .views-row a {
   text-decoration: none;
 }
@@ -435,6 +439,8 @@
   color: var(--neutral-40);
   margin-bottom: 0px;
 }
+
+
 
 
 /** lesson plans **/
