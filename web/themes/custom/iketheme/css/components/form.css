@@ -485,3 +485,13 @@ fieldset.webform-composite-hidden-title {
   border-radius: 1.5rem;
 }
 
+.hidden-label {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+label {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
