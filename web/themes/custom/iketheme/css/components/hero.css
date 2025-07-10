@@ -774,10 +774,14 @@ primary sources
 
 /** hero buttons **/
 
-.hero-buttons, .hero-buttons div {
+.hero-buttons {
   display: flex;
   margin-top: 3rem;
   /* margin-bottom: 7em; */
+}
+
+.hero-buttons, .hero-buttons div {
+  display: flex;
 }
 
 
