@@ -774,7 +774,7 @@ primary sources
 
 /** hero buttons **/
 
-.hero-buttons {
+.hero-buttons, .hero-buttons div {
   display: flex;
   margin-top: 3rem;
   /* margin-bottom: 7em; */
@@ -804,5 +804,5 @@ primary sources
   color: var(--primary-10);
   margin-right: 2rem;
   margin-bottom: 1rem;
-  display: block;
+  display: inline-block;
 }
