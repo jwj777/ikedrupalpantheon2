@@ -603,13 +603,13 @@
 .field--name-field-card {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   position: relative;
   width: 100%;
-  gap: 1rem;
+  gap: 2rem;
 }
 
-@media screen and (max-width: 968px) {
-}
+
 
 @media screen and (max-width: 968px) {
   .node-id-1918 .field--name-field-card {
@@ -1040,8 +1040,16 @@
 }
 
 .no-sidebar .paragraph--type--card-image-title-description {
-  max-width: 348px;
+  /* max-width: 348px; */
+  max-width: 376px;
+  height: 100%;
 }
+
+/* @media screen and (max-width: 1216px) {
+  .no-sidebar .paragraph--type--card-image-title-description {
+    max-width: 46%;
+  }
+} */
 
 @media screen and (max-width: 712px) {
   .paragraph--type--card-image-title-description {
