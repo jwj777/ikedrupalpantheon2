@@ -76,6 +76,8 @@ base:
         weight: -10
       css/components/views.css:
         weight: -10
+      css/components/block-widths.css:
+        weight: -10
 
 global-scripts:
   version: VERSION
