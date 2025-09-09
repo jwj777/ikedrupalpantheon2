@@ -605,7 +605,7 @@
 .field--name-field-card {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   position: relative;
   width: 100%;
   gap: 2rem;
@@ -1285,9 +1285,15 @@ p.image-caption {
   background: var(--primary-95);
   padding: 1.5rem;
   border-radius: 1.5rem;
-  max-width: 325px;
-  margin-right: 1rem;
+  max-width: 320px;
 }
+
+@media screen and (max-width: 712px) {
+  .paragraph--type--markup-and-title {
+    max-width: 100%;
+  }
+}
+
 
 .paragraph--type--markup-and-title .field--name-field-heading-3 {
   margin-top: 1rem;
