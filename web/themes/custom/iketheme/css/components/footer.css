@@ -177,6 +177,10 @@ ul.footer-submenu {
   display: block;
 }
 
+li.menu-child {
+  list-style-type: none;
+}
+
 .footer-card,
 .footer-menu li.menu-parent {
   display: flex;
