@@ -53,18 +53,25 @@
 
 
 .lg-sm-width .field--name-field-column-one {
-  max-width: 720px;
+  width: 720px;
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 968px) {
+  .lg-sm-width .field--name-field-column-one {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
 .lg-sm-width .field--name-field-column-two {
-  max-width: 464px;
+  width: 464px;
   flex: 2;
 }
 
 @media screen and (max-width: 968px) {
   .lg-sm-width .field--name-field-column-two {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
