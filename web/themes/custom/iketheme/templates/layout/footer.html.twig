@@ -1,9 +1,17 @@
-
+{# 
 {% import _self as menus %}
 
 {{ menus.menu_links(items, attributes, 0) }}
 
 {% macro menu_links(items, attributes, menu_level) %}
+
+
+
+{% 
+  --------------
+  No longer used - footer code in /block/block--foter-nav.html.twig 
+  -------------
+%}
 
 
   <div class="footer-container">
@@ -121,15 +129,20 @@
     </div>
 
     <div class="footer-bottom">
-      <div class="row1">
-        <a href="/page/privacy-policy">Privacy Policy</a>
+      <div class="bottom-left">
+        <div class="row1">
+          <a href="/page/privacy-policy">Privacy Policy</a>
+        </div>
+        <div class="">
+          <p class="label-small">© 2025 Eisenhower Foundation</p>
+        </div>
       </div>
-      <div class="">
-        <p class="label-small">© 2025 Eisenhower Foundation</p>
+      <div class="bottom-right">
+        <p class="signature">Built by <a href="https://www.demandstack.io">Demand Stack</a></p>
       </div>
     </div>
 
   </div>
   </div>
  
-{% endmacro %}
+{% endmacro %} #}
