@@ -25,7 +25,7 @@
   position: fixed !important;
   left: -800px;
   overflow-y: auto !important;
-  height: 64vh !important;
+  height: 100vh !important;
   -webkit-overflow-scrolling: touch;
   background: var(--primary-10);
   width: 380px;
@@ -38,6 +38,7 @@
 @media screen and (max-width: 480px) {
   .mobile-nav-container {
     width: 72%;
+    height: 90vh !important;
   }
 }
 

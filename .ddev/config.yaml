@@ -1,7 +1,7 @@
 name: ike-drupal-ds4
 type: drupal10
 docroot: web
-php_version: "8.1"
+php_version: "8.2"
 webserver_type: nginx-fpm
 xdebug_enabled: false
 additional_hostnames: []
@@ -13,6 +13,8 @@ use_dns_when_possible: true
 composer_version: "2"
 web_environment:
     - TERMINUS_MACHINE_TOKEN=3PvNoEc2_euhZeKcFyCDbWVYaB23i9YWDb6j6M5oc8Le6
+    - PANTHEON_SITE=ike-drupal-ds4
+    - PANTHEON_ENVIRONMENT=dev
 
 # Key features of DDEV's config.yaml:
 

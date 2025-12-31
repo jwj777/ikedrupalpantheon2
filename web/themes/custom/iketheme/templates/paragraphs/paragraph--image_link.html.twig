@@ -1,0 +1,41 @@
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+{# {% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    <div class="paragraph-inner">
+      {% block content %}
+        <div class="{{ paragraph.field_link_type.value }}">
+          {{ content.field_link }}
+        </div>
+      {% endblock %}
+    </div>
+  </div>
+{% endblock paragraph %} #}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    <div class="paragraph-inner">
+      {% block content %}
+
+        {% set link_url = paragraph.field_link.0.url.toString() ?? '' %}
+
+        {% if link_url %}
+          <a href="{{ link_url }}" class="{{ paragraph.field_link_type.value }}">
+            {{ content.field_image }}
+          </a>
+        {% else %}
+          {{ content.field_image }}
+        {% endif %}
+
+      {% endblock %}
+    </div>
+  </div>
+{% endblock paragraph %}

@@ -1374,3 +1374,45 @@ p.image-caption {
 }
 
 
+/* Hero cards / paragraphs */
+
+.paragraph--type--hero-cards .field--name-field-paragraphs-reference {
+  display: flex;
+}
+
+@media screen and (max-width: 1216px) {
+  .paragraph--type--hero-cards .field--name-field-paragraphs-reference {
+    flex-direction: column;
+  }
+}
+
+.paragraph--type--hero-cards .field--name-field-paragraphs-reference .field__item:nth-child(1) img {
+  max-width: 500px;
+  height: 400px;
+  object-fit: cover;
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 1216px) {
+  .paragraph--type--hero-cards .field--name-field-paragraphs-reference .field__item:nth-child(1) img {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+.paragraph--type--hero-cards .field--name-field-paragraphs-reference .field__item:nth-child(2) img {
+  max-width: 680px;
+  height: 400px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1216px) {
+  .paragraph--type--hero-cards .field--name-field-paragraphs-reference .field__item:nth-child(2) img {
+    max-width: 100%;
+  }
+}
+
+.paragraph--type--hero-cards .field--name-field-paragraphs-reference img {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
