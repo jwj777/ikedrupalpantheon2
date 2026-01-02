@@ -666,6 +666,14 @@ primary sources
   margin: 0 auto;
 }
 
+@media screen and (max-width: 968px) {
+  .soldier-hero {
+    flex-direction: column;
+  }
+}
+
+
+
 .soldier-hero {
   padding: 4rem 0 18rem 0;
 }
@@ -677,13 +685,31 @@ primary sources
   border-radius: 1.5rem;
   overflow: hidden;
   margin-top: -2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
+
+@media screen and (max-width: 968px) {
+  .soldier-hero .soldier-image {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+
 
 .soldier-hero img {
   min-height: 340px;
   max-height: 400px;
-  max-width: 320px;
+  /* max-width: 320px; */
+  overflow: hidden;
   object-fit: cover;
+}
+
+.soldier-hero .text-container { 
+  overflow: hidden;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .soldier-hero h1, 

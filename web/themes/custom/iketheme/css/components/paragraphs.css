@@ -802,6 +802,12 @@
   margin-bottom: 0.5rem;
 }
 
+.paragraph--type--text-array .field__item,
+.paragraph--type--text-array .field__item * {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 
 
 /** friends of the foundation - body paragraph wrapper **/
