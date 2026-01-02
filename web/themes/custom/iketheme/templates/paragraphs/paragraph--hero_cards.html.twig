@@ -1,0 +1,25 @@
+{%
+  set base_classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+{% set item_count = paragraph.field_paragraphs_reference|length %}
+
+{% set count_classes = [
+  'items-' ~ item_count,
+  item_count > 0 ? 'has-items' : 'no-items'
+] %}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(base_classes|merge(count_classes)) }}>
+    <div class="paragraph-inner">
+      {% block content %}
+        {{ content.field_paragraphs_reference }}
+      {% endblock %}
+    </div>
+  </div>
+{% endblock %}

@@ -1400,6 +1400,10 @@ p.image-caption {
   }
 }
 
+.paragraph--type--hero-cards.items-1 .field--name-field-paragraphs-reference .field__item:nth-child(1) img {
+  max-width: 100%;
+}
+
 .paragraph--type--hero-cards .field--name-field-paragraphs-reference .field__item:nth-child(2) img {
   max-width: 680px;
   height: 400px;
