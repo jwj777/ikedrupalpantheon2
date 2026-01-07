@@ -384,12 +384,6 @@
   margin-bottom: 2rem;
 }
 
-/* .paragraph--type--two-column-text-collage .image-row-1 img {
-  width: 560px;
-  height: 280px;
-  object-fit: cover;
-} */
-
 .paragraph--type--two-column-text-collage .image-row-2 {
   display: flex;
   justify-content: flex-end;
@@ -510,6 +504,13 @@
     overflow: hidden;
     object-fit: cover;
   }
+}
+
+/** paragraph images and videos - max-width **/
+
+.paragraph-inner .text-container img, .paragraph-inner .text-container iframe {
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -776,7 +777,7 @@
 }
 
 .paragraph--type--text-array .field__item {
-  width: 440px;
+  flex: 1 1 440px;
   padding: 0 2rem 0.5rem 0;
 }
 
@@ -1425,4 +1426,16 @@ p.image-caption {
 .paragraph--type--hero-cards .field--name-field-paragraphs-reference img {
   border-radius: 1.5rem;
   overflow: hidden;
+}
+
+
+
+/* Critical for flex overflow issues */
+.paragraph--type--text-array .field--name-field-paragraph-reference {
+  box-sizing: border-box;
+}
+
+.paragraph--type--text-array .field__item {
+  min-width: 0;
+  max-width: 100%;
 }

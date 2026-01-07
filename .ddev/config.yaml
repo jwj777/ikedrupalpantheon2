@@ -11,6 +11,8 @@ database:
     version: "10.4"
 use_dns_when_possible: true
 composer_version: "2"
+mutagen_sync_excludes:
+    - ".ddev/.downloads"
 web_environment:
     - TERMINUS_MACHINE_TOKEN=3PvNoEc2_euhZeKcFyCDbWVYaB23i9YWDb6j6M5oc8Le6
     - PANTHEON_SITE=ike-drupal-ds4
