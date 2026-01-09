@@ -199,6 +199,13 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .page-node-type-soldier main {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
 .page-node-type-ike-s-life .region-content,
 .page-node-type-ike-s-life-era-group .region-content,
 .page-node-type-soldier .region-content,

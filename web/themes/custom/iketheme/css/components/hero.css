@@ -697,6 +697,13 @@ primary sources
   }
 }
 
+@media screen and (max-width: 480px) {
+  .soldier-hero .soldier-image {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
 
 .soldier-hero img {
   min-height: 340px;
@@ -706,10 +713,23 @@ primary sources
   object-fit: cover;
 }
 
+@media screen and (max-width: 480px) {
+  .soldier-hero img {
+    max-height: none;
+  }
+}
+
 .soldier-hero .text-container { 
   overflow: hidden;
   margin-left: 3rem;
   margin-right: 3rem;
+}
+
+@media screen and (max-width: 480px) {
+  .soldier-hero .text-container { 
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 
 .soldier-hero h1, 

@@ -50,6 +50,14 @@
   align-items: center;
 }
 
+@media screen and (max-width: 480px) {
+  .label-value {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+
 .soldier-details {
   position: relative; 
   z-index: 2;
